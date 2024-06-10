@@ -10,8 +10,16 @@ const styles = {
         height: 100,
         margin: "100px auto"
     }),
-    icon: style({
-        borderRadius: "50%"
+    greetingBox: style({
+        width: 300,
+        margin: "-75px auto",
+        textAlign: "center",
+        fontSize: 24,
+        "@media": {
+            "screen and (max-width:300px)": {
+                width: "100%"
+            }
+        }
     })
 }
 

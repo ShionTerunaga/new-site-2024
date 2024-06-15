@@ -12,7 +12,9 @@ const styles = {
     }),
     greetingBox: style({
         width: 300,
-        margin: "-75px auto",
+        height: 100,
+        margin: "auto",
+        marginTop: "-75px",
         textAlign: "center",
         "@media": {
             "screen and (max-width:300px)": {

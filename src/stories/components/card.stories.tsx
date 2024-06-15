@@ -10,5 +10,10 @@ export default meta
 type Story = StoryFn<typeof Card>
 
 export const Basic: Story = () => {
-    return <Card />
+    return (
+        <Card
+            title="title"
+            description="hogehogehogehgoeruhaughaiurhgaiuhgaiuhgriauhrgiahgeriu"
+        />
+    )
 }

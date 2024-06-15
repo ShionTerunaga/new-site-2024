@@ -9,10 +9,9 @@ export const Home = () => {
                 <Icon />
             </section>
             <section className={styles.greetingBox}>
-                <div>
-                    <p>{en.home.description1}</p>
-                    <p>{en.home.description2}</p>
-                    <p>{en.home.greeting}</p>
+                <h1 className={styles.name}>{en.home.name}</h1>
+                <div className={styles.descriptionBox}>
+                    <p>{en.home.description}</p>
                 </div>
             </section>
         </main>

@@ -14,12 +14,17 @@ const styles = {
         width: 300,
         margin: "-75px auto",
         textAlign: "center",
-        fontSize: 24,
         "@media": {
             "screen and (max-width:300px)": {
                 width: "100%"
             }
         }
+    }),
+    name: style({
+        fontSize: 32
+    }),
+    descriptionBox: style({
+        marginTop: 12
     })
 }
 

@@ -5,8 +5,7 @@ export const en = {
         third: "Let's go!!"
     },
     home: {
-        greeting: "(◜ω◝) Ultimate Nichaia",
-        description1: "Hello. I'm TERUSI.",
-        description2: "Please take your time."
+        name: "TERUSI",
+        description: "software engineer"
     }
 }

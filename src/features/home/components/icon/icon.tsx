@@ -7,21 +7,15 @@ import ICON from "@/assets/icon.jpg"
 
 const Icon = () => {
     return (
-        <AnimatePresence>
-            <motion.picture
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1 }}
-            >
-                <Image
-                    src={ICON}
-                    width={100}
-                    height={100}
-                    alt="My Icon"
-                    className={styles.icon}
-                />
-            </motion.picture>
-        </AnimatePresence>
+        <picture>
+            <Image
+                src={ICON}
+                width={100}
+                height={100}
+                alt="My Icon"
+                className={styles.icon}
+            />
+        </picture>
     )
 }
 

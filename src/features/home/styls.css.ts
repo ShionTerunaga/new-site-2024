@@ -27,6 +27,14 @@ const styles = {
     }),
     descriptionBox: style({
         marginTop: 12
+    }),
+    link: style({
+        textDecoration: "none",
+        marginBottom: 12
+    }),
+    itemBox: style({
+        display: "flex",
+        justifyContent: "center"
     })
 }
 

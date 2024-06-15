@@ -6,6 +6,17 @@ export const en = {
     },
     home: {
         name: "TERUSI",
-        description: "software engineer"
+        description: "software engineer",
+        card: {
+            card1: {
+                title: "introduction",
+                description: "Let me introduce myself!"
+            },
+            card2: {
+                title: "skill",
+                description:
+                    "We will focus on the skills we have experience with."
+            }
+        }
     }
 }

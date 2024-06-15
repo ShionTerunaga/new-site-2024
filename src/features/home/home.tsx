@@ -2,6 +2,8 @@ import { Card } from "@/components/card/card"
 import Icon from "./components/icon/icon"
 import styles from "./styls.css"
 import { en } from "@/shared/lang/en"
+import { staticCard } from "./static/card"
+import Link from "next/link"
 
 export const Home = () => {
     return (
@@ -20,11 +22,14 @@ export const Home = () => {
                 </section>
             </div>
             <div>
-                <section style={{ display: "flex", justifyContent: "center" }}>
-                    <Card
-                        title="introduction"
-                        description="hogehogehoruhaorguhauigrhaiurghaigh"
-                    />
+                <section>
+                    {staticCard.map((item, index) => (
+                        <div className={styles.itemBox} key={index}>
+                            <Link href={item.path} className={styles.link}>
+                                <Card {...item} />
+                            </Link>
+                        </div>
+                    ))}
                 </section>
             </div>
         </main>

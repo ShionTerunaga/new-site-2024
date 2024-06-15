@@ -8,15 +8,19 @@ const styles = {
         border: "1px solid silver",
         borderRadius: 5,
         color: "black",
-        boxShadow: "0 0 10px white"
+        boxShadow: "0 0 10px white",
+        ":hover": {
+            boxShadow: "0 0 20px yellow",
+            transition: "0.6s"
+        }
     }),
     picture: style({
         width: "100%",
         height: 125
     }),
     image: style({
-        borderStartStartRadius: 5,
-        borderStartEndRadius: 5
+        borderStartStartRadius: 3,
+        borderStartEndRadius: 3
     }),
     textBox: style({
         width: "100%",
@@ -33,7 +37,7 @@ const styles = {
     }),
     description: style({
         color: "black",
-        margin: 0,
+        marginTop: 10,
         overflowWrap: "break-word"
     })
 }

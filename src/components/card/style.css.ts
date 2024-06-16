@@ -20,7 +20,12 @@ const styles = {
     }),
     image: style({
         borderStartStartRadius: 3,
-        borderStartEndRadius: 3
+        borderStartEndRadius: 3,
+        pointerEvents: "none",
+        WebkitTouchCallout: "none",
+        WebkitUserSelect: "none",
+        MozUserSelect: "none",
+        userSelect: "none"
     }),
     textBox: style({
         width: "100%",

@@ -1,4 +1,4 @@
-import { Card } from "@/components/card/card"
+import { Card } from "@/components/card"
 import Icon from "./components/icon/icon"
 import styles from "./styls.css"
 import { en } from "@/shared/lang/en"

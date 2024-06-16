@@ -1,4 +1,9 @@
 export const en = {
+    component: {
+        back: {
+            title: "back"
+        }
+    },
     top: {
         first: "Hello world!!",
         second: "Are you ready?",

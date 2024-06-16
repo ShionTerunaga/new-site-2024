@@ -16,6 +16,15 @@ export const en = {
                 title: "skill",
                 description:
                     "We will focus on the skills we have experience with."
+            },
+            card3: {
+                title: "activity",
+                description: "This section describes our usual activities."
+            },
+            card4: {
+                title: "contact",
+                description:
+                    "Please contact me at X DM. Please browse github for source code and other information."
             }
         }
     }

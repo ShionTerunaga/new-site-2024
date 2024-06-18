@@ -1,7 +1,7 @@
-import { en } from "@/shared/lang/en"
 import { MoveLeftIcon } from "@yamada-ui/lucide"
 import Link from "next/link"
 import styles from "./style.css"
+import { en } from "@/shared/lang/en"
 
 export const Back = () => {
     return (

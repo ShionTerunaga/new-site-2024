@@ -1,11 +1,12 @@
 import Link from "next/link"
 import Icon from "../components/icon/icon"
 import { staticCard } from "../static/card"
-import styles from "./styls.css"
+import styles from "./styles.css"
 import { Card } from "@/components/card"
 import { en } from "@/shared/lang/en"
 
 export const Home = () => {
+    console.log("hoge")
     return (
         <main style={{ width: "100vw", height: "100wh" }}>
             <div>

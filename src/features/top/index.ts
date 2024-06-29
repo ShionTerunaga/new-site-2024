@@ -1,1 +1,1 @@
-export { Top } from "./top"
+export { Top } from "./view/top"

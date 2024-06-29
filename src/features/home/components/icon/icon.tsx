@@ -1,6 +1,5 @@
 "use client"
 
-import { AnimatePresence, motion } from "framer-motion"
 import Image from "next/image"
 import styles from "./style.css"
 import ICON from "@/assets/icon.jpg"

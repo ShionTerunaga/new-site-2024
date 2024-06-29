@@ -1,9 +1,9 @@
-import { Card } from "@/components/card"
-import Icon from "./components/icon/icon"
-import styles from "./styls.css"
-import { en } from "@/shared/lang/en"
-import { staticCard } from "./static/card"
 import Link from "next/link"
+import Icon from "./components/icon/icon"
+import { staticCard } from "./static/card"
+import styles from "./styls.css"
+import { Card } from "@/components/card"
+import { en } from "@/shared/lang/en"
 
 export const Home = () => {
     return (

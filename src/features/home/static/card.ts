@@ -7,7 +7,7 @@ import { en } from "@/shared/lang/en"
 
 export const staticCard: cardType[] = [
     {
-        path: "",
+        path: "/intro",
         image: INTRO,
         title: en.home.card.card1.title,
         description: en.home.card.card1.description

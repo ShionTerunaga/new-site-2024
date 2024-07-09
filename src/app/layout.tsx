@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import { PopupLayout } from "@/layout/popupLayout/popupLayout.logic"
 import PopupContextProvider from "@/store/popup/popupContext"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -18,7 +19,10 @@ export default function RootLayout({
     return (
         <html lang="ja">
             <body className={inter.className}>
-                <PopupContextProvider>{children}</PopupContextProvider>
+                <PopupContextProvider>
+                    <PopupLayout />
+                    {children}
+                </PopupContextProvider>
             </body>
         </html>
     )

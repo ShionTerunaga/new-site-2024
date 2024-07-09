@@ -4,7 +4,8 @@ export const popupReducer = (state: popState, action: popAction) => {
     switch (action.type) {
         case "show":
             return {
-                state: true
+                state: true,
+                children: action.children
             }
         case "hidden":
             return {

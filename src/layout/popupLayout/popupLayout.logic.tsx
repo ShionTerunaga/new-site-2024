@@ -1,5 +1,10 @@
 "use client"
 
+import PopupLayoutView from "./popupLayout.view"
+import { usePopup } from "@/hooks/popup"
+
 export const PopupLayout = () => {
-    return <div>Enter</div>
+    const { state, closePopup } = usePopup()
+
+    return <PopupLayoutView state={state} onClose={closePopup} />
 }

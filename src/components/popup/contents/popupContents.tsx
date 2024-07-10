@@ -9,7 +9,7 @@ interface props {
     description: string
 }
 
-const PopupContents = (props: props) => {
+export const PopupContents = (props: props) => {
     const { closePopup } = usePopup()
 
     return (
@@ -26,5 +26,3 @@ const PopupContents = (props: props) => {
         </div>
     )
 }
-
-export default PopupContents

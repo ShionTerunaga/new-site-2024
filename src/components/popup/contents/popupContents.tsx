@@ -1,6 +1,7 @@
 "use client"
 
 import { X } from "@yamada-ui/lucide"
+import styles from "./style.css"
 import { usePopup } from "@/hooks/popup"
 
 interface props {
@@ -14,15 +15,14 @@ export const PopupContents = (props: props) => {
 
     return (
         <div>
-            <div>
-                <h1>
-                    {props.title}　{props.answer}
-                </h1>
-                <button onClick={closePopup}>
+            <div className={styles.header}>
+                <h1 className={styles.heading1}>{props.title}</h1>
+                <button className={styles.button} onClick={closePopup}>
                     <X />
                 </button>
             </div>
-            <div>{props.description}</div>
+            <h2 className={styles.heading2}>{props.answer}</h2>
+            <div className={styles.description}>{props.description}</div>
         </div>
     )
 }

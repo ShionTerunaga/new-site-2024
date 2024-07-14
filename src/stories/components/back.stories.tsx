@@ -1,5 +1,5 @@
-import { Back } from "@/components/back"
 import type { Meta, StoryFn } from "@storybook/react"
+import { Back } from "@/components/back"
 
 const meta: Meta<typeof Back> = {
     component: Back
@@ -9,6 +9,6 @@ export default meta
 
 type Story = StoryFn<typeof Back>
 
-export const basic: Story = () => {
+export const Basic: Story = () => {
     return <Back />
 }

@@ -7,8 +7,9 @@ interface props {
 
 export const PopupBase = (props: props) => {
     return (
-        <section className={styles.background}>
+        <>
+            <section className={styles.background} />
             <main className={styles.container}>{props.children}</main>
-        </section>
+        </>
     )
 }

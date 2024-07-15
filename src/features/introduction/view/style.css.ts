@@ -5,11 +5,27 @@ const styles = {
         textAlign: "center"
     }),
     title: style({
-        fontSize: 24
+        fontSize: 32
     }),
     itemSection: style({
         width: 200,
         display: "flex"
+    }),
+    box: style({
+        width: "80%",
+        margin: "auto",
+        display: "flex",
+        justifyContent: "center",
+        gap: 4,
+        "@media": {
+            "screen and (max-width:400px)": {
+                width: 150,
+                display: "block",
+                gap: 0,
+                textAlign: "center",
+                backgroundColor: "white"
+            }
+        }
     })
 }
 

@@ -1,7 +1,7 @@
 export const en = {
     component: {
         back: {
-            title: "back"
+            title: "HOME"
         }
     },
     top: {

@@ -2,16 +2,16 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     link: style({
-        textDecoration: "none"
+        textDecoration: "none",
+        marginLeft: 10
     }),
     icon: style({
-        width: 40,
+        width: 30,
         height: 30,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        fontSize: 24,
-        marginRight: 5
+        fontSize: 30
     }),
     linkContent: style({
         width: 75,

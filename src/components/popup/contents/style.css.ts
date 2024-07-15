@@ -1,6 +1,9 @@
 import { style } from "@vanilla-extract/css"
 
 const styles = {
+    container: style({
+        color: "black"
+    }),
     header: style({
         display: "flex",
         justifyContent: "space-between",
@@ -34,9 +37,7 @@ const styles = {
         marginBottom: 10
     }),
     description: style({
-        height: 180,
-        display: "flex",
-        alignItems: "center"
+        height: 180
     })
 }
 

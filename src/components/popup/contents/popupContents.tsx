@@ -14,7 +14,7 @@ export const PopupContents = (props: props) => {
     const { closePopup } = usePopup()
 
     return (
-        <div>
+        <div className={styles.container}>
             <div className={styles.header}>
                 <h1 className={styles.heading1}>{props.title}</h1>
                 <button className={styles.button} onClick={closePopup}>

@@ -1,7 +1,6 @@
-import { MoveLeftIcon } from "@yamada-ui/lucide"
+import { Home } from "@yamada-ui/lucide"
 import Link from "next/link"
 import styles from "./style.css"
-import { en } from "@/shared/lang/en"
 
 interface props {
     /**
@@ -19,9 +18,8 @@ export const Back = (props: props) => {
         <Link href={path} className={styles.link}>
             <div className={styles.linkContent}>
                 <div className={styles.icon}>
-                    <MoveLeftIcon size="larger" />
+                    <Home />
                 </div>
-                <div>{en.component.back.title}</div>
             </div>
         </Link>
     )

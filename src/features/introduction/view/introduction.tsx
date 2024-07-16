@@ -8,12 +8,17 @@ const Introduction = () => {
     return (
         <main className={styles.container}>
             <Header title={en.intro.title} />
-            <section className={styles.box}>
-                {introData.map((item, index) => (
-                    <div key={index}>
-                        <IntroModal {...item} />
-                    </div>
-                ))}
+            <section>
+                <p className={styles.contents1}>
+                    {en.intro.contents.contents1}
+                </p>
+                <div className={styles.box}>
+                    {introData.map((item, index) => (
+                        <div key={index}>
+                            <IntroModal {...item} />
+                        </div>
+                    ))}
+                </div>
             </section>
         </main>
     )

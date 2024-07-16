@@ -2,13 +2,13 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     header: style({
-        width: "100%",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center"
     }),
     heading1: style({
-        color: "white"
+        color: "white",
+        marginLeft: -30
     }),
     button: style({
         backgroundColor: "black",

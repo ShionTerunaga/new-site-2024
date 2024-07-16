@@ -35,6 +35,9 @@ export const en = {
     },
     intro: {
         title: "Introduction",
+        contents: {
+            contents1: "Click on the button."
+        },
         introData: {
             intro1: {
                 title: "Name",

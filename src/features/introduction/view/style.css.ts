@@ -7,6 +7,9 @@ const styles = {
     title: style({
         fontSize: 32
     }),
+    contents1: style({
+        margin: 0
+    }),
     itemSection: style({
         width: 200,
         display: "flex"

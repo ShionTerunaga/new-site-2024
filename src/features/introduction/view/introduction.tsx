@@ -8,7 +8,7 @@ const Introduction = () => {
     return (
         <main className={styles.container}>
             <Header title={en.intro.title} />
-            <section>
+            <section className={styles.section}>
                 <p className={styles.contents1}>
                     {en.intro.contents.contents1}
                 </p>

@@ -21,5 +21,30 @@ export const introData: introType[] = [
         title: en.intro.introData.intro4.title,
         headerContents: en.intro.introData.intro4.headerContents,
         bodyContents: en.intro.introData.intro4.bodyContents
+    },
+    {
+        title: en.intro.introData.intro5.title,
+        headerContents: en.intro.introData.intro5.headerContents,
+        bodyContents: en.intro.introData.intro5.bodyContents
+    },
+    {
+        title: en.intro.introData.intro6.title,
+        headerContents: en.intro.introData.intro6.headerContents,
+        bodyContents: en.intro.introData.intro6.bodyContents
+    },
+    {
+        title: en.intro.introData.intro7.title,
+        headerContents: en.intro.introData.intro7.headerContents,
+        bodyContents: en.intro.introData.intro7.bodyContents
+    },
+    {
+        title: en.intro.introData.intro8.title,
+        headerContents: en.intro.introData.intro8.headerContents,
+        bodyContents: en.intro.introData.intro8.bodyContents
+    },
+    {
+        title: en.intro.introData.intro9.title,
+        headerContents: en.intro.introData.intro9.headerContents,
+        bodyContents: en.intro.introData.intro9.bodyContents
     }
 ]

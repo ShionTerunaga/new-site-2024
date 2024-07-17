@@ -8,6 +8,7 @@ const styles = {
         borderRadius: 4,
         backgroundColor: "white",
         color: "black",
+        marginBottom: 5,
         ":hover": {
             backgroundColor: "yellow",
             transition: "0.6s"

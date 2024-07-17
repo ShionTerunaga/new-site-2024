@@ -54,6 +54,12 @@ export const en = {
                 headerContents: "Ibaraki in Japan",
                 bodyContents:
                     "The vegetables are good in the tranquil countryside. It is also famous for its many delinquents."
+            },
+            intro4: {
+                title: "University",
+                headerContents: "Tokyo University of Science",
+                bodyContents:
+                    "Universities that somehow got in.He graduated in four years, although he struggled because there was too much of an academic gap between him and those around him. Reports were tough🫠"
             }
         }
     }

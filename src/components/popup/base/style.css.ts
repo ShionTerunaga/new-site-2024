@@ -7,7 +7,7 @@ const styles = {
         position: "absolute",
         zIndex: 1,
         opacity: 0.5,
-        backgroundColor: "transparent"
+        backgroundColor: "black"
     }),
     container: style({
         width: 250,

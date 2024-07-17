@@ -5,7 +5,7 @@ const styles = {
         textAlign: "center"
     }),
     section: style({
-        marginTop: 50
+        marginTop: 100
     }),
     title: style({
         fontSize: 32
@@ -18,18 +18,16 @@ const styles = {
         display: "flex"
     }),
     box: style({
-        width: "80%",
+        width: 470,
         margin: "20px auto",
-        display: "flex",
-        justifyContent: "center",
-        gap: 4,
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr",
         "@media": {
-            "screen and (max-width:400px)": {
+            "screen and (max-width:470px)": {
                 width: 150,
                 display: "block",
                 gap: 0,
-                textAlign: "center",
-                backgroundColor: "white"
+                textAlign: "center"
             }
         }
     })

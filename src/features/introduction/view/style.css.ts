@@ -4,6 +4,9 @@ const styles = {
     container: style({
         textAlign: "center"
     }),
+    section: style({
+        marginTop: 50
+    }),
     title: style({
         fontSize: 32
     }),
@@ -16,7 +19,7 @@ const styles = {
     }),
     box: style({
         width: "80%",
-        margin: "auto",
+        margin: "20px auto",
         display: "flex",
         justifyContent: "center",
         gap: 4,

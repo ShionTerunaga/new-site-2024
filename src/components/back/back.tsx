@@ -15,7 +15,7 @@ export const Back = (props: props) => {
     const { path = "/home" } = props
 
     return (
-        <Link href={path} className={styles.link}>
+        <Link href={path} className={styles.link} aria-label="go to home">
             <div className={styles.linkContent}>
                 <div className={styles.icon}>
                     <Home />

@@ -33,7 +33,11 @@ const IntroModal = (props: props) => {
     }
 
     return (
-        <button className={styles.button} onClick={handleClick}>
+        <button
+            className={styles.button}
+            onClick={handleClick}
+            aria-label="Open popup"
+        >
             {props.title}
         </button>
     )

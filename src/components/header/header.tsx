@@ -16,7 +16,7 @@ export const Header = (props: props) => {
 
             <h1 className={styles.heading1}>{props.title}</h1>
 
-            <button className={styles.button}>
+            <button className={styles.button} aria-label="open menu">
                 <Menu />
             </button>
         </header>

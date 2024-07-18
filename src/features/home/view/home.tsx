@@ -7,7 +7,7 @@ import { en } from "@/shared/lang/en"
 
 export const Home = () => {
     return (
-        <main style={{ width: "100vw", height: "100wh" }}>
+        <main className={styles.container}>
             <div>
                 <section className={styles.iconBox}>
                     <Icon />

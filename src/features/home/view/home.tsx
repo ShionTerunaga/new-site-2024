@@ -6,7 +6,6 @@ import { Card } from "@/components/card"
 import { en } from "@/shared/lang/en"
 
 export const Home = () => {
-    console.log("hoge")
     return (
         <main style={{ width: "100vw", height: "100wh" }}>
             <div>

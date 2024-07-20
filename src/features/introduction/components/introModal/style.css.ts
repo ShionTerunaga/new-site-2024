@@ -10,7 +10,7 @@ const styles = {
         color: "black",
         marginBottom: 5,
         ":hover": {
-            backgroundColor: "yellow",
+            boxShadow: "0 0 20px yellow",
             transition: "0.6s"
         },
         fontSize: 24

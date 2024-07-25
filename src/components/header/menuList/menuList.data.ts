@@ -1,4 +1,4 @@
-import { menuType } from "./menu.type"
+import { menuType } from "./menuList.type"
 import { en } from "@/shared/lang/en"
 
 export const staticMenu: menuType[] = [

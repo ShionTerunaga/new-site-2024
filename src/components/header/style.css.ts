@@ -4,23 +4,14 @@ const styles = {
     header: style({
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "center"
+        alignItems: "center",
+        height: 50
     }),
     heading1: style({
-        color: "white",
-        marginLeft: -30
+        color: "white"
     }),
-    button: style({
-        backgroundColor: "black",
-        color: "white",
-        border: "none",
-        height: 30,
-        width: 30,
-        fontSize: 40,
-        marginRight: 15,
-        ":hover": {
-            color: "yellow"
-        }
+    menuBox: style({
+        width: 30
     })
 }
 

@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import MenuView from "./menu.view"
+import MenuView from "./menuList.view"
 
-const Menu = () => {
+const MenuList = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
     const handleClick = () => {
@@ -19,4 +19,4 @@ const Menu = () => {
     )
 }
 
-export default Menu
+export default MenuList

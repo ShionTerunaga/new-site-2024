@@ -1,5 +1,5 @@
-import { Menu } from "@yamada-ui/lucide"
 import { Back } from "../back"
+import MenuList from "./menuList/menuList.logic"
 import styles from "./style.css"
 
 interface props {
@@ -16,9 +16,9 @@ export const Header = (props: props) => {
 
             <h1 className={styles.heading1}>{props.title}</h1>
 
-            <button className={styles.button} aria-label="open menu">
-                <Menu />
-            </button>
+            <div className={styles.menuBox}>
+                <MenuList />
+            </div>
         </header>
     )
 }

@@ -5,7 +5,7 @@ const styles = {
         width: "100vw",
         height: "100vh",
         position: "absolute",
-        zIndex: 1,
+        zIndex: 6,
         opacity: 0.5,
         backgroundColor: "black"
     }),
@@ -16,7 +16,7 @@ const styles = {
         top: "50%",
         left: "50%",
         transform: "translateX(-50%) translateY(-50%)",
-        zIndex: 2,
+        zIndex: 7,
         backgroundColor: "white"
     })
 }

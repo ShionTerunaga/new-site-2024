@@ -90,5 +90,24 @@ export const en = {
                     "There is too much lack of power and too little room in my heart for what I want to achieve, so I want to build up my power and make room for it😧"
             }
         }
+    },
+    skills: {
+        title: "skills",
+        webSkills: {
+            title: "web",
+            skill1: {
+                path: "https://developer.mozilla.org/ja/docs/Web/JavaScript",
+                title: "Javascript",
+                description:
+                    "I think I only understand about 30% of this language🤪 I think I need to read MDN a lot more. There seems to be a lot of libraries, especially for objects."
+            },
+
+            skill2: {
+                path: "https://www.typescriptlang.org/",
+                title: "Typescript",
+                description:
+                    "The TS knows even less because the JS doesn't understand that much. I realized that the development experience can be improved by just defining and reasoning about types. We would also like to consider the performance part."
+            }
+        }
     }
 }

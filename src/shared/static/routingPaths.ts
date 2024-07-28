@@ -1,3 +1,5 @@
 export const routingPaths = {
-    home: "/home"
+    home: "/home",
+    intro: "/intro",
+    skills: "/skills"
 }

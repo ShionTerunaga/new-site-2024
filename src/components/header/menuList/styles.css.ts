@@ -50,6 +50,8 @@ const styles = {
     link: style({
         textDecoration: "none",
         color: "black",
+        width: 160,
+        height: 33,
         ":hover": {
             color: "silver"
         }

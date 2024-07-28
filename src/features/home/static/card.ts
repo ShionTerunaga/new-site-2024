@@ -1,8 +1,8 @@
 import { cardType } from "../types/card"
-import CONTACT from "@/assets/contact.png"
-import INTRO from "@/assets/introduction.png"
-import PRODUCTION from "@/assets/product.png"
-import SKILL from "@/assets/skill.png"
+import CONTACT from "@/assets/home/contact.png"
+import INTRO from "@/assets/home/introduction.png"
+import PRODUCTION from "@/assets/home/product.png"
+import SKILL from "@/assets/home/skill.png"
 import { en } from "@/shared/lang/en"
 
 export const staticCard: cardType[] = [

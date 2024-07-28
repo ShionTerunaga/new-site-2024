@@ -6,6 +6,7 @@
 body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 img {
     -webkit-touch-callout: none;

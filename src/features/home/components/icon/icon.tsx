@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import styles from "./style.css"
-import ICON from "@/assets/icon.jpg"
+import ICON from "@/assets/home/icon.jpg"
 
 const Icon = () => {
     return (

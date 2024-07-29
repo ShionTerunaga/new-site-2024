@@ -106,7 +106,7 @@ export const en = {
                 path: "https://www.typescriptlang.org/",
                 title: "Typescript",
                 description:
-                    "The TS knows even less because the JS doesn't understand that much. I realized that the development experience can be improved by just defining and reasoning about types. We would also like to consider the performance part."
+                    "I use it more than JS.  We would also like to consider the performance part."
             }
         }
     }

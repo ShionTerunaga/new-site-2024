@@ -22,6 +22,9 @@ const styles = {
         display: "grid",
         gap: 12,
         gridTemplateColumns: "1fr 1fr 1fr"
+    }),
+    link: style({
+        textDecoration: "none"
     })
 }
 

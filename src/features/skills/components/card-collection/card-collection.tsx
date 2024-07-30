@@ -1,4 +1,5 @@
 import Link from "next/link"
+import styles from "./style.css"
 import { Card } from "@/components/card"
 import { cardType } from "@/components/card/card.type"
 
@@ -9,9 +10,9 @@ interface props {
 
 const CardCollection = (props: props) => {
     return (
-        <section>
-            <h2>{props.title}</h2>
-            <div>
+        <section className={styles.container}>
+            <h2 className={styles.heading2}>{props.title}</h2>
+            <div className={styles.mainBox}>
                 {props.skills.map((item, index) => (
                     <div key={index}>
                         <Link href={item.path}>

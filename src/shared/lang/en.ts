@@ -120,12 +120,17 @@ export const en = {
                     "I'm using it as my main tool these days; I'd like to understand it because it's difficult to do the RSC etc."
             },
             skill5: {
+                path: "https://vanilla-extract.style/",
+                title: "vanilla-extract",
+                description: ""
+            },
+            skill6: {
                 path: "https://storybook.js.org/",
                 title: "storybook",
                 description:
                     "I found out about its existence through the OSS. Useful for creating stand-alone components!"
             },
-            skill6: {
+            skill7: {
                 path: "https://expressjs.com/ja/",
                 title: "express.js",
                 description:

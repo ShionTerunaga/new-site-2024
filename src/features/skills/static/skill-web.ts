@@ -4,6 +4,7 @@ import NEXT from "@/assets/skills/next-js.png"
 import REACT from "@/assets/skills/react.png"
 import STORYBOOK from "@/assets/skills/storybook.png"
 import TS from "@/assets/skills/ts.png"
+import VANILLA_EXTRACT from "@/assets/skills/vanilla-extract.png"
 import { cardType } from "@/components/card/card.type"
 import { en } from "@/shared/lang/en"
 
@@ -26,10 +27,14 @@ export const skillWeb: cardType[] = [
     },
     {
         ...en.skills.webSkills.skill5,
-        image: STORYBOOK
+        image: VANILLA_EXTRACT
     },
     {
         ...en.skills.webSkills.skill6,
+        image: STORYBOOK
+    },
+    {
+        ...en.skills.webSkills.skill7,
         image: EXPRESS
     }
 ]

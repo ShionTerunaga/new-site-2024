@@ -37,6 +37,13 @@ const styles = {
     }),
     link: style({
         textDecoration: "none"
+    }),
+    item: style({
+        "@media": {
+            "screen and (max-width:630px)": {
+                marginBottom: 10
+            }
+        }
     })
 }
 

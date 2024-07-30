@@ -15,7 +15,11 @@ const CardCollection = (props: props) => {
             <div className={styles.mainBox}>
                 {props.skills.map((item, index) => (
                     <div key={index}>
-                        <Link href={item.path} className={styles.link}>
+                        <Link
+                            href={item.path}
+                            className={styles.link}
+                            target="__blank"
+                        >
                             <Card
                                 title={item.title}
                                 image={item.image}

@@ -99,14 +99,25 @@ export const en = {
                 path: "https://developer.mozilla.org/ja/docs/Web/JavaScript",
                 title: "Javascript",
                 description:
-                    "I think I only understand about 30% of this language🤪 I think I need to read MDN a lot more. There seems to be a lot of libraries, especially for objects."
+                    "I think I only understand about 30% of this language🤪 I think I need to read MDN a lot more."
             },
-
             skill2: {
                 path: "https://www.typescriptlang.org/",
                 title: "Typescript",
                 description:
                     "I use it more than JS.  We would also like to consider the performance part."
+            },
+            skill3: {
+                path: "https://ja.react.dev/",
+                title: "React",
+                description:
+                    "I use it more than vanilla js.I hope to be able to read React's own code one day."
+            },
+            skill4: {
+                path: "https://nextjs.org/",
+                title: "Next.js",
+                description:
+                    "I'm using it as my main tool these days; I'd like to understand it because it's difficult to do the RSC etc."
             }
         }
     }

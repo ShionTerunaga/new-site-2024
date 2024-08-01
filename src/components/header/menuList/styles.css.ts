@@ -2,7 +2,7 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
-        position: "absolute",
+        position: "fixed",
         width: 200,
         height: "100vh",
         top: 0,
@@ -73,7 +73,7 @@ const styles = {
         height: 30,
         width: 30,
         fontSize: 40,
-        position: "absolute",
+        position: "fixed",
         top: 5,
         right: 15,
         zIndex: 2,

@@ -122,7 +122,8 @@ export const en = {
             skill5: {
                 path: "https://vanilla-extract.style/",
                 title: "vanilla-extract",
-                description: ""
+                description:
+                    "Use with Next.js. It could be very nice to be able to write in TS-only."
             },
             skill6: {
                 path: "https://storybook.js.org/",
@@ -135,6 +136,17 @@ export const en = {
                 title: "express.js",
                 description:
                     "It is used to create simple REST APIs. Recently, it is moving to bun."
+            },
+            skill8: {
+                path: "https://vitest.dev/",
+                title: "vitest",
+                description: "Used for work, etc. Writing test code is fun!"
+            },
+            skill9: {
+                path: "https://bun.sh/",
+                title: "bun.js",
+                description:
+                    "Slightly touched. Technology to look forward to. nodemon hot reload was fast."
             }
         }
     }

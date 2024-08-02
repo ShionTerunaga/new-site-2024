@@ -1,19 +1,19 @@
 import Link from "next/link"
 import styles from "./style.css"
-import { Card } from "@/components/card"
-import { cardType } from "@/components/card/card.type"
+import { Card } from "@/components/ui/card"
+import { cardType } from "@/components/ui/card/card.type"
 
 interface props {
-    title: string
-    skills: cardType[]
+    title?: string
+    contents: cardType[]
 }
 
 const CardCollection = (props: props) => {
     return (
         <section className={styles.container}>
-            <h2 className={styles.heading2}>{props.title}</h2>
+            {props.title && <h2 className={styles.heading2}>{props.title}</h2>}
             <div className={styles.mainBox}>
-                {props.skills.map((item, index) => (
+                {props.contents.map((item, index) => (
                     <div key={index} className={styles.item}>
                         <Link
                             href={item.path}

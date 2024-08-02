@@ -1,7 +1,7 @@
 "use client"
 
 import styles from "./style.css"
-import { PopupContents } from "@/components/popup"
+import { PopupContents } from "@/components/ui/popup"
 import { usePopup } from "@/hooks/popup"
 
 interface props {

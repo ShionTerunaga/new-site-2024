@@ -1,10 +1,10 @@
-import { skillAll } from "../types/skills-all.type"
 import { skillWeb } from "./skill-web"
+import { contentsAll } from "@/components/view/cardView/types/contents-all.type"
 import { en } from "@/shared/lang/en"
 
-export const allSkills: skillAll[] = [
+export const allSkills: contentsAll[] = [
     {
         title: en.skills.webSkills.title,
-        skills: skillWeb
+        contents: skillWeb
     }
 ]

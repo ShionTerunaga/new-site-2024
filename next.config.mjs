@@ -5,7 +5,7 @@ const withVanillaExtract = createVanillaExtractPlugin()
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["placehold.jp"]
+        domains: ["placehold.jp", "images.microcms-assets.io"]
     }
 }
 

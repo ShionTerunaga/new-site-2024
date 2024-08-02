@@ -149,5 +149,8 @@ export const en = {
                     "Slightly touched. Technology to look forward to. nodemon hot reload was fast."
             }
         }
+    },
+    active: {
+        title: "active"
     }
 }

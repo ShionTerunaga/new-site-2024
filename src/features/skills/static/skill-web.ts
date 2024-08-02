@@ -7,7 +7,7 @@ import STORYBOOK from "@/assets/skills/storybook.png"
 import TS from "@/assets/skills/ts.png"
 import VANILLA_EXTRACT from "@/assets/skills/vanilla-extract.png"
 import VITEST from "@/assets/skills/vitest.png"
-import { cardType } from "@/components/card/card.type"
+import { cardType } from "@/components/ui/card/card.type"
 import { en } from "@/shared/lang/en"
 
 export const skillWeb: cardType[] = [

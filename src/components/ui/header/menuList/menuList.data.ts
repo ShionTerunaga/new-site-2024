@@ -12,7 +12,7 @@ export const staticMenu: menuType[] = [
         pageName: en.home.card.card2.title
     },
     {
-        path: "",
+        path: routingPaths.activity,
         pageName: en.home.card.card3.title
     },
     {

@@ -2,7 +2,7 @@ import Link from "next/link"
 import Icon from "../components/icon/icon"
 import { staticCard } from "../static/card"
 import styles from "./styles.css"
-import { Card } from "@/components/card"
+import { Card } from "@/components/ui/card"
 import { en } from "@/shared/lang/en"
 
 export const Home = () => {

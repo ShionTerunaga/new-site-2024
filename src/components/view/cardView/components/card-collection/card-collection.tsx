@@ -5,6 +5,7 @@ import { cardType } from "@/components/ui/card/card.type"
 
 interface props {
     title?: string
+    isBlank?: boolean
     contents: cardType[]
 }
 
@@ -18,7 +19,7 @@ const CardCollection = (props: props) => {
                         <Link
                             href={item.path}
                             className={styles.link}
-                            target="__blank"
+                            target={props.isBlank ? "_blank" : undefined}
                         >
                             <Card
                                 title={item.title}

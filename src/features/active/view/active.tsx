@@ -1,9 +1,26 @@
-import { CardView } from "@/components/view/cardView/view/cardView"
-import { getAllCMS } from "@/model/getCMS"
+import parse from "html-react-parser"
+import styles from "./style.css"
+import { Header } from "@/components/ui/header"
+import { getCMS } from "@/service/model"
 import { en } from "@/shared/lang/en"
 
-export const Active = async () => {
-    const data = await getAllCMS()
+interface props {
+    id: string
+}
 
-    return <CardView pageTitle={en.active.title} contents={data} />
+export const Active = async (props: props) => {
+    const res = await getCMS(props.id)
+
+    return (
+        <main>
+            <Header title={en.active.title} />
+
+            <section className={styles.container}>
+                <h2 className={styles.heading}>{res.title}</h2>
+                <div className={styles.contents}>
+                    <div className={styles.contentsBody}>{parse(res.body)}</div>
+                </div>
+            </section>
+        </main>
+    )
 }

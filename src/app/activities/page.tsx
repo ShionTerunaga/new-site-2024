@@ -1,7 +1,7 @@
-import { Active } from "@/features/active"
+import { Activity } from "@/features/activities"
 
 const Activities = () => {
-    return <Active />
+    return <Activity />
 }
 
 export default Activities

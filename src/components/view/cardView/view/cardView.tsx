@@ -16,7 +16,7 @@ export const CardView = (props: props) => {
                 {Array.isArray(props.contents) ? (
                     <>
                         {props.contents.map((item, index) => (
-                            <CardCollection key={index} {...item} />
+                            <CardCollection key={index} {...item} isBlank />
                         ))}
                     </>
                 ) : (

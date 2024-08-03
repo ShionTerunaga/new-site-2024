@@ -4,7 +4,7 @@ import { client } from "@/lib/client"
 
 export const getCMS = async (contentId: string, queries?: MicroCMSQueries) => {
     const detailData = await client.getListDetail<activeType>({
-        endpoint: "blogs",
+        endpoint: "active",
         contentId,
         queries
     })

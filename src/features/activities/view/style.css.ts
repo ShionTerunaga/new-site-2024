@@ -2,37 +2,36 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
-        margin: "100px auto",
         width: 630,
+        margin: "20px auto",
         "@media": {
             "screen and (max-width:630px)": {
-                width: "80%"
+                width: 202,
+                display: "block",
+                gap: 0
             }
         }
     }),
-    heading: style({
-        textAlign: "center"
-    }),
-    contents: style({
+    mainBox: style({
         width: 630,
-        marginTop: 15,
-        backgroundColor: "white",
-        color: "black",
-        borderRadius: 8,
+        display: "grid",
+        gap: 12,
+        gridTemplateColumns: "1fr 1fr 1fr",
         "@media": {
             "screen and (max-width:630px)": {
-                width: 300,
-                margin: "10px auto"
+                width: 202,
+                display: "block",
+                gap: 0
             }
         }
     }),
-    contentsBody: style({
-        width: 590,
-        margin: "auto",
+    link: style({
+        textDecoration: "none"
+    }),
+    item: style({
         "@media": {
             "screen and (max-width:630px)": {
-                width: 260,
-                margin: "auto"
+                marginBottom: 10
             }
         }
     })

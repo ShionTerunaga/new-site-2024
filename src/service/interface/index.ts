@@ -1,1 +1,0 @@
-export { pageInterface } from "./pageInterface"

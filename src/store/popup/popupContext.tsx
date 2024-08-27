@@ -14,7 +14,7 @@ interface props {
     children: ReactNode
 }
 
-const PopupContextProvider = (props: props) => {
+export const PopupContextProvider = (props: props) => {
     const [state, dispatch] = useReducer(popupReducer, initialState)
 
     return (
@@ -23,5 +23,3 @@ const PopupContextProvider = (props: props) => {
         </PopupContext.Provider>
     )
 }
-
-export default PopupContextProvider

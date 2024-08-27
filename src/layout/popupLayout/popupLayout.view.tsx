@@ -1,7 +1,7 @@
 "use client"
 
 import { PopupBase } from "@/components/ui/popup"
-import { popState } from "@/store/popup/popup.type"
+import { popState } from "@/store/popup"
 
 interface props {
     state: popState

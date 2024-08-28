@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { PopupLayout } from "@/layout/popupLayout/popupLayout.logic"
-import PopupContextProvider from "@/store/popup/popupContext"
+import { PopupContextProvider } from "@/store/popup/popupContext"
 
 const inter = Inter({ subsets: ["latin"] })
 

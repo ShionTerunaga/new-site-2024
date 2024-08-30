@@ -5,18 +5,28 @@ const styles = {
         width: "100vw",
         height: "100vh",
         position: "absolute",
-        zIndex: 6,
+        zIndex: 997,
+        top: 0,
+        left: 0,
         opacity: 0.5,
         backgroundColor: "black"
     }),
+    mainContainer: style({
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        position: "absolute",
+        zIndex: 999,
+        top: 0,
+        left: 0,
+        alignItems: "center"
+    }),
     container: style({
         width: 250,
-        height: 300,
+        height: 500,
         position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translateX(-50%) translateY(-50%)",
-        zIndex: 7,
+        zIndex: 999,
         backgroundColor: "white"
     })
 }

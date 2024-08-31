@@ -8,13 +8,16 @@ const styles = {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        height: 50,
-        fontSize: 10
+        height: 50
     }),
     heading1: style({
-        margin: 0
+        margin: 0,
+        fontSize: 33
     }),
     button: style({
+        width: 33,
+        height: 33,
+        fontSize: 33,
         backgroundColor: "white",
         marginRight: 5,
         border: "1px solid black",
@@ -28,16 +31,18 @@ const styles = {
         }
     }),
     heading2: style({
-        fontSize: 18,
+        fontSize: 29,
         height: 50,
         display: "flex",
         alignItems: "center",
         margin: 0,
-        marginTop: 10,
+        marginTop: 20,
         marginBottom: 10
     }),
     description: style({
-        height: 180
+        marginTop: 20,
+        height: 160,
+        fontSize: 22
     })
 }
 

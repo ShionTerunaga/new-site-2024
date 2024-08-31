@@ -3,7 +3,7 @@ import { style } from "@vanilla-extract/css"
 const styles = {
     container: style({
         position: "fixed",
-        width: 200,
+        width: "100vw",
         height: "100vh",
         top: 0,
         right: 0
@@ -18,34 +18,33 @@ const styles = {
         color: "red"
     }),
     menuBox: style({
-        width: 200,
+        width: "100%",
         height: "100%",
         backgroundColor: "white",
         zIndex: 3,
-        display: "flex"
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
     }),
     ul: style({
         margin: 0,
         padding: 0,
-        position: "absolute",
-        height: 400,
-        top: "30%",
-        transform: "translateY(-50%)",
         right: 0,
-        width: 160,
+        width: 300,
         listStyle: "none",
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent: "center"
     }),
     li: style({
-        width: 160,
-        height: 60,
-        fontSize: 26,
+        fontSize: 30,
         display: "flex",
         alignItems: "center",
+        width: "100%",
+        padding: 10,
         borderBottom: "2px solid black",
-        marginBottom: 10,
-        textAlign: "left"
+        marginBottom: 30,
+        textAlign: "center"
     }),
     link: style({
         textDecoration: "none",

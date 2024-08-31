@@ -18,7 +18,7 @@ export const PopupContents = (props: props) => {
             <div className={styles.header}>
                 <h1 className={styles.heading1}>{props.title}</h1>
                 <button className={styles.button} onClick={closePopup}>
-                    <X />
+                    <X size="7xl" />
                 </button>
             </div>
             <h2 className={styles.heading2}>{props.answer}</h2>

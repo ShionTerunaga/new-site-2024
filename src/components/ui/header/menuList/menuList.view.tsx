@@ -29,9 +29,10 @@ const MenuListView = (props: props) => {
                 {props.isOpen && (
                     <motion.div
                         className={`${styles.container} ${props.isOpen ? styles.opacity1 : styles.opacity0}`}
-                        initial={{ x: "100%" }}
-                        animate={{ x: 0 }}
-                        exit={{ x: "100%" }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 1 }}
+                        transition={{ duration: 0.3 }}
                     >
                         <motion.div className={styles.menuBox}>
                             <ul className={styles.ul}>

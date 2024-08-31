@@ -23,8 +23,9 @@ const styles = {
         alignItems: "center"
     }),
     container: style({
-        width: 250,
+        width: 300,
         height: 500,
+        padding: 30,
         position: "absolute",
         zIndex: 999,
         backgroundColor: "white"

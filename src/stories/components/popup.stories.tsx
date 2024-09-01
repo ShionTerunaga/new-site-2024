@@ -15,11 +15,9 @@ export const Basic: Story = () => {
 
     const handleClick = () => {
         openPopup(
-            <PopupContents
-                title={"あいうえお"}
-                answer={"かきくけこ"}
-                description={"さしすせそ"}
-            />
+            <PopupContents title={"あいうえお"}>
+                <div>hogehoge</div>
+            </PopupContents>
         )
     }
 

@@ -1,0 +1,22 @@
+"use client"
+
+import { useEffect, useState } from "react"
+import CardContainerView from "./cardContainer.view"
+import { cardType } from "@/components/ui/card"
+
+interface props {
+    index: number
+    item: cardType
+}
+
+const CardContainer = (props: props) => {
+    const [isOpen, setIsOpen] = useState<boolean>(false)
+
+    useEffect(() => {
+        setIsOpen(true)
+    }, [])
+
+    return <CardContainerView {...props} isOpen={isOpen} />
+}
+
+export default CardContainer

@@ -1,8 +1,9 @@
-import Link from "next/link"
+"use client"
+
+import CardContainer from "../components/cardContainer/cardContainer.logic"
 import Icon from "../components/icon/icon"
 import { staticCard } from "../static/card"
 import styles from "./styles.css"
-import { Card } from "@/components/ui/card"
 import { en } from "@/shared/lang/en"
 
 export const Home = () => {
@@ -22,13 +23,9 @@ export const Home = () => {
                 </section>
             </div>
             <div>
-                <section>
+                <section className={styles.cardContainer}>
                     {staticCard.map((item, index) => (
-                        <div className={styles.itemBox} key={index}>
-                            <Link href={item.path} className={styles.link}>
-                                <Card {...item} />
-                            </Link>
-                        </div>
+                        <CardContainer index={index} item={item} key={index} />
                     ))}
                 </section>
             </div>

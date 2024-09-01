@@ -28,13 +28,17 @@ const styles = {
     descriptionBox: style({
         marginTop: 12
     }),
-    link: style({
-        textDecoration: "none",
-        marginBottom: 12
-    }),
-    itemBox: style({
-        display: "flex",
-        justifyContent: "center"
+    cardContainer: style({
+        display: "block",
+
+        "@media": {
+            "screen and (min-width:500px)": {
+                width: 500,
+                margin: "auto",
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr"
+            }
+        }
     })
 }
 

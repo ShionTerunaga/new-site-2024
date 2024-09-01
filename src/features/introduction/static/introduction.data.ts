@@ -41,10 +41,5 @@ export const introData: introType[] = [
         title: en.intro.introData.intro8.title,
         headerContents: en.intro.introData.intro8.headerContents,
         bodyContents: en.intro.introData.intro8.bodyContents
-    },
-    {
-        title: en.intro.introData.intro9.title,
-        headerContents: en.intro.introData.intro9.headerContents,
-        bodyContents: en.intro.introData.intro9.bodyContents
     }
 ]

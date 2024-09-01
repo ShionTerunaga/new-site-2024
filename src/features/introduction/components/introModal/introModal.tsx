@@ -1,5 +1,6 @@
 "use client"
 
+import { ReactNode } from "react"
 import styles from "./style.css"
 import { PopupContents } from "@/components/ui/popup"
 import { usePopup } from "@/hooks/popup"
@@ -10,26 +11,16 @@ interface props {
      */
     title: string
     /**
-     * answer
+     * contents
      */
-    headerContents: string
-    /**
-     * description
-     */
-    bodyContents: string
+    children: ReactNode
 }
 
 const IntroModal = (props: props) => {
     const { openPopup } = usePopup()
 
     const handleClick = () => {
-        openPopup(
-            <PopupContents
-                title={props.title}
-                answer={props.headerContents}
-                description={props.bodyContents}
-            />
-        )
+        openPopup(<PopupContents {...props} />)
     }
 
     return (

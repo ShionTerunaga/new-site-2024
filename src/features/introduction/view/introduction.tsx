@@ -1,4 +1,5 @@
 import IntroModal from "../components/introModal/introModal"
+import IntroPopup from "../components/introPopup/introPopup"
 import { introData } from "../static/introduction.data"
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
@@ -15,7 +16,12 @@ const Introduction = () => {
                 <div className={styles.box}>
                     {introData.map((item, index) => (
                         <div key={index}>
-                            <IntroModal {...item} />
+                            <IntroModal {...item}>
+                                <IntroPopup
+                                    answer={item.headerContents}
+                                    description={item.bodyContents}
+                                />
+                            </IntroModal>
                         </div>
                     ))}
                 </div>

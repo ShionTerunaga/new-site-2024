@@ -1,13 +1,13 @@
 "use client"
 
 import { X } from "@yamada-ui/lucide"
+import { ReactNode } from "react"
 import styles from "./style.css"
 import { usePopup } from "@/hooks/popup"
 
 interface props {
     title: string
-    answer: string
-    description: string
+    children: ReactNode
 }
 
 export const PopupContents = (props: props) => {
@@ -21,8 +21,7 @@ export const PopupContents = (props: props) => {
                     <X />
                 </button>
             </div>
-            <h2 className={styles.heading2}>{props.answer}</h2>
-            <div className={styles.description}>{props.description}</div>
+            {props.children}
         </div>
     )
 }

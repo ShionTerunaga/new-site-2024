@@ -10,20 +10,15 @@ const Introduction = () => {
         <main className={styles.container}>
             <Header title={en.intro.title} />
             <section className={styles.section}>
-                <p className={styles.contents1}>
-                    {en.intro.contents.contents1}
-                </p>
-                <div className={styles.box}>
-                    {introData.map((item, index) => (
-                        <div key={index}>
-                            <IntroModal {...item}>
-                                <IntroPopup
-                                    answer={item.headerContents}
-                                    description={item.bodyContents}
-                                />
-                            </IntroModal>
-                        </div>
-                    ))}
+                <div className={styles.intro}>
+                    <div className={styles.titleBox}>
+                        <h2>introduction</h2>
+                    </div>
+                    <div className={styles.introductionContents}>
+                        Hello. My name is TERUSI. I am software engineer. I
+                        became engineer in 2023. Currently, the main focus is on
+                        the front end.
+                    </div>
                 </div>
             </section>
         </main>

@@ -38,6 +38,11 @@ export const en = {
         contents: {
             contents1: "Click on the button."
         },
+        introduction: {
+            title: "introduction",
+            contents:
+                "Hello. My name is TERUSI. I am software engineer. I became engineer in 2023. Currently, the main focus is on the front end."
+        },
         introData: {
             intro1: {
                 title: "Name",

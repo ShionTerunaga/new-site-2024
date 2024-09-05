@@ -14,8 +14,6 @@ export const Header = (props: props) => {
         <header className={styles.header}>
             <Back />
 
-            <h1 className={styles.heading1}>{props.title}</h1>
-
             <div className={styles.menuBox}>
                 <MenuList />
             </div>

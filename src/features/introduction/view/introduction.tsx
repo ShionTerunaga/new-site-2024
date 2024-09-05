@@ -12,12 +12,10 @@ const Introduction = () => {
             <section className={styles.section}>
                 <div className={styles.intro}>
                     <div className={styles.titleBox}>
-                        <h2>introduction</h2>
+                        <h2>{en.intro.introduction.title}</h2>
                     </div>
                     <div className={styles.introductionContents}>
-                        Hello. My name is TERUSI. I am software engineer. I
-                        became engineer in 2023. Currently, the main focus is on
-                        the front end.
+                        {en.intro.introduction.contents}
                     </div>
                 </div>
             </section>

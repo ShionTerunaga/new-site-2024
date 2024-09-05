@@ -39,9 +39,46 @@ export const en = {
             contents1: "Click on the button."
         },
         introduction: {
+            sectionTitle: "About me",
             title: "introduction",
             contents:
                 "Hello. My name is TERUSI. I am software engineer. I became engineer in 2023. Currently, the main focus is on the front end."
+        },
+        carrier: {
+            title: "Carrier",
+            list: {
+                highSchoolOut: {
+                    when: "2019/3",
+                    contents: "Graduated from Joso Gakuin."
+                },
+                universityIn: {
+                    when: "2019/4",
+                    contents:
+                        "Entered Tokyo University of Science, Faculty of Engineering, Department of Information Technology."
+                },
+                jobHunting: {
+                    when: "2022/5",
+                    contents: "Receive a job offer from an IT company."
+                },
+                graduationResearch: {
+                    when: "2023/2",
+                    contents:
+                        "From April 2022 I carried out my graduation research in the Optimisation Algorithms laboratory. The topic was the optimisation of training menus in athletics."
+                },
+                universityOut: {
+                    when: "2023/3",
+                    contents: "Graduated from Tokyo University of Science."
+                },
+                companyIn: {
+                    when: "2023/4",
+                    contents:
+                        "Joined an IT company as a software engineer. Becomes a new employee."
+                },
+                ossStart: {
+                    when: "2023/11",
+                    contents: "Become an OSS committer for the first time."
+                }
+            }
         },
         introData: {
             intro1: {

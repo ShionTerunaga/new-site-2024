@@ -1,4 +1,4 @@
-import Introduction from "@/features/introduction/view/introduction"
+import { Introduction } from "@/features/introduction"
 
 const Intro = () => {
     return <Introduction />

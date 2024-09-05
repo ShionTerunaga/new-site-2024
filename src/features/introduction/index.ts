@@ -1,1 +1,1 @@
-export * from "./view/introduction"
+export { Introduction } from "./view/introduction"

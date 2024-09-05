@@ -13,7 +13,6 @@ export const Header = (props: props) => {
     return (
         <header className={styles.header}>
             <Back />
-
             <div className={styles.menuBox}>
                 <MenuList />
             </div>

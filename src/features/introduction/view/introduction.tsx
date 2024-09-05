@@ -1,6 +1,3 @@
-import IntroModal from "../components/introModal/introModal"
-import IntroPopup from "../components/introPopup/introPopup"
-import { introData } from "../static/introduction.data"
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
 import { en } from "@/shared/lang/en"

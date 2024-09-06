@@ -2,23 +2,23 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     background: style({
-        width: "100vw",
-        height: "100vh",
+        width: "100%",
+        height: "100%",
         position: "absolute",
-        zIndex: 997,
-        top: 0,
+        zIndex: 999,
+        bottom: 0,
         left: 0,
         opacity: 0.5,
         backgroundColor: "black"
     }),
     mainContainer: style({
-        width: "100vw",
-        height: "100vh",
+        width: "100%",
+        height: "100%",
         display: "flex",
         justifyContent: "center",
         position: "absolute",
         zIndex: 999,
-        top: 0,
+        bottom: 0,
         left: 0,
         alignItems: "center"
     }),

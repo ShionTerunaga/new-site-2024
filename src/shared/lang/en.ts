@@ -81,55 +81,29 @@ export const en = {
             }
         },
         introData: {
+            title: "others",
             intro1: {
-                title: "Name",
-                headerContents: "TERUSI",
-                bodyContents: "I'm keeping my real name under wraps."
-            },
-            intro2: {
-                title: "Birthday",
-                headerContents: "2000/12/1",
-                bodyContents: "I was born in a cold winter."
-            },
-            intro3: {
-                title: "Birthplace",
-                headerContents: "Ibaraki in Japan",
-                bodyContents:
-                    "The vegetables are good in the tranquil countryside. It is also famous for its many delinquents."
-            },
-            intro4: {
-                title: "Residence",
-                headerContents: "Tokyo in Japan",
-                bodyContents: "When I was 18, I started lived in Tokyo."
-            },
-            intro5: {
-                title: "University",
-                headerContents: "Tokyo University of Science",
-                bodyContents:
-                    "Universities that somehow got in.He graduated in four years, although he struggled because there was too much of an academic gap between him and those around him. Reports were tough🫠"
-            },
-            intro6: {
                 title: "Favorite food",
                 headerContents: "meat 🍖🍗",
                 bodyContents: "I want to eat good, expensive meat...🤤"
             },
-            intro7: {
-                title: "Favorite sport",
+            intro2: {
+                title: "Favorite sport 1",
                 headerContents: "Track and Field 🏃🏻‍♂️",
                 bodyContents:
                     "I was a long-distance runner in high school and university. In my third and fourth years at university, I participated in the Hakone Ekiden qualifying round. I am not running at the moment, but I enjoy watching races on TV."
             },
-            intro8: {
+            intro3: {
+                title: "Favorite sport 2",
+                headerContents: "Soccer⚽️",
+                bodyContents:
+                    "I played football in primary and secondary school. I don't play at all now, but I often watch Japan's national team games and the World Cup."
+            },
+            intro4: {
                 title: "Favorite artist",
                 headerContents: "Spitz",
                 bodyContents:
                     "I like many different artists, but Spitz is exceptional. They heal me when I am tired."
-            },
-            intro9: {
-                title: "wanted...",
-                headerContents: "one's mental faculties🫀",
-                bodyContents:
-                    "There is too much lack of power and too little room in my heart for what I want to achieve, so I want to build up my power and make room for it😧"
             }
         }
     },

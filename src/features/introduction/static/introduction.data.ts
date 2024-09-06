@@ -1,11 +1,14 @@
 import { introType } from "./introduction.type"
 import { en } from "@/shared/lang/en"
+import YAKINIKU from "@/assets/introduction/yakiniku.png"
+import SPITZ from "@/assets/introduction/spitz.png"
 
 export const introData: introType[] = [
     {
         title: en.intro.introData.intro1.title,
         headerContents: en.intro.introData.intro1.headerContents,
-        bodyContents: en.intro.introData.intro1.bodyContents
+        bodyContents: en.intro.introData.intro1.bodyContents,
+        image: YAKINIKU
     },
     {
         title: en.intro.introData.intro2.title,
@@ -20,26 +23,7 @@ export const introData: introType[] = [
     {
         title: en.intro.introData.intro4.title,
         headerContents: en.intro.introData.intro4.headerContents,
-        bodyContents: en.intro.introData.intro4.bodyContents
-    },
-    {
-        title: en.intro.introData.intro5.title,
-        headerContents: en.intro.introData.intro5.headerContents,
-        bodyContents: en.intro.introData.intro5.bodyContents
-    },
-    {
-        title: en.intro.introData.intro6.title,
-        headerContents: en.intro.introData.intro6.headerContents,
-        bodyContents: en.intro.introData.intro6.bodyContents
-    },
-    {
-        title: en.intro.introData.intro7.title,
-        headerContents: en.intro.introData.intro7.headerContents,
-        bodyContents: en.intro.introData.intro7.bodyContents
-    },
-    {
-        title: en.intro.introData.intro8.title,
-        headerContents: en.intro.introData.intro8.headerContents,
-        bodyContents: en.intro.introData.intro8.bodyContents
+        bodyContents: en.intro.introData.intro4.bodyContents,
+        image: SPITZ
     }
 ]

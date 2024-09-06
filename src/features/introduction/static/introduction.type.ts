@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image"
+
 export type introType = {
     /**
      * item
@@ -11,4 +13,8 @@ export type introType = {
      * description
      */
     bodyContents: string
+    /**
+     * image
+     */
+    image?: StaticImageData
 }

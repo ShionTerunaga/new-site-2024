@@ -2,8 +2,11 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
+        width: "100vw",
+        height: "100vh",
         color: "white",
-        textAlign: "center"
+        textAlign: "center",
+        overflow: "auto"
     }),
     title: style({
         marginTop: 100,
@@ -21,13 +24,13 @@ const styles = {
         display: "flex"
     }),
     box: style({
-        width: 470,
+        width: "50%",
         margin: "20px auto",
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr",
+        display: "flex",
+        justifyContent: "space-around",
         "@media": {
             "screen and (max-width:470px)": {
-                width: 150,
+                width: 170,
                 display: "block",
                 gap: 0,
                 textAlign: "center"

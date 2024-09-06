@@ -20,6 +20,7 @@ const IntroModal = (props: props) => {
     const { openPopup } = usePopup()
 
     const handleClick = () => {
+        console.log(props)
         openPopup(<PopupContents {...props} />)
     }
 

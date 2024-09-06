@@ -2,8 +2,8 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     button: style({
-        width: 150,
-        height: 50,
+        width: 170,
+        height: 60,
         border: "1px solid white",
         borderRadius: 4,
         backgroundColor: "white",

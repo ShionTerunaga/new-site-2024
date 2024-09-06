@@ -12,8 +12,9 @@ const styles = {
     }),
     description: style({
         marginTop: 20,
-        height: 160,
-        fontSize: 22
+        maxHeight: 150,
+        fontSize: 22,
+        marginBottom: 10
     })
 }
 

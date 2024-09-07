@@ -3,7 +3,8 @@ import { style } from "@vanilla-extract/css"
 const styles = {
     container: style({
         width: "100vw",
-        height: "100vh"
+        height: "100vh",
+        overflow: "auto"
     }),
     iconBox: style({
         width: 100,

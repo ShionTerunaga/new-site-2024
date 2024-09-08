@@ -12,7 +12,7 @@ interface props {
 const CardCollection = (props: props) => {
     return (
         <section className={styles.container}>
-            {props.title && <h2 className={styles.heading2}>{props.title}</h2>}
+            {props.title && <h1 className={styles.heading1}>{props.title}</h1>}
             <div className={styles.mainBox}>
                 {props.contents.map((item, index) => (
                     <div key={index} className={styles.item}>

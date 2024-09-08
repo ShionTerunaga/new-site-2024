@@ -1,5 +1,5 @@
-import CardCollection from "../components/card-collection/card-collection"
-import { contentsAll } from "../types/contents-all.type"
+import CardCollection from "./card-collection/card-collection"
+import { contentsAll } from "./card-collection/contents-all.type"
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
 

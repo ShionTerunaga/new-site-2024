@@ -12,9 +12,10 @@ const styles = {
             }
         }
     }),
-    heading2: style({
+    heading1: style({
         margin: 10,
-        marginLeft: 0,
+        textAlign: "center",
+        fontSize: 32,
         width: 630,
         "@media": {
             "screen and (max-width:630px)": {

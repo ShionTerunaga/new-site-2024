@@ -1,5 +1,5 @@
-import { en } from "@/shared/lang/en"
 import { carrierType } from "./carrier.type"
+import { en } from "@/shared/lang/en"
 
 export const carrier: carrierType[] = [
     { ...en.intro.carrier.list.highSchoolOut },

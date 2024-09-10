@@ -1,7 +1,7 @@
 import { introType } from "./introduction.type"
-import { en } from "@/shared/lang/en"
-import YAKINIKU from "@/assets/introduction/yakiniku.png"
 import SPITZ from "@/assets/introduction/spitz.png"
+import YAKINIKU from "@/assets/introduction/yakiniku.png"
+import { en } from "@/shared/lang/en"
 
 export const introData: introType[] = [
     {

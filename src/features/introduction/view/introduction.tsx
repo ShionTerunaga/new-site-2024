@@ -1,11 +1,11 @@
+import CarrierCard from "../components/carrierCard/carrierCard"
+import IntroContents from "../components/introContents/introduction"
+import IntroModal from "../components/introModal/introModal"
+import IntroPopup from "../components/introPopup/introPopup"
+import { introData } from "../static/introduction.data"
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
 import { en } from "@/shared/lang/en"
-import IntroContents from "../components/introContents/introduction"
-import CarrierCard from "../components/carrierCard/carrierCard"
-import IntroModal from "../components/introModal/introModal"
-import { introData } from "../static/introduction.data"
-import IntroPopup from "../components/introPopup/introPopup"
 
 export const Introduction = () => {
     return (

@@ -1,5 +1,5 @@
-import { en } from "@/shared/lang/en"
 import styles from "./style.css"
+import { en } from "@/shared/lang/en"
 
 const IntroContents = () => {
     return (

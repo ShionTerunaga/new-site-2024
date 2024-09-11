@@ -11,7 +11,7 @@ interface props {
     /** カードのタイトル */
     title: string
     /** カードの画像 */
-    image: StaticImageData
+    image: StaticImageData | string
     /**ポップアップの中身 */
     children: ReactNode
 }

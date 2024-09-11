@@ -164,7 +164,8 @@ export const en = {
                 description:
                     "Slightly touched. Technology to look forward to. nodemon hot reload was fast."
             }
-        }
+        },
+        official: "official site"
     },
     active: {
         title: "active"

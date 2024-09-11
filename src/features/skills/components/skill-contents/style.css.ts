@@ -6,6 +6,9 @@ const styles = {
         margin: 0,
         marginBottom: 10
     }),
+    image: style({
+        textAlign: "center"
+    }),
     description: style({
         marginTop: 20,
         maxHeight: 150,

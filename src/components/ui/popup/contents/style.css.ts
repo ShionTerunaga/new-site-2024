@@ -5,14 +5,11 @@ const styles = {
         color: "black"
     }),
     header: style({
+        textAlign: "left",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "right",
         alignItems: "center",
         height: 50
-    }),
-    heading1: style({
-        margin: 0,
-        fontSize: 33
     }),
     button: style({
         width: 33,

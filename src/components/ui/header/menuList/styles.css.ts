@@ -69,9 +69,9 @@ const styles = {
     button: style({
         backgroundColor: "transparent",
         border: "none",
-        height: 30,
-        width: 30,
-        fontSize: 40,
+        height: 40,
+        width: 40,
+        fontSize: 45,
         position: "fixed",
         top: 5,
         right: 15,

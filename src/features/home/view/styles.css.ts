@@ -29,13 +29,23 @@ const styles = {
     descriptionBox: style({
         marginTop: 12
     }),
+    icons: style({
+        margin: "auto",
+        marginTop: 10,
+        marginBottom: 10,
+        display: "flex",
+        width: 80,
+        height: 22,
+        justifyContent: "space-between",
+        alignItems: "center"
+    }),
     cardContainer: style({
         display: "block",
-
+        marginTop: 20,
         "@media": {
             "screen and (min-width:500px)": {
                 width: 500,
-                margin: "auto",
+                margin: "15px auto",
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr"
             }

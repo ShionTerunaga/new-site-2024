@@ -13,7 +13,6 @@ const styles = {
         }
     }),
     heading1: style({
-        margin: 10,
         textAlign: "center",
         fontSize: 32,
         width: 630,
@@ -22,6 +21,12 @@ const styles = {
                 width: 202
             }
         }
+    }),
+    clickMessage: style({
+        textAlign: "center",
+        fontSize: 18,
+        marginTop: 10,
+        marginBottom: 10
     }),
     mainBox: style({
         width: 630,

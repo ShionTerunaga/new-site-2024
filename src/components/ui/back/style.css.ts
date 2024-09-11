@@ -6,18 +6,18 @@ const styles = {
         marginLeft: 10
     }),
     icon: style({
-        width: 30,
-        height: 30,
+        width: 40,
+        height: 40,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        fontSize: 30
+        fontSize: 40
     }),
     linkContent: style({
-        width: 30,
-        height: 30,
+        width: 40,
+        height: 40,
         display: "flex",
-        fontSize: 23,
+        fontSize: 30,
         color: "white",
         cursor: "pointer"
     })

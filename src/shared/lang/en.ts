@@ -109,8 +109,9 @@ export const en = {
     },
     skills: {
         title: "skills",
+        clickMessage: "click a card",
         webSkills: {
-            title: "web",
+            title: "Skill1 : web",
             skill1: {
                 path: "https://developer.mozilla.org/ja/docs/Web/JavaScript",
                 title: "Javascript",

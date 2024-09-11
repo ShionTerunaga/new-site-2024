@@ -31,6 +31,13 @@ const styles = {
         width: "100%",
         height: 125
     }),
+    noneContents: style({
+        width: "100%",
+        height: 125,
+        display: "flex",
+        marginTop: 30,
+        justifyContent: "center"
+    }),
     h2: style({
         margin: 0
     }),

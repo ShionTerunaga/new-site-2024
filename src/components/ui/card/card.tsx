@@ -23,11 +23,21 @@ export const Card = (props: props) => {
                     className={styles.image}
                 />
             </picture>
-            <div className={styles.textBox}>
+            <div
+                className={
+                    props.description !== ""
+                        ? styles.textBox
+                        : styles.noneContents
+                }
+            >
                 <h2 className={styles.h2}>{props.title}</h2>
-                <div className={styles.descriptionBox}>
-                    <p className={styles.description}>{props.description}</p>
-                </div>
+                {props.description !== "" && (
+                    <div className={styles.descriptionBox}>
+                        <p className={styles.description}>
+                            {props.description}
+                        </p>
+                    </div>
+                )}
             </div>
         </div>
     )

@@ -6,7 +6,6 @@ import styles from "./style.css"
 import { usePopup } from "@/hooks/popup"
 
 interface props {
-    title: string
     children: ReactNode
 }
 
@@ -16,10 +15,11 @@ export const PopupContents = (props: props) => {
     return (
         <div className={styles.container}>
             <div className={styles.header}>
-                <h1 className={styles.heading1}>{props.title}</h1>
-                <button className={styles.button} onClick={closePopup}>
-                    <X />
-                </button>
+                <div>
+                    <button className={styles.button} onClick={closePopup}>
+                        <X />
+                    </button>
+                </div>
             </div>
             {props.children}
         </div>

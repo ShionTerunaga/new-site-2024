@@ -10,7 +10,7 @@ interface props {
 
 export const CardView = (props: props) => {
     return (
-        <main>
+        <section>
             <Header title={props.pageTitle} />
             <div className={styles.container}>
                 {Array.isArray(props.contents) ? (
@@ -23,6 +23,6 @@ export const CardView = (props: props) => {
                     <CardCollection {...props.contents} />
                 )}
             </div>
-        </main>
+        </section>
     )
 }

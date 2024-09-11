@@ -1,6 +1,6 @@
-import Link from "next/link"
+import SkillContents from "../../skill-contents/skill-contents"
+import CardButton from "../card-button/card-button"
 import styles from "./style.css"
-import { Card } from "@/components/ui/card"
 import { cardType } from "@/components/ui/card/card.type"
 
 interface props {
@@ -11,26 +11,22 @@ interface props {
 
 const CardCollection = (props: props) => {
     return (
-        <section className={styles.container}>
+        <div className={styles.container}>
             {props.title && <h1 className={styles.heading1}>{props.title}</h1>}
             <div className={styles.mainBox}>
                 {props.contents.map((item, index) => (
                     <div key={index} className={styles.item}>
-                        <Link
-                            href={item.path}
-                            className={styles.link}
-                            target={props.isBlank ? "_blank" : undefined}
-                        >
-                            <Card
-                                title={item.title}
-                                image={item.image}
-                                description={item.description}
+                        <CardButton {...item}>
+                            <SkillContents
+                                contents={item.description}
+                                url={item.path}
+                                {...item}
                             />
-                        </Link>
+                        </CardButton>
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
     )
 }
 

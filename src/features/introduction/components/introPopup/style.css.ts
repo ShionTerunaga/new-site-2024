@@ -8,8 +8,13 @@ const styles = {
     }),
     description: style({
         marginTop: 20,
-        maxHeight: 150,
+        maxHeight: 300,
         fontSize: 22,
+        marginBottom: 10,
+        overflow: "auto"
+    }),
+    contents: style({
+        margin: 0,
         marginBottom: 10
     })
 }

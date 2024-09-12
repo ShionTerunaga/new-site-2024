@@ -6,7 +6,12 @@ const styles = {
         height: "100vh",
         color: "white",
         textAlign: "center",
-        overflow: "auto"
+        overflow: "auto",
+        msOverflowStyle: "none",
+        scrollbarWidth: "none",
+        "::-webkit-scrollbar": {
+            display: "none"
+        }
     }),
     title: style({
         marginTop: 100,

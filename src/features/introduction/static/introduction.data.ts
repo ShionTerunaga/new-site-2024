@@ -1,6 +1,7 @@
 import { introType } from "./introduction.type"
 import SPITZ from "@/assets/introduction/spitz.png"
 import YAKINIKU from "@/assets/introduction/yakiniku.png"
+import RUN from "@/assets/introduction/running.jpg"
 import { en } from "@/shared/lang/en"
 
 export const introData: introType[] = [
@@ -13,7 +14,8 @@ export const introData: introType[] = [
     {
         title: en.intro.introData.intro2.title,
         headerContents: en.intro.introData.intro2.headerContents,
-        bodyContents: en.intro.introData.intro2.bodyContents
+        bodyContents: en.intro.introData.intro2.bodyContents,
+        image: RUN
     },
     {
         title: en.intro.introData.intro3.title,

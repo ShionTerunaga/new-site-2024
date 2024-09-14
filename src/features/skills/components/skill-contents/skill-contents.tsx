@@ -30,10 +30,12 @@ const SkillContents = (props: props) => {
                     alt=""
                 />
             </div>
-            <div className={styles.description}>{props.contents}</div>
-            <Link href={props.url} target="_blank">
-                {en.skills.official}
-            </Link>
+            <div className={styles.description}>
+                <p>{props.contents}</p>
+                <Link href={props.url} target="_blank">
+                    {en.skills.official}
+                </Link>
+            </div>
         </>
     )
 }

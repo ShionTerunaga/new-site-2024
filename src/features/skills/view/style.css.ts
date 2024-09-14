@@ -2,10 +2,10 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
-        marginTop: 70,
+        overflow: "auto",
         width: "100vw",
         height: "100vh",
-        overflow: "auto"
+        paddingTop: 50
     }),
     space: style({
         height: 70

@@ -1,6 +1,6 @@
 import CardCollection from "./card-collection/card-collection"
 import { contentsAll } from "./card-collection/contents-all.type"
-import { Header } from "@/components/ui/header"
+import styles from "./style.css"
 
 interface props {
     pageTitle: string
@@ -9,8 +9,7 @@ interface props {
 
 export const CardView = (props: props) => {
     return (
-        <section>
-            <Header title={props.pageTitle} />
+        <section className={styles.container}>
             <div>
                 {Array.isArray(props.contents) ? (
                     <>

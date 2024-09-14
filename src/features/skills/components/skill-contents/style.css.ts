@@ -13,7 +13,8 @@ const styles = {
         marginTop: 20,
         maxHeight: 150,
         fontSize: 22,
-        marginBottom: 10
+        marginBottom: 10,
+        overflow: "auto"
     })
 }
 

@@ -111,7 +111,7 @@ export const en = {
         title: "skills",
         clickMessage: "click a card",
         webSkills: {
-            title: "Skill1 : web",
+            title: "1. web",
             skill1: {
                 path: "https://developer.mozilla.org/ja/docs/Web/JavaScript",
                 title: "Javascript",
@@ -164,6 +164,36 @@ export const en = {
                 title: "bun.js",
                 description:
                     "Slightly touched. Technology to look forward to. nodemon hot reload was fast."
+            }
+        },
+        nativeSkill: {
+            title: "2. native",
+            skill1: {
+                path: "https://reactnative.dev/",
+                title: "React Native",
+                description:
+                    "Technology used in the first job. It is easy to get into from someone who has worked on the front end of the web.It is surprising that v1.0 has not yet been released. Is there in the future, and how it will change based on the evolution of React is something to look forward to."
+            }
+        },
+        otherSkill: {
+            title: "3. other",
+            skill1: {
+                path: "https://www.python.org/",
+                title: "python",
+                description:
+                    "It is recognised as an excellent language when it comes to processing using complex calculations in data analysis and mathematics.It was used in a prototype of a tool using the GPT API, although it is not used much in work. I was indebted to them for my university research."
+            },
+            skill2: {
+                path: "https://www.raspberrypi.com/",
+                title: "raspberry Pi",
+                description:
+                    "I had the opportunity to touch it at work. I thought it was interesting to make an IoT tool, but I felt I had had enough."
+            },
+            skill3: {
+                path: "https://github.co.jp/",
+                title: "git/github",
+                description:
+                    "I use it for source code management; I don't know all the git commands but I try to use the CUI as much as possible. In my work, I try to use github in an ingenious way to efficiently turn around projects."
             }
         },
         official: "official site"

@@ -199,6 +199,6 @@ export const en = {
         official: "official site"
     },
     active: {
-        title: "active"
+        title: "Activities"
     }
 }

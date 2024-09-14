@@ -7,12 +7,16 @@ interface props {
      * ページのタイトル
      */
     title: string
+    /**
+     * 戻る時のpath
+     */
+    path?: string
 }
 
 export const Header = (props: props) => {
     return (
         <header className={styles.header}>
-            <Back />
+            <Back {...props} />
             <div className={styles.menuBox}>
                 <MenuList />
             </div>

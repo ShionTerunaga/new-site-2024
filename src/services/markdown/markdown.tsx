@@ -9,11 +9,15 @@ import P from "./view/p/p"
 import Pre from "./view/pre/pre"
 import Table from "./view/table/table"
 import WarningBlock from "./view/warningBlock/warningBlock"
+import H1 from "./view/h1/h1"
+import Li from "./view/li/li"
 
 export const markdownComponent: MDXComponents = {
     a: (props) => <A {...props} />,
     blockquote: (props) => <Blockquote {...props} />,
     code: (props) => <Code {...props} />,
+    h1: (props) => <H1 {...props} />,
+    li: (props) => <Li {...props} />,
     p: (props) => <P {...props} />,
     pre: (props) => <Pre {...props} />,
     table: (props) => <Table {...props} />,

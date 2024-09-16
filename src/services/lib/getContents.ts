@@ -38,7 +38,11 @@ export const getContents = (id: string) => {
         }
     }
 
-    const response = { source: filterResponse[0].source, options: option }
+    const response = {
+        source: filterResponse[0].source,
+        overview: filterResponse[0].overview,
+        options: option
+    }
 
     return response
 }

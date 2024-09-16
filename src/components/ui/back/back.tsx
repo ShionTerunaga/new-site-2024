@@ -1,4 +1,5 @@
 import { Home } from "@yamada-ui/lucide"
+import { ArrowLeft } from "@yamada-ui/lucide"
 import Link from "next/link"
 import styles from "./style.css"
 
@@ -18,7 +19,7 @@ export const Back = (props: props) => {
         <Link href={path} className={styles.link} aria-label="go to home">
             <div className={styles.linkContent}>
                 <div className={styles.icon}>
-                    <Home />
+                    {path === "/home" ? <Home /> : <ArrowLeft />}
                 </div>
             </div>
         </Link>

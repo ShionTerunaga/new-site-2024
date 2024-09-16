@@ -199,6 +199,8 @@ export const en = {
         official: "official site"
     },
     active: {
-        title: "Activities"
-    }
+        title: "Activities",
+        clickList: "click a item of list"
+    },
+    activeDetail: {}
 }

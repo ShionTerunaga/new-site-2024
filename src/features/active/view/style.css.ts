@@ -11,20 +11,17 @@ const styles = {
         }
     }),
     heading: style({
-        textAlign: "center"
+        textAlign: "center",
+        fontSize: 32
     }),
     contents: style({
-        width: 630,
-        marginTop: 15,
-        backgroundColor: "white",
-        color: "black",
+        width: "80%",
         borderRadius: 8,
-        "@media": {
-            "screen and (max-width:630px)": {
-                width: 300,
-                margin: "10px auto"
-            }
-        }
+        margin: "15px auto",
+        boxShadow: "0 0 10px rgba(255,255,255,0.8)",
+        backgroundColor: "white",
+        padding: 20,
+        color: "black"
     }),
     contentsBody: style({
         width: 590,

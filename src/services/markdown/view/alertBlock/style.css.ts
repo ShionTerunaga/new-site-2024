@@ -6,16 +6,17 @@ const styles = {
         borderRadius: 8,
         marginTop: 4,
         display: "flex",
-        padding: 8
+        padding: 8,
+        color: "red"
     }),
     circleX: style({
         color: "red",
-        marginLeft: 10,
         borderRadius: "50%"
     }),
     text: style({
         whiteSpace: "pre-wrap",
-        marginLeft: 10
+        marginLeft: 10,
+        color: "black"
     })
 }
 

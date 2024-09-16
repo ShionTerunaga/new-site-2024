@@ -13,19 +13,22 @@ export const Active = async (props: props) => {
     const markdown = getContents(props.id)
 
     return (
-        <main>
+        <>
             <Header title={en.active.title} path="/activities" />
-
-            <section className={styles.container}>
-                <h1 className={styles.heading}>{markdown.overview.title}</h1>
-                <section className={styles.contents}>
-                    <MDXRemote
-                        source={markdown.source}
-                        options={markdown.options}
-                        components={markdownComponent}
-                    />
+            <main className={styles.mainBox}>
+                <section className={styles.container}>
+                    <h1 className={styles.heading}>
+                        {markdown.overview.title}
+                    </h1>
+                    <section className={styles.contents}>
+                        <MDXRemote
+                            source={markdown.source}
+                            options={markdown.options}
+                            components={markdownComponent}
+                        />
+                    </section>
                 </section>
-            </section>
-        </main>
+            </main>
+        </>
     )
 }

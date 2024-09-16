@@ -3,16 +3,21 @@ import { style } from "@vanilla-extract/css"
 const styles = {
     container: style({
         margin: "100px auto",
-        width: 630,
+        width: 800,
         "@media": {
-            "screen and (max-width:630px)": {
-                width: "80%"
+            "screen and (max-width:830px)": {
+                width: "95%"
             }
         }
     }),
     heading: style({
         textAlign: "center",
         fontSize: 32
+    }),
+    mainBox: style({
+        width: "100vw",
+        height: "100vh",
+        overflow: "auto"
     }),
     contents: style({
         width: "80%",

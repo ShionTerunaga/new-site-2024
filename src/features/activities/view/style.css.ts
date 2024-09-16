@@ -15,6 +15,7 @@ const styles = {
         marginBottom: 10
     }),
     li: style({
+        marginBottom: 10,
         "::marker": {
             fontSize: 24
         }

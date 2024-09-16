@@ -6,15 +6,17 @@ const styles = {
         marginTop: 4,
         borderRadius: 8,
         display: "flex",
-        padding: 8
+        padding: 8,
+        color: "#FF9933"
     }),
     triangle: style({
-        color: "#FF9933",
-        marginLeft: 10
+        marginLeft: 10,
+        fontSize: 20
     }),
     text: style({
         whiteSpace: "pre-wrap",
-        marginLeft: 10
+        marginLeft: 10,
+        color: "black"
     })
 }
 

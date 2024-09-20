@@ -1,9 +1,9 @@
+import { MDXRemote } from "next-mdx-remote/rsc"
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
 import { getContents } from "@/services/lib"
 import { markdownComponent } from "@/services/markdown"
 import { en } from "@/shared/lang/en"
-import { MDXRemote } from "next-mdx-remote/rsc"
 
 interface props {
     id: string

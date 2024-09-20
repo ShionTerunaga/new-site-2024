@@ -1,5 +1,4 @@
 import { cardType } from "../../../components/ui/card/card.type"
-import CONTACT from "@/assets/home/contact.png"
 import INTRO from "@/assets/home/introduction.png"
 import PRODUCTION from "@/assets/home/product.png"
 import SKILL from "@/assets/home/skill.png"
@@ -24,11 +23,5 @@ export const staticCard: cardType[] = [
         image: PRODUCTION,
         title: en.home.card.card3.title,
         description: en.home.card.card3.description
-    },
-    {
-        path: "",
-        image: CONTACT,
-        title: en.home.card.card4.title,
-        description: en.home.card.card4.description
     }
 ]

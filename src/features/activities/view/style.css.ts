@@ -4,7 +4,8 @@ const styles = {
     container: style({
         width: "100vw",
         height: "100vh",
-        marginTop: 100
+        paddingTop: 50,
+        overflow: "auto"
     }),
     title: style({
         textAlign: "center"

@@ -14,9 +14,5 @@ export const staticMenu: menuType[] = [
     {
         path: routingPaths.activity,
         pageName: en.home.card.card3.title
-    },
-    {
-        path: "",
-        pageName: en.home.card.card4.title
     }
 ]

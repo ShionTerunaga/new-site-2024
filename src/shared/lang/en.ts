@@ -19,17 +19,11 @@ export const en = {
             },
             card2: {
                 title: "skill",
-                description:
-                    "We will focus on the skills we have experience with."
+                description: "I will focus on the skills I know well."
             },
             card3: {
                 title: "activity",
                 description: "This section describes our usual activities."
-            },
-            card4: {
-                title: "contact",
-                description:
-                    "Please contact me at X DM. Please browse github for source code and other information."
             }
         }
     },
@@ -42,7 +36,7 @@ export const en = {
             sectionTitle: "About me",
             title: "introduction",
             contents:
-                "Hello. My name is TERUSI. I am software engineer. I became engineer in 2023. Currently, the main focus is on the front end."
+                "Hello. My name is TERUSI. I am a software engineer. I became an engineer in 2023. Currently, the main focus is on the front end."
         },
         carrier: {
             title: "Carrier",
@@ -54,7 +48,7 @@ export const en = {
                 universityIn: {
                     when: "2019/4",
                     contents:
-                        "Entered Tokyo University of Science, Faculty of Engineering, Department of Information Technology."
+                        "Enrolled in the Department of Computer Science, Faculty of Engineering at Tokyo University of Science."
                 },
                 jobHunting: {
                     when: "2022/5",
@@ -63,7 +57,7 @@ export const en = {
                 graduationResearch: {
                     when: "2023/2",
                     contents:
-                        "From April 2022 I carried out my graduation research in the Optimisation Algorithms laboratory. The topic was the optimisation of training menus in athletics."
+                        "From April 2022 I completed my graduation research in the Optimization Algorithms laboratory. The topic was the optimization of training menus in athletics."
                 },
                 universityOut: {
                     when: "2023/3",

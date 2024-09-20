@@ -47,7 +47,8 @@ const styles = {
                 width: 500,
                 margin: "15px auto",
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr"
+                gridTemplateColumns: "1fr 1fr",
+                gridTemplateRows: "auto auto"
             }
         }
     })

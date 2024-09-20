@@ -66,7 +66,7 @@ export const en = {
                 companyIn: {
                     when: "2023/4",
                     contents:
-                        "Joined an IT company as a software engineer. Becomes a new employee."
+                        "I joined an IT company as a software engineer. I becomes a new employee."
                 },
                 ossStart: {
                     when: "2023/11",
@@ -85,13 +85,13 @@ export const en = {
                 title: "Favorite sport 1",
                 headerContents: "Track and Field 🏃🏻‍♂️",
                 bodyContents:
-                    "I was a long-distance runner in high school and university. In my third and fourth years at university, I participated in the Hakone Ekiden qualifying round. I am not running at the moment, but I enjoy watching races on TV."
+                    "I was a long-distance runner during high school and university. In my third and fourth years, I competed in the qualifying rounds for the Hakone Ekiden. Although I’m not running anymore, I still enjoy watching races on TV."
             },
             intro3: {
                 title: "Favorite sport 2",
                 headerContents: "Soccer⚽️",
                 bodyContents:
-                    "I played football in primary and secondary school. I don't play at all now, but I often watch Japan's national team games and the World Cup."
+                    "I played football in primary and secondary school. I don't play now. But I often watch Japan's national team games and the World Cup."
             },
             intro4: {
                 title: "Favorite artist",
@@ -110,7 +110,7 @@ export const en = {
                 path: "https://developer.mozilla.org/ja/docs/Web/JavaScript",
                 title: "Javascript",
                 description:
-                    "I think I only understand about 30% of this language🤪 I think I need to read MDN a lot more."
+                    "I think I only understand about 30% of this language 🤪. I need to read MDN a lot more."
             },
             skill2: {
                 path: "https://www.typescriptlang.org/",
@@ -122,19 +122,19 @@ export const en = {
                 path: "https://ja.react.dev/",
                 title: "React",
                 description:
-                    "I use it more than vanilla js.I hope to be able to read React's own code one day."
+                    "I use it more than vanilla js. I hope to be able to read React's code one day."
             },
             skill4: {
                 path: "https://nextjs.org/",
                 title: "Next.js",
                 description:
-                    "I'm using it as my main tool these days; I'd like to understand it because it's difficult to do the RSC etc."
+                    "I'm using it as my main tool. I'd like to understand it because it's difficult to do the RSC etc."
             },
             skill5: {
                 path: "https://vanilla-extract.style/",
                 title: "vanilla-extract",
                 description:
-                    "Use with Next.js. It could be very nice to be able to write in TS-only."
+                    "Use with Next.js. It would be very nice to be able to write in TS-only. I would be more than happy if turbo-pack was supported.."
             },
             skill6: {
                 path: "https://storybook.js.org/",
@@ -146,7 +146,7 @@ export const en = {
                 path: "https://expressjs.com/ja/",
                 title: "express.js",
                 description:
-                    "It is used to create simple REST APIs. Recently, it is moving to bun."
+                    "It is used to create simple REST APIs, but recently, it has been shifting to Bun."
             },
             skill8: {
                 path: "https://vitest.dev/",
@@ -157,7 +157,7 @@ export const en = {
                 path: "https://bun.sh/",
                 title: "bun.js",
                 description:
-                    "Slightly touched. Technology to look forward to. nodemon hot reload was fast."
+                    "I made some adjustments. It's a promising technology. The hot reload is faster than Nodemon's hot reload.odemon's hot reload."
             }
         },
         nativeSkill: {
@@ -166,7 +166,7 @@ export const en = {
                 path: "https://reactnative.dev/",
                 title: "React Native",
                 description:
-                    "Technology used in the first job. It is easy to get into from someone who has worked on the front end of the web.It is surprising that v1.0 has not yet been released. Is there in the future, and how it will change based on the evolution of React is something to look forward to."
+                    "The technology I used in my first job is easy to learn for someone with front-end web development experience. Surprisingly, version 1.0 has yet to be released. It will be interesting to see how it evolves, especially with future developments in React."
             }
         },
         otherSkill: {
@@ -175,7 +175,7 @@ export const en = {
                 path: "https://www.python.org/",
                 title: "python",
                 description:
-                    "It is recognised as an excellent language when it comes to processing using complex calculations in data analysis and mathematics.It was used in a prototype of a tool using the GPT API, although it is not used much in work. I was indebted to them for my university research."
+                    "It is an excellent language for performing complex calculations in data analysis and mathematics.It was used in a prototype of a tool using the GPT API, although it is not used much in work. I was indebted to them for my university research."
             },
             skill2: {
                 path: "https://www.raspberrypi.com/",
@@ -187,7 +187,7 @@ export const en = {
                 path: "https://github.co.jp/",
                 title: "git/github",
                 description:
-                    "I use it for source code management; I don't know all the git commands but I try to use the CUI as much as possible. In my work, I try to use github in an ingenious way to efficiently turn around projects."
+                    "I use it for source code management; I don't know all the git commands but I try to use the CUI as much as possible. In my work, I try to use Github ingeniously to efficiently turn around projects."
             }
         },
         official: "official site"

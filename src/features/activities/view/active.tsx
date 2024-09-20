@@ -1,6 +1,6 @@
+import { CircleChevronRight } from "@yamada-ui/lucide"
 import Link from "next/link"
 import styles from "./style.css"
-import { CircleChevronRight } from "@yamada-ui/lucide"
 import { Header } from "@/components/ui/header"
 import { getAllContents } from "@/services/lib"
 import { en } from "@/shared/lang/en"

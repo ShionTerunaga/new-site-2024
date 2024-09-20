@@ -4,13 +4,13 @@ import A from "./view/a/a"
 import AlertBlock from "./view/alertBlock/alertBlock"
 import Blockquote from "./view/blockquote/blockquote"
 import Code from "./view/code/code"
+import H1 from "./view/h1/h1"
 import InfoBlock from "./view/infoBlock/infoBlock"
+import Li from "./view/li/li"
 import P from "./view/p/p"
 import Pre from "./view/pre/pre"
 import Table from "./view/table/table"
 import WarningBlock from "./view/warningBlock/warningBlock"
-import H1 from "./view/h1/h1"
-import Li from "./view/li/li"
 
 export const markdownComponent: MDXComponents = {
     a: (props) => <A {...props} />,

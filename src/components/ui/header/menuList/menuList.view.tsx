@@ -1,7 +1,7 @@
 import { Menu, X } from "@yamada-ui/lucide"
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
-import { Dispatch, SetStateAction } from "react"
+import { Dispatch, Fragment, SetStateAction } from "react"
 import { staticMenu } from "./menuList.data"
 import styles from "./styles.css"
 
@@ -12,6 +12,8 @@ interface props {
     setIsOpen: Dispatch<SetStateAction<boolean>>
     /** メニューのアイコンをクリックした時の関数 */
     handleClick: () => void
+    /** 現在のパス */
+    path: string
 }
 
 const MenuListView = (props: props) => {
@@ -38,16 +40,20 @@ const MenuListView = (props: props) => {
                             <ul className={styles.ul}>
                                 <div>
                                     {staticMenu.map((item, index) => (
-                                        <li key={index} className={styles.li}>
-                                            <Link
-                                                href={item.path}
-                                                className={styles.link}
-                                            >
-                                                <p className={styles.p}>
-                                                    {item.pageName}
-                                                </p>
-                                            </Link>
-                                        </li>
+                                        <Fragment key={index}>
+                                            {item.path !== props.path && (
+                                                <li className={styles.li}>
+                                                    <Link
+                                                        href={item.path}
+                                                        className={styles.link}
+                                                    >
+                                                        <p className={styles.p}>
+                                                            {item.pageName}
+                                                        </p>
+                                                    </Link>
+                                                </li>
+                                            )}
+                                        </Fragment>
                                     ))}
                                 </div>
                             </ul>

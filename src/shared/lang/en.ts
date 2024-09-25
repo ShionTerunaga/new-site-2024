@@ -10,6 +10,7 @@ export const en = {
         third: "Let's go!!"
     },
     home: {
+        title: "Home",
         name: "TERUSI",
         description: "software engineer",
         card: {

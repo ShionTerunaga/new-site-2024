@@ -4,6 +4,10 @@ import { routingPaths } from "@/shared/static/routingPaths"
 
 export const staticMenu: menuType[] = [
     {
+        path: routingPaths.home,
+        pageName: en.home.title
+    },
+    {
         path: routingPaths.intro,
         pageName: en.home.card.card1.title
     },

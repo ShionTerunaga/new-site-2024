@@ -1,7 +1,7 @@
-export const en = {
+export const ja = {
     component: {
         back: {
-            title: "HOME"
+            title: "ホーム"
         }
     },
     top: {
@@ -10,138 +10,136 @@ export const en = {
         third: "Let's go!!"
     },
     home: {
-        title: "Home",
-        name: "TERUSI",
+        title: "ホーム",
+        name: "てるし〜",
         description: "software engineer",
         card: {
             card1: {
-                title: "introduction",
-                description: "Let me introduce myself!"
+                title: "自己紹介",
+                description: "自己紹介をします！!"
             },
             card2: {
-                title: "skill",
-                description: "I will focus on the skills I know well."
+                title: "スキル",
+                description: "私が知っている技術をフォーカスします。"
             },
             card3: {
-                title: "activity",
-                description: "This section describes my usual activities."
+                title: "アクティブ",
+                description: "普段の活動を説明します。"
             }
         }
     },
     intro: {
-        title: "Introduction",
+        title: "自己紹介",
         contents: {
-            contents1: "Click on the button."
+            contents1: "ボタンをクリックしてください！"
         },
         introduction: {
-            sectionTitle: "About me",
-            title: "introduction",
+            sectionTitle: "私について",
+            title: "自己紹介",
             contents:
-                "Hello. My name is TERUSI. I am a software engineer. I became an engineer in 2023. Currently, the main focus is on the front end."
+                "こんにちは。私の名前はてるし〜です。私はソフトウェアエンジニアです。2023年にエンジニアになりました。現在、メインはフロントエンドにフォーカスしています。"
         },
         carrier: {
-            title: "Carrier",
+            title: "経歴",
             list: {
                 highSchoolOut: {
                     when: "2019/3",
-                    contents: "Graduated from Joso Gakuin."
+                    contents: "常総学院を卒業"
                 },
                 universityIn: {
                     when: "2019/4",
-                    contents:
-                        "Enrolled in the Department of Computer Science, Faculty of Engineering at Tokyo University of Science."
+                    contents: "東京理科大学工学部情報工学科に入学"
                 },
                 jobHunting: {
                     when: "2022/5",
-                    contents: "Receive a job offer from an IT company."
+                    contents: "IT企業に内定をいただく"
                 },
                 graduationResearch: {
                     when: "2023/2",
                     contents:
-                        "From April 2022 I completed my graduation research in the Optimization Algorithms laboratory. The topic was the optimization of training menus in athletics."
+                        "2024年4月より、最適化アルゴリズムの研究室で卒表研究を行った。テーマは陸上競技におけるトレーニングメニューの最適化である。"
                 },
                 universityOut: {
                     when: "2023/3",
-                    contents: "Graduated from Tokyo University of Science."
+                    contents: "東京理科大学を卒業"
                 },
                 companyIn: {
                     when: "2023/4",
-                    contents:
-                        "I joined an IT company as a software engineer. I becomes a new employee."
+                    contents: "IT企業に入社。社会人になる。"
                 },
                 ossStart: {
                     when: "2023/11",
-                    contents: "Become an OSS committer for the first time."
+                    contents: "OSSに初めて貢献する"
                 }
             }
         },
         introData: {
-            title: "others",
+            title: "その他",
             intro1: {
-                title: "Favorite food",
-                headerContents: "meat 🍖🍗",
-                bodyContents: "I want to eat good, expensive meat...🤤"
+                title: "好物",
+                headerContents: "肉 🍖🍗",
+                bodyContents: "高くて美味しい肉が食べたい...🤤"
             },
             intro2: {
-                title: "Favorite sport 1",
-                headerContents: "Track and Field 🏃🏻‍♂️",
+                title: "スポーツ1",
+                headerContents: "陸上競技 🏃🏻‍♂️",
                 bodyContents:
-                    "I was a long-distance runner during high school and university. In my third and fourth years, I competed in the qualifying rounds for the Hakone Ekiden. Although I’m not running anymore, I still enjoy watching races on TV."
+                    "高校、大学時代は長距離ランナーでした、3,4年生の時には箱根駅伝予選会に出場しました、今は走っていませんが、テレビでレースを見ることが好きです。"
             },
             intro3: {
-                title: "Favorite sport 2",
-                headerContents: "Soccer⚽️",
+                title: "スポーツ2",
+                headerContents: "サッカー⚽️",
                 bodyContents:
-                    "I played football in primary and secondary school. I don't play now. But I often watch Japan's national team games and the World Cup."
+                    "小中学校ではサッカーをやっていました、今はやっていません。しかし、日本代表に試合やワールドカップはよく見ます。"
             },
             intro4: {
-                title: "Favorite artist",
-                headerContents: "Spitz",
+                title: "アーティスト",
+                headerContents: "スピッツ",
                 bodyContents:
-                    "I like many different artists, but Spitz is exceptional. They heal me when I am tired."
+                    "色々なアーティストが好きですが、スピッツは別格です。疲れを癒してくれます。"
             }
         }
     },
     skills: {
-        title: "skills",
-        clickMessage: "click a card",
+        title: "スキル",
+        clickMessage: "カードをクリック",
         webSkills: {
             title: "1. web",
             skill1: {
                 path: "https://developer.mozilla.org/ja/docs/Web/JavaScript",
                 title: "Javascript",
                 description:
-                    "I think I only understand about 30% of this language 🤪. I need to read MDN a lot more."
+                    "この言語は30%くらいしか理解してないと思います🤪. もっとMDNを読む必要があります。"
             },
             skill2: {
                 path: "https://www.typescriptlang.org/",
                 title: "Typescript",
                 description:
-                    "I use it more than JS.  We would also like to consider the performance part."
+                    "JSよりも使っている。パフォーマンスの面も考えていきたい。"
             },
             skill3: {
                 path: "https://ja.react.dev/",
                 title: "React",
                 description:
-                    "I use it more than vanilla js. I hope to be able to read React's code one day."
+                    "バニラjsよりも多く使っています。いつかReact自体のコードを読めるようになりたいです。"
             },
             skill4: {
                 path: "https://nextjs.org/",
                 title: "Next.js",
                 description:
-                    "I'm using it as my main tool. I'd like to understand it because it's difficult to do the RSC etc."
+                    "メインでよく使っています。RSCなどは難しいので理解したい。"
             },
             skill5: {
                 path: "https://vanilla-extract.style/",
                 title: "vanilla-extract",
                 description:
-                    "Use with Next.js. It would be very nice to be able to write in TS-only. I would be more than happy if turbo-pack was supported.."
+                    "Next.js併用してます。TSだけで描けるようになるのでとても嬉しいです。turbo-packがサポートされればもっと嬉しいのですが...。"
             },
             skill6: {
                 path: "https://storybook.js.org/",
                 title: "storybook",
                 description:
-                    "I found out about its existence through the OSS. Useful for creating stand-alone components!"
+                    "OSSで存在を知りました。スタンドアローンのコンポーネントを作るのに便利です！"
             },
             skill7: {
                 path: "https://expressjs.com/ja/",
@@ -191,7 +189,7 @@ export const en = {
                     "I use it for source code management; I don't know all the git commands but I try to use the CUI as much as possible. In my work, I try to use Github ingeniously to efficiently turn around projects."
             }
         },
-        official: "official site"
+        official: "公式サイト"
     },
     active: {
         title: "Activities",

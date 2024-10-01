@@ -145,18 +145,19 @@ export const ja = {
                 path: "https://expressjs.com/ja/",
                 title: "express.js",
                 description:
-                    "It is used to create simple REST APIs, but recently, it has been shifting to Bun."
+                    "簡単なREST APIを作成する時に使用します。最近はBunにシフトしつつあります。"
             },
             skill8: {
                 path: "https://vitest.dev/",
                 title: "vitest",
-                description: "Used for work, etc. Writing test code is fun!"
+                description:
+                    "仕事等で使います。テストコードを書くのは楽しいです！"
             },
             skill9: {
                 path: "https://bun.sh/",
                 title: "bun.js",
                 description:
-                    "I made some adjustments. It's a promising technology. The hot reload is faster than Nodemon's hot reload.odemon's hot reload."
+                    "将来性のある技術だと思います。The hot reload is faster than Nodemon's hot reload."
             }
         },
         nativeSkill: {

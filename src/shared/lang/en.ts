@@ -158,7 +158,7 @@ export const en = {
                 path: "https://bun.sh/",
                 title: "bun.js",
                 description:
-                    "It's a promising technology. The hot reload is faster than Nodemon's hot reload.nodemon's hot reload."
+                    "It's a promising technology. The hot reload is faster than Nodemon's hot reload."
             }
         },
         nativeSkill: {

@@ -157,7 +157,7 @@ export const ja = {
                 path: "https://bun.sh/",
                 title: "bun.js",
                 description:
-                    "将来性のある技術だと思います。The hot reload is faster than Nodemon's hot reload."
+                    "将来性のある技術だと思います。ホットリロードはNodemonより早いです！"
             }
         },
         nativeSkill: {
@@ -166,7 +166,7 @@ export const ja = {
                 path: "https://reactnative.dev/",
                 title: "React Native",
                 description:
-                    "The technology I used in my first job is easy to learn for someone with front-end web development experience. Surprisingly, version 1.0 has yet to be released. It will be interesting to see how it evolves, especially with future developments in React."
+                    "私が最初の仕事で使った技術で、フロントエンドのウェブ開発経験者にとっては学びやすいものだ。驚くことに、バージョン1.0はまだリリースされていない。特にReactの今後の発展によって、どのように進化していくのか興味深い。"
             }
         },
         otherSkill: {
@@ -181,20 +181,20 @@ export const ja = {
                 path: "https://www.raspberrypi.com/",
                 title: "raspberry Pi",
                 description:
-                    "I had the opportunity to touch it at work. I thought it was interesting to make an IoT tool, but I felt I had had enough."
+                    "仕事ではあまり使われないが、GPT APIを使ったツールのプロトタイプで使われた。大学の研究でお世話になった。"
             },
             skill3: {
                 path: "https://github.co.jp/",
                 title: "git/github",
                 description:
-                    "I use it for source code management; I don't know all the git commands but I try to use the CUI as much as possible. In my work, I try to use Github ingeniously to efficiently turn around projects."
+                    "ソースコード管理に使っています。すべてのgitコマンドを知っているわけではありませんが、できるだけCUIを使うようにしています。仕事では、Githubを工夫して使い、プロジェクトを効率的に回すようにしています。"
             }
         },
         official: "公式サイト"
     },
     active: {
-        title: "Activities",
-        clickList: "click a item of list"
+        title: "アクティビティ",
+        clickList: "アイテムリストをクリック"
     },
     activeDetail: {}
 }

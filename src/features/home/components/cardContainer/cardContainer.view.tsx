@@ -11,22 +11,18 @@ interface props {
 
 const CardContainerView = (props: props) => {
     return (
-        // <div className={styles.itemBox}>
-        // {
-            props.isOpen && (
-                <motion.div
-                    style={{ width: 202, height: 'auto' }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 + props.index }}
-                >
-                    <Link href={props.item.path} className={styles.link}>
-                        <Card {...props.item} />
-                    </Link>
-                </motion.div>
-            )
-        // }
-        // </div>
+        props.isOpen && (
+            <motion.div
+                style={{ width: 202, height: "auto" }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 + props.index }}
+            >
+                <Link href={props.item.path} className={styles.link}>
+                    <Card {...props.item} />
+                </Link>
+            </motion.div>
+        )
     )
 }
 

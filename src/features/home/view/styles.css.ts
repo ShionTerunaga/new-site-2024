@@ -19,7 +19,6 @@ const styles = {
         width: 300,
         height: 100,
         margin: "auto",
-        // marginTop: "-75px",
         textAlign: "center",
         "@media": {
             "screen and (max-width:300px)": {
@@ -42,22 +41,11 @@ const styles = {
         alignItems: "center"
     }),
     cardContainer: style({
-        // display: "block",
         marginTop: 20,
         display: "flex",
         justifyContent: "center",
         gap: "max(2vw, 1em)",
         flexWrap: "wrap"
-
-        // "@media": {
-        //     "screen and (min-width:500px)": {
-        //         width: 500,
-        //         margin: "15px auto",
-        //         display: "grid",
-        //         gridTemplateColumns: "1fr 1fr",
-        //         gridTemplateRows: "auto auto"
-        //     }
-        // }
     })
 }
 

@@ -13,12 +13,12 @@ import { en } from "@/shared/lang/en"
 export const Home = () => {
     return (
         <main className={styles.container}>
-            <div>
+            {/* <div> */}
                 <section className={styles.iconBox}>
                     <Icon />
                 </section>
-            </div>
-            <div>
+            {/* </div> */}
+            {/* <div> */}
                 <section className={styles.greetingBox}>
                     <h1 className={styles.name}>{en.home.name}</h1>
                     <div className={styles.descriptionBox}>
@@ -36,7 +36,7 @@ export const Home = () => {
                         </Link>
                     </div>
                 </section>
-            </div>
+            {/* </div> */}
             <section className={styles.cardContainer}>
                 {staticCard.map((item, index) => (
                     <CardContainer index={index} item={item} key={index} />

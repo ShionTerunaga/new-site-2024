@@ -10,7 +10,7 @@ interface props {
 export const Card = (props: props) => {
     return (
         <div className={styles.box}>
-            <picture className={styles.picture}>
+            <picture>
                 <Image
                     src={
                         props.image
@@ -25,9 +25,9 @@ export const Card = (props: props) => {
             </picture>
             <div
                 className={
-                    props.description !== ""
-                        ? styles.textBox
-                        : styles.noneContents
+                    props.description === ""
+                        ? styles.noneContents
+                        : undefined
                 }
             >
                 <h2 className={styles.h2}>{props.title}</h2>

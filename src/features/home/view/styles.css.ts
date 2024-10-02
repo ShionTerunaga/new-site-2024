@@ -36,7 +36,6 @@ const styles = {
         margin: "10px auto",
         display: "flex",
         width: 80,
-        // height: 22,
         justifyContent: "space-between",
         alignItems: "center"
     }),

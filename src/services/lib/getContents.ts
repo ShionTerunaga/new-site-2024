@@ -6,11 +6,11 @@ import type { contents, overviewContents } from "./getContents.type"
 import "highlight.js/styles/vs2015.min.css"
 import { remarkUIComponent } from "./utils/remearkUIComponent"
 
-export const getContents = (id: string) => {
-    const pullFolders = fs.readdirSync(contentsPath)
+export const getContents = (id: string, lang: string) => {
+    const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`)
 
     const subResponse: contents[] = pullFolders.map((item) => {
-        const path = `${contentsPath}/${item}`
+        const path = `${contentsPath}/${lang}/${item}`
 
         const sourceFile = `${item}.mdx`
         const overviewFile = `${item}Overview.json`

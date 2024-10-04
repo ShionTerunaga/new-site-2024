@@ -1,10 +1,16 @@
 import { carrier } from "./carrier.data"
 import styles from "./style.css"
 
-const CarrierCard = () => {
+interface props {
+    lang: string
+}
+
+const CarrierCard = (props: props) => {
+    const carrierList = carrier(props.lang)
+
     return (
         <section className={styles.intro}>
-            {carrier.map((item, index) => (
+            {carrierList.map((item, index) => (
                 <div key={index} className={styles.box}>
                     <h2 className={styles.titleBox}>{item.when}</h2>
                     <div className={styles.introductionContents}>

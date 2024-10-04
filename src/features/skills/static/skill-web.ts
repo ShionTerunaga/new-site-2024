@@ -8,43 +8,44 @@ import TS from "@/assets/skills/ts.png"
 import VANILLA_EXTRACT from "@/assets/skills/vanilla-extract.png"
 import VITEST from "@/assets/skills/vitest.png"
 import { cardType } from "@/components/ui/card/card.type"
-import { en } from "@/shared/lang/en"
 
-export const skillWeb: cardType[] = [
-    {
-        ...en.skills.webSkills.skill1,
-        image: JS
-    },
-    {
-        ...en.skills.webSkills.skill2,
-        image: TS
-    },
-    {
-        ...en.skills.webSkills.skill3,
-        image: REACT
-    },
-    {
-        ...en.skills.webSkills.skill4,
-        image: NEXT
-    },
-    {
-        ...en.skills.webSkills.skill5,
-        image: VANILLA_EXTRACT
-    },
-    {
-        ...en.skills.webSkills.skill6,
-        image: STORYBOOK
-    },
-    {
-        ...en.skills.webSkills.skill7,
-        image: EXPRESS
-    },
-    {
-        ...en.skills.webSkills.skill8,
-        image: VITEST
-    },
-    {
-        ...en.skills.webSkills.skill9,
-        image: BUN
-    }
-]
+export const skillWeb = (t: any): cardType[] => {
+    return [
+        {
+            ...t.skills.webSkills.skill1,
+            image: JS
+        },
+        {
+            ...t.skills.webSkills.skill2,
+            image: TS
+        },
+        {
+            ...t.skills.webSkills.skill3,
+            image: REACT
+        },
+        {
+            ...t.skills.webSkills.skill4,
+            image: NEXT
+        },
+        {
+            ...t.skills.webSkills.skill5,
+            image: VANILLA_EXTRACT
+        },
+        {
+            ...t.skills.webSkills.skill6,
+            image: STORYBOOK
+        },
+        {
+            ...t.skills.webSkills.skill7,
+            image: EXPRESS
+        },
+        {
+            ...t.skills.webSkills.skill8,
+            image: VITEST
+        },
+        {
+            ...t.skills.webSkills.skill9,
+            image: BUN
+        }
+    ]
+}

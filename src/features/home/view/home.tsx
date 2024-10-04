@@ -8,18 +8,25 @@ import { staticCard } from "../static/card"
 import styles from "./styles.css"
 import GITHUB from "@/assets/home/github-mark-white.svg"
 import X from "@/assets/home/logo-white.png"
-import { en } from "@/shared/lang/en"
+import { i18n } from "@/shared/static/lang"
 
-export const Home = () => {
+interface props {
+    lang: string
+}
+
+export const Home = (props: props) => {
+    const t = i18n(props.lang)
+    const cards = staticCard(props.lang)
+
     return (
         <main className={styles.container}>
             <section className={styles.iconBox}>
                 <Icon />
             </section>
             <section className={styles.greetingBox}>
-                <h1 className={styles.name}>{en.home.name}</h1>
+                <h1 className={styles.name}>{t.home.name}</h1>
                 <div className={styles.descriptionBox}>
-                    <p>{en.home.description}</p>
+                    <p>{t.home.description}</p>
                 </div>
                 <div className={styles.icons}>
                     <Link href="https://x.com/TERUSI1201" target="_blank">
@@ -34,8 +41,13 @@ export const Home = () => {
                 </div>
             </section>
             <section className={styles.cardContainer}>
-                {staticCard.map((item, index) => (
-                    <CardContainer index={index} item={item} key={index} />
+                {cards.map((item, index) => (
+                    <CardContainer
+                        lang={props.lang}
+                        index={index}
+                        item={item}
+                        key={index}
+                    />
                 ))}
             </section>
         </main>

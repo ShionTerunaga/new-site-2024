@@ -2,11 +2,11 @@ import fs from "fs"
 import { contentsPath } from "./getContents.data"
 import { overviewContents } from "./getContents.type"
 
-export const getAllContents = () => {
-    const pullFolders = fs.readdirSync(contentsPath)
+export const getAllContents = (lang: string) => {
+    const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`)
 
     const response: overviewContents[] = pullFolders.map((item) => {
-        const path = `${contentsPath}/${item}`
+        const path = `${contentsPath}/${lang}/${item}`
 
         const overviewFile = `${item}Overview.json`
 

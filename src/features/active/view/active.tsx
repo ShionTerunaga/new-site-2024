@@ -3,18 +3,25 @@ import styles from "./style.css"
 import { Header } from "@/components/ui/header"
 import { getContents } from "@/services/lib"
 import { markdownComponent } from "@/services/markdown"
-import { en } from "@/shared/lang/en"
+import { i18n } from "@/shared/static/lang"
+import { routingPath } from "@/shared/static/routingPaths"
 
 interface props {
     id: string
+    lang: string
 }
 
 export const Active = async (props: props) => {
-    const markdown = getContents(props.id)
+    const t = i18n(props.lang)
+    const markdown = getContents(props.id, props.lang)
 
     return (
         <>
-            <Header title={en.active.title} path="/activities" />
+            <Header
+                title={t.active.title}
+                path={routingPath(props.lang).activity}
+                {...props}
+            />
             <main className={styles.mainBox}>
                 <section className={styles.container}>
                     <h1 className={styles.heading}>

@@ -11,6 +11,10 @@ interface props {
      * 戻る時のpath
      */
     path?: string
+    /**
+     * 言語
+     */
+    lang: string
 }
 
 export const Header = (props: props) => {
@@ -18,7 +22,7 @@ export const Header = (props: props) => {
         <header className={styles.header}>
             <Back {...props} />
             <div className={styles.menuBox}>
-                <MenuList />
+                <MenuList {...props} />
             </div>
         </header>
     )

@@ -5,21 +5,28 @@ import IntroPopup from "../components/introPopup/introPopup"
 import { introData } from "../static/introduction.data"
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
-import { en } from "@/shared/lang/en"
+import { i18n } from "@/shared/static/lang"
 
-export const Introduction = () => {
+interface props {
+    lang: string
+}
+
+export const Introduction = (props: props) => {
+    const t = i18n(props.lang)
+    const introModal = introData(props.lang)
+
     return (
         <main className={styles.container}>
-            <Header title={en.intro.title} />
+            <Header title={t.intro.title} {...props} />
             <h1 className={styles.title}>
-                {en.intro.introduction.sectionTitle}
+                {t.intro.introduction.sectionTitle}
             </h1>
-            <IntroContents />
-            <h1 className={styles.title2}>{en.intro.carrier.title}</h1>
-            <CarrierCard />
-            <h1>{en.intro.introData.title}</h1>
+            <IntroContents lang={props.lang} />
+            <h1 className={styles.title2}>{t.intro.carrier.title}</h1>
+            <CarrierCard lang={props.lang} />
+            <h1>{t.intro.introData.title}</h1>
             <div className={styles.box}>
-                {introData.map((item, index) => (
+                {introModal.map((item, index) => (
                     <IntroModal key={index} title={item.title}>
                         <IntroPopup
                             answer={item.headerContents}

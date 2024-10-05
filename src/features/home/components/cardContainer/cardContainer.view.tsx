@@ -7,6 +7,7 @@ interface props {
     index: number
     item: cardType
     isOpen: boolean
+    lang: string
 }
 
 const CardContainerView = (props: props) => {

@@ -2,26 +2,31 @@ import { cardType } from "../../../components/ui/card/card.type"
 import INTRO from "@/assets/home/introduction.png"
 import PRODUCTION from "@/assets/home/product.png"
 import SKILL from "@/assets/home/skill.png"
-import { en } from "@/shared/lang/en"
-import { routingPaths } from "@/shared/static/routingPaths"
+import { i18n } from "@/shared/static/lang"
+import { routingPath } from "@/shared/static/routingPaths"
 
-export const staticCard: cardType[] = [
-    {
-        path: routingPaths.intro,
-        image: INTRO,
-        title: en.home.card.card1.title,
-        description: en.home.card.card1.description
-    },
-    {
-        path: routingPaths.skills,
-        image: SKILL,
-        title: en.home.card.card2.title,
-        description: en.home.card.card2.description
-    },
-    {
-        path: routingPaths.activity,
-        image: PRODUCTION,
-        title: en.home.card.card3.title,
-        description: en.home.card.card3.description
-    }
-]
+export const staticCard = (lang: string): cardType[] => {
+    const t = i18n(lang)
+    const paths = routingPath(lang)
+
+    return [
+        {
+            path: paths.intro,
+            image: INTRO,
+            title: t.home.card.card1.title,
+            description: t.home.card.card1.description
+        },
+        {
+            path: paths.skills,
+            image: SKILL,
+            title: t.home.card.card2.title,
+            description: t.home.card.card2.description
+        },
+        {
+            path: paths.activity,
+            image: PRODUCTION,
+            title: t.home.card.card3.title,
+            description: t.home.card.card3.description
+        }
+    ]
+}

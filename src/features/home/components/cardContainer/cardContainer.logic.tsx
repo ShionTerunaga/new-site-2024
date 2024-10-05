@@ -7,6 +7,7 @@ import { cardType } from "@/components/ui/card"
 interface props {
     index: number
     item: cardType
+    lang: string
 }
 
 const CardContainer = (props: props) => {

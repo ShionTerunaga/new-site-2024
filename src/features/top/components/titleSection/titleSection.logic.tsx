@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import TitleSectionView from "./titleSection.view"
-import { routingPaths } from "@/shared/static/routingPaths"
+import { routingPath } from "@/shared/static/routingPaths"
 import { topAnimation } from "@/shared/static/topAnimation"
 
 const TitleSection = () => {
@@ -23,7 +23,7 @@ const TitleSection = () => {
         if (counter === topAnimation.length) {
             setTimeout(() => {
                 setFlag(false)
-                router.push(routingPaths.home)
+                router.push(routingPath("en").home)
             }, 500)
         }
     }, [counter, router])

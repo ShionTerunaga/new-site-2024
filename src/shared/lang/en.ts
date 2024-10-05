@@ -24,7 +24,7 @@ export const en = {
             },
             card3: {
                 title: "activity",
-                description: "This section describes our usual activities."
+                description: "This section describes my usual activities."
             }
         }
     },
@@ -158,7 +158,7 @@ export const en = {
                 path: "https://bun.sh/",
                 title: "bun.js",
                 description:
-                    "I made some adjustments. It's a promising technology. The hot reload is faster than Nodemon's hot reload."
+                    "It's a promising technology. The hot reload is faster than Nodemon's hot reload."
             }
         },
         nativeSkill: {

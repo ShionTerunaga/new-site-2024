@@ -14,9 +14,13 @@ interface props {
     handleClick: () => void
     /** 現在のパス */
     path: string
+
+    lang: string
 }
 
 const MenuListView = (props: props) => {
+    const paths = staticMenu(props.lang)
+
     return (
         <>
             <button
@@ -39,7 +43,7 @@ const MenuListView = (props: props) => {
                         <motion.div className={styles.menuBox}>
                             <ul className={styles.ul}>
                                 <div>
-                                    {staticMenu.map((item, index) => (
+                                    {paths.map((item, index) => (
                                         <Fragment key={index}>
                                             {item.path !== props.path && (
                                                 <li className={styles.li}>

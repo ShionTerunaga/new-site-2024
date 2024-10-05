@@ -22,7 +22,7 @@ export const Header = (props: props) => {
         <header className={styles.header}>
             <Back {...props} />
             <div className={styles.menuBox}>
-                <MenuList />
+                <MenuList {...props} />
             </div>
         </header>
     )

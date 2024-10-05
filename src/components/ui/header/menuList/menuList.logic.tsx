@@ -4,7 +4,11 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import MenuView from "./menuList.view"
 
-const MenuList = () => {
+interface props {
+    lang: string
+}
+
+const MenuList = (props: props) => {
     const path = usePathname()
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -18,6 +22,7 @@ const MenuList = () => {
             setIsOpen={setIsOpen}
             handleClick={handleClick}
             path={path}
+            {...props}
         />
     )
 }

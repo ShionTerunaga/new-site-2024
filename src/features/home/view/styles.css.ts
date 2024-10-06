@@ -5,10 +5,15 @@ const styles = {
         width: "100vw",
         minHeight: "100dvh",
         padding: "max(5vw, 50px) 5vw",
-        display: 'grid',
-        placeItems: 'center',
-        placeContent: 'center',
-        gap: '1em'
+        display: "grid",
+        placeItems: "center",
+        placeContent: "center",
+        gap: "1em",
+        "@media": {
+            "(width < 768px)": {
+                paddingTop: 110
+            }
+        }
     }),
     iconBox: style({
         width: 100,

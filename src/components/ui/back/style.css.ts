@@ -3,15 +3,15 @@ import { style } from "@vanilla-extract/css"
 const styles = {
     link: style({
         textDecoration: "none",
-        marginLeft: 10
+        marginLeft: 2
     }),
     icon: style({
-        width: 40,
-        height: 40,
+        // width: 40,
+        // height: 40,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        fontSize: 40
+        fontSize: 32
     }),
     linkContent: style({
         width: 40,

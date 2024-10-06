@@ -7,10 +7,11 @@ const styles = {
         padding: "max(5vw, 50px) 5vw",
         display: "grid",
         alignItems: "center",
-        alignContent: "center",
+        alignContent: "center"
     }),
     title: style({
-        textAlign: "center"
+        textAlign: "center",
+        paddingTop: 20
     }),
     clickList: style({
         textAlign: "center",

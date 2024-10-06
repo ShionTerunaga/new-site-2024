@@ -1,9 +1,9 @@
 "use client"
-import { useState } from "react"
-import styles, { dropLi } from "./styles.css"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { useParams, usePathname } from "next/navigation"
+import { useState } from "react"
 import type { headerProps } from "../header.type"
+import styles, { dropLi } from "./styles.css"
 import { lang } from "@/shared/static/lang"
 
 interface props extends headerProps {}
@@ -11,20 +11,20 @@ interface props extends headerProps {}
 const LangSelect = (props: props) => {
     const [isDrop, setIsDrop] = useState(false)
     const toggleDrop = () => setIsDrop((prev) => !prev)
+    const pathArr = usePathname().split("/")
+    const params = useParams().id || ""
 
     const getLinkPath = (path: string) => {
-        const pathArr = usePathname().split("/")
-        pathArr.splice(0, 2)
-        return `/${path}/${pathArr.join("/")}`
+        return `/${path}/${pathArr[2]}/${params}`
     }
 
     return (
-        <div className={styles.selectLang} onClick={toggleDrop}>
-            <div className={styles.box}>
+        <div className={styles.selectLang}>
+            <button type="button" className={styles.box} onClick={toggleDrop}>
                 <span className={styles.label}>lang:</span>
                 <span className={styles.lang}>{props.lang}</span>
                 <span className={styles.arrow}></span>
-            </div>
+            </button>
             <ul
                 className={`${styles.dropBox} ${isDrop ? styles.show : styles.hidden}`}
             >

@@ -1,7 +1,9 @@
+import { MDXRemote } from "next-mdx-remote/rsc"
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
 import { getContents } from "@/services/lib"
-import { i18n } from "@/shared/static/lang"
+import { markdownComponent } from "@/services/markdown"
+import { en } from "@/shared/lang/en"
 import { routingPath } from "@/shared/static/routingPaths"
 
 interface props {
@@ -10,13 +12,13 @@ interface props {
 }
 
 export const Active = async (props: props) => {
-    const t = i18n(props.lang)
+    //const t = i18n(props.lang)
     const markdown = getContents(props.id, props.lang)
 
     return (
         <>
             <Header
-                title={t.active.title}
+                title={en.active.title}
                 path={routingPath(props.lang).activity}
                 {...props}
             />
@@ -26,11 +28,11 @@ export const Active = async (props: props) => {
                         {markdown.overview.title}
                     </h1>
                     <section className={styles.contents}>
-                        {/*<MDXRemote
+                        <MDXRemote
                             source={markdown.source}
                             options={markdown.options}
                             components={markdownComponent}
-                        />*/}
+                        />
                     </section>
                 </section>
             </main>

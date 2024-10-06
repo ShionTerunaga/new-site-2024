@@ -69,14 +69,12 @@ const styles = {
     button: style({
         backgroundColor: "transparent",
         border: "none",
-        height: 40,
-        width: 40,
-        fontSize: 45,
-        position: "fixed",
-        top: 5,
-        right: 15,
-        zIndex: 2,
-        cursor: "pointer"
+        display: "grid",
+        placeItems: 'center',
+        fontSize: 32,
+        cursor: "pointer",
+        position: 'relative',
+        zIndex: 101,
     })
 }
 

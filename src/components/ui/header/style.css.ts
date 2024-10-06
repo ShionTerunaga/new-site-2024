@@ -1,23 +1,29 @@
 import { style } from "@vanilla-extract/css"
 
+export const dropLi = style({})
+
 const styles = {
     header: style({
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        height: 50,
+        paddingInline: "5vw",
+        height: 66,
         position: "fixed",
-        zIndex: 2,
-        width: "100vw",
-        top: 0,
-        backgroundColor: "black"
+        inset: "0 0 auto",
+        zIndex: 100,
+        backgroundColor: "rgb(0 0 0/0.7)",
+        backdropFilter: "blur(10px)",
+        WebkitBackdropFilter: "blur(10px)"
     }),
     heading1: style({
         color: "white"
     }),
-    menuBox: style({
-        width: 30
-    })
+    right: style({
+        display: "flex",
+        alignItems: "center",
+        gap: "5vw"
+    }),
 }
 
 export default styles

@@ -8,8 +8,8 @@ import { staticCard } from "../static/card"
 import styles from "./styles.css"
 import GITHUB from "@/assets/home/github-mark-white.svg"
 import X from "@/assets/home/logo-white.png"
-import { i18n } from "@/shared/static/lang"
 import { Header } from "@/components/ui/header"
+import { i18n } from "@/shared/static/lang"
 
 interface props {
     lang: string

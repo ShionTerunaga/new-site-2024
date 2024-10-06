@@ -4,7 +4,7 @@ export const dropLi = style({})
 const styles = {
     selectLang: style({
         position: "relative",
-        cursor: "pointer"
+        border: "none"
     }),
     box: style({
         backgroundColor: "transparent",

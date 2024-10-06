@@ -1,13 +1,13 @@
 import { Back } from "../back"
-import MenuList from "./menuList/menuList.logic"
-import styles from "./style.css"
 import type { headerProps } from "./header.type"
 import LangSelect from "./langSelect/langSelect.view"
+import MenuList from "./menuList/menuList.logic"
+import styles from "./style.css"
 
 interface props extends headerProps {}
 
 export const Header = (props: props) => {
-    const {isHome, ...rest} = props
+    const { isHome, ...rest } = props
 
     return isHome ? (
         <header className={`${styles.header} ${styles.isHome}`}>

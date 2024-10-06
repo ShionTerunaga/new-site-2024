@@ -1,4 +1,5 @@
 import fs from "fs"
+import path from "path"
 import rehypeHighlight from "rehype-highlight"
 import remarkGfm from "remark-gfm"
 import { contentsPath } from "./getContents.data"
@@ -10,15 +11,25 @@ export const getContents = (id: string, lang: string) => {
     const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`)
 
     const subResponse: contents[] = pullFolders.map((item) => {
-        const path = `${contentsPath}/${lang}/${item}`
+        const sourceFile = path.join(
+            process.cwd(),
+            "src",
+            "contents",
+            lang,
+            item,
+            `${item}.mdx`
+        )
+        const overviewFile = path.join(
+            process.cwd(),
+            "src",
+            "contents",
+            lang,
+            item,
+            `${item}Overview.json`
+        )
 
-        const sourceFile = `${item}.mdx`
-        const overviewFile = `${item}Overview.json`
-
-        const source = fs.readFileSync(`${path}/${sourceFile}`).toString()
-        const overviewStr = fs
-            .readFileSync(`${path}/${overviewFile}`)
-            .toString()
+        const source = fs.readFileSync(sourceFile, "utf8").toString()
+        const overviewStr = fs.readFileSync(overviewFile, "utf8").toString()
         const overviewParse = JSON.parse(overviewStr) as overviewContents
 
         return {

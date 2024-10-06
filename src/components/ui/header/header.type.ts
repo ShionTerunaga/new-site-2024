@@ -2,7 +2,7 @@ export interface headerProps {
     /**
      * ページのタイトル
      */
-    title: string
+    title?: string
     /**
      * 戻る時のpath
      */
@@ -11,4 +11,8 @@ export interface headerProps {
      * 言語
      */
     lang: string
+    /**
+     * home画面か
+     */
+    isHome?: boolean
 }

@@ -19,37 +19,40 @@ export const Home = (props: props) => {
     const cards = staticCard(props.lang)
 
     return (
-        <main className={styles.container}>
-            <section className={styles.iconBox}>
-                <Icon />
-            </section>
-            <section className={styles.greetingBox}>
-                <h1 className={styles.name}>{t.home.name}</h1>
-                <div className={styles.descriptionBox}>
-                    <p>{t.home.description}</p>
-                </div>
-                <div className={styles.icons}>
-                    <Link href="https://x.com/TERUSI1201" target="_blank">
-                        <Image src={X} width={20} height={20} alt="" />
-                    </Link>
-                    <Link
-                        href="https://github.com/ShionTerunaga"
-                        target="_blank"
-                    >
-                        <Image src={GITHUB} width={22} height={22} alt="" />
-                    </Link>
-                </div>
-            </section>
-            <section className={styles.cardContainer}>
-                {cards.map((item, index) => (
-                    <CardContainer
-                        lang={props.lang}
-                        index={index}
-                        item={item}
-                        key={index}
-                    />
-                ))}
-            </section>
-        </main>
+        <>
+            <Headers></Headers>
+            <main className={styles.container}>
+                <section className={styles.iconBox}>
+                    <Icon />
+                </section>
+                <section className={styles.greetingBox}>
+                    <h1 className={styles.name}>{t.home.name}</h1>
+                    <div className={styles.descriptionBox}>
+                        <p>{t.home.description}</p>
+                    </div>
+                    <div className={styles.icons}>
+                        <Link href="https://x.com/TERUSI1201" target="_blank">
+                            <Image src={X} width={20} height={20} alt="" />
+                        </Link>
+                        <Link
+                            href="https://github.com/ShionTerunaga"
+                            target="_blank"
+                        >
+                            <Image src={GITHUB} width={22} height={22} alt="" />
+                        </Link>
+                    </div>
+                </section>
+                <section className={styles.cardContainer}>
+                    {cards.map((item, index) => (
+                        <CardContainer
+                            lang={props.lang}
+                            index={index}
+                            item={item}
+                            key={index}
+                        />
+                    ))}
+                </section>
+            </main>
+        </>
     )
 }

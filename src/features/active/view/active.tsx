@@ -1,5 +1,6 @@
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
+import { getContents } from "@/services/lib"
 import { en } from "@/shared/lang/en"
 import { routingPath } from "@/shared/static/routingPaths"
 
@@ -10,7 +11,9 @@ interface props {
 
 export const Active = async (props: props) => {
     //const t = i18n(props.lang)
-    //const markdown = getContents(props.id, props.lang)
+    const markdown = getContents(props.id, props.lang)
+
+    console.log(markdown)
 
     return (
         <>

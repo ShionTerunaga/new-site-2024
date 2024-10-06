@@ -15,6 +15,15 @@ const styles = {
         fontSize: 22,
         marginBottom: 10,
         overflow: "auto"
+    }),
+    imageContents: style({
+        pointerEvents: "none",
+        WebkitTouchCallout: "none",
+        WebkitUserSelect: "none",
+        MozUserSelect: "none",
+        userSelect: "none",
+        width: "100%",
+        objectFit: "contain"
     })
 }
 

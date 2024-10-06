@@ -16,6 +16,9 @@ const styles = {
         backdropFilter: "blur(10px)",
         WebkitBackdropFilter: "blur(10px)"
     }),
+    isHome: style({
+        justifyContent: "end",
+    }),
     heading1: style({
         color: "white"
     }),
@@ -23,7 +26,7 @@ const styles = {
         display: "flex",
         alignItems: "center",
         gap: "5vw"
-    }),
+    })
 }
 
 export default styles

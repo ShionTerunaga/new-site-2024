@@ -13,9 +13,9 @@ const LangSelect = (props: props) => {
     const toggleDrop = () => setIsDrop((prev) => !prev)
 
     const getLinkPath = (path: string) => {
-        const _pathArr = usePathname().split("/")
-        _pathArr.splice(0, 2)
-        return `/${path}/${_pathArr.join("/")}`
+        const pathArr = usePathname().split("/")
+        pathArr.splice(0, 2)
+        return `/${path}/${pathArr.join("/")}`
     }
 
     return (
@@ -28,10 +28,13 @@ const LangSelect = (props: props) => {
             <ul
                 className={`${styles.dropBox} ${isDrop ? styles.show : styles.hidden}`}
             >
-                {lang.map((l, i) => (
-                    <li className={dropLi} key={i}>
-                        <Link href={getLinkPath(l)} className={styles.langLink}>
-                            {l}
+                {lang.map((ln, index) => (
+                    <li className={dropLi} key={index}>
+                        <Link
+                            href={getLinkPath(ln)}
+                            className={styles.langLink}
+                        >
+                            {ln}
                         </Link>
                     </li>
                 ))}

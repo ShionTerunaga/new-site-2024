@@ -9,6 +9,7 @@ import styles from "./styles.css"
 import GITHUB from "@/assets/home/github-mark-white.svg"
 import X from "@/assets/home/logo-white.png"
 import { i18n } from "@/shared/static/lang"
+import { Header } from "@/components/ui/header"
 
 interface props {
     lang: string
@@ -20,7 +21,7 @@ export const Home = (props: props) => {
 
     return (
         <>
-            <Headers></Headers>
+            <Header isHome {...props} />
             <main className={styles.container}>
                 <section className={styles.iconBox}>
                     <Icon />

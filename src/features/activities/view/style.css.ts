@@ -3,9 +3,11 @@ import { style } from "@vanilla-extract/css"
 const styles = {
     container: style({
         width: "100vw",
-        height: "100vh",
-        paddingTop: 50,
-        overflow: "auto"
+        minHeight: "100dvh",
+        padding: "max(5vw, 50px) 5vw",
+        display: "grid",
+        alignItems: "center",
+        alignContent: "center",
     }),
     title: style({
         textAlign: "center"

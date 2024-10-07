@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
 import CardContainer from "../components/cardContainer/cardContainer.logic"
 import Icon from "../components/icon/icon"
 import { staticCard } from "../static/card"
@@ -32,15 +31,20 @@ export const Home = (props: props) => {
                         <p>{t.home.description}</p>
                     </div>
                     <div className={styles.icons}>
-                        <Link href="https://x.com/TERUSI1201" target="_blank">
+                        <a
+                            href="https://x.com/TERUSI1201"
+                            target="_blank"
+                            aria-label="This is X of TERUSI"
+                        >
                             <Image src={X} width={20} height={20} alt="" />
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                             href="https://github.com/ShionTerunaga"
                             target="_blank"
+                            aria-label="This is GitHub of TERUSI"
                         >
                             <Image src={GITHUB} width={22} height={22} alt="" />
-                        </Link>
+                        </a>
                     </div>
                 </section>
                 <section className={styles.cardContainer}>

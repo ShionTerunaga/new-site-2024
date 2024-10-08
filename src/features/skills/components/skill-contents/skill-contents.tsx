@@ -28,6 +28,7 @@ const SkillContents = (props: props) => {
                     width={200}
                     height={125}
                     alt=""
+                    className={styles.imageContents}
                 />
             </div>
             <div className={styles.description}>

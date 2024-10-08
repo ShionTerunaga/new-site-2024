@@ -2,24 +2,12 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
-        width: "100vw",
-        height: "100vh",
-        color: "white",
-        textAlign: "center",
-        overflow: "auto",
-        msOverflowStyle: "none",
-        scrollbarWidth: "none",
-        "::-webkit-scrollbar": {
-            display: "none"
-        }
+        paddingBlock: '60px max(5vw, 50px)',
     }),
     title: style({
-        marginTop: 100,
-        fontSize: 32
-    }),
-    title2: style({
         marginTop: 40,
-        fontSize: 32
+        fontSize: 32,
+        textAlign: 'center'
     }),
     contents1: style({
         margin: 0
@@ -29,16 +17,14 @@ const styles = {
         display: "flex"
     }),
     box: style({
-        width: "50%",
+        width: "min(90%, 900px)",
         margin: "20px auto",
         display: "flex",
-        justifyContent: "space-around",
+        gap: 'max(1em, 8px)',
         "@media": {
-            "screen and (max-width:470px)": {
-                width: 170,
-                display: "block",
-                gap: 0,
-                textAlign: "center"
+            "screen and (max-width:850px)": {
+                width: 'min(90%, 360px)',
+                flexDirection: "column",
             }
         }
     })

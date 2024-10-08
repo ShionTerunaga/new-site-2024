@@ -15,10 +15,10 @@ export const SkillsPage = (props: props) => {
     return (
         <>
             <Header title="" {...props} />
-            <div className={styles.container}>
+            <main className={styles.container}>
                 <CardView pageTitle={t.skills.title} contents={skills} />
                 <div className={styles.space} />
-            </div>
+            </main>
         </>
     )
 }

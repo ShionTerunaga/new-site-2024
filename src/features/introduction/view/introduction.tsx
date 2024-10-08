@@ -16,26 +16,28 @@ export const Introduction = (props: props) => {
     const introModal = introData(props.lang)
 
     return (
-        <main className={styles.container}>
+        <>
             <Header title={t.intro.title} {...props} />
-            <h1 className={styles.title}>
-                {t.intro.introduction.sectionTitle}
-            </h1>
-            <IntroContents lang={props.lang} />
-            <h1 className={styles.title2}>{t.intro.carrier.title}</h1>
-            <CarrierCard lang={props.lang} />
-            <h1>{t.intro.introData.title}</h1>
-            <div className={styles.box}>
-                {introModal.map((item, index) => (
-                    <IntroModal key={index} title={item.title}>
-                        <IntroPopup
-                            answer={item.headerContents}
-                            description={item.bodyContents}
-                            {...item}
-                        />
-                    </IntroModal>
-                ))}
-            </div>
-        </main>
+            <main className={styles.container}>
+                <h1 className={styles.title}>
+                    {t.intro.introduction.sectionTitle}
+                </h1>
+                <IntroContents lang={props.lang} />
+                <h1 className={styles.title}>{t.intro.carrier.title}</h1>
+                <CarrierCard lang={props.lang} />
+                <h1 className={styles.title}>{t.intro.introData.title}</h1>
+                <div className={styles.box}>
+                    {introModal.map((item, index) => (
+                        <IntroModal key={index} title={item.title}>
+                            <IntroPopup
+                                answer={item.headerContents}
+                                description={item.bodyContents}
+                                {...item}
+                            />
+                        </IntroModal>
+                    ))}
+                </div>
+            </main>
+        </>
     )
 }

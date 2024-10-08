@@ -2,57 +2,52 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     section: style({
-        marginTop: 20
+        margin: "20px auto 0",
+        width: "min(90%, 900px)"
     }),
     intro: style({
-        width: "75%",
+        width: "100%",
         borderRadius: 8,
-        margin: "auto",
-        boxShadow: "0 0 10px rgba(255,255,255,0.8)",
-        backgroundColor: "white",
-        padding: 25,
-        color: "black",
+        backgroundColor: "#333",
+        paddingBlock: 25,
+        display: "flex",
         "@media": {
-            "screen and (max-width:430px)": {
-                paddingLeft: 0,
-                paddingRight: 0
-            },
-            "screen and (min-width:849px)": {
-                width: "50%",
-                height: 250,
-                display: "flex"
+            "(width < 850px)": {
+                flexDirection: "column",
+                alignItems: "center",
+                paddingInline: "max(3vw, 14px)"
             }
         }
     }),
     titleBox: style({
-        fontSize: 18,
-        paddingBottom: 15,
-        borderBottom: "2px solid silver",
+        display: "grid",
+        paddingInline: 20,
+        width: "max(24%, 180px)",
+        placeItems: "center",
+        borderRight: "1px solid #555",
         "@media": {
-            "screen and (min-width:849px)": {
-                display: "flex",
-                paddingRight: 20,
-                justifyContent: "center",
-                alignItems: "center",
-                borderRight: "4px solid black",
-                height: 210,
-                borderBottom: "none"
+            "(width < 850px)": {
+                width: "fit-content",
+                paddingBottom: ".6em",
+                borderRight: "none",
+                borderBottom: "1px solid #555"
             }
         }
     }),
+    title: style({
+        fontSize: 18
+    }),
     introductionContents: style({
-        textAlign: "center",
+        flex: "1",
+        padding: "2em 20px",
         fontSize: 18,
-        padding: 4,
-        marginTop: 10,
+        display: "flex",
+        textAlign: "left",
+        lineHeight: 1.6,
         "@media": {
-            "screen and (min-width:855px)": {
-                fontSize: 20,
-                textAlign: "left",
-                display: "flex",
-                alignItems: "center",
-                paddingLeft: 7,
-                marginTop: 0
+            "(width < 850px)": {
+                fontSize: 16,
+                padding: "20px 0 0"
             }
         }
     })

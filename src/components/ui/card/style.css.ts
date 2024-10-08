@@ -7,8 +7,7 @@ const styles = {
         color: "#fff",
         padding: "1em",
         height: '100%',
-        transition: "0.4s",
-
+        transition: "box-shadow 0.4s",
         ":hover": {
             boxShadow: "0 0 15px 4px skyBlue",
         }

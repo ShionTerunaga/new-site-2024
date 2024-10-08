@@ -12,7 +12,7 @@ const IntroContents = (props: props) => {
         <section className={styles.section}>
             <div className={styles.intro}>
                 <div className={styles.titleBox}>
-                    <h2>{t.intro.introduction.title}</h2>
+                    <h2 className={styles.title}>{t.intro.introduction.title}</h2>
                 </div>
                 <div className={styles.introductionContents}>
                     {t.intro.introduction.contents}

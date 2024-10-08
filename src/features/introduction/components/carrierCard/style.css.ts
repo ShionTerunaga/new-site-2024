@@ -2,63 +2,53 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     intro: style({
-        width: "75%",
+        margin: "30px auto 0",
+        width: "min(90%, 900px)",
         borderRadius: 8,
-        margin: "30px auto",
-        boxShadow: "0 0 10px rgba(255,255,255,0.8)",
-        backgroundColor: "white",
-        padding: 25,
-        color: "black",
-        "@media": {
-            "screen and (max-width:430px)": {
-                paddingLeft: 0,
-                paddingRight: 0
-            },
-            "screen and (min-width:849px)": {
-                width: "50%"
-            }
-        }
+        backgroundColor: "#333",
+        paddingBlock: 25
     }),
     box: style({
-        display: "block",
-        marginBottom: 40,
+        display: "flex",
+        selectors: {
+            "&~&": {
+                marginTop: 25
+            }
+        },
         "@media": {
-            "screen and (min-width:849px)": {
-                display: "flex"
+            "(width < 850px)": {
+                flexDirection: "column",
+                alignItems: "center",
             }
         }
     }),
     titleBox: style({
+        width: "max(24%, 180px)",
         fontSize: 18,
-        paddingBottom: 15,
-        textAlign: "center",
-        borderBottom: "2px solid silver",
+        display: "grid",
+        paddingInline: 20,
+        placeItems: "center",
+        borderRight: "1px solid #555",
         "@media": {
-            "screen and (min-width:849px)": {
-                display: "flex",
-                paddingRight: 20,
-                justifyContent: "center",
-                alignItems: "center",
-                minWidth: 180,
-                borderBottom: "none"
+            "(width < 850px)": {
+                width: "fit-content",
+                paddingBottom: ".6em",
+                borderRight: "none",
+                borderBottom: "1px solid #555"
             }
         }
     }),
     introductionContents: style({
-        textAlign: "center",
+        flex: "1",
+        padding: "2em 20px",
         fontSize: 18,
-        padding: 4,
-        marginTop: 10,
+        textAlign: "left",
+        lineHeight: 1.7,
         "@media": {
-            "screen and (min-width:849px)": {
-                fontSize: 20,
-                textAlign: "left",
-                display: "flex",
-                alignItems: "center",
-                borderLeft: "4px solid black",
-                paddingLeft: 7,
-                minHeight: 210,
-                marginTop: 0
+            "(width < 850px)": {
+                fontSize: 16,
+                width: "fit-content",
+                padding: "20px max(3vw, 14px) 2em"
             }
         }
     })

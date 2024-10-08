@@ -11,7 +11,6 @@ const IntroPopup = (props: props) => {
     return (
         <>
             <h2 className={styles.heading2}>{props.answer}</h2>
-            <div>
                 <div className={styles.description}>
                     <p className={styles.contents}>{props.description}</p>
                     {props.image && (
@@ -20,10 +19,10 @@ const IntroPopup = (props: props) => {
                             alt=""
                             width={200}
                             height={200}
+                            className={styles.img}
                         />
                     )}
                 </div>
-            </div>
         </>
     )
 }

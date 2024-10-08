@@ -2,18 +2,17 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     button: style({
-        width: 170,
-        height: 60,
-        border: "1px solid white",
-        borderRadius: 4,
-        backgroundColor: "white",
-        color: "black",
-        marginBottom: 5,
+        paddingBlock: '1em',
+        textAlign: 'center',
+        flex: "1",
+        borderRadius: 5,
+        border: "none",
+        backgroundColor: "#333",
+        transition: "box-shadow 0.4s",
         ":hover": {
-            boxShadow: "0 0 20px yellow",
-            transition: "0.6s"
+            boxShadow: "0 0 15px 4px skyBlue"
         },
-        fontSize: 24
+        fontSize: 20
     })
 }
 

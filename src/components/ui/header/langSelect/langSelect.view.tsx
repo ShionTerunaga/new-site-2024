@@ -14,9 +14,7 @@ const LangSelect = (props: props) => {
     const pathArr = usePathname().split("/")
     const params = useParams().id || ""
 
-    const getLinkPath = (path: string) => {
-        return `/${path}/${pathArr[2]}/${params}`
-    }
+    const getLinkPath = (path: string) => `/${path}/${pathArr[2]}/${params}`
 
     return (
         <div className={styles.selectLang}>

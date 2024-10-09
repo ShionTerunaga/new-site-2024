@@ -17,8 +17,6 @@ const LangSelect = (props: props) => {
     const toggleDrop = () => setIsDrop((prev) => !prev)
 
     const clickLink = (lang: string) => {
-        console.log(pathArr)
-
         setIsDrop(false)
 
         if (pathArr[1] !== lang) router.push(`/${lang}/${pathArr[2]}/${params}`)

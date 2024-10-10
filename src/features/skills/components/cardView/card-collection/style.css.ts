@@ -3,12 +3,6 @@ import { style } from "@vanilla-extract/css"
 const styles = {
     container: style({
         marginTop: "max(5vw, 50px)"
-        // "@media": {
-        //     "screen and (max-width:630px)": {
-        //         width: 'min(100%, 400px)',
-        //         display: "block",
-        //     }
-        // }
     }),
     heading1: style({
         textAlign: "center",

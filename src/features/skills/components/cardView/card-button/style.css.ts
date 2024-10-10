@@ -7,8 +7,6 @@ const styles = {
         border: "none",
         backgroundColor: "transparent",
         cursor: "pointer",
-        transformStyle: "preserve-3d",
-        perspective: "100vmax"
     })
 }
 

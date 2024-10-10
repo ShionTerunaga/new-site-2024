@@ -30,7 +30,7 @@ export const Card = (props: props) => {
                 }
             >
                 <h2
-                    className={styles.h2}
+                    className={`${styles.h2} ${props.isSkills ? styles.isSkillsH2 : null}`}
                 >
                     {props.title}
                 </h2>

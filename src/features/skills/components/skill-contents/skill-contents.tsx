@@ -10,6 +10,7 @@ interface props {
     contents: string
     /** image of popup */
     image: StaticImageData | string
+    imageB?: StaticImageData | string
     /** official URL  */
     url: string
 }
@@ -22,7 +23,7 @@ const SkillContents = (props: props) => {
                 <Image
                     src={
                         props.image
-                            ? props.image
+                            ? props.imageB ?? props.image
                             : "https://placehold.jp/200x125.png"
                     }
                     width={200}

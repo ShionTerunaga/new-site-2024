@@ -40,9 +40,9 @@ const styles = {
         listStyle: "none",
         position: "absolute",
         inset: "auto 0 -4.1em",
-        width: 100,
         marginInline: "auto",
         borderRadius: 4,
+        width: 100,
         overflow: "hidden",
         transitionProperty: "opacity, translate",
         transitionDuration: ".6s"
@@ -60,10 +60,13 @@ const styles = {
     langLink: style({
         color: "#fff",
         textDecoration: "none",
+        width: "100%",
         display: "block",
         padding: ".4em .8em",
         backgroundColor: "#333",
         textAlign: "left",
+        border: "none",
+        margin: "auto",
         transition: "background-color .4s",
         ":hover": {
             backgroundColor: "#666"

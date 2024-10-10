@@ -1,6 +1,6 @@
 import { Back } from "../back"
 import type { headerProps } from "./header.type"
-import LangSelect from "./langSelect/langSelect.view"
+import LangSelect from "./langSelect/langSelect"
 import MenuList from "./menuList/menuList.logic"
 import styles from "./style.css"
 

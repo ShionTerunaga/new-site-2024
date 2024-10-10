@@ -1,6 +1,6 @@
 "use client"
-import Link from "next/link"
-import { useParams, usePathname } from "next/navigation"
+
+import { useParams, usePathname, useRouter } from "next/navigation"
 import { useState } from "react"
 import type { headerProps } from "../header.type"
 import styles, { dropLi } from "./styles.css"
@@ -10,11 +10,17 @@ interface props extends headerProps {}
 
 const LangSelect = (props: props) => {
     const [isDrop, setIsDrop] = useState(false)
-    const toggleDrop = () => setIsDrop((prev) => !prev)
     const pathArr = usePathname().split("/")
     const params = useParams().id || ""
+    const router = useRouter()
 
-    const getLinkPath = (path: string) => `/${path}/${pathArr[2]}/${params}`
+    const toggleDrop = () => setIsDrop((prev) => !prev)
+
+    const clickLink = (lang: string) => {
+        setIsDrop(false)
+
+        if (pathArr[1] !== lang) router.push(`/${lang}/${pathArr[2]}/${params}`)
+    }
 
     return (
         <div className={styles.selectLang}>
@@ -28,12 +34,12 @@ const LangSelect = (props: props) => {
             >
                 {lang.map((ln, index) => (
                     <li className={dropLi} key={index}>
-                        <Link
-                            href={getLinkPath(ln)}
+                        <button
                             className={styles.langLink}
+                            onClick={() => clickLink(ln)}
                         >
                             {ln}
-                        </Link>
+                        </button>
                     </li>
                 ))}
             </ul>

@@ -17,15 +17,13 @@ const CardCollection = (props: props) => {
             <div className={styles.clickMessage}>{en.skills.clickMessage}</div>
             <div className={styles.mainBox}>
                 {props.contents.map((item, index) => (
-                    <div key={index} className={styles.item}>
-                        <CardButton {...item}>
-                            <SkillContents
-                                contents={item.description}
-                                url={item.path}
-                                {...item}
-                            />
-                        </CardButton>
-                    </div>
+                    <CardButton {...item} key={index}>
+                        <SkillContents
+                            contents={item.description}
+                            url={item.path}
+                            {...item}
+                        />
+                    </CardButton>
                 ))}
             </div>
         </div>

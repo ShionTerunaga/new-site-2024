@@ -1,4 +1,4 @@
-import REACT from "@/assets/skills/react.png"
+import REACT from "@/assets/skills/react-native.svg"
 import { cardType } from "@/components/ui/card"
 
 export const skillNative = (t: any): cardType[] => {

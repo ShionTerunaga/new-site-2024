@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image"
-import styles, { box } from "./style.css"
+import styles from "./style.css"
 
 interface props {
     image?: StaticImageData | string
@@ -10,7 +10,7 @@ interface props {
 
 export const Card = (props: props) => {
     return (
-        <div className={`${box} ${props.isSkills ? styles.isSkills : null}`}>
+        <div className={`${styles.box} ${props.isSkills ? styles.isSkills : null}`}>
             <picture>
                 <Image
                     src={
@@ -21,7 +21,7 @@ export const Card = (props: props) => {
                     width={200}
                     height={125}
                     alt=""
-                    className={`${styles.image} ${props.isSkills ? styles.isSkillsImg : null}`}
+                    className={styles.image}
                 />
             </picture>
             <div
@@ -30,7 +30,7 @@ export const Card = (props: props) => {
                 }
             >
                 <h2
-                    className={`${styles.h2} ${props.isSkills ? styles.isSkillsH2 : null}`}
+                    className={styles.h2}
                 >
                     {props.title}
                 </h2>

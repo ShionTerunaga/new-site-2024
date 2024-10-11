@@ -25,7 +25,7 @@ const CardButton = (props: props) => {
 
     return (
         <button onClick={handleClick} className={styles.container}>
-            <Card description="" isSkills {...props} />
+            <Card {...props} description="" isSkills />
         </button>
     )
 }

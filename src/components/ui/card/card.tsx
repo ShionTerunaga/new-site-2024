@@ -5,11 +5,12 @@ interface props {
     image?: StaticImageData | string
     title: string
     description: string
+    isSkills?: boolean
 }
 
 export const Card = (props: props) => {
     return (
-        <div className={styles.box}>
+        <div className={`${styles.box} ${props.isSkills ? styles.isSkills : null}`}>
             <picture>
                 <Image
                     src={
@@ -25,12 +26,14 @@ export const Card = (props: props) => {
             </picture>
             <div
                 className={
-                    props.description === ""
-                        ? styles.noneContents
-                        : undefined
+                    props.description === "" ? styles.noneContents : undefined
                 }
             >
-                <h2 className={styles.h2}>{props.title}</h2>
+                <h2
+                    className={`${styles.h2} ${props.isSkills ? styles.isSkillsH2 : null}`}
+                >
+                    {props.title}
+                </h2>
                 {props.description !== "" && (
                     <div className={styles.descriptionBox}>
                         <p className={styles.description}>

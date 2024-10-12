@@ -1,6 +1,7 @@
-import GIT from "@/assets/skills/git-github.png"
-import PYTHON from "@/assets/skills/python.png"
-import RASPI from "@/assets/skills/raspi.png"
+import GIT_B from "@/assets/skills/git&github-b.svg"
+import GIT from "@/assets/skills/git&github.svg"
+import PYTHON from "@/assets/skills/python.svg"
+import RASPI from "@/assets/skills/raspberry-pi.svg"
 import { cardType } from "@/components/ui/card"
 
 export const skillOthers = (t: any): cardType[] => {
@@ -15,7 +16,8 @@ export const skillOthers = (t: any): cardType[] => {
         },
         {
             ...t.skills.otherSkill.skill3,
-            image: GIT
+            image: GIT,
+            imageB: GIT_B
         }
     ]
 }

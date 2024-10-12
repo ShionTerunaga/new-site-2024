@@ -2,8 +2,7 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
-        width: 202,
-        height: 252,
+        aspectRatio: "5/7",
         padding: 0,
         border: "none",
         backgroundColor: "transparent",

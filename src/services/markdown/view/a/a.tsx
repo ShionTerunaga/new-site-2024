@@ -1,4 +1,3 @@
-import Link from "next/link"
 import React, { DetailedHTMLProps } from "react"
 import LinkCustom from "./components/link-custom/link-custom"
 
@@ -13,6 +12,7 @@ const A = (
             <span
                 style={{
                     width: "100%",
+                    height: 75,
                     marginTop: 4,
                     border: "1px solid silver",
                     borderRadius: 8
@@ -23,9 +23,9 @@ const A = (
         )
 
     return (
-        <Link href={props.href as string} target="_blank">
+        <a href={props.href as string} target="_blank">
             {props.children}
-        </Link>
+        </a>
     )
 }
 

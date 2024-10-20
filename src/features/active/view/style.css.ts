@@ -11,6 +11,7 @@ const styles = {
         }
     }),
     heading: style({
+        marginTop: 10,
         textAlign: "center",
         fontSize: 32
     }),
@@ -26,10 +27,9 @@ const styles = {
         width: "100%",
         borderRadius: 8,
         margin: "15px auto",
-        boxShadow: "0 0 10px rgba(255,255,255,0.8)",
-        backgroundColor: "white",
+        backgroundColor: "#333",
         padding: 20,
-        color: "black"
+        color: "white"
     }),
     contentsBody: style({
         width: 590,

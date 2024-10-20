@@ -20,7 +20,7 @@ const LinkCustom = async (props: props) => {
         }
 
         return (
-            <Link href={props.url} target="_blank" className={styles.container}>
+            <a href={props.url} target="_blank" className={styles.container}>
                 <span className={styles.contents}>
                     <span className={styles.picture}>
                         {ogp["og:image"] && (
@@ -51,7 +51,7 @@ const LinkCustom = async (props: props) => {
                         </span>
                     </span>
                 </span>
-            </Link>
+            </a>
         )
     } catch {
         return null

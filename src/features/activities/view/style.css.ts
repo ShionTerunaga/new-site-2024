@@ -35,18 +35,16 @@ const styles = {
         alignItems: "center"
     }),
     section: style({
-        width: "75%",
         borderRadius: 8,
         margin: "15px auto",
-        boxShadow: "0 0 10px rgba(255,255,255,0.8)",
-        backgroundColor: "white",
+        backgroundColor: "#333",
         padding: 50,
-        color: "black",
+        color: "#fff",
         overflow: "auto"
     }),
     link: style({
         textDecoration: "none",
-        color: "black",
+        color: "#fff",
         ":hover": {
             opacity: 0.5
         }

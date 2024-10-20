@@ -1,7 +1,7 @@
 import { style } from "@vanilla-extract/css"
 
 const styles = {
-     box: style({
+    box: style({
         backgroundColor: "#333",
         borderRadius: 5,
         color: "#fff",
@@ -15,7 +15,7 @@ const styles = {
     isSkills: style({
         display: "grid",
         placeItems: "center",
-        placeContent: "center",
+        placeContent: "center"
     }),
     image: style({
         pointerEvents: "none",

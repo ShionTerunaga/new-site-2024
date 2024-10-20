@@ -3,10 +3,10 @@ import { style } from "@vanilla-extract/css"
 const styles = {
     container: style({
         margin: "100px auto",
-        width: 800,
+        width: 640,
         "@media": {
-            "screen and (max-width:830px)": {
-                width: "95%"
+            "(width < 830px)": {
+                width: "90%"
             }
         }
     }),
@@ -23,7 +23,7 @@ const styles = {
         }
     }),
     contents: style({
-        width: "80%",
+        width: "100%",
         borderRadius: 8,
         margin: "15px auto",
         boxShadow: "0 0 10px rgba(255,255,255,0.8)",

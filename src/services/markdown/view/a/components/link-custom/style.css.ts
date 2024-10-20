@@ -5,33 +5,48 @@ const styles = {
         textDecoration: "none"
     }),
     contents: style({
-        display: "flex"
+        display: "flex",
+        justifyContent: "space-between"
     }),
     picture: style({
-        width: 150,
-        height: 75,
-        marginRight: 20
+        height: 73,
+        display: "flex",
+        justifyContent: "flex-start",
+        borderStartEndRadius: 7,
+        borderEndEndRadius: 7
     }),
     img: style({
-        borderStartStartRadius: 6,
-        borderEndStartRadius: 6
+        borderStartEndRadius: 7,
+        borderEndEndRadius: 7,
+        pointerEvents: "none",
+        WebkitTouchCallout: "none",
+        WebkitUserSelect: "none",
+        MozUserSelect: "none",
+        userSelect: "none",
+        objectFit: "contain",
+        objectPosition: "right",
+        width: "auto"
     }),
     textContents: style({
         width: "100%",
         overflow: "auto",
         whiteSpace: "nowrap",
-        display: "flex",
-        alignItems: "center"
+        padding: 10,
+        marginRight: 5,
+        "::-webkit-scrollbar": {
+            display: "none"
+        }
     }),
     title: style({
         width: "100%",
-        fontSize: 22,
+        fontSize: 18,
         marginBottom: 20,
-        color: "black"
+        color: "white"
     }),
     description: style({
         color: "silver",
-        marginTop: 5
+        marginTop: 5,
+        fontSize: 10
     })
 }
 

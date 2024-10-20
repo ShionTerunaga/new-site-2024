@@ -2,8 +2,8 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
-        width: "100vw",
-        padding: "max(5vw, 50px) 8vw",
+        margin: "100px auto",
+        width: 640,
         "@media": {
             "(width < 830px)": {
                 width: "90%"

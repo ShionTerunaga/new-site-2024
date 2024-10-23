@@ -1,8 +1,8 @@
-import Image, { StaticImageData } from "next/image"
 import styles from "./style.css"
+import Image from "next/image"
 
 interface props {
-    image?: StaticImageData | string
+    image?: any
     title: string
     description: string
     isSkills?: boolean
@@ -10,7 +10,9 @@ interface props {
 
 export const Card = (props: props) => {
     return (
-        <div className={`${styles.box} ${props.isSkills ? styles.isSkills : null}`}>
+        <div
+            className={`${styles.box} ${props.isSkills ? styles.isSkills : null}`}
+        >
             <picture>
                 <Image
                     src={

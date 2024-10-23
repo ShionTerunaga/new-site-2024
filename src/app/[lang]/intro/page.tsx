@@ -3,7 +3,9 @@ import { getLangList } from "@/utils/getLangList"
 
 export const generateStaticParams = () => getLangList()
 
-const Intro = ({ params: { lang } }: { params: { lang: string } }) => {
+const Intro = async ({ params }: { params: { lang: string } }) => {
+    const { lang } = await params
+
     return <Introduction lang={lang} />
 }
 

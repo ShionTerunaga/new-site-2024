@@ -16,11 +16,13 @@ export const generateStaticParams = () => {
     return lang
 }
 
-const Activity = ({
-    params: { lang, id }
+const Activity = async ({
+    params
 }: {
     params: { lang: string; id: string }
 }) => {
+    const { id, lang } = await params
+
     return <Active id={id} lang={lang} />
 }
 

@@ -3,7 +3,9 @@ import { getLangList } from "@/utils/getLangList"
 
 export const generateStaticParams = () => getLangList()
 
-const HomePage = ({ params: { lang } }: { params: { lang: string } }) => {
+const HomePage = async ({ params }: { params: { lang: string } }) => {
+    const { lang } = await params
+
     return <Home lang={lang} />
 }
 

@@ -1,5 +1,6 @@
 import React, { DetailedHTMLProps } from "react"
 import LinkCustom from "./components/link-custom/link-custom"
+import styles from "./style.css"
 
 const A = (
     props: DetailedHTMLProps<
@@ -9,15 +10,7 @@ const A = (
 ) => {
     if (props.href === props.children)
         return (
-            <span
-                style={{
-                    width: "100%",
-                    height: 75,
-                    marginTop: 4,
-                    border: "1px solid silver",
-                    borderRadius: 8
-                }}
-            >
+            <span className={styles.container}>
                 <LinkCustom url={props.href as string} />
             </span>
         )

@@ -11,13 +11,9 @@ const styles = {
     picture: style({
         height: 73,
         display: "flex",
-        justifyContent: "flex-start",
-        borderStartEndRadius: 7,
-        borderEndEndRadius: 7
+        justifyContent: "flex-start"
     }),
     img: style({
-        borderStartEndRadius: 7,
-        borderEndEndRadius: 7,
         pointerEvents: "none",
         WebkitTouchCallout: "none",
         WebkitUserSelect: "none",

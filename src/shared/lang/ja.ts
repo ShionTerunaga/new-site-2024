@@ -196,5 +196,29 @@ export const ja = {
         title: "アクティビティ",
         clickList: "アイテムリストをクリック"
     },
-    activeDetail: {}
+    activeDetail: {},
+    about: {
+        title: "このサイトについて",
+        tech: {
+            title: "使用技術",
+            tech1: "Next.js",
+            tech2: "vanilla-extract",
+            tech3: "framer-motion",
+            tech4: "next-mdx-remote"
+        },
+        detail: {
+            title: "詳細",
+            point1: "ポップアップについてはグローバルな状態管理で実装しました",
+            point2: "多言語対応をしました",
+            point3: "framer-motionを使ったアニメーションを実装しました",
+            point4: "activeのコンテンツはマークダウンで記述しました"
+        },
+        design: {
+            title: "デザイン、スタイリングについて",
+            contents:
+                "デザインとスタイリングについてはkasumiさんという方に手伝っていただきました。とても良いサイトに仕上げていただきとても感謝しています。ありがとうございます。",
+            github: "kasumiさんのgithub",
+            githubUrl: "https://github.com/kasumi0"
+        }
+    }
 }

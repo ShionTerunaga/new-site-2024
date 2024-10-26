@@ -197,5 +197,29 @@ export const en = {
         title: "Activities",
         clickList: "click a item of list"
     },
-    activeDetail: {}
+    activeDetail: {},
+    about: {
+        title: "About this site",
+        tech: {
+            title: "Technology used",
+            tech1: "Next.js",
+            tech2: "vanilla-extract",
+            tech3: "framer-motion",
+            tech4: "next-mdx-remote"
+        },
+        detail: {
+            title: "Detail",
+            point1: "Popups are implemented with global state management",
+            point2: "Multilingual support is now available.",
+            point3: "Animation using framer-motion is implemented.",
+            point4: "Active content was written in markdown."
+        },
+        design: {
+            title: "About design and styling",
+            contents:
+                "I had a person named Kasumi help me with the design and styling. We are very grateful to her for making the site look so good. Thank you very much.",
+            github: "Kasumi's github",
+            githubUrl: "https://github.com/kasumi0"
+        }
+    }
 }

@@ -16,7 +16,7 @@ const styles = {
         overflow: "hidden",
         "@media": {
             "(max-width:580px)": {
-                width: 120
+                width: 200
             }
         }
     }),

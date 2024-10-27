@@ -9,9 +9,16 @@ const styles = {
         justifyContent: "space-between"
     }),
     picture: style({
-        height: 73,
+        height: 120,
+        width: 380,
         display: "flex",
-        justifyContent: "flex-start"
+        justifyContent: "flex-end",
+        overflow: "hidden",
+        "@media": {
+            "(max-width:580px)": {
+                width: 120
+            }
+        }
     }),
     img: style({
         pointerEvents: "none",
@@ -20,13 +27,10 @@ const styles = {
         MozUserSelect: "none",
         userSelect: "none",
         objectFit: "contain",
-        objectPosition: "right",
-        width: "auto"
+        objectPosition: "right"
     }),
     textContents: style({
         width: "100%",
-        overflow: "auto",
-        whiteSpace: "nowrap",
         padding: 10,
         marginRight: 5,
         "::-webkit-scrollbar": {

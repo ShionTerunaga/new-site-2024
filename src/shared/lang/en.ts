@@ -200,19 +200,23 @@ export const en = {
     activeDetail: {},
     about: {
         title: "About this site",
-        tech: {
-            title: "Technology used",
-            tech1: "Next.js",
-            tech2: "vanilla-extract",
-            tech3: "framer-motion",
-            tech4: "next-mdx-remote"
-        },
-        detail: {
-            title: "Detail",
-            point1: "Popups are implemented with global state management",
-            point2: "Multilingual support is now available.",
-            point3: "Animation using framer-motion is implemented.",
-            point4: "Active content was written in markdown."
+        stack: {
+            tech: {
+                title: "Technology used",
+                tech1: "Next.js",
+                tech2: "vanilla-extract",
+                tech3: "framer-motion",
+                tech4: "next-mdx-remote"
+            },
+            detail: {
+                title: "Particulars, etc.",
+                point1: "It was created with Next.js, which I am familiar with.",
+                point2: "Popups are implemented with global state management. Global management makes it easy to create pop-ups even if they are created on a separate page.",
+                point3: "We have added multilingual support. I heard that there were some methods such as using libraries, but I did not understand them well, so I used a routing system to support them.",
+                point4: "The content of active was written in markdown. At first, I was going to use a CMS, but I heard that many OSS documents are written in mdx, so I decided to use that, which I was interested in.",
+                point5: "I have included techniques that I can implement now in the web front-end area.",
+                source: "https://github.com/ShionTerunaga/new-site-2024"
+            }
         },
         design: {
             title: "About design and styling",

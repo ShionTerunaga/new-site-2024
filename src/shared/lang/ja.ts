@@ -201,17 +201,20 @@ export const ja = {
         title: "このサイトについて",
         tech: {
             title: "使用技術",
+            detail: "このサイトで使用した技術スタックを列挙します",
             tech1: "Next.js",
             tech2: "vanilla-extract",
             tech3: "framer-motion",
             tech4: "next-mdx-remote"
         },
-        detail: {
-            title: "詳細",
-            point1: "ポップアップについてはグローバルな状態管理で実装しました",
-            point2: "多言語対応をしました",
-            point3: "framer-motionを使ったアニメーションを実装しました",
-            point4: "activeのコンテンツはマークダウンで記述しました"
+        appeal: {
+            title: "こだわった部分等",
+            point1: "使い慣れているNext.jsで作成しました。",
+            point2: "ポップアップについてはグローバルな状態管理で実装しました。グローバルで管理することで仮に別ページでポップアップを作成するとしても簡単に作成できるようにしています。",
+            point3: "多言語対応をしました。ライブラリを使うなどの手法があるようですがよくわからなかったのでルーティングシステムを利用して対応しました。",
+            point4: "activeのコンテンツはマークダウンで記述しました。当初はCMSを使おうと思っていましたが、OSSのドキュメントの多くはmdxで書かれていることが多いそうで興味があったそれを採用しました。",
+            point5: "webフロントエンドの領域で今、自分が実装可能な手法をここに盛り込んだつもりです。",
+            source: "https://github.com/ShionTerunaga/new-site-2024"
         },
         design: {
             title: "デザイン、スタイリングについて",

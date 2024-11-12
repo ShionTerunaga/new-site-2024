@@ -2,12 +2,21 @@ import { style } from "@vanilla-extract/css"
 
 const styles = {
     container: style({
-        paddingBlock: '60px max(5vw, 50px)',
+        paddingBlock: "60px max(5vw, 50px)"
     }),
     title: style({
         marginTop: 40,
         fontSize: 32,
-        textAlign: 'center'
+        textAlign: "center"
+    }),
+    subTitle: style({
+        padding: 20,
+        fontSize: 26,
+        textAlign: "center"
+    }),
+    detail: style({
+        padding: 20,
+        textAlign: "center"
     }),
     contents1: style({
         margin: 0
@@ -20,11 +29,11 @@ const styles = {
         width: "min(90%, 900px)",
         margin: "20px auto",
         display: "flex",
-        gap: 'max(1em, 8px)',
+        gap: "max(1em, 8px)",
         "@media": {
             "screen and (max-width:850px)": {
-                width: 'min(90%, 360px)',
-                flexDirection: "column",
+                width: "min(90%, 360px)",
+                flexDirection: "column"
             }
         }
     })

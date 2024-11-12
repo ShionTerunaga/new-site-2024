@@ -199,8 +199,9 @@ export const ja = {
     activeDetail: {},
     about: {
         title: "このサイトについて",
+        detail: "ここでは、このサイトを作成するにあたって工夫した点等を記載しています。",
         tech: {
-            title: "使用技術",
+            title: "1. 使用技術",
             detail: "このサイトで使用した技術スタックを列挙します",
             tech1: "Next.js",
             tech2: "vanilla-extract",
@@ -208,7 +209,7 @@ export const ja = {
             tech4: "next-mdx-remote"
         },
         appeal: {
-            title: "こだわった部分等",
+            title: "2. こだわった部分等",
             point1: "使い慣れているNext.jsで作成しました。",
             point2: "ポップアップについてはグローバルな状態管理で実装しました。グローバルで管理することで仮に別ページでポップアップを作成するとしても簡単に作成できるようにしています。",
             point3: "多言語対応をしました。ライブラリを使うなどの手法があるようですがよくわからなかったのでルーティングシステムを利用して対応しました。",
@@ -217,10 +218,10 @@ export const ja = {
             source: "https://github.com/ShionTerunaga/new-site-2024"
         },
         design: {
-            title: "デザイン、スタイリングについて",
+            title: "3. デザイン、スタイリングについて",
             contents:
-                "デザインとスタイリングについてはkasumiさんという方に手伝っていただきました。とても良いサイトに仕上げていただきとても感謝しています。ありがとうございます。",
-            github: "kasumiさんのgithub",
+                "デザインとスタイリングについてはKasumiさんという方に手伝っていただきました。とても良いサイトに仕上げていただきとても感謝しています。ありがとうございます😍",
+            github: "Kasumiさんのgithub",
             githubUrl: "https://github.com/kasumi0"
         }
     }

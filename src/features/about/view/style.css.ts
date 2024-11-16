@@ -10,13 +10,25 @@ const styles = {
         textAlign: "center"
     }),
     subTitle: style({
-        padding: 20,
+        padding: '20px 5vw',
         fontSize: 26,
-        textAlign: "center"
+        textAlign: "center",
+        selectors: {
+            "& ~ &": {
+                paddingTop: "max(3vw, 40px)"
+            }
+        },
+        "@media": {
+            "(width < 768px)": {
+                textAlign: "left",
+                fontSize: 20
+            }
+        }
     }),
     detail: style({
         padding: 20,
-        textAlign: "center"
+        width: "fit-content",
+        marginInline: "auto"
     }),
     contents1: style({
         margin: 0

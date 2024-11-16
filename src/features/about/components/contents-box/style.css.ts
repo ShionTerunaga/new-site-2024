@@ -6,8 +6,13 @@ const styles = {
         width: "min(90%, 900px)",
         borderRadius: 8,
         backgroundColor: "#333",
-        padding: 20,
-        fontSize: 22
+        fontSize: 22,
+        padding: "1em",
+        "@media": {
+            "(width < 768px)": {
+                fontSize: 16
+            }
+        }
     }),
     linkContainer: style({
         marginTop: 20

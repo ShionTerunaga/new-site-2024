@@ -3,17 +3,26 @@ import { style } from "@vanilla-extract/css"
 const styles = {
     section: style({
         margin: "0 auto 0",
-        width: "min(90%, 900px)"
+        width: "min(90%, 900px)",
+        fontSize: 22,
+        "@media": {
+            "(width < 768px)": {
+                fontSize: 16
+            }
+        }
     }),
     container: style({
         width: "100%",
         borderRadius: 8,
         backgroundColor: "#333",
-        padding: "20px 20px 20px 40px"
+        padding: "1em 1em 1em 2em"
     }),
     list: style({
-        fontSize: 22,
-        paddingTop: 15
+        selectors: {
+            "& ~ &": {
+                paddingTop: 15
+            }
+        }
     }),
     titleBox: style({
         display: "grid",

@@ -10,14 +10,6 @@ const LinkCustom = async (props: props) => {
     try {
         const ogp = await getUrlContents(props.url)
 
-        if (ogp.url) {
-            return (
-                <a href={ogp.url}>
-                    <iframe src={ogp.url} />
-                </a>
-            )
-        }
-
         return (
             <a href={props.url} target="_blank" className={styles.container}>
                 <span className={styles.contents}>

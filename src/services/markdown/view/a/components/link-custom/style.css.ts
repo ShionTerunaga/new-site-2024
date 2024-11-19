@@ -9,28 +9,28 @@ const styles = {
         justifyContent: "space-between"
     }),
     picture: style({
-        height: 73,
+        height: 120,
+        width: 380,
         display: "flex",
-        justifyContent: "flex-start",
-        borderStartEndRadius: 7,
-        borderEndEndRadius: 7
+        justifyContent: "flex-end",
+        overflow: "hidden",
+        "@media": {
+            "(max-width:580px)": {
+                width: 200
+            }
+        }
     }),
     img: style({
-        borderStartEndRadius: 7,
-        borderEndEndRadius: 7,
         pointerEvents: "none",
         WebkitTouchCallout: "none",
         WebkitUserSelect: "none",
         MozUserSelect: "none",
         userSelect: "none",
         objectFit: "contain",
-        objectPosition: "right",
-        width: "auto"
+        objectPosition: "right"
     }),
     textContents: style({
         width: "100%",
-        overflow: "auto",
-        whiteSpace: "nowrap",
         padding: 10,
         marginRight: 5,
         "::-webkit-scrollbar": {

@@ -16,11 +16,12 @@ export const generateStaticParams = () => {
     return lang
 }
 
-const Activity = async ({
-    params
-}: {
-    params: { lang: string; id: string }
-}) => {
+type props = Promise<{
+    lang: string
+    id: string
+}>
+
+const Activity = async ({ params }: { params: props }) => {
     const { id, lang } = await params
 
     return <Active id={id} lang={lang} />

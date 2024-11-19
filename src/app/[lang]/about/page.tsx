@@ -3,7 +3,13 @@ import { getLangList } from "@/utils/getLangList"
 
 export const generateStaticParams = () => getLangList()
 
-const About = ({ params: { lang } }: { params: { lang: string } }) => {
+type props = Promise<{
+    lang: string
+}>
+
+const About = async ({ params }: { params: props }) => {
+    const { lang } = await params
+
     return <AboutComponent lang={lang} />
 }
 

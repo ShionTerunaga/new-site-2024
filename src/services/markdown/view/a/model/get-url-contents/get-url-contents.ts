@@ -2,6 +2,14 @@ import { JSDOM } from "jsdom"
 import { linkDict } from "./get-url-contents.type"
 
 export const getUrlContents = async (url: string) => {
+    const res = await fetch(url)
+
+    if (!res.ok) {
+        throw new Error("response is failed")
+    }
+    const html = await res.text()
+    const DOM = new JSDOM(html)
+
     const twitterPost = url.match(/https:\/\/x\.com\/([\w]+)\/status\/([\d]+)/)
 
     if (twitterPost) {
@@ -10,7 +18,7 @@ export const getUrlContents = async (url: string) => {
         }
     }
 
-    const twitterHome = url.match(/^https?:\/\/x\.com/g)
+    const twitterHome = url.match(/^https?:\/\/x\.com\/([\w]+)/)
 
     if (twitterHome !== null) {
         return {
@@ -20,22 +28,18 @@ export const getUrlContents = async (url: string) => {
         } as linkDict
     }
 
-    const res = await fetch(url)
-
-    if (!res.ok) {
-        throw new Error("response is failed")
-    }
-
-    const html = await res.text()
-    const DOM = new JSDOM(html)
     const meta = DOM.window.document.head.querySelectorAll("meta")
 
     const dict: linkDict = {}
 
     meta.forEach((item) => {
-        const hasProperty = item.getAttribute("property")
+        let hasProperty = item.getAttribute("property")
 
-        if (!hasProperty) return
+        if (!hasProperty) {
+            hasProperty = item.getAttribute("name")
+
+            if (!hasProperty) return
+        }
 
         const ogpProperty = hasProperty.match(/og:([\w]+)/g)
 
@@ -47,6 +51,12 @@ export const getUrlContents = async (url: string) => {
 
         dict[ogpProperty[0]] = item.getAttribute("content")
     })
+
+    if (!dict["og:title"]) {
+        const meta = DOM.window.document.head.querySelectorAll("title")
+
+        dict["og:title"] = meta[0].textContent
+    }
 
     return dict
 }

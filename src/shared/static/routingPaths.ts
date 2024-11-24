@@ -9,11 +9,3 @@ export const routingPath = (lang: string) => {
         about: `${locale}/about`
     }
 }
-
-export const routingPaths = {
-    home: "/home",
-    intro: "/intro",
-    skills: "/skills",
-    activity: "/activities",
-    about: "/about"
-}

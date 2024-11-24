@@ -23,7 +23,7 @@ export const staticMenu = (lang: string) => {
             pageName: t.home.card.card3.title
         },
         {
-            path: paths.activity,
+            path: paths.about,
             pageName: t.home.card.card4.title
         }
     ]

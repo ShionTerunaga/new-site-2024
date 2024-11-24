@@ -14,6 +14,7 @@ const CardContainer = (props: props) => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
     useEffect(() => {
+        console.log(isOpen)
         setIsOpen(true)
     }, [])
 

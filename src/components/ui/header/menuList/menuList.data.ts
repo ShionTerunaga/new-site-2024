@@ -21,6 +21,10 @@ export const staticMenu = (lang: string) => {
         {
             path: paths.activity,
             pageName: t.home.card.card3.title
+        },
+        {
+            path: paths.activity,
+            pageName: t.home.card.card4.title
         }
     ]
 }

@@ -25,6 +25,10 @@ export const ja = {
             card3: {
                 title: "アクティブ",
                 description: "普段の活動を説明します。"
+            },
+            card4: {
+                title: "アバウト",
+                description: "このサイトを作成するにあたって。"
             }
         }
     },

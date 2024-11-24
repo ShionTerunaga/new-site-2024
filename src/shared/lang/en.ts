@@ -25,6 +25,10 @@ export const en = {
             card3: {
                 title: "activity",
                 description: "This section describes my usual activities."
+            },
+            card4: {
+                title: "about",
+                description: "Tech stack, key points, special thanks, etc."
             }
         }
     },

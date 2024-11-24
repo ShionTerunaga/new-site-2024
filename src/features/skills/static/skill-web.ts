@@ -36,7 +36,7 @@ export const skillWeb = (t: any): cardType[] => {
         },
         {
             ...t.skills.webSkills.skill6,
-            image: STORYBOOK,
+            image: STORYBOOK
         },
         {
             ...t.skills.webSkills.skill7,

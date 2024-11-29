@@ -1,5 +1,5 @@
-import styles from "./style.css"
 import Image from "next/image"
+import styles from "./style.css"
 
 interface props {
     image?: any

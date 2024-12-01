@@ -1,12 +1,12 @@
 "use client"
 
-import { usePathname } from "next/navigation"
-import { Fragment, useState } from "react"
 import { Menu, X } from "@yamada-ui/lucide"
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
-import styles from "./styles.css"
+import { usePathname } from "next/navigation"
+import { Fragment, useState } from "react"
 import { staticMenu } from "./menu-list.data"
+import styles from "./styles.css"
 
 interface props {
     lang: string

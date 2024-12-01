@@ -1,12 +1,12 @@
-"use client"
-
 import Image from "next/image"
-import CardContainer from "../components/cardContainer/cardContainer.logic"
+import Link from "next/link"
+import CardContainer from "../components/card-container/card-container"
 import Icon from "../components/icon/icon"
 import { staticCard } from "../static/card"
 import styles from "./styles.css"
 import GITHUB from "@/assets/home/github-mark-white.svg"
 import X from "@/assets/home/logo-white.png"
+import { Card } from "@/components/ui/card"
 import { Header } from "@/components/ui/header"
 import { i18n } from "@/shared/static/lang"
 
@@ -49,12 +49,11 @@ export const Home = (props: props) => {
                 </section>
                 <section className={styles.cardContainer}>
                     {cards.map((item, index) => (
-                        <CardContainer
-                            lang={props.lang}
-                            index={index}
-                            item={item}
-                            key={index}
-                        />
+                        <CardContainer index={index} key={index}>
+                            <Link href={item.path} className={styles.link}>
+                                <Card {...item} />
+                            </Link>
+                        </CardContainer>
                     ))}
                 </section>
             </main>

@@ -8,7 +8,7 @@ const styles = {
         display: "grid",
         placeItems: "center",
         placeContent: "center",
-        gap: "1em",
+        gap: "1em"
     }),
     iconBox: style({
         width: 100,
@@ -45,6 +45,11 @@ const styles = {
         justifyContent: "center",
         gap: "max(2vw, 1em)",
         flexWrap: "wrap"
+    }),
+    link: style({
+        textDecoration: "none",
+        height: "100%",
+        display: "block"
     })
 }
 

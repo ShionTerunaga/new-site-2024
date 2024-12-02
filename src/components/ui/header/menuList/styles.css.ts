@@ -30,35 +30,26 @@ const styles = {
         margin: 0,
         padding: 0,
         right: 0,
-        width: 300,
-        listStyle: "none",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
+        width: 160,
+        listStyle: "none"
     }),
     li: style({
         fontSize: 30,
-        display: "flex",
-        alignItems: "center",
         width: "100%",
         padding: 10,
         borderBottom: "2px solid black",
-        marginBottom: 30,
+        margin: "0 0 30px 0",
         textAlign: "center"
     }),
     link: style({
         textDecoration: "none",
         color: "black",
-        width: 160,
-        height: 33,
         ":hover": {
             color: "silver"
         }
     }),
     p: style({
-        margin: 0,
-        width: 160,
-        height: 30
+        margin: 0
     }),
     openButton: style({
         color: "white"
@@ -70,11 +61,11 @@ const styles = {
         backgroundColor: "transparent",
         border: "none",
         display: "grid",
-        placeItems: 'center',
+        placeItems: "center",
         fontSize: 32,
         cursor: "pointer",
-        position: 'relative',
-        zIndex: 101,
+        position: "relative",
+        zIndex: 101
     })
 }
 

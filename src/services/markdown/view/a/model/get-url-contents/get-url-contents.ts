@@ -8,7 +8,12 @@ export const getUrlContents = async (url: string) => {
         throw new Error("response is failed")
     }
     const html = await res.text()
-    const DOM = new JSDOM(html)
+
+    const replaceHTML = html
+        .replace(/<style[\s\S]*?>[\s\S]*?<\/style>/gi, "")
+        .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "")
+
+    const DOM = new JSDOM(replaceHTML)
 
     const twitterPost = url.match(/https:\/\/x\.com\/([\w]+)\/status\/([\d]+)/)
 

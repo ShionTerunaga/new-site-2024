@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import MenuList from "@/components/ui/header/menuList/menuList.logic"
+import MenuList from "@/components/ui/header/menuList/menu-list"
 
 const meta: Meta<typeof MenuList> = {
     component: MenuList

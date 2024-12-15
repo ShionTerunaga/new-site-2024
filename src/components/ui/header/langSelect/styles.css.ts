@@ -1,5 +1,7 @@
 import { style } from "@vanilla-extract/css"
 
+export const dropLi = style({})
+
 const styles = {
     selectLang: style({
         position: "relative",

@@ -10,7 +10,7 @@ export interface headerProps {
     /**
      * 言語
      */
-    lang: string
+    currentLang: string
     /**
      * home画面か
      */

@@ -24,7 +24,7 @@ type props = Promise<{
 const Activity = async ({ params }: { params: props }) => {
     const { id, lang } = await params
 
-    return <Active id={id} lang={lang} />
+    return <Active id={id} currentLang={lang} />
 }
 
 export default Activity

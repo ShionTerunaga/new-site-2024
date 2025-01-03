@@ -8,7 +8,7 @@ import { lang } from "@/shared/static/lang"
 
 interface props extends headerProps {}
 
-const LangSelect = (props: props) => {
+const LangSelect = ({ currentLang }: props) => {
     const [isDrop, setIsDrop] = useState(false)
     const pathArr = usePathname().split("/")
     const params = useParams().id || ""
@@ -26,7 +26,7 @@ const LangSelect = (props: props) => {
         <div className={styles.selectLang}>
             <button type="button" className={styles.box} onClick={toggleDrop}>
                 <span className={styles.label}>lang:</span>
-                <span className={styles.lang}>{props.lang}</span>
+                <span className={styles.lang}>{currentLang}</span>
                 <span className={styles.arrow}></span>
             </button>
             <ul

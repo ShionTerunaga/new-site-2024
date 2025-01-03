@@ -10,7 +10,7 @@ type props = Promise<{
 const About = async ({ params }: { params: props }) => {
     const { lang } = await params
 
-    return <AboutComponent lang={lang} />
+    return <AboutComponent currentLang={lang} />
 }
 
 export default About

@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from "@storybook/react"
 import SPITZ from "@/assets/introduction/spitz.png"
-import CardButton from "@/features/skills/components/cardView/card-button/card-button"
+import CardButton from "@/features/skills/components/card-view/card-button/card-button"
 const meta: Meta<typeof CardButton> = {
     component: CardButton
 }

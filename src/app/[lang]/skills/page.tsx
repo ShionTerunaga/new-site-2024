@@ -8,7 +8,7 @@ type props = Promise<{ lang: string }>
 const Skills = async ({ params }: { params: props }) => {
     const { lang } = await params
 
-    return <SkillsPage lang={lang} />
+    return <SkillsPage currentLang={lang} />
 }
 
 export default Skills

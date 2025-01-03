@@ -6,17 +6,16 @@ import { en } from "@/shared/lang/en"
 
 interface props {
     title?: string
-    isBlank?: boolean
     contents: cardType[]
 }
 
-const CardCollection = (props: props) => {
+const CardCollection = ({ title, contents }: props) => {
     return (
         <div className={styles.container}>
-            {props.title && <h1 className={styles.heading1}>{props.title}</h1>}
+            {title && <h1 className={styles.heading1}>{title}</h1>}
             <div className={styles.clickMessage}>{en.skills.clickMessage}</div>
             <div className={styles.mainBox}>
-                {props.contents.map((item, index) => (
+                {contents.map((item, index) => (
                     <CardButton {...item} key={index}>
                         <SkillContents
                             contents={item.description}

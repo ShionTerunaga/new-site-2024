@@ -6,13 +6,13 @@ interface props {
     linkTitle: string
 }
 
-const ContentsBox = (props: props) => {
+const ContentsBox = ({ contents, link, linkTitle }: props) => {
     return (
         <section className={styles.section}>
-            <p>{props.contents}</p>
+            <p>{contents}</p>
             <div className={styles.linkContainer}>
-                <a href={props.link} target="_blank" className={styles.link}>
-                    {props.linkTitle}
+                <a href={link} target="_blank" className={styles.link}>
+                    {linkTitle}
                 </a>
             </div>
         </section>

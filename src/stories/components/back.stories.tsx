@@ -10,5 +10,5 @@ export default meta
 type Story = StoryFn<typeof Back>
 
 export const Basic: Story = () => {
-    return <Back lang="" />
+    return <Back currentLang="" />
 }

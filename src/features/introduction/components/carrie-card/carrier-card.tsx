@@ -5,8 +5,8 @@ interface props {
     lang: string
 }
 
-const CarrierCard = (props: props) => {
-    const carrierList = carrier(props.lang)
+const CarrierCard = ({ lang }: props) => {
+    const carrierList = carrier(lang)
 
     return (
         <section className={styles.intro}>

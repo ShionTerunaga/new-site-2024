@@ -3,22 +3,21 @@ import { contentsAll } from "./card-collection/contents-all.type"
 import styles from "./style.css"
 
 interface props {
-    pageTitle: string
     contents: contentsAll[] | contentsAll
 }
 
-export const CardView = (props: props) => {
+export const CardView = ({ contents }: props) => {
     return (
         <section className={styles.container}>
             <div>
-                {Array.isArray(props.contents) ? (
+                {Array.isArray(contents) ? (
                     <>
-                        {props.contents.map((item, index) => (
-                            <CardCollection key={index} {...item} isBlank />
+                        {contents.map((item, index) => (
+                            <CardCollection key={index} {...item} />
                         ))}
                     </>
                 ) : (
-                    <CardCollection {...props.contents} />
+                    <CardCollection {...contents} />
                 )}
             </div>
         </section>

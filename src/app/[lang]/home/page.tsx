@@ -8,7 +8,7 @@ type props = Promise<{ lang: string }>
 const HomePage = async ({ params }: { params: props }) => {
     const { lang } = await params
 
-    return <Home lang={lang} />
+    return <Home currentLang={lang} />
 }
 
 export default HomePage

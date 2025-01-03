@@ -6,13 +6,12 @@ import { popState } from "@/store/popup"
 
 interface props {
     state: popState
-    onClose: () => void
 }
 
-const PopupLayoutView = (props: props) => {
+const PopupLayoutView = ({ state }: props) => {
     return (
         <AnimatePresence>
-            {props.state.state && <PopupBase>{props.state.children}</PopupBase>}
+            {state.state && <PopupBase>{state.children}</PopupBase>}
         </AnimatePresence>
     )
 }

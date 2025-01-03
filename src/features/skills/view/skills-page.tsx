@@ -1,7 +1,7 @@
 import { allSkills } from "../static/skill-all"
 import styles from "./style.css"
 import { Header } from "@/components/ui/header"
-import { CardView } from "@/features/skills/components/cardView/cardView"
+import { CardView } from "@/features/skills/components/card-view/card-view"
 import { i18n } from "@/shared/static/lang"
 
 interface props {
@@ -16,7 +16,7 @@ export const SkillsPage = ({ currentLang }: props) => {
         <>
             <Header title="" currentLang={currentLang} />
             <main className={styles.container}>
-                <CardView pageTitle={t.skills.title} contents={skills} />
+                <CardView contents={skills} />
                 <div className={styles.space} />
             </main>
         </>

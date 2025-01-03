@@ -16,11 +16,11 @@ interface props {
     children: ReactNode
 }
 
-const IntroModal = (props: props) => {
+const IntroModal = ({ title, children }: props) => {
     const { openPopup } = usePopup()
 
     const handleClick = () => {
-        openPopup(<PopupContents {...props} />)
+        openPopup(<PopupContents>{children}</PopupContents>)
     }
 
     return (
@@ -29,7 +29,7 @@ const IntroModal = (props: props) => {
             onClick={handleClick}
             aria-label="Open popup"
         >
-            {props.title}
+            {title}
         </button>
     )
 }

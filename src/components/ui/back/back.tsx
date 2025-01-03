@@ -12,11 +12,11 @@ interface props {
     /**
      * 言語
      */
-    lang: string
+    currentLang: string
 }
 
-export const Back = ({ path, lang }: props) => {
-    const pathName = path || routingPath(lang).home
+export const Back = ({ path, currentLang }: props) => {
+    const pathName = path || routingPath(currentLang).home
 
     return (
         <Link href={pathName} className={styles.link} aria-label="go to home">

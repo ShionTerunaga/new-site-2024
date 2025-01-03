@@ -10,5 +10,5 @@ export default meta
 type Story = StoryFn<typeof MenuList>
 
 export const Basic: Story = () => {
-    return <MenuList lang="" />
+    return <MenuList currentLang="" />
 }

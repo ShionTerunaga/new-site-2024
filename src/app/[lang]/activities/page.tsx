@@ -8,7 +8,7 @@ type props = Promise<{ lang: string }>
 const Activities = async ({ params }: { params: props }) => {
     const { lang } = await params
 
-    return <Activity lang={lang} />
+    return <Activity currentLang={lang} />
 }
 
 export default Activities

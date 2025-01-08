@@ -15,15 +15,15 @@ interface props {
     url: string
 }
 
-const SkillContents = (props: props) => {
+const SkillContents = ({ title, contents, image, imageB, url }: props) => {
     return (
         <>
-            <h2 className={styles.heading2}>{props.title}</h2>
+            <h2 className={styles.heading2}>{title}</h2>
             <div className={styles.image}>
                 <Image
                     src={
-                        props.image
-                            ? props.imageB ?? props.image
+                        image
+                            ? imageB ?? image
                             : "https://placehold.jp/200x125.png"
                     }
                     width={200}
@@ -33,8 +33,8 @@ const SkillContents = (props: props) => {
                 />
             </div>
             <div className={styles.description}>
-                <p>{props.contents}</p>
-                <Link href={props.url} target="_blank">
+                <p>{contents}</p>
+                <Link href={url} target="_blank">
                     {en.skills.official}
                 </Link>
             </div>

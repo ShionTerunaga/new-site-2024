@@ -7,24 +7,22 @@ import { routingPath } from "@/shared/static/routingPaths"
 interface props {
     /**
      * 戻る時のパス
-     *
-     * @default "/home"
      */
     path?: string
     /**
      * 言語
      */
-    lang: string
+    currentLang: string
 }
 
-export const Back = (props: props) => {
-    const path = props.path || routingPath(props.lang).home
+export const Back = ({ path, currentLang }: props) => {
+    const pathName = path || routingPath(currentLang).home
 
     return (
-        <Link href={path} className={styles.link} aria-label="go to home">
+        <Link href={pathName} className={styles.link} aria-label="go to home">
             <div className={styles.linkContent}>
                 <div className={styles.icon}>
-                    {path.includes("/home") ? <Home /> : <ArrowLeft />}
+                    {pathName.includes("/home") ? <Home /> : <ArrowLeft />}
                 </div>
             </div>
         </Link>

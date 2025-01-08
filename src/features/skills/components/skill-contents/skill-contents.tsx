@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image"
+import Image from "next/image"
 import Link from "next/link"
 import styles from "./style.css"
 import { en } from "@/shared/lang/en"
@@ -9,8 +9,8 @@ interface props {
     /** contents of popup */
     contents: string
     /** image of popup */
-    image: StaticImageData | string
-    imageB?: StaticImageData | string
+    image: any
+    imageB?: any
     /** official URL  */
     url: string
 }

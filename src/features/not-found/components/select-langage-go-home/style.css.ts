@@ -6,29 +6,18 @@ const styles = {
         justifyContent: "center"
     }),
     wholeBox: style({
-        width: 110,
+        width: 130,
         height: 150,
         position: "relative",
         border: "none",
         marginTop: 10
     }),
-    dropBox: style({
-        listStyle: "none",
-        position: "absolute",
-        inset: "auto 0 -4.1em",
-        marginInline: "auto",
-        borderRadius: 4,
-        width: 150,
-        overflow: "hidden",
-        transitionProperty: "opacity, translate",
-        transitionDuration: ".6s"
-    }),
+
     button: style({
-        width: 110,
+        width: 130,
         height: 35,
-        backgroundColor: "white",
-        color: "black",
-        border: "none",
+        border: "1px solid #333",
+        color: "white",
         borderRadius: 5,
         textAlign: "center",
         ":active": {
@@ -46,25 +35,34 @@ const styles = {
         translate: 0
     }),
     listContainer: style({
-        backgroundColor: "white",
-        width: 110,
+        backgroundColor: "#666",
+        width: 130,
         padding: 0,
         marginTop: 2,
         textAlign: "center",
-        borderRadius: 5
+        borderRadius: 5,
+        border: "1px solid #333",
+        listStyle: "none",
+        position: "absolute",
+        //inset: "auto 0 -4.1em",
+        marginInline: "auto",
+        overflow: "hidden",
+        transitionProperty: "opacity, translate",
+        transitionDuration: ".6s"
     }),
     list: style({
         listStyle: "none",
         height: 25,
-        borderBottom: "1px solid black",
+        borderBottom: "1px solid #333",
         margin: 5,
+
         ":last-child": {
             borderBottom: "none"
         }
     }),
     link: style({
         textDecoration: "none",
-        color: "black",
+        color: "white",
         ":hover": {
             color: "silver"
         }

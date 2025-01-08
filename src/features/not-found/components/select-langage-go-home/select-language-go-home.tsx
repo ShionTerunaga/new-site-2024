@@ -6,7 +6,7 @@ import { languages, selectLanguage } from "../../static/language"
 import styles from "./style.css"
 
 const SelectLanguageGoHome = () => {
-    const [isOpen, setIsOpen] = useState<boolean>(true)
+    const [isOpen, setIsOpen] = useState<boolean>(false)
 
     const handleClick = () => setIsOpen(!isOpen)
 
@@ -16,22 +16,21 @@ const SelectLanguageGoHome = () => {
                 <button className={styles.button} onClick={handleClick}>
                     Back to home
                 </button>
-                {isOpen && (
-                    <ul className={styles.listContainer}>
-                        {languages.map(
-                            (lang: selectLanguage, index: number) => (
-                                <li key={index} className={styles.list}>
-                                    <Link
-                                        href={`/${lang.lang}/home`}
-                                        className={styles.link}
-                                    >
-                                        {lang.text}
-                                    </Link>
-                                </li>
-                            )
-                        )}
-                    </ul>
-                )}
+
+                <ul
+                    className={`${styles.listContainer} ${isOpen ? styles.show : styles.hidden}`}
+                >
+                    {languages.map((lang: selectLanguage, index: number) => (
+                        <li key={index} className={styles.list}>
+                            <Link
+                                href={`/${lang.lang}/home`}
+                                className={styles.link}
+                            >
+                                {lang.text}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </section>
     )

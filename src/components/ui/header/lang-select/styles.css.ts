@@ -1,7 +1,6 @@
 import { style } from "@vanilla-extract/css"
 
 export const dropLi = style({})
-
 const styles = {
     selectLang: style({
         position: "relative",
@@ -61,8 +60,22 @@ const styles = {
     langLink: style({
         color: "#fff",
         textDecoration: "none",
-        width: "100%"
+        width: "100%",
+        display: "block",
+        padding: ".4em .8em",
+        backgroundColor: "#333",
+        textAlign: "left",
+        border: "none",
+        margin: "auto",
+        transition: "background-color .4s",
+        ":hover": {
+            backgroundColor: "#666"
+        },
+        selectors: {
+            [`${dropLi} ~ ${dropLi} &`]: {
+                borderTop: "1px solid #444"
+            }
+        }
     })
 }
-
 export default styles

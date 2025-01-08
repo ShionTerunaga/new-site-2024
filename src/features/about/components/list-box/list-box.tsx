@@ -4,11 +4,11 @@ interface props {
     items: string[]
 }
 
-const ListBox = (props: props) => {
+const ListBox = ({ items }: props) => {
     return (
         <section className={styles.section}>
             <ul className={styles.container}>
-                {props.items.map((item, index) => (
+                {items.map((item, index) => (
                     <li key={index} className={styles.list}>
                         {item}
                     </li>

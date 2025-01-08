@@ -11,16 +11,16 @@ import { Header } from "@/components/ui/header"
 import { i18n } from "@/shared/static/lang"
 
 interface props {
-    lang: string
+    currentLang: string
 }
 
-export const Home = (props: props) => {
-    const t = i18n(props.lang)
-    const cards = staticCard(props.lang)
+export const Home = ({ currentLang }: props) => {
+    const t = i18n(currentLang)
+    const cards = staticCard(currentLang)
 
     return (
         <>
-            <Header isHome {...props} />
+            <Header isHome currentLang={currentLang} />
             <main className={styles.container}>
                 <section className={styles.iconBox}>
                     <Icon />

@@ -7,16 +7,16 @@ import { i18n } from "@/shared/static/lang"
 import { routingPath } from "@/shared/static/routingPaths"
 
 interface props {
-    lang: string
+    currentLang: string
 }
 
-export const Activity = (props: props) => {
-    const t = i18n(props.lang)
-    const contents = getAllContents(props.lang)
+export const Activity = ({ currentLang }: props) => {
+    const t = i18n(currentLang)
+    const contents = getAllContents(currentLang)
 
     return (
         <>
-            <Header title="activity" {...props} />
+            <Header title={t.active.title} currentLang={currentLang} />
             <main className={styles.container}>
                 <h1 className={styles.title}>{t.active.title}</h1>
                 <p className={styles.clickList}>{t.active.clickList}</p>
@@ -25,7 +25,7 @@ export const Activity = (props: props) => {
                         {contents.map((item, index) => (
                             <li key={index} className={styles.li}>
                                 <Link
-                                    href={`${routingPath(props.lang).activity}/${item.id}`}
+                                    href={`${routingPath(currentLang).activity}/${item.id}`}
                                     className={styles.link}
                                 >
                                     <h2 className={styles.heading2}>

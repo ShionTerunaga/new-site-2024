@@ -8,19 +8,19 @@ import { routingPath } from "@/shared/static/routingPaths"
 
 interface props {
     id: string
-    lang: string
+    currentLang: string
 }
 
-export const Active = async (props: props) => {
-    const t = i18n(props.lang)
-    const markdown = getContents(props.id, props.lang)
+export const Active = async ({ id, currentLang }: props) => {
+    const t = i18n(currentLang)
+    const markdown = getContents(id, currentLang)
 
     return (
         <>
             <Header
                 title={t.active.title}
-                path={routingPath(props.lang).activity}
-                {...props}
+                path={routingPath(currentLang).activity}
+                currentLang={currentLang}
             />
             <main className={styles.mainBox}>
                 <section className={styles.container}>

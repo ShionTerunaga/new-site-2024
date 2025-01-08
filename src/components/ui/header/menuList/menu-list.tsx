@@ -9,12 +9,12 @@ import { staticMenu } from "./menu-list.data"
 import styles from "./styles.css"
 
 interface props {
-    lang: string
+    currentLang: string
 }
 
-const MenuList = (props: props) => {
+const MenuList = ({ currentLang }: props) => {
     const path = usePathname()
-    const paths = staticMenu(props.lang)
+    const paths = staticMenu(currentLang)
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
     const handleClick = () => {

@@ -9,7 +9,7 @@ interface props {
     children: ReactNode
 }
 
-export const PopupContents = (props: props) => {
+export const PopupContents = ({ children }: props) => {
     const { closePopup } = usePopup()
 
     return (
@@ -21,7 +21,7 @@ export const PopupContents = (props: props) => {
                     </button>
                 </div>
             </div>
-            {props.children}
+            {children}
         </div>
     )
 }

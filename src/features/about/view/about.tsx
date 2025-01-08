@@ -7,17 +7,17 @@ import { Header } from "@/components/ui/header"
 import { i18n } from "@/shared/static/lang"
 
 interface props {
-    lang: string
+    currentLang: string
 }
 
-export const AboutComponent = (props: props) => {
-    const t = i18n(props.lang)
-    const stack = getStack(props.lang)
-    const appeal = getAppeal(props.lang)
+export const AboutComponent = ({ currentLang }: props) => {
+    const t = i18n(currentLang)
+    const stack = getStack(currentLang)
+    const appeal = getAppeal(currentLang)
 
     return (
         <>
-            <Header {...props} />
+            <Header currentLang={currentLang} />
             <main className={styles.container}>
                 <h1 className={styles.title}>{t.about.title}</h1>
 

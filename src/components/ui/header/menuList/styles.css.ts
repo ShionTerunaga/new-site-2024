@@ -30,7 +30,7 @@ const styles = {
         margin: 0,
         padding: 0,
         right: 0,
-        width: 160,
+        width: 200,
         listStyle: "none"
     }),
     li: style({

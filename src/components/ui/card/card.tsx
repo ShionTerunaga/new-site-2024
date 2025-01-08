@@ -8,18 +8,12 @@ interface props {
     isSkills?: boolean
 }
 
-export const Card = (props: props) => {
+export const Card = ({ image, title, description, isSkills }: props) => {
     return (
-        <div
-            className={`${styles.box} ${props.isSkills ? styles.isSkills : null}`}
-        >
+        <div className={`${styles.box} ${isSkills ? styles.isSkills : null}`}>
             <picture>
                 <Image
-                    src={
-                        props.image
-                            ? props.image
-                            : "https://placehold.jp/200x125.png"
-                    }
+                    src={image ? image : "https://placehold.jp/200x125.png"}
                     width={200}
                     height={125}
                     alt=""
@@ -27,20 +21,16 @@ export const Card = (props: props) => {
                 />
             </picture>
             <div
-                className={
-                    props.description === "" ? styles.noneContents : undefined
-                }
+                className={description === "" ? styles.noneContents : undefined}
             >
                 <h2
-                    className={`${styles.h2} ${props.isSkills ? styles.isSkillsH2 : null}`}
+                    className={`${styles.h2} ${isSkills ? styles.isSkillsH2 : null}`}
                 >
-                    {props.title}
+                    {title}
                 </h2>
-                {props.description !== "" && (
+                {description !== "" && (
                     <div className={styles.descriptionBox}>
-                        <p className={styles.description}>
-                            {props.description}
-                        </p>
+                        <p className={styles.description}>{description}</p>
                     </div>
                 )}
             </div>

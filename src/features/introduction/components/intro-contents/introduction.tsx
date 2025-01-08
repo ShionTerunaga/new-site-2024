@@ -5,14 +5,16 @@ interface props {
     lang: string
 }
 
-const IntroContents = (props: props) => {
-    const t = i18n(props.lang)
+const IntroContents = ({ lang }: props) => {
+    const t = i18n(lang)
 
     return (
         <section className={styles.section}>
             <div className={styles.intro}>
                 <div className={styles.titleBox}>
-                    <h2 className={styles.title}>{t.intro.introduction.title}</h2>
+                    <h2 className={styles.title}>
+                        {t.intro.introduction.title}
+                    </h2>
                 </div>
                 <div className={styles.introductionContents}>
                     {t.intro.introduction.contents}

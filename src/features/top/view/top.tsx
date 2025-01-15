@@ -1,4 +1,4 @@
-import TitleSection from "../components/titleSection/titleSection.logic"
+import TitleSection from "../components/title-section/title-section"
 import styles from "./style.css"
 
 export const Top = () => {

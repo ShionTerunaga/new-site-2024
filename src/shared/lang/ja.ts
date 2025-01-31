@@ -179,7 +179,7 @@ export const ja = {
                 path: "https://www.python.org/",
                 title: "python",
                 description:
-                    "It is an excellent language for performing complex calculations in data analysis and mathematics.It was used in a prototype of a tool using the GPT API, although it is not used much in work. I was indebted to them for my university research."
+                    "仕事ではあまり使われないが、GPT APIを使ったツールのプロトタイプで使われた。大学の研究でお世話になった。"
             },
             skill2: {
                 path: "https://www.raspberrypi.com/",

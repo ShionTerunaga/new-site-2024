@@ -185,7 +185,7 @@ export const ja = {
                 path: "https://www.raspberrypi.com/",
                 title: "raspberry Pi",
                 description:
-                    "仕事ではあまり使われないが、GPT APIを使ったツールのプロトタイプで使われた。大学の研究でお世話になった。"
+                    "仕事で触る機会があった。IoTツールを作るのは面白いと思ったけど、もういいかなと。"
             },
             skill3: {
                 path: "https://github.co.jp/",

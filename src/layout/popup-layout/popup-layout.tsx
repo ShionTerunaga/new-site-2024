@@ -1,6 +1,6 @@
 "use client"
 
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "motion/react"
 import { PopupBase } from "@/components/ui/popup"
 import { usePopup } from "@/hooks/popup"
 

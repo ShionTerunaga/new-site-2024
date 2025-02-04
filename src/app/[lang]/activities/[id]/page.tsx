@@ -1,5 +1,5 @@
-import { Active } from "@/features/active"
-import { getAllContents } from "@/services/lib"
+import { Active } from "./view/active"
+import { getAllContents } from "@/features/markdown/core"
 import { getLangList } from "@/utils/getLangList"
 
 export const generateStaticParams = () => {

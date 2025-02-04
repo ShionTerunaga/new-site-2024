@@ -1,4 +1,4 @@
-import { Activity } from "@/features/activities"
+import { Activity } from "./(activities)/view/active"
 import { getLangList } from "@/utils/getLangList"
 
 export const generateStaticParams = () => getLangList()

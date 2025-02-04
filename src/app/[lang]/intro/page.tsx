@@ -1,4 +1,4 @@
-import { Introduction } from "@/features/introduction"
+import { Introduction } from "./view/introduction"
 import { getLangList } from "@/utils/getLangList"
 
 export const generateStaticParams = () => getLangList()

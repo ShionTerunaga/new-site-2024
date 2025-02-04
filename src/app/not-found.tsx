@@ -1,4 +1,4 @@
-import { NotFoundComponent } from "@/features/not-found"
+import { NotFoundComponent } from "./(not-found)/view/not-found"
 
 const NotFound = () => {
     return <NotFoundComponent />

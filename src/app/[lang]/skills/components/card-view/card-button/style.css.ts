@@ -6,7 +6,7 @@ const styles = {
         padding: 0,
         border: "none",
         backgroundColor: "transparent",
-        cursor: "pointer",
+        cursor: "pointer"
     })
 }
 

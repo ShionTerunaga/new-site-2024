@@ -18,7 +18,10 @@ interface Props {
 }
 
 export function PopupContextProvider({ children }: Props) {
-    const [state, dispatch] = useReducer(popupReducer, initialState)
+    const [state, dispatch] = useReducer<popState, [action: popAction]>(
+        popupReducer,
+        initialState
+    )
 
     const result: Result<[popState, ActionDispatch<[action: popAction]>]> = {
         kind: "ok",

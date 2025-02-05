@@ -9,8 +9,11 @@ interface props {
 }
 
 export const Card = ({ image, title, description, isSkills }: props) => {
+    const containerClass = isSkills ? styles.isSkills : ""
+    const descriptionClass = description === "" ? styles.noneContents : ""
+
     return (
-        <div className={`${styles.box} ${isSkills ? styles.isSkills : null}`}>
+        <div className={`${styles.box} ${containerClass}`}>
             <picture>
                 <Image
                     src={image ? image : "https://placehold.jp/200x125.png"}
@@ -20,11 +23,9 @@ export const Card = ({ image, title, description, isSkills }: props) => {
                     className={styles.image}
                 />
             </picture>
-            <div
-                className={description === "" ? styles.noneContents : undefined}
-            >
+            <div className={descriptionClass}>
                 <h2
-                    className={`${styles.h2} ${isSkills ? styles.isSkillsH2 : null}`}
+                    className={`${styles.h2} ${isSkills ? styles.isSkillsH2 : ""}`}
                 >
                     {title}
                 </h2>

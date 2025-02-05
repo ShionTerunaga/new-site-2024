@@ -1,25 +1,29 @@
 "use client"
 
-import { ReactNode, createContext, useReducer } from "react"
-import { popupContextType } from "./popup.type"
+import { ActionDispatch, ReactNode, createContext, useReducer } from "react"
+import { popAction, popState } from "./popup.type"
 import { initialState } from "./popupInitial.static"
 import { popupReducer } from "./popupReducer"
+import { Result } from "@/shared/types/global-types"
 
-export const PopupContext = createContext<popupContextType>({
-    state: initialState,
-    dispatch: () => {}
+export const PopupContext = createContext<
+    Result<[popState, ActionDispatch<[action: popAction]>]>
+>({
+    kind: "error",
+    message: "Providerがありません"
 })
 
-interface props {
+interface Props {
     children: ReactNode
 }
 
-export const PopupContextProvider = (props: props) => {
+export function PopupContextProvider({ children }: Props) {
     const [state, dispatch] = useReducer(popupReducer, initialState)
 
-    return (
-        <PopupContext value={{ state, dispatch }}>
-            {props.children}
-        </PopupContext>
-    )
+    const result: Result<[popState, ActionDispatch<[action: popAction]>]> = {
+        kind: "ok",
+        value: [state, dispatch]
+    }
+
+    return <PopupContext value={result}>{children}</PopupContext>
 }

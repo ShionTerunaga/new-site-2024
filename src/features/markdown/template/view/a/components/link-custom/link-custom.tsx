@@ -38,8 +38,8 @@ const LinkCustom = async (props: props) => {
                 </span>
             </a>
         )
-    } catch {
-        return null
+    } catch (e) {
+        console.log(e)
     }
 }
 

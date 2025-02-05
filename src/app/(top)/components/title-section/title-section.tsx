@@ -19,8 +19,10 @@ const TitleSection = () => {
 
         setTimeout(() => {
             setFlag(false)
+
             setCounter(counter + 1)
         }, 3000)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const animationComplete = async () => {
@@ -48,7 +50,7 @@ const TitleSection = () => {
     return (
         <section className={styles.titleBox}>
             <AnimatePresence>
-                {flag ? (
+                {flag && (
                     <motion.h1
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -58,7 +60,7 @@ const TitleSection = () => {
                     >
                         {topAnimation[counter]}
                     </motion.h1>
-                ) : null}
+                )}
             </AnimatePresence>
         </section>
     )

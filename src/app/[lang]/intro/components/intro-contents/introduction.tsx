@@ -1,5 +1,5 @@
 import styles from "./style.css"
-import { i18n } from "@/shared/static/lang"
+import { i18n } from "@/utils/lang"
 
 interface props {
     lang: string

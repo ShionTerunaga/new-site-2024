@@ -4,7 +4,7 @@ import { getAppeal } from "../static/appeal"
 import { getStack } from "../static/stack"
 import styles from "./style.css"
 import { Header } from "@/components/header"
-import { i18n } from "@/shared/static/lang"
+import { i18n } from "@/utils/lang"
 
 interface props {
     currentLang: string

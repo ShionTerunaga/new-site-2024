@@ -5,7 +5,7 @@ import IntroPopup from "../components/intro-popup/intro-popup"
 import { introData } from "../static/introduction.data"
 import styles from "./style.css"
 import { Header } from "@/components/header"
-import { i18n } from "@/shared/static/lang"
+import { i18n } from "@/utils/lang"
 
 interface props {
     currentLang: string

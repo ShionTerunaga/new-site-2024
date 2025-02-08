@@ -2,7 +2,7 @@ import { Home } from "@yamada-ui/lucide"
 import { ArrowLeft } from "@yamada-ui/lucide"
 import Link from "next/link"
 import styles from "./style.css"
-import { routingPath } from "@/shared/static/routingPaths"
+import { routingPath } from "@/utils/routing-paths"
 
 interface props {
     /**

@@ -1,5 +1,5 @@
-import { i18n } from "@/shared/static/lang"
-import { routingPath } from "@/shared/static/routingPaths"
+import { i18n } from "@/utils/lang"
+import { routingPath } from "@/utils/routing-paths"
 
 export const staticMenu = (lang: string) => {
     const t = i18n(lang)

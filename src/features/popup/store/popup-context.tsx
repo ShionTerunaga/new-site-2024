@@ -1,17 +1,14 @@
 "use client"
 
 import { ActionDispatch, ReactNode, createContext, useReducer } from "react"
+import { popupReducer } from "./popup-reducer"
 import { popAction, popState } from "./popup.type"
 import { initialState } from "./popupInitial.static"
-import { popupReducer } from "./popupReducer"
-import { Result } from "@/shared/types/global-types"
+import { Result, createResult } from "@/utils/others"
 
 export const PopupContext = createContext<
     Result<[popState, ActionDispatch<[action: popAction]>]>
->({
-    kind: "error",
-    message: "Providerがありません"
-})
+>(createResult.err("providerの下で定義してください"))
 
 interface Props {
     children: ReactNode

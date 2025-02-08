@@ -1,7 +1,7 @@
 import RUN from "@/assets/introduction/running.jpg"
 import SPITZ from "@/assets/introduction/spitz.png"
 import YAKINIKU from "@/assets/introduction/yakiniku.jpg"
-import { i18n } from "@/shared/static/lang"
+import { i18n } from "@/utils/lang"
 
 export const introData = (lang: string) => {
     const t = i18n(lang)

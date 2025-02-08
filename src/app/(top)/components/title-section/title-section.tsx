@@ -4,8 +4,8 @@ import { AnimatePresence, motion } from "motion/react"
 import { useRouter } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
 import styles from "./style.css"
-import { routingPath } from "@/shared/static/routingPaths"
-import { topAnimation } from "@/shared/static/topAnimation"
+import { topAnimation } from "@/shared/static/top-animation"
+import { routingPath } from "@/utils/routing-paths"
 import { sleep } from "@/utils/sleep"
 
 const TitleSection = () => {

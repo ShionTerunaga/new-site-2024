@@ -1,5 +1,5 @@
-import { en } from "../lang/en"
-import { ja } from "../lang/ja"
+import { en } from "../shared/lang/en"
+import { ja } from "../shared/lang/ja"
 
 export const lang: string[] = ["en", "ja"]
 

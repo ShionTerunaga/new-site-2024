@@ -3,8 +3,8 @@ import Link from "next/link"
 import styles from "./style.css"
 import { Header } from "@/components/header"
 import { getAllContents } from "@/features/markdown/core"
-import { i18n } from "@/shared/static/lang"
-import { routingPath } from "@/shared/static/routingPaths"
+import { i18n } from "@/utils/lang"
+import { routingPath } from "@/utils/routing-paths"
 
 interface props {
     currentLang: string

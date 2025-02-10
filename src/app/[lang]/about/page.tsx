@@ -1,5 +1,5 @@
 import { AboutComponent } from "./view/about"
-import { getLangList } from "@/utils/getLangList"
+import { getLangList } from "@/utils/get-lang-list"
 
 export const generateStaticParams = () => getLangList()
 

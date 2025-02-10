@@ -3,8 +3,8 @@ import INTRO from "@/assets/home/introduction.png"
 import PRODUCTION from "@/assets/home/product.png"
 import SKILL from "@/assets/home/skill.png"
 import { cardType } from "@/components/card"
-import { i18n } from "@/shared/static/lang"
-import { routingPath } from "@/shared/static/routingPaths"
+import { i18n } from "@/utils/lang"
+import { routingPath } from "@/utils/routing-paths"
 
 export const staticCard = (lang: string): cardType[] => {
     const t = i18n(lang)

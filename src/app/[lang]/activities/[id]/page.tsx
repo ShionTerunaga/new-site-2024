@@ -1,6 +1,6 @@
 import { Active } from "./view/active"
 import { getAllContents } from "@/features/markdown/core"
-import { getLangList } from "@/utils/getLangList"
+import { getLangList } from "@/utils/get-lang-list"
 
 export const generateStaticParams = () => {
     const lang = getLangList()

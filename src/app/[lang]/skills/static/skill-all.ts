@@ -2,7 +2,7 @@ import { skillNative } from "./skill-native"
 import { skillOthers } from "./skill-others"
 import { skillWeb } from "./skill-web"
 import { contentsAll } from "@/app/[lang]/skills/components/card-view/card-collection/contents-all.type"
-import { i18n } from "@/shared/static/lang"
+import { i18n } from "@/utils/lang"
 
 export const allSkills = (lang: string): contentsAll[] => {
     const t = i18n(lang)

@@ -1,10 +1,10 @@
 import { MDXRemote } from "next-mdx-remote/rsc"
 import styles from "./style.css"
 import { Header } from "@/components/header"
+import { markdownComponent } from "@/features/markdown"
 import { getContents } from "@/features/markdown/core"
-import { markdownComponent } from "@/features/markdown/template"
-import { i18n } from "@/shared/static/lang"
-import { routingPath } from "@/shared/static/routingPaths"
+import { i18n } from "@/utils/lang"
+import { routingPath } from "@/utils/routing-paths"
 
 interface props {
     id: string

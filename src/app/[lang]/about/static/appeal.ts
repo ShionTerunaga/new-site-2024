@@ -1,4 +1,4 @@
-import { i18n } from "@/shared/static/lang"
+import { i18n } from "@/utils/lang"
 
 export const getAppeal = (lang: string): string[] => {
     const t = i18n(lang)

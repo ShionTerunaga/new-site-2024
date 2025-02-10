@@ -4,8 +4,8 @@ import { AnimatePresence, motion } from "motion/react"
 import { useRouter } from "next/navigation"
 import { useEffect, useRef, useState } from "react"
 import styles from "./style.css"
-import { routingPath } from "@/shared/static/routingPaths"
-import { topAnimation } from "@/shared/static/topAnimation"
+import { topAnimation } from "@/shared/static/top-animation"
+import { routingPath } from "@/utils/routing-paths"
 import { sleep } from "@/utils/sleep"
 
 const TitleSection = () => {
@@ -19,8 +19,10 @@ const TitleSection = () => {
 
         setTimeout(() => {
             setFlag(false)
+
             setCounter(counter + 1)
         }, 3000)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const animationComplete = async () => {
@@ -48,7 +50,7 @@ const TitleSection = () => {
     return (
         <section className={styles.titleBox}>
             <AnimatePresence>
-                {flag ? (
+                {flag && (
                     <motion.h1
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -58,7 +60,7 @@ const TitleSection = () => {
                     >
                         {topAnimation[counter]}
                     </motion.h1>
-                ) : null}
+                )}
             </AnimatePresence>
         </section>
     )

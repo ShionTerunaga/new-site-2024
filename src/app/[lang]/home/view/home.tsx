@@ -8,7 +8,7 @@ import GITHUB from "@/assets/home/github-mark-white.svg"
 import X from "@/assets/home/logo-white.png"
 import { Card } from "@/components/card"
 import { Header } from "@/components/header"
-import { i18n } from "@/shared/static/lang"
+import { i18n } from "@/utils/lang"
 
 interface props {
     currentLang: string

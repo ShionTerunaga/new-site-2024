@@ -1,8 +1,14 @@
 import { useContext } from "react"
-import { PopupContext } from "../../store/popupContext"
+import { PopupContext } from "../../store/popup-context"
 
 const useBase = () => {
-    const { state, dispatch } = useContext(PopupContext)
+    const context = useContext(PopupContext)
+
+    if (context.kind === "error") {
+        throw context.err
+    }
+
+    const [state, dispatch] = context.value
 
     return { state, dispatch }
 }

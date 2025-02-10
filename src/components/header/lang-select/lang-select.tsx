@@ -4,7 +4,7 @@ import { useParams, usePathname, useRouter } from "next/navigation"
 import { useState } from "react"
 import type { headerProps } from "../header.type"
 import styles, { dropLi } from "./styles.css"
-import { lang } from "@/shared/static/lang"
+import { lang } from "@/utils/lang"
 
 interface props extends headerProps {}
 

@@ -1,5 +1,5 @@
 import { Home } from "./view/home"
-import { getLangList } from "@/utils/getLangList"
+import { getLangList } from "@/utils/get-lang-list"
 
 export const generateStaticParams = () => getLangList()
 

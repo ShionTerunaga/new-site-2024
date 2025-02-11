@@ -1,6 +1,6 @@
-import { popAction, popState } from "./popup.type"
+import { PopAction, PopState } from "./popup.type"
 
-export const popupReducer = (state: popState, action: popAction): popState => {
+export const popupReducer = (state: PopState, action: PopAction): PopState => {
     switch (action.type) {
         case "hidden":
             return {

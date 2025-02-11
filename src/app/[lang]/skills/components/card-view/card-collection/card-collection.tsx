@@ -1,15 +1,15 @@
 import SkillContents from "../../skill-contents/skill-contents"
 import CardButton from "../card-button/card-button"
 import styles from "./style.css"
-import { cardType } from "@/components/card/card.type"
+import { CardType } from "@/components/card/card.type"
 import { en } from "@/shared/lang/en"
 
-interface props {
+interface Props {
     title?: string
-    contents: cardType[]
+    contents: CardType[]
 }
 
-const CardCollection = ({ title, contents }: props) => {
+const CardCollection = ({ title, contents }: Props) => {
     return (
         <div className={styles.container}>
             {title && <h1 className={styles.heading1}>{title}</h1>}

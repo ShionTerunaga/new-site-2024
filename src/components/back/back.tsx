@@ -4,7 +4,7 @@ import Link from "next/link"
 import styles from "./style.css"
 import { routingPath } from "@/utils/routing-paths"
 
-interface props {
+interface Props {
     /**
      * 戻る時のパス
      */
@@ -15,7 +15,7 @@ interface props {
     currentLang: string
 }
 
-export const Back = ({ path, currentLang }: props) => {
+export const Back = ({ path, currentLang }: Props) => {
     const pathName = path || routingPath(currentLang).home
 
     return (

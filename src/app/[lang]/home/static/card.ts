@@ -2,11 +2,11 @@ import ABOUT from "@/assets/home/about.png"
 import INTRO from "@/assets/home/introduction.png"
 import PRODUCTION from "@/assets/home/product.png"
 import SKILL from "@/assets/home/skill.png"
-import { cardType } from "@/components/card"
+import { CardType } from "@/components/card"
 import { i18n } from "@/utils/lang"
 import { routingPath } from "@/utils/routing-paths"
 
-export const staticCard = (lang: string): cardType[] => {
+export const staticCard = (lang: string): CardType[] => {
     const t = i18n(lang)
     const paths = routingPath(lang)
 

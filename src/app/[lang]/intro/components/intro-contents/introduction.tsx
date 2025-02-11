@@ -1,11 +1,11 @@
 import styles from "./style.css"
 import { i18n } from "@/utils/lang"
 
-interface props {
+interface Props {
     lang: string
 }
 
-const IntroContents = ({ lang }: props) => {
+const IntroContents = ({ lang }: Props) => {
     const t = i18n(lang)
 
     return (

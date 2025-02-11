@@ -7,11 +7,11 @@ import styles from "./style.css"
 import { Header } from "@/components/header"
 import { i18n } from "@/utils/lang"
 
-interface props {
+interface Props {
     currentLang: string
 }
 
-export const Introduction = ({ currentLang }: props) => {
+export const Introduction = ({ currentLang }: Props) => {
     const t = i18n(currentLang)
     const introModal = introData(currentLang)
 

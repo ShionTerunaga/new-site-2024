@@ -2,14 +2,12 @@ import { allSkills } from "../static/skill-all"
 import styles from "./style.css"
 import { CardView } from "@/app/[lang]/skills/components/card-view/card-view"
 import { Header } from "@/components/header"
-import { i18n } from "@/utils/lang"
 
-interface props {
+interface Props {
     currentLang: string
 }
 
-export const SkillsPage = ({ currentLang }: props) => {
-    const t = i18n(currentLang)
+export const SkillsPage = ({ currentLang }: Props) => {
     const skills = allSkills(currentLang)
 
     return (

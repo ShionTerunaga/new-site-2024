@@ -1,12 +1,12 @@
 import styles from "./style.css"
 
-interface props {
+interface Props {
     contents: string
     link: string
     linkTitle: string
 }
 
-const ContentsBox = ({ contents, link, linkTitle }: props) => {
+const ContentsBox = ({ contents, link, linkTitle }: Props) => {
     return (
         <section className={styles.section}>
             <p>{contents}</p>

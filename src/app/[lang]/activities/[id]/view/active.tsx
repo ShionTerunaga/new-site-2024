@@ -6,12 +6,12 @@ import { getContents } from "@/features/markdown/core"
 import { i18n } from "@/utils/lang"
 import { routingPath } from "@/utils/routing-paths"
 
-interface props {
+interface Props {
     id: string
     currentLang: string
 }
 
-export const Active = async ({ id, currentLang }: props) => {
+export const Active = async ({ id, currentLang }: Props) => {
     const t = i18n(currentLang)
     const markdown = getContents(id, currentLang)
 

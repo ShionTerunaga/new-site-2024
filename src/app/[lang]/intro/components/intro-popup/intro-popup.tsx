@@ -1,13 +1,13 @@
 import Image from "next/image"
 import styles from "./style.css"
 
-interface props {
+interface Props {
     answer: string
     description: string
     image?: any
 }
 
-const IntroPopup = ({ answer, description, image }: props) => {
+const IntroPopup = ({ answer, description, image }: Props) => {
     return (
         <>
             <h2 className={styles.heading2}>{answer}</h2>

@@ -4,12 +4,12 @@ import { motion } from "motion/react"
 import { ReactNode } from "react"
 import styles from "./styles.css"
 
-interface props {
+interface Props {
     children: ReactNode
     index: number
 }
 
-const CardContainer = ({ children, index }: props) => {
+const CardContainer = ({ children, index }: Props) => {
     return (
         <motion.div
             className={styles.container}

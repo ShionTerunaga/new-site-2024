@@ -1,11 +1,11 @@
 import { carrier } from "./carrier.data"
 import styles from "./style.css"
 
-interface props {
+interface Props {
     lang: string
 }
 
-const CarrierCard = ({ lang }: props) => {
+const CarrierCard = ({ lang }: Props) => {
     const carrierList = carrier(lang)
 
     return (

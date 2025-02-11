@@ -1,10 +1,10 @@
 import { skillNative } from "./skill-native"
 import { skillOthers } from "./skill-others"
 import { skillWeb } from "./skill-web"
-import { contentsAll } from "@/app/[lang]/skills/components/card-view/card-collection/contents-all.type"
+import { ContentsAll } from "@/app/[lang]/skills/components/card-view/card-collection/contents-all.type"
 import { i18n } from "@/utils/lang"
 
-export const allSkills = (lang: string): contentsAll[] => {
+export const allSkills = (lang: string): ContentsAll[] => {
     const t = i18n(lang)
 
     return [

@@ -1,11 +1,11 @@
-export type overviewContents = {
+export type OverviewContents = {
     id: string
     title: string
     date: number
     description: string
 }
 
-export type contents = {
+export type Contents = {
     source: string
-    overview: overviewContents
+    overview: OverviewContents
 }

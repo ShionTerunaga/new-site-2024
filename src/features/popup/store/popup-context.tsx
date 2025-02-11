@@ -2,12 +2,12 @@
 
 import { ActionDispatch, ReactNode, createContext, useReducer } from "react"
 import { popupReducer } from "./popup-reducer"
-import { popAction, popState } from "./popup.type"
+import { PopAction, PopState } from "./popup.type"
 import { initialState } from "./popupInitial.static"
 import { Result, createResult } from "@/utils/others"
 
 export const PopupContext = createContext<
-    Result<[popState, ActionDispatch<[action: popAction]>]>
+    Result<[PopState, ActionDispatch<[action: PopAction]>]>
 >(createResult.err("providerの下で定義してください"))
 
 interface Props {
@@ -15,12 +15,12 @@ interface Props {
 }
 
 export function PopupContextProvider({ children }: Props) {
-    const [state, dispatch] = useReducer<popState, [action: popAction]>(
+    const [state, dispatch] = useReducer<PopState, [action: PopAction]>(
         popupReducer,
         initialState
     )
 
-    const result: Result<[popState, ActionDispatch<[action: popAction]>]> = {
+    const result: Result<[PopState, ActionDispatch<[action: PopAction]>]> = {
         kind: "ok",
         value: [state, dispatch]
     }

@@ -1,9 +1,9 @@
-export type selectLanguage = {
+export type SelectLanguage = {
     lang: string
     text: string
 }
 
-export const languages: selectLanguage[] = [
+export const languages: SelectLanguage[] = [
     {
         lang: "en",
         text: "English ver"

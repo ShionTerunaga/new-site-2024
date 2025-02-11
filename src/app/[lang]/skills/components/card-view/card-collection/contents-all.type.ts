@@ -1,6 +1,6 @@
-import { cardType } from "@/components/card/card.type"
+import { CardType } from "@/components/card/card.type"
 
-export type contentsAll = {
+export type ContentsAll = {
     title?: string
-    contents: cardType[]
+    contents: CardType[]
 }

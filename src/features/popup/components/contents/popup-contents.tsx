@@ -5,11 +5,11 @@ import { ReactNode } from "react"
 import styles from "./style.css"
 import { usePopup } from "@/features/popup"
 
-interface props {
+interface Props {
     children: ReactNode
 }
 
-export const PopupContents = ({ children }: props) => {
+export const PopupContents = ({ children }: Props) => {
     const { closePopup } = usePopup()
 
     return (

@@ -1,10 +1,10 @@
 import styles from "./style.css"
 
-interface props {
+interface Props {
     items: string[]
 }
 
-const ListBox = ({ items }: props) => {
+const ListBox = ({ items }: Props) => {
     return (
         <section className={styles.section}>
             <ul className={styles.container}>

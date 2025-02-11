@@ -1,9 +1,9 @@
-type params = {
+type Params = {
     name: string
     children: any[]
 }
 
-export const insertElement = (params: params) => {
+export const insertElement = (params: Params) => {
     const { name, children = [] } = params
 
     return (node: any) => {

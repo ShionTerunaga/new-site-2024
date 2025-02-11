@@ -1,12 +1,12 @@
 import CardCollection from "./card-collection/card-collection"
-import { contentsAll } from "./card-collection/contents-all.type"
+import { ContentsAll } from "./card-collection/contents-all.type"
 import styles from "./style.css"
 
-interface props {
-    contents: contentsAll[] | contentsAll
+interface Props {
+    contents: ContentsAll[] | ContentsAll
 }
 
-export const CardView = ({ contents }: props) => {
+export const CardView = ({ contents }: Props) => {
     return (
         <section className={styles.container}>
             <div>

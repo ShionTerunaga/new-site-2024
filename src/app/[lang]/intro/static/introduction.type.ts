@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image"
 
-export type introType = {
+export type IntroType = {
     /**
      * item
      */

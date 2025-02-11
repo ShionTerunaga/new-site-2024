@@ -9,9 +9,9 @@ import STORYBOOK from "@/assets/skills/storybook.svg"
 import TS from "@/assets/skills/ts.svg"
 import VANILLA_EXTRACT from "@/assets/skills/vanilla-extract.png"
 import VITEST from "@/assets/skills/vitest.svg"
-import { cardType } from "@/components/card/card.type"
+import { CardType } from "@/components/card/card.type"
 
-export const skillWeb = (t: any): cardType[] => {
+export const skillWeb = (t: any): CardType[] => {
     return [
         {
             ...t.skills.webSkills.skill1,

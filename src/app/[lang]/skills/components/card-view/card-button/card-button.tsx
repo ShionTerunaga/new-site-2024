@@ -5,7 +5,7 @@ import styles from "./style.css"
 import { Card } from "@/components/card"
 import { PopupContents, usePopup } from "@/features/popup"
 
-interface props {
+interface Props {
     /** カードのタイトル */
     title: string
     /** カードの画像 */
@@ -14,7 +14,7 @@ interface props {
     children: ReactNode
 }
 
-const CardButton = (props: props) => {
+const CardButton = (props: Props) => {
     const { openPopup } = usePopup()
 
     const handleClick = () => {

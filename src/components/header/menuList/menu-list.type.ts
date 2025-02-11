@@ -1,4 +1,4 @@
-export type menuType = {
+export type MenuType = {
     path: string
     pageName: string
 }

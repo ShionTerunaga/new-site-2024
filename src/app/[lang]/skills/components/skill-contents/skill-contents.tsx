@@ -3,7 +3,7 @@ import Link from "next/link"
 import styles from "./style.css"
 import { en } from "@/shared/lang/en"
 
-interface props {
+interface Props {
     /** title of contents */
     title: string
     /** contents of popup */
@@ -15,7 +15,7 @@ interface props {
     url: string
 }
 
-const SkillContents = ({ title, contents, image, imageB, url }: props) => {
+const SkillContents = ({ title, contents, image, imageB, url }: Props) => {
     return (
         <>
             <h2 className={styles.heading2}>{title}</h2>

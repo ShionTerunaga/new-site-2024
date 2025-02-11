@@ -6,11 +6,11 @@ import { getAllContents } from "@/features/markdown/core"
 import { i18n } from "@/utils/lang"
 import { routingPath } from "@/utils/routing-paths"
 
-interface props {
+interface Props {
     currentLang: string
 }
 
-export const Activity = ({ currentLang }: props) => {
+export const Activity = ({ currentLang }: Props) => {
     const t = i18n(currentLang)
     const contents = getAllContents(currentLang)
 

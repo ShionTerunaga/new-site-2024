@@ -1,5 +1,5 @@
 import { JSDOM } from "jsdom"
-import { linkDict } from "./get-url-contents.type"
+import { LinkDict } from "./get-url-contents.type"
 
 export const getUrlContents = async (url: string) => {
     const res = await fetch(url)
@@ -30,12 +30,12 @@ export const getUrlContents = async (url: string) => {
             "og:title": url,
             "og:image":
                 "https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
-        } as linkDict
+        } as LinkDict
     }
 
     const meta = DOM.window.document.head.querySelectorAll("meta")
 
-    const dict: linkDict = {}
+    const dict: LinkDict = {}
 
     meta.forEach((item) => {
         let hasProperty = item.getAttribute("property")

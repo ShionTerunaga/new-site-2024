@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { languages, selectLanguage } from "../../static/language"
+import { languages, SelectLanguage } from "../../static/language"
 import styles from "./style.css"
 
 const SelectLanguageGoHome = () => {
@@ -20,7 +20,7 @@ const SelectLanguageGoHome = () => {
                 <ul
                     className={`${styles.listContainer} ${isOpen ? styles.show : styles.hidden}`}
                 >
-                    {languages.map((lang: selectLanguage, index: number) => (
+                    {languages.map((lang: SelectLanguage, index: number) => (
                         <li key={index} className={styles.list}>
                             <Link
                                 href={`/${lang.lang}/home`}

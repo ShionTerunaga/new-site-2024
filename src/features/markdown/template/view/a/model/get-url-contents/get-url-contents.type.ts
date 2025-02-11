@@ -1,1 +1,1 @@
-export type linkDict = Record<string, any>
+export type LinkDict = Record<string, any>

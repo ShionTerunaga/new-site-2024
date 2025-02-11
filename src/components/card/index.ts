@@ -1,2 +1,2 @@
 export { Card } from "./card"
-export type { cardType } from "./card.type"
+export type { CardType } from "./card.type"

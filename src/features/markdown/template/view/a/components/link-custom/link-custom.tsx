@@ -2,11 +2,11 @@ import React from "react"
 import { getUrlContents } from "../../model/get-url-contents/get-url-contents"
 import styles from "./style.css"
 
-interface props {
+interface Props {
     url: string
 }
 
-const LinkCustom = async (props: props) => {
+const LinkCustom = async (props: Props) => {
     try {
         const ogp = await getUrlContents(props.url)
 

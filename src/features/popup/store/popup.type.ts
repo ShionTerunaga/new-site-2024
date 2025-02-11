@@ -1,28 +1,28 @@
 import { Dispatch, ReactNode } from "react"
 
-export type openState = {
+export type OpenState = {
     state: true
     children: ReactNode
 }
 
-export type closeState = {
+export type CloseState = {
     state: false
 }
 
-export type popState = closeState | openState
+export type PopState = CloseState | OpenState
 
-export type openAction = {
+export type OpenAction = {
     type: "show"
     children: ReactNode
 }
 
-export type closeAction = {
+export type CloseAction = {
     type: "hidden"
 }
 
-export type popAction = closeAction | openAction
+export type PopAction = CloseAction | OpenAction
 
 export type popupContextType = {
-    state: popState
-    dispatch: Dispatch<popAction>
+    state: PopState
+    dispatch: Dispatch<PopAction>
 }

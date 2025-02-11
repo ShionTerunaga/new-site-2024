@@ -5,7 +5,7 @@ import styles from "./style.css"
 import { PopupContents } from "@/features/popup"
 import { usePopup } from "@/features/popup"
 
-interface props {
+interface Props {
     /**
      * item
      */
@@ -16,7 +16,7 @@ interface props {
     children: ReactNode
 }
 
-const IntroModal = ({ title, children }: props) => {
+const IntroModal = ({ title, children }: Props) => {
     const { openPopup } = usePopup()
 
     const handleClick = () => {

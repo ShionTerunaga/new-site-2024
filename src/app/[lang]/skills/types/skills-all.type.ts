@@ -1,6 +1,6 @@
-import { cardType } from "@/components/card/card.type"
+import { CardType } from "@/components/card/card.type"
 
 export type skillAll = {
     title: string
-    skills: cardType[]
+    skills: CardType[]
 }

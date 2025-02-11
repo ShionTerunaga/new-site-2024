@@ -10,11 +10,11 @@ import { Card } from "@/components/card"
 import { Header } from "@/components/header"
 import { i18n } from "@/utils/lang"
 
-interface props {
+interface Props {
     currentLang: string
 }
 
-export const Home = ({ currentLang }: props) => {
+export const Home = ({ currentLang }: Props) => {
     const t = i18n(currentLang)
     const cards = staticCard(currentLang)
 

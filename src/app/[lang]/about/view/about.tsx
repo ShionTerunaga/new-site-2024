@@ -6,11 +6,11 @@ import styles from "./style.css"
 import { Header } from "@/components/header"
 import { i18n } from "@/utils/lang"
 
-interface props {
+interface Props {
     currentLang: string
 }
 
-export const AboutComponent = ({ currentLang }: props) => {
+export const AboutComponent = ({ currentLang }: Props) => {
     const t = i18n(currentLang)
     const stack = getStack(currentLang)
     const appeal = getAppeal(currentLang)

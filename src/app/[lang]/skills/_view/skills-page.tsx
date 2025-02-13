@@ -1,6 +1,6 @@
-import { allSkills } from "../static/skill-all"
+import { allSkills } from "../_static/skill-all"
 import styles from "./style.css"
-import { CardView } from "@/app/[lang]/skills/components/card-view/card-view"
+import { CardView } from "@/app/[lang]/skills/_components/card-view/card-view"
 import { Header } from "@/components/header"
 
 interface Props {

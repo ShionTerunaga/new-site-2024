@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { languages, SelectLanguage } from "../../static/language"
+import { languages, SelectLanguage } from "../../_static/language"
 import styles from "./style.css"
 
 const SelectLanguageGoHome = () => {

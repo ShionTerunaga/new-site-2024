@@ -1,4 +1,4 @@
-import { SkillsPage } from "./view/skills-page"
+import { SkillsPage } from "./_view/skills-page"
 import { getLangList } from "@/utils/get-lang-list"
 
 export const generateStaticParams = () => getLangList()

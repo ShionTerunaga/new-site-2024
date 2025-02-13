@@ -2,10 +2,10 @@ import fs from "fs"
 import path from "path"
 import rehypeHighlight from "rehype-highlight"
 import remarkGfm from "remark-gfm"
-import { contentsPath } from "./getContents.data"
-import type { Contents, OverviewContents } from "./getContents.type"
+import { contentsPath } from "./get-contents.data"
+import type { Contents, OverviewContents } from "./get-contents.type"
 import "highlight.js/styles/vs2015.min.css"
-import { remarkUIComponent } from "./utils/remearkUIComponent"
+import { remarkUIComponent } from "./remark-ui-component"
 
 export const getContents = (id: string, lang: string) => {
     const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`)

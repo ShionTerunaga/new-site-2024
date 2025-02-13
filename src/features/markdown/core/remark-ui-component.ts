@@ -1,7 +1,7 @@
 import { Plugin } from "unified"
 import { visit } from "unist-util-visit"
-import { getValidChildren } from "./getValidChildren"
-import { insertElement } from "./insertElement"
+import { getValidChildren } from "./get-valid-children"
+import { insertElement } from "./insert-element"
 
 export const remarkUIComponent: Plugin = () => (tree) => {
     let cache: any[] = []

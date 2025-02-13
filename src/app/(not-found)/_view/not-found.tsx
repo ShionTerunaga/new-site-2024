@@ -1,4 +1,4 @@
-import SelectLanguageGoHome from "../components/select-langage-go-home/select-language-go-home"
+import SelectLanguageGoHome from "../_components/select-langage-go-home/select-language-go-home"
 import styles from "./style.css"
 
 export const NotFoundComponent = () => {

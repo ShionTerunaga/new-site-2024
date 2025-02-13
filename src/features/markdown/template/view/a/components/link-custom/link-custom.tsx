@@ -1,5 +1,5 @@
 import React from "react"
-import { getUrlContents } from "../../model/get-url-contents/get-url-contents"
+import { getUrlContents } from "../../services/get-url-contents"
 import styles from "./style.css"
 
 interface Props {

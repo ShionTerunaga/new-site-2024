@@ -1,6 +1,6 @@
 import fs from "fs"
-import { contentsPath } from "./getContents.data"
-import { OverviewContents } from "./getContents.type"
+import { contentsPath } from "./get-contents.data"
+import { OverviewContents } from "./get-contents.type"
 
 export const getAllContents = (lang: string) => {
     const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`)

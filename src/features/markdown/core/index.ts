@@ -1,3 +1,3 @@
-export { getAllContents } from "./getAllContents"
-export { getContents } from "./getContents"
-export type { OverviewContents, Contents } from "./getContents.type"
+export { getAllContents } from "./get-all-contents"
+export { getContents } from "./get-contents"
+export type { OverviewContents, Contents } from "./get-contents.type"

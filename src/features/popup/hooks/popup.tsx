@@ -1,8 +1,8 @@
 import { ReactNode } from "react"
-import useBase from "../base/useBase"
+import { PopupContext } from "../store/popup-provider"
 
 export const usePopup = () => {
-    const { state, dispatch } = useBase()
+    const { state, dispatch } = PopupContext.context()
 
     const openPopup = (children: ReactNode) => {
         dispatch({ type: "show", children: children })

@@ -46,7 +46,7 @@ export function createReducerContext<T, S>({
         if (context.kind === RESULT_ERROR) {
             throw context.err
         }
-        1
+
         const [state, dispatch] = context.value
 
         return { state, dispatch }

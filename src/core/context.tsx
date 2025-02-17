@@ -8,7 +8,7 @@ import {
     useContext,
     useReducer
 } from "react"
-import { createResult, Result, RESULT_ERROR } from "@/utils/others"
+import { createResult, Result, RESULT_ERROR } from "@/utils/result"
 
 interface ContextParams<T> {
     errMessage: string
@@ -40,7 +40,10 @@ export function createReducerContext<T, S>({
         return <Context value={result}>{children}</Context>
     }
 
-    const context = function useReducerContext() {
+    const context = function useReducerContext(): {
+        state: T
+        dispatch: ActionDispatch<[action: S]>
+    } {
         const context = useContext(Context)
 
         if (context.kind === RESULT_ERROR) {

@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import CarrierCard from "@/app/[lang]/intro/components/carrie-card/carrier-card"
+import CarrierCard from "@/app/[lang]/intro/_components/carrie-card/carrier-card"
 
 const meta: Meta<typeof CarrierCard> = {
     component: CarrierCard

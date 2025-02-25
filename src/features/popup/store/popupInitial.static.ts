@@ -1,5 +1,5 @@
-import { popState } from "./popup.type"
+import { PopState } from "./popup.type"
 
-export const initialState: popState = {
+export const initialState: PopState = {
     state: false
 }

@@ -1,14 +1,14 @@
 import Image from "next/image"
 import styles from "./style.css"
 
-interface props {
+interface Props {
     image?: any
     title: string
     description: string
     isSkills?: boolean
 }
 
-export const Card = ({ image, title, description, isSkills }: props) => {
+export const Card = ({ image, title, description, isSkills }: Props) => {
     const containerClass = isSkills ? styles.isSkills : ""
     const descriptionClass = description === "" ? styles.noneContents : ""
 

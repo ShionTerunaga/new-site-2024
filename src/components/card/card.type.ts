@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image"
 
-export type cardType = {
+export type CardType = {
     path: string
     image: string | StaticImageData
     title: string

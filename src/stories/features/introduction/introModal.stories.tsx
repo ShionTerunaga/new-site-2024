@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from "@storybook/react"
-import IntroModal from "@/app/[lang]/intro/components/intro-modal/intro-modal"
+import IntroModal from "@/app/[lang]/intro/_components/intro-modal/intro-modal"
 
 const meta: Meta<typeof IntroModal> = {
     component: IntroModal

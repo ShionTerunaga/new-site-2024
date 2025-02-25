@@ -8,11 +8,11 @@ import { Fragment, useState } from "react"
 import { staticMenu } from "./menu-list.data"
 import styles from "./styles.css"
 
-interface props {
+interface Props {
     currentLang: string
 }
 
-const MenuList = ({ currentLang }: props) => {
+const MenuList = ({ currentLang }: Props) => {
     const path = usePathname()
     const paths = staticMenu(currentLang)
     const [isOpen, setIsOpen] = useState<boolean>(false)

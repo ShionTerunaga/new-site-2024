@@ -1,4 +1,4 @@
-import { Active } from "./view/active"
+import { Active } from "./_view/active"
 import { getAllContents } from "@/features/markdown/core"
 import { getLangList } from "@/utils/get-lang-list"
 
@@ -16,12 +16,12 @@ export const generateStaticParams = () => {
     return lang
 }
 
-type props = Promise<{
+type Props = Promise<{
     lang: string
     id: string
 }>
 
-const Activity = async ({ params }: { params: props }) => {
+const Activity = async ({ params }: { params: Props }) => {
     const { id, lang } = await params
 
     return <Active id={id} currentLang={lang} />

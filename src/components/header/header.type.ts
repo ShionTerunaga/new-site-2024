@@ -1,4 +1,4 @@
-export interface headerProps {
+export interface HeaderProps {
     /**
      * ページのタイトル
      */

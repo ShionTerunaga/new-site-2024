@@ -2,13 +2,13 @@
 
 import { useParams, usePathname, useRouter } from "next/navigation"
 import { useState } from "react"
-import type { headerProps } from "../header.type"
+import type { HeaderProps } from "../header.type"
 import styles, { dropLi } from "./styles.css"
 import { lang } from "@/utils/lang"
 
-interface props extends headerProps {}
+interface Props extends HeaderProps {}
 
-const LangSelect = ({ currentLang }: props) => {
+const LangSelect = ({ currentLang }: Props) => {
     const [isDrop, setIsDrop] = useState(false)
     const pathArr = usePathname().split("/")
     const params = useParams().id || ""

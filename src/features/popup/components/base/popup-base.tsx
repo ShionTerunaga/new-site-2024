@@ -2,11 +2,11 @@ import { motion } from "motion/react"
 import { ReactNode } from "react"
 import styles from "./style.css"
 
-interface props {
+interface Props {
     children: ReactNode
 }
 
-export const PopupBase = ({ children }: props) => {
+export const PopupBase = ({ children }: Props) => {
     return (
         <>
             <motion.div

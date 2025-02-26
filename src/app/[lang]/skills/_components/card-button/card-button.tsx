@@ -2,7 +2,7 @@
 
 import { ReactNode } from "react"
 import styles from "./style.css"
-import { Card } from "@/components/card"
+import { Card } from "@/components/elements/card"
 import { PopupContents, usePopup } from "@/features/popup"
 
 interface Props {

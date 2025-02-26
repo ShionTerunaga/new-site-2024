@@ -4,7 +4,7 @@ import IntroModal from "../_components/intro-modal/intro-modal"
 import IntroPopup from "../_components/intro-popup/intro-popup"
 import { introData } from "../_static/introduction.data"
 import styles from "./style.css"
-import { Header } from "@/components/header"
+import { Header } from "@/components/layouts/header"
 import { i18n } from "@/utils/lang"
 
 interface Props {

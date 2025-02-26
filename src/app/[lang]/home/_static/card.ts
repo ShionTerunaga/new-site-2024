@@ -2,7 +2,7 @@ import ABOUT from "@/assets/home/about.png"
 import INTRO from "@/assets/home/introduction.png"
 import PRODUCTION from "@/assets/home/product.png"
 import SKILL from "@/assets/home/skill.png"
-import { CardType } from "@/components/card"
+import { CardType } from "@/components/elements/card"
 import { i18n } from "@/utils/lang"
 import { routingPath } from "@/utils/routing-paths"
 

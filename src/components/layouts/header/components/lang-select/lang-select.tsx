@@ -2,7 +2,7 @@
 
 import { useParams, usePathname, useRouter } from "next/navigation"
 import { useState } from "react"
-import type { HeaderProps } from "../header.type"
+import type { HeaderProps } from "../../layout/header.type"
 import styles, { dropLi } from "./styles.css"
 import { lang } from "@/utils/lang"
 

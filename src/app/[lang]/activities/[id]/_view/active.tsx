@@ -1,6 +1,6 @@
 import { MDXRemote } from "next-mdx-remote/rsc"
 import styles from "./style.css"
-import { Header } from "@/components/header"
+import { Header } from "@/components/layouts/header"
 import { markdownComponent } from "@/features/markdown"
 import { getContents } from "@/features/markdown/core"
 import { i18n } from "@/utils/lang"

@@ -1,5 +1,5 @@
-import CardCollection from "./card-collection/card-collection"
-import { ContentsAll } from "./card-collection/contents-all.type"
+import CardCollection from "../card-collection/card-collection"
+import { ContentsAll } from "../card-collection/contents-all.type"
 import styles from "./style.css"
 
 interface Props {

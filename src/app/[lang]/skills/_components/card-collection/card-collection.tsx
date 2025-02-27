@@ -1,5 +1,5 @@
-import SkillContents from "../../skill-contents/skill-contents"
 import CardButton from "../card-button/card-button"
+import SkillContents from "../skill-contents/skill-contents"
 import styles from "./style.css"
 import { CardType } from "@/components/elements/card/card.type"
 import { en } from "@/shared/lang/en"

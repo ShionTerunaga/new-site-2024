@@ -1,15 +1,16 @@
 "use client"
 
+import { StaticImageData } from "next/image"
 import { ReactNode } from "react"
 import styles from "./style.css"
-import { Card } from "@/components/card"
+import { Card } from "@/components/elements/card"
 import { PopupContents, usePopup } from "@/features/popup"
 
 interface Props {
     /** カードのタイトル */
     title: string
     /** カードの画像 */
-    image: any
+    image: StaticImageData
     /**ポップアップの中身 */
     children: ReactNode
 }

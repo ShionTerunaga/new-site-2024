@@ -2,7 +2,7 @@ import GIT_B from "@/assets/skills/git&github-b.svg"
 import GIT from "@/assets/skills/git&github.svg"
 import PYTHON from "@/assets/skills/python.svg"
 import RASPI from "@/assets/skills/raspberry-pi.svg"
-import { CardType } from "@/components/card"
+import { CardType } from "@/components/elements/card"
 
 export const skillOthers = (t: any): CardType[] => {
     return [

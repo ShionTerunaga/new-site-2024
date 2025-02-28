@@ -6,8 +6,8 @@ import { staticCard } from "../_static/card"
 import styles from "./styles.css"
 import GITHUB from "@/assets/home/github-mark-white.svg"
 import X from "@/assets/home/logo-white.png"
-import { Card } from "@/components/card"
-import { Header } from "@/components/header"
+import { Card } from "@/components/elements/card"
+import { Header } from "@/components/layouts/header"
 import { i18n } from "@/utils/lang"
 
 interface Props {

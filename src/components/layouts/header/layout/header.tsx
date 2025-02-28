@@ -1,7 +1,7 @@
-import { Back } from "../back"
-import type { HeaderProps } from "./header.type"
-import LangSelect from "./lang-select/lang-select"
-import MenuList from "./menuList/menu-list"
+import { Back } from "../../../elements/back"
+import LangSelect from "../components/lang-select/lang-select"
+import MenuList from "../components/menu-list/menu-list"
+import { HeaderProps } from "./header.type"
 import styles from "./style.css"
 
 interface Props extends HeaderProps {}

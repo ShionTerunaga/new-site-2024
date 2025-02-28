@@ -4,7 +4,7 @@ import { ReactNode } from "react"
 import { popupReducer } from "./popup-reducer"
 import { PopAction, PopState } from "./popup.type"
 import { initialState } from "./popupInitial.static"
-import { createReducerContext } from "@/core/context"
+import { createReducerContext } from "@/utils/context"
 
 interface Props {
     children: ReactNode

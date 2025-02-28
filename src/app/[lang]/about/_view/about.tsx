@@ -3,7 +3,7 @@ import ListBox from "../_components/list-box/list-box"
 import { getAppeal } from "../_static/appeal"
 import { getStack } from "../_static/stack"
 import styles from "./style.css"
-import { Header } from "@/components/header"
+import { Header } from "@/components/layouts/header"
 import { i18n } from "@/utils/lang"
 
 interface Props {

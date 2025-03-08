@@ -12,12 +12,12 @@ const styles = {
         position: "fixed",
         inset: "0 0 auto",
         zIndex: 100,
-        backgroundColor: "rgb(0 0 0/0.7)",
+        backgroundColor: "rgba(35,35,35,0.7)",
         backdropFilter: "blur(10px)",
         WebkitBackdropFilter: "blur(10px)"
     }),
     isHome: style({
-        justifyContent: "end",
+        justifyContent: "end"
     }),
     heading1: style({
         color: "white"

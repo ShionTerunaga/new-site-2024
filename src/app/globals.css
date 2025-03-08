@@ -4,8 +4,8 @@
     margin: 0;
 }
 body {
-    background-color: black;
-    color: white;
+    background-color: #232323;
+    color: #eaeaea;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -27,18 +27,18 @@ input,
 optgroup,
 select,
 textarea {
-  -webkit-appearance: none;
-  appearance: none !important;
-  vertical-align: middle;
-  color: inherit;
-  font: inherit;
-  background: transparent;
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  border-radius: 0;
-  text-align: inherit;
-  cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none !important;
+    vertical-align: middle;
+    color: inherit;
+    font: inherit;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border-radius: 0;
+    text-align: inherit;
+    cursor: pointer;
 }
 
 /**
@@ -46,13 +46,13 @@ textarea {
  */
 
 [type="checkbox"] {
-  -webkit-appearance: checkbox;
-  appearance: checkbox;
+    -webkit-appearance: checkbox;
+    appearance: checkbox;
 }
 
 [type="radio"] {
-  -webkit-appearance: radio;
-  appearance: radio;
+    -webkit-appearance: radio;
+    appearance: radio;
 }
 
 /**
@@ -62,8 +62,8 @@ textarea {
 
 button,
 input {
-  /* 1 */
-  overflow: visible;
+    /* 1 */
+    overflow: visible;
 }
 
 /**
@@ -73,8 +73,8 @@ input {
 
 button,
 select {
-  /* 1 */
-  text-transform: none;
+    /* 1 */
+    text-transform: none;
 }
 
 /**
@@ -85,16 +85,16 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 button[disabled],
 [type="button"][disabled],
 [type="reset"][disabled],
 [type="submit"][disabled] {
-  cursor: default;
+    cursor: default;
 }
 
 /**
@@ -105,8 +105,8 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+    border-style: none;
+    padding: 0;
 }
 
 /**
@@ -117,5 +117,5 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+    outline: 1px dotted ButtonText;
 }

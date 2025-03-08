@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { PopupLayout, PopupProvider } from "@/features/popup"
+import { PopupProvider } from "@/features/popup"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -18,10 +18,7 @@ export default function RootLayout({
     return (
         <html lang="ja">
             <body className={inter.className}>
-                <PopupProvider>
-                    <PopupLayout />
-                    {children}
-                </PopupProvider>
+                <PopupProvider>{children}</PopupProvider>
             </body>
         </html>
     )

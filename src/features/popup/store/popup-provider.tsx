@@ -1,6 +1,7 @@
 "use client"
 
 import { ReactNode } from "react"
+import { PopupLayout } from "../layout/popup-layout"
 import { popupReducer } from "./popup-reducer"
 import { PopAction, PopState } from "./popup.type"
 import { initialState } from "./popupInitial.static"
@@ -18,5 +19,10 @@ export const PopupContext = createReducerContext<PopState, PopAction>({
 export function PopupProvider({ children }: Props) {
     const { Provider } = PopupContext
 
-    return <Provider reducer={popupReducer}>{children}</Provider>
+    return (
+        <Provider reducer={popupReducer}>
+            <PopupLayout />
+            {children}
+        </Provider>
+    )
 }

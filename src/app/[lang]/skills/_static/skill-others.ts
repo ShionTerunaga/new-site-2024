@@ -1,7 +1,4 @@
-import GIT_B from "@/assets/skills/git&github-b.svg";
-import GIT from "@/assets/skills/git&github.svg";
-import PYTHON from "@/assets/skills/python.svg";
-import RASPI from "@/assets/skills/raspberry-pi.svg";
+import { GIT_MAIN, GIT_SUB, PYTHON, RASPI } from "./assets";
 import { CardType } from "@/components/elements/card";
 
 export const skillOthers = (t: any): CardType[] => {
@@ -16,8 +13,8 @@ export const skillOthers = (t: any): CardType[] => {
         },
         {
             ...t.skills.otherSkill.skill3,
-            image: GIT,
-            imageB: GIT_B
+            image: GIT_MAIN,
+            imageB: GIT_SUB
         }
     ];
 };

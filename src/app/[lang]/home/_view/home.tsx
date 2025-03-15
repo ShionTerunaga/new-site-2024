@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import CardContainer from "../_components/card-container/card-container";
 import Icon from "../_components/icon/icon";
-import { X_ICON } from "../_static/assets";
+import { X_ICON, GITHUB_ICON } from "../_static/assets";
 import { staticCard } from "../_static/card";
 import styles from "./styles.css";
-import GITHUB from "@/assets/home/github-mark-white.svg";
+
 import { Card } from "@/components/elements/card";
 import { Header } from "@/components/layouts/header";
 import { i18n } from "@/utils/lang";
@@ -43,7 +43,12 @@ export const Home = ({ currentLang }: Props) => {
                             target="_blank"
                             aria-label="This is GitHub of TERUSI"
                         >
-                            <Image src={GITHUB} width={22} height={22} alt="" />
+                            <Image
+                                src={GITHUB_ICON}
+                                width={22}
+                                height={22}
+                                alt=""
+                            />
                         </a>
                     </div>
                 </section>

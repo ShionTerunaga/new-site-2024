@@ -1,11 +1,11 @@
 import ABOUT from "../_assets/about.png";
 import CONTACT from "../_assets/contact.png";
 import GITHUB from "../_assets/github.svg";
+import ICON from "../_assets/icon.jpg";
 import INTRO from "../_assets/introduction.png";
 import PRODUCT from "../_assets/product.png";
 import SKILL from "../_assets/skill.png";
 import X from "../_assets/x.png";
-import ICON from "@/assets/home/icon.jpg";
 
 export const MY_FACE = ICON;
 export const ABOUT_ICON = ABOUT;

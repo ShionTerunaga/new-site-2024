@@ -1,15 +1,17 @@
-import BUN from "@/assets/skills/bun-js.png"
-import JS from "@/assets/skills/javascript.png"
-import NEXT_B from "@/assets/skills/next-js-b.svg"
-import NEXT from "@/assets/skills/next-js.svg"
-import EXPRESS from "@/assets/skills/node&exp.svg"
-import EXPRESS_B from "@/assets/skills/node-b.svg"
-import REACT from "@/assets/skills/react.svg"
-import STORYBOOK from "@/assets/skills/storybook.svg"
-import TS from "@/assets/skills/ts.svg"
-import VANILLA_EXTRACT from "@/assets/skills/vanilla-extract.png"
-import VITEST from "@/assets/skills/vitest.svg"
-import { CardType } from "@/components/elements/card/card.type"
+import {
+    BUN_JS,
+    EXPRESS,
+    EXPRESS_B,
+    JS,
+    NEXT,
+    NEXT_B,
+    REACT_PIC,
+    STORY_BOOK,
+    TS,
+    VANILLA_EXTRACT,
+    VT
+} from "./assets";
+import { CardType } from "@/components/elements/card/card.type";
 
 export const skillWeb = (t: any): CardType[] => {
     return [
@@ -23,7 +25,7 @@ export const skillWeb = (t: any): CardType[] => {
         },
         {
             ...t.skills.webSkills.skill3,
-            image: REACT
+            image: REACT_PIC
         },
         {
             ...t.skills.webSkills.skill4,
@@ -36,7 +38,7 @@ export const skillWeb = (t: any): CardType[] => {
         },
         {
             ...t.skills.webSkills.skill6,
-            image: STORYBOOK
+            image: STORY_BOOK
         },
         {
             ...t.skills.webSkills.skill7,
@@ -45,11 +47,11 @@ export const skillWeb = (t: any): CardType[] => {
         },
         {
             ...t.skills.webSkills.skill8,
-            image: VITEST
+            image: VT
         },
         {
             ...t.skills.webSkills.skill9,
-            image: BUN
+            image: BUN_JS
         }
-    ]
-}
+    ];
+};

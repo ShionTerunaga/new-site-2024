@@ -1,12 +1,12 @@
-import CardButton from "../card-button/card-button"
-import SkillContents from "../skill-contents/skill-contents"
-import styles from "./style.css"
-import { CardType } from "@/components/elements/card/card.type"
-import { en } from "@/shared/lang/en"
+import CardButton from "../card-button/card-button";
+import SkillContents from "../skill-contents/skill-contents";
+import styles from "./style.css";
+import { CardType } from "@/components/elements/card/card.type";
+import { en } from "@/shared/lang/en";
 
 interface Props {
-    title?: string
-    contents: CardType[]
+    title?: string;
+    contents: CardType[];
 }
 
 const CardCollection = ({ title, contents }: Props) => {
@@ -26,7 +26,7 @@ const CardCollection = ({ title, contents }: Props) => {
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CardCollection
+export default CardCollection;

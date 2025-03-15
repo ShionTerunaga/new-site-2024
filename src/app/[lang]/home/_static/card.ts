@@ -1,39 +1,36 @@
-import ABOUT from "@/assets/home/about.png"
-import INTRO from "@/assets/home/introduction.png"
-import PRODUCTION from "@/assets/home/product.png"
-import SKILL from "@/assets/home/skill.png"
-import { CardType } from "@/components/elements/card"
-import { i18n } from "@/utils/lang"
-import { routingPath } from "@/utils/routing-paths"
+import { ABOUT_ICON, INTRO_ICON, PRODUCT_ICON, SKILL_ICON } from "./assets";
+import { CardType } from "@/components/elements/card";
+import { i18n } from "@/utils/lang";
+import { routingPath } from "@/utils/routing-paths";
 
 export const staticCard = (lang: string): CardType[] => {
-    const t = i18n(lang)
-    const paths = routingPath(lang)
+    const t = i18n(lang);
+    const paths = routingPath(lang);
 
     return [
         {
             path: paths.intro,
-            image: INTRO,
+            image: INTRO_ICON,
             title: t.home.card.card1.title,
             description: t.home.card.card1.description
         },
         {
             path: paths.skills,
-            image: SKILL,
+            image: SKILL_ICON,
             title: t.home.card.card2.title,
             description: t.home.card.card2.description
         },
         {
             path: paths.activity,
-            image: PRODUCTION,
+            image: PRODUCT_ICON,
             title: t.home.card.card3.title,
             description: t.home.card.card3.description
         },
         {
             path: paths.about,
-            image: ABOUT,
+            image: ABOUT_ICON,
             title: t.home.card.card4.title,
             description: t.home.card.card4.description
         }
-    ]
-}
+    ];
+};

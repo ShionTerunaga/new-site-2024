@@ -1,26 +1,27 @@
-"use client"
+"use client";
 
-import { useParams, usePathname, useRouter } from "next/navigation"
-import { useState } from "react"
-import type { HeaderProps } from "../../layout/header.type"
-import styles, { dropLi } from "./styles.css"
-import { lang } from "@/utils/lang"
+import { useParams, usePathname, useRouter } from "next/navigation";
+import { useState } from "react";
+import type { HeaderProps } from "../../layout/header.type";
+import styles, { dropLi } from "./styles.css";
+import { lang } from "@/utils/lang";
 
 interface Props extends HeaderProps {}
 
 const LangSelect = ({ currentLang }: Props) => {
-    const [isDrop, setIsDrop] = useState(false)
-    const pathArr = usePathname().split("/")
-    const params = useParams().id || ""
-    const router = useRouter()
+    const [isDrop, setIsDrop] = useState(false);
+    const pathArr = usePathname().split("/");
+    const params = useParams().id || "";
+    const router = useRouter();
 
-    const toggleDrop = () => setIsDrop((prev) => !prev)
+    const toggleDrop = () => setIsDrop((prev) => !prev);
 
     const clickLink = (lang: string) => {
-        setIsDrop(false)
+        setIsDrop(false);
 
-        if (pathArr[1] !== lang) router.push(`/${lang}/${pathArr[2]}/${params}`)
-    }
+        if (pathArr[1] !== lang)
+            router.push(`/${lang}/${pathArr[2]}/${params}`);
+    };
 
     return (
         <div className={styles.selectLang}>
@@ -44,7 +45,7 @@ const LangSelect = ({ currentLang }: Props) => {
                 ))}
             </ul>
         </div>
-    )
-}
+    );
+};
 
-export default LangSelect
+export default LangSelect;

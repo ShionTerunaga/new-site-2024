@@ -1,9 +1,9 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     button: style({
-        paddingBlock: '1em',
-        textAlign: 'center',
+        paddingBlock: "1em",
+        textAlign: "center",
         flex: "1",
         borderRadius: 5,
         border: "none",
@@ -14,6 +14,6 @@ const styles = {
         },
         fontSize: 20
     })
-}
+};
 
-export default styles
+export default styles;

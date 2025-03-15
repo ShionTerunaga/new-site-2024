@@ -4,18 +4,11 @@
         "prettier",
         "plugin:storybook/recommended"
     ],
-    "plugins": [
-        "import",
-        "react",
-        "jsx-a11y",
-        "unused-imports"
-    ],
+    "plugins": ["import", "react", "jsx-a11y", "unused-imports"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
-        "project": [
-            "./tsconfig.json"
-        ],
+        "project": ["./tsconfig.json"],
         "ecmaFeatures": {
             "jsx": true
         },

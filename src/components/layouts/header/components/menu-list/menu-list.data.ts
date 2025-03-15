@@ -1,9 +1,9 @@
-import { i18n } from "@/utils/lang"
-import { routingPath } from "@/utils/routing-paths"
+import { i18n } from "@/utils/lang";
+import { routingPath } from "@/utils/routing-paths";
 
 export const staticMenu = (lang: string) => {
-    const t = i18n(lang)
-    const paths = routingPath(lang)
+    const t = i18n(lang);
+    const paths = routingPath(lang);
 
     return [
         {
@@ -26,5 +26,5 @@ export const staticMenu = (lang: string) => {
             path: paths.about,
             pageName: t.home.card.card4.title
         }
-    ]
-}
+    ];
+};

@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     section: style({
@@ -51,6 +51,6 @@ const styles = {
             }
         }
     })
-}
+};
 
-export default styles
+export default styles;

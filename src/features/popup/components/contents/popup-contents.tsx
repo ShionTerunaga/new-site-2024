@@ -1,16 +1,16 @@
-"use client"
+"use client";
 
-import { X } from "@yamada-ui/lucide"
-import { ReactNode } from "react"
-import styles from "./style.css"
-import { usePopup } from "@/features/popup"
+import { X } from "@yamada-ui/lucide";
+import { ReactNode } from "react";
+import styles from "./style.css";
+import { usePopup } from "@/features/popup";
 
 interface Props {
-    children: ReactNode
+    children: ReactNode;
 }
 
 export const PopupContents = ({ children }: Props) => {
-    const { closePopup } = usePopup()
+    const { closePopup } = usePopup();
 
     return (
         <div className={styles.container}>
@@ -23,5 +23,5 @@ export const PopupContents = ({ children }: Props) => {
             </div>
             {children}
         </div>
-    )
-}
+    );
+};

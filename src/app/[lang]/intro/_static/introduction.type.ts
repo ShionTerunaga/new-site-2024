@@ -1,20 +1,20 @@
-import { StaticImageData } from "next/image"
+import { StaticImageData } from "next/image";
 
 export type IntroType = {
     /**
      * item
      */
-    title: string
+    title: string;
     /**
      * answer
      */
-    headerContents: string
+    headerContents: string;
     /**
      * description
      */
-    bodyContents: string
+    bodyContents: string;
     /**
      * image
      */
-    image?: StaticImageData
-}
+    image?: StaticImageData;
+};

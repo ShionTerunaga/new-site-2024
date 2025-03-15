@@ -1,6 +1,6 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
-export const dropLi = style({})
+export const dropLi = style({});
 
 const styles = {
     header: style({
@@ -27,6 +27,6 @@ const styles = {
         alignItems: "center",
         gap: "5vw"
     })
-}
+};
 
-export default styles
+export default styles;

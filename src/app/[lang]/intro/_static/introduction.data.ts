@@ -1,6 +1,4 @@
-import RUN from "@/assets/introduction/running.jpg";
-import SPITZ from "@/assets/introduction/spitz.png";
-import YAKINIKU from "@/assets/introduction/yakiniku.jpg";
+import { MEAT_PIC, RUN_PIC, SPITZ_PIC } from "./assets";
 import { i18n } from "@/utils/lang";
 
 export const introData = (lang: string) => {
@@ -11,13 +9,13 @@ export const introData = (lang: string) => {
             title: t.intro.introData.intro1.title,
             headerContents: t.intro.introData.intro1.headerContents,
             bodyContents: t.intro.introData.intro1.bodyContents,
-            image: YAKINIKU
+            image: MEAT_PIC
         },
         {
             title: t.intro.introData.intro2.title,
             headerContents: t.intro.introData.intro2.headerContents,
             bodyContents: t.intro.introData.intro2.bodyContents,
-            image: RUN
+            image: RUN_PIC
         },
         {
             title: t.intro.introData.intro3.title,
@@ -28,7 +26,7 @@ export const introData = (lang: string) => {
             title: t.intro.introData.intro4.title,
             headerContents: t.intro.introData.intro4.headerContents,
             bodyContents: t.intro.introData.intro4.bodyContents,
-            image: SPITZ
+            image: SPITZ_PIC
         }
     ];
 };

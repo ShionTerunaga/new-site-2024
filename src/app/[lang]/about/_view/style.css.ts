@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     container: style({
@@ -10,7 +10,7 @@ const styles = {
         textAlign: "center"
     }),
     subTitle: style({
-        padding: '20px 5vw',
+        padding: "20px 5vw",
         fontSize: 26,
         textAlign: "center",
         selectors: {
@@ -49,6 +49,6 @@ const styles = {
             }
         }
     })
-}
+};
 
-export default styles
+export default styles;

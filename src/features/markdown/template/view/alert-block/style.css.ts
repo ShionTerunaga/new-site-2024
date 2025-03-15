@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     container: style({
@@ -20,6 +20,6 @@ const styles = {
         marginLeft: 10,
         color: "white"
     })
-}
+};
 
-export default styles
+export default styles;

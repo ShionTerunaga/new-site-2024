@@ -1,25 +1,25 @@
-"use client"
+"use client";
 
-import { Menu, X } from "@yamada-ui/lucide"
-import { AnimatePresence, motion } from "motion/react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Fragment, useState } from "react"
-import { staticMenu } from "./menu-list.data"
-import styles from "./styles.css"
+import { Menu, X } from "@yamada-ui/lucide";
+import { AnimatePresence, motion } from "motion/react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Fragment, useState } from "react";
+import { staticMenu } from "./menu-list.data";
+import styles from "./styles.css";
 
 interface Props {
-    currentLang: string
+    currentLang: string;
 }
 
 const MenuList = ({ currentLang }: Props) => {
-    const path = usePathname()
-    const paths = staticMenu(currentLang)
-    const [isOpen, setIsOpen] = useState<boolean>(false)
+    const path = usePathname();
+    const paths = staticMenu(currentLang);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const handleClick = () => {
-        setIsOpen(!isOpen)
-    }
+        setIsOpen(!isOpen);
+    };
 
     return (
         <>
@@ -64,7 +64,7 @@ const MenuList = ({ currentLang }: Props) => {
                 )}
             </AnimatePresence>
         </>
-    )
-}
+    );
+};
 
-export default MenuList
+export default MenuList;

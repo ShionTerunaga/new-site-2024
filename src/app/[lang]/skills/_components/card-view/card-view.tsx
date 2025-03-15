@@ -1,9 +1,9 @@
-import CardCollection from "../card-collection/card-collection"
-import { ContentsAll } from "../card-collection/contents-all.type"
-import styles from "./style.css"
+import CardCollection from "../card-collection/card-collection";
+import { ContentsAll } from "../card-collection/contents-all.type";
+import styles from "./style.css";
 
 interface Props {
-    contents: ContentsAll[] | ContentsAll
+    contents: ContentsAll[] | ContentsAll;
 }
 
 export const CardView = ({ contents }: Props) => {
@@ -21,5 +21,5 @@ export const CardView = ({ contents }: Props) => {
                 )}
             </div>
         </section>
-    )
-}
+    );
+};

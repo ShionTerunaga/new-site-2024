@@ -1,67 +1,67 @@
-import { JSDOM } from "jsdom"
-import { LinkDict } from "./get-url-contents.type"
+import { JSDOM } from "jsdom";
+import { LinkDict } from "./get-url-contents.type";
 
 export const getUrlContents = async (url: string) => {
-    const res = await fetch(url)
+    const res = await fetch(url);
 
     if (!res.ok) {
-        throw new Error("response is failed")
+        throw new Error("response is failed");
     }
-    const html = await res.text()
+    const html = await res.text();
 
     const replaceHTML = html
         .replace(/<style[\s\S]*?>[\s\S]*?<\/style>/gi, "")
-        .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "")
+        .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "");
 
-    const DOM = new JSDOM(replaceHTML)
+    const DOM = new JSDOM(replaceHTML);
 
-    const twitterPost = url.match(/https:\/\/x\.com\/([\w]+)\/status\/([\d]+)/)
+    const twitterPost = url.match(/https:\/\/x\.com\/([\w]+)\/status\/([\d]+)/);
 
     if (twitterPost) {
         return {
             url: url
-        }
+        };
     }
 
-    const twitterHome = url.match(/^https?:\/\/x\.com\/([\w]+)/)
+    const twitterHome = url.match(/^https?:\/\/x\.com\/([\w]+)/);
 
     if (twitterHome !== null) {
         return {
             "og:title": url,
             "og:image":
                 "https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
-        } as LinkDict
+        } as LinkDict;
     }
 
-    const meta = DOM.window.document.head.querySelectorAll("meta")
+    const meta = DOM.window.document.head.querySelectorAll("meta");
 
-    const dict: LinkDict = {}
+    const dict: LinkDict = {};
 
     meta.forEach((item) => {
-        let hasProperty = item.getAttribute("property")
+        let hasProperty = item.getAttribute("property");
 
         if (!hasProperty) {
-            hasProperty = item.getAttribute("name")
+            hasProperty = item.getAttribute("name");
 
-            if (!hasProperty) return
+            if (!hasProperty) return;
         }
 
-        const ogpProperty = hasProperty.match(/og:([\w]+)/g)
+        const ogpProperty = hasProperty.match(/og:([\w]+)/g);
 
-        if (!ogpProperty) return
+        if (!ogpProperty) return;
 
-        const option = hasProperty.match(/og:[\w]+:[\w]+/g)
+        const option = hasProperty.match(/og:[\w]+:[\w]+/g);
 
-        if (option) return
+        if (option) return;
 
-        dict[ogpProperty[0]] = item.getAttribute("content")
-    })
+        dict[ogpProperty[0]] = item.getAttribute("content");
+    });
 
     if (!dict["og:title"]) {
-        const meta = DOM.window.document.head.querySelectorAll("title")
+        const meta = DOM.window.document.head.querySelectorAll("title");
 
-        dict["og:title"] = meta[0].textContent
+        dict["og:title"] = meta[0].textContent;
     }
 
-    return dict
-}
+    return dict;
+};

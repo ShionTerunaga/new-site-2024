@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
-import { ReactNode } from "react"
-import styles from "./styles.css"
+import { motion } from "motion/react";
+import { ReactNode } from "react";
+import styles from "./styles.css";
 
 interface Props {
-    children: ReactNode
-    index: number
+    children: ReactNode;
+    index: number;
 }
 
 const CardContainer = ({ children, index }: Props) => {
@@ -19,7 +19,7 @@ const CardContainer = ({ children, index }: Props) => {
         >
             {children}
         </motion.div>
-    )
-}
+    );
+};
 
-export default CardContainer
+export default CardContainer;

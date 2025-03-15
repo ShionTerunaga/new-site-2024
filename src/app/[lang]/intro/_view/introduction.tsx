@@ -1,19 +1,19 @@
-import CarrierCard from "../_components/carrie-card/carrier-card"
-import IntroContents from "../_components/intro-contents/introduction"
-import IntroModal from "../_components/intro-modal/intro-modal"
-import IntroPopup from "../_components/intro-popup/intro-popup"
-import { introData } from "../_static/introduction.data"
-import styles from "./style.css"
-import { Header } from "@/components/layouts/header"
-import { i18n } from "@/utils/lang"
+import CarrierCard from "../_components/carrie-card/carrier-card";
+import IntroContents from "../_components/intro-contents/introduction";
+import IntroModal from "../_components/intro-modal/intro-modal";
+import IntroPopup from "../_components/intro-popup/intro-popup";
+import { introData } from "../_static/introduction.data";
+import styles from "./style.css";
+import { Header } from "@/components/layouts/header";
+import { i18n } from "@/utils/lang";
 
 interface Props {
-    currentLang: string
+    currentLang: string;
 }
 
 export const Introduction = ({ currentLang }: Props) => {
-    const t = i18n(currentLang)
-    const introModal = introData(currentLang)
+    const t = i18n(currentLang);
+    const introModal = introData(currentLang);
 
     return (
         <>
@@ -39,5 +39,5 @@ export const Introduction = ({ currentLang }: Props) => {
                 </div>
             </main>
         </>
-    )
-}
+    );
+};

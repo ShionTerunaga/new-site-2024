@@ -1,5 +1,5 @@
-import SelectLanguageGoHome from "../_components/select-langage-go-home/select-language-go-home"
-import styles from "./style.css"
+import SelectLanguageGoHome from "../_components/select-langage-go-home/select-language-go-home";
+import styles from "./style.css";
 
 export const NotFoundComponent = () => {
     return (
@@ -14,5 +14,5 @@ export const NotFoundComponent = () => {
                 <SelectLanguageGoHome />
             </section>
         </main>
-    )
-}
+    );
+};

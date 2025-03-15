@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     heading2: style({
@@ -25,6 +25,6 @@ const styles = {
         width: "100%",
         objectFit: "contain"
     })
-}
+};
 
-export default styles
+export default styles;

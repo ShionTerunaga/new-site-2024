@@ -1,1 +1,1 @@
-export { Back } from "./back"
+export { Back } from "./back";

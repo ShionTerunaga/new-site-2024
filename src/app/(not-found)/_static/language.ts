@@ -1,7 +1,7 @@
 export type SelectLanguage = {
-    lang: string
-    text: string
-}
+    lang: string;
+    text: string;
+};
 
 export const languages: SelectLanguage[] = [
     {
@@ -12,4 +12,4 @@ export const languages: SelectLanguage[] = [
         lang: "ja",
         text: "Japanese ver"
     }
-]
+];

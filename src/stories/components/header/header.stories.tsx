@@ -1,14 +1,14 @@
-import type { Meta, StoryFn } from "@storybook/react"
-import { Header } from "@/components/layouts/header"
+import type { Meta, StoryFn } from "@storybook/react";
+import { Header } from "@/components/layouts/header";
 
 const meta: Meta<typeof Header> = {
     component: Header
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryFn<typeof Header>
+type Story = StoryFn<typeof Header>;
 
 export const Basic: Story = () => {
-    return <Header title="" currentLang="" />
-}
+    return <Header title="" currentLang="" />;
+};

@@ -1,19 +1,19 @@
-import ContentsBox from "../_components/contents-box/contents-box"
-import ListBox from "../_components/list-box/list-box"
-import { getAppeal } from "../_static/appeal"
-import { getStack } from "../_static/stack"
-import styles from "./style.css"
-import { Header } from "@/components/layouts/header"
-import { i18n } from "@/utils/lang"
+import ContentsBox from "../_components/contents-box/contents-box";
+import ListBox from "../_components/list-box/list-box";
+import { getAppeal } from "../_static/appeal";
+import { getStack } from "../_static/stack";
+import styles from "./style.css";
+import { Header } from "@/components/layouts/header";
+import { i18n } from "@/utils/lang";
 
 interface Props {
-    currentLang: string
+    currentLang: string;
 }
 
 export const AboutComponent = ({ currentLang }: Props) => {
-    const t = i18n(currentLang)
-    const stack = getStack(currentLang)
-    const appeal = getAppeal(currentLang)
+    const t = i18n(currentLang);
+    const stack = getStack(currentLang);
+    const appeal = getAppeal(currentLang);
 
     return (
         <>
@@ -37,5 +37,5 @@ export const AboutComponent = ({ currentLang }: Props) => {
                 />
             </main>
         </>
-    )
-}
+    );
+};

@@ -1,14 +1,14 @@
-import React from "react"
-import { getUrlContents } from "../../services/get-url-contents"
-import styles from "./style.css"
+import React from "react";
+import { getUrlContents } from "../../services/get-url-contents";
+import styles from "./style.css";
 
 interface Props {
-    url: string
+    url: string;
 }
 
 const LinkCustom = async (props: Props) => {
     try {
-        const ogp = await getUrlContents(props.url)
+        const ogp = await getUrlContents(props.url);
 
         return (
             <a href={props.url} target="_blank" className={styles.container}>
@@ -37,10 +37,10 @@ const LinkCustom = async (props: Props) => {
                     )}
                 </span>
             </a>
-        )
+        );
     } catch (e) {
-        console.log(e)
+        console.log(e);
     }
-}
+};
 
-export default LinkCustom
+export default LinkCustom;

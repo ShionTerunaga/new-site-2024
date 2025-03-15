@@ -1,1 +1,1 @@
-export { Header } from "./layout/header"
+export { Header } from "./layout/header";

@@ -1,1 +1,1 @@
-export const contentsPath: string = "./src/contents"
+export const contentsPath: string = "./src/contents";

@@ -1,16 +1,16 @@
-import { AboutComponent } from "./_view/about"
-import { getLangList } from "@/utils/get-lang-list"
+import { AboutComponent } from "./_view/about";
+import { getLangList } from "@/utils/get-lang-list";
 
-export const generateStaticParams = () => getLangList()
+export const generateStaticParams = () => getLangList();
 
 type Props = Promise<{
-    lang: string
-}>
+    lang: string;
+}>;
 
 const About = async ({ params }: { params: Props }) => {
-    const { lang } = await params
+    const { lang } = await params;
 
-    return <AboutComponent currentLang={lang} />
-}
+    return <AboutComponent currentLang={lang} />;
+};
 
-export default About
+export default About;

@@ -1,1 +1,1 @@
-export { markdownComponent } from "./template/markdown"
+export { markdownComponent } from "./template/markdown";

@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 // import button from '../introModal/style.css'
 
 const styles = {
@@ -19,11 +19,11 @@ const styles = {
         marginBottom: 10
     }),
     img: style({
-        width: '100%',
-        height: 'auto',
-        aspectRatio: '10/11',
-        objectFit: 'cover',
+        width: "100%",
+        height: "auto",
+        aspectRatio: "10/11",
+        objectFit: "cover"
     })
-}
+};
 
-export default styles
+export default styles;

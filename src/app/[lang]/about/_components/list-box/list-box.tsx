@@ -1,7 +1,7 @@
-import styles from "./style.css"
+import styles from "./style.css";
 
 interface Props {
-    items: string[]
+    items: string[];
 }
 
 const ListBox = ({ items }: Props) => {
@@ -15,7 +15,7 @@ const ListBox = ({ items }: Props) => {
                 ))}
             </ul>
         </section>
-    )
-}
+    );
+};
 
-export default ListBox
+export default ListBox;

@@ -1,10 +1,10 @@
-import Image from "next/image"
-import styles from "./style.css"
+import Image from "next/image";
+import styles from "./style.css";
 
 interface Props {
-    answer: string
-    description: string
-    image?: any
+    answer: string;
+    description: string;
+    image?: any;
 }
 
 const IntroPopup = ({ answer, description, image }: Props) => {
@@ -24,7 +24,7 @@ const IntroPopup = ({ answer, description, image }: Props) => {
                 )}
             </div>
         </>
-    )
-}
+    );
+};
 
-export default IntroPopup
+export default IntroPopup;

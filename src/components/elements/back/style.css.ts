@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     link: style({
@@ -21,6 +21,6 @@ const styles = {
         color: "white",
         cursor: "pointer"
     })
-}
+};
 
-export default styles
+export default styles;

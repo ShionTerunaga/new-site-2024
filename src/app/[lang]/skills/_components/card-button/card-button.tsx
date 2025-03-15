@@ -1,32 +1,32 @@
-"use client"
+"use client";
 
-import { StaticImageData } from "next/image"
-import { ReactNode } from "react"
-import styles from "./style.css"
-import { Card } from "@/components/elements/card"
-import { PopupContents, usePopup } from "@/features/popup"
+import { StaticImageData } from "next/image";
+import { ReactNode } from "react";
+import styles from "./style.css";
+import { Card } from "@/components/elements/card";
+import { PopupContents, usePopup } from "@/features/popup";
 
 interface Props {
     /** カードのタイトル */
-    title: string
+    title: string;
     /** カードの画像 */
-    image: StaticImageData
+    image: StaticImageData;
     /**ポップアップの中身 */
-    children: ReactNode
+    children: ReactNode;
 }
 
 const CardButton = (props: Props) => {
-    const { openPopup } = usePopup()
+    const { openPopup } = usePopup();
 
     const handleClick = () => {
-        openPopup(<PopupContents {...props} />)
-    }
+        openPopup(<PopupContents {...props} />);
+    };
 
     return (
         <button onClick={handleClick} className={styles.container}>
             <Card {...props} description="" isSkills />
         </button>
-    )
-}
+    );
+};
 
-export default CardButton
+export default CardButton;

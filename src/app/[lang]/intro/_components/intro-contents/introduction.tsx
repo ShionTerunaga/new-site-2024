@@ -1,12 +1,12 @@
-import styles from "./style.css"
-import { i18n } from "@/utils/lang"
+import styles from "./style.css";
+import { i18n } from "@/utils/lang";
 
 interface Props {
-    lang: string
+    lang: string;
 }
 
 const IntroContents = ({ lang }: Props) => {
-    const t = i18n(lang)
+    const t = i18n(lang);
 
     return (
         <section className={styles.section}>
@@ -21,7 +21,7 @@ const IntroContents = ({ lang }: Props) => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default IntroContents
+export default IntroContents;

@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     box: style({
@@ -53,6 +53,6 @@ const styles = {
         marginTop: 10,
         overflowWrap: "break-word"
     })
-}
+};
 
-export default styles
+export default styles;

@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     intro: style({
@@ -18,7 +18,7 @@ const styles = {
         "@media": {
             "(width < 850px)": {
                 flexDirection: "column",
-                alignItems: "center",
+                alignItems: "center"
             }
         }
     }),
@@ -52,6 +52,6 @@ const styles = {
             }
         }
     })
-}
+};
 
-export default styles
+export default styles;

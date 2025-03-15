@@ -1,6 +1,6 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
-export const dropLi = style({})
+export const dropLi = style({});
 const styles = {
     selectLang: style({
         position: "relative",
@@ -77,5 +77,5 @@ const styles = {
             }
         }
     })
-}
-export default styles
+};
+export default styles;

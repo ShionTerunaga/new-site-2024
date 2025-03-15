@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
     ActionDispatch,
@@ -7,12 +7,12 @@ import {
     ReactNode,
     useContext,
     useReducer
-} from "react"
-import { createResult, Result, RESULT_ERROR } from "@/utils/result"
+} from "react";
+import { createResult, Result, RESULT_ERROR } from "@/utils/result";
 
 interface ContextParams<T> {
-    errMessage: string
-    initialState: T
+    errMessage: string;
+    initialState: T;
 }
 export function createReducerContext<T, S>({
     errMessage,
@@ -20,40 +20,40 @@ export function createReducerContext<T, S>({
 }: ContextParams<T>) {
     const Context = createContext<Result<[T, ActionDispatch<[action: S]>]>>(
         createResult.err(errMessage)
-    )
+    );
 
     const Provider = function ({
         children,
         reducer
     }: {
-        children: ReactNode
-        reducer: (state: T, action: S) => T
+        children: ReactNode;
+        reducer: (state: T, action: S) => T;
     }): JSX.Element {
         const [state, action] = useReducer<T, [action: S]>(
             reducer,
             initialState
-        )
+        );
 
         const result: Result<[T, ActionDispatch<[action: S]>]> =
-            createResult.ok([state, action])
+            createResult.ok([state, action]);
 
-        return <Context value={result}>{children}</Context>
-    }
+        return <Context value={result}>{children}</Context>;
+    };
 
     const context = function useReducerContext(): {
-        state: T
-        dispatch: ActionDispatch<[action: S]>
+        state: T;
+        dispatch: ActionDispatch<[action: S]>;
     } {
-        const context = useContext(Context)
+        const context = useContext(Context);
 
         if (context.kind === RESULT_ERROR) {
-            throw context.err
+            throw context.err;
         }
 
-        const [state, dispatch] = context.value
+        const [state, dispatch] = context.value;
 
-        return { state, dispatch }
-    }
+        return { state, dispatch };
+    };
 
-    return { Provider, context }
+    return { Provider, context };
 }

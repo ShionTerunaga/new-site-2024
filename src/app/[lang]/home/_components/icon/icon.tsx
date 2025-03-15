@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { MY_FACE } from "../../_static/assets"
-import styles from "./style.css"
+import Image from "next/image";
+import { MY_FACE } from "../../_static/assets";
+import styles from "./style.css";
 
 const Icon = () => {
     return (
@@ -13,7 +13,7 @@ const Icon = () => {
                 className={styles.icon}
             />
         </picture>
-    )
-}
+    );
+};
 
-export default Icon
+export default Icon;

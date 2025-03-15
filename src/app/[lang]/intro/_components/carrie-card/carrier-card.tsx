@@ -1,12 +1,12 @@
-import { carrier } from "./carrier.data"
-import styles from "./style.css"
+import { carrier } from "./carrier.data";
+import styles from "./style.css";
 
 interface Props {
-    lang: string
+    lang: string;
 }
 
 const CarrierCard = ({ lang }: Props) => {
-    const carrierList = carrier(lang)
+    const carrierList = carrier(lang);
 
     return (
         <section className={styles.intro}>
@@ -19,7 +19,7 @@ const CarrierCard = ({ lang }: Props) => {
                 </div>
             ))}
         </section>
-    )
-}
+    );
+};
 
-export default CarrierCard
+export default CarrierCard;

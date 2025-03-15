@@ -1,8 +1,8 @@
-import { Back } from "../../../elements/back"
-import LangSelect from "../components/lang-select/lang-select"
-import MenuList from "../components/menu-list/menu-list"
-import { HeaderProps } from "./header.type"
-import styles from "./style.css"
+import { Back } from "../../../elements/back";
+import LangSelect from "../components/lang-select/lang-select";
+import MenuList from "../components/menu-list/menu-list";
+import { HeaderProps } from "./header.type";
+import styles from "./style.css";
 
 interface Props extends HeaderProps {}
 
@@ -19,5 +19,5 @@ export const Header = ({ isHome, ...rest }: Props) => {
                 <MenuList {...rest} />
             </div>
         </header>
-    )
-}
+    );
+};

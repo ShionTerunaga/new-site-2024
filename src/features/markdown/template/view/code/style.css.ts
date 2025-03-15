@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     codeBase: style({
@@ -7,6 +7,6 @@ const styles = {
         padding: 4,
         color: "red"
     })
-}
+};
 
-export default styles
+export default styles;

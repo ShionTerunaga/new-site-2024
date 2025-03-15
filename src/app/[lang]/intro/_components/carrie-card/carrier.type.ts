@@ -1,4 +1,4 @@
 export type CarrierType = {
-    when: string
-    contents: string
-}
+    when: string;
+    contents: string;
+};

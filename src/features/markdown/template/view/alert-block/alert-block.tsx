@@ -1,6 +1,6 @@
-import { CircleX } from "@yamada-ui/lucide"
-import React from "react"
-import styles from "./style.css"
+import { CircleX } from "@yamada-ui/lucide";
+import React from "react";
+import styles from "./style.css";
 
 const AlertBlock = (props: any) => {
     return (
@@ -8,7 +8,7 @@ const AlertBlock = (props: any) => {
             <CircleX className={styles.circleX} />
             <p className={styles.text}>{props.children}</p>
         </div>
-    )
-}
+    );
+};
 
-export default AlertBlock
+export default AlertBlock;

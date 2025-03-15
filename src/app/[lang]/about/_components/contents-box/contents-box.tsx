@@ -1,9 +1,9 @@
-import styles from "./style.css"
+import styles from "./style.css";
 
 interface Props {
-    contents: string
-    link: string
-    linkTitle: string
+    contents: string;
+    link: string;
+    linkTitle: string;
 }
 
 const ContentsBox = ({ contents, link, linkTitle }: Props) => {
@@ -16,7 +16,7 @@ const ContentsBox = ({ contents, link, linkTitle }: Props) => {
                 </a>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default ContentsBox
+export default ContentsBox;

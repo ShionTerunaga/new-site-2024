@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     container: style({
@@ -48,6 +48,6 @@ const styles = {
         marginTop: 5,
         fontSize: 10
     })
-}
+};
 
-export default styles
+export default styles;

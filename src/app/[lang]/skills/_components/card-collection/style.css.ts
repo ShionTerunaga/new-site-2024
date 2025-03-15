@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     container: style({
@@ -11,16 +11,16 @@ const styles = {
     clickMessage: style({
         textAlign: "center",
         fontSize: 18,
-        marginTop: 10,
+        marginTop: 10
     }),
     mainBox: style({
         display: "grid",
         gap: "max(3vw, 1em)",
         width: "min(90%, 800px)",
-        marginInline: 'auto',
+        marginInline: "auto",
         gridTemplateColumns: "repeat(auto-fill, max(26%, 160px))",
-        justifyContent: 'center',
-        marginTop: 'max(3vw, 30px)'
+        justifyContent: "center",
+        marginTop: "max(3vw, 30px)"
     }),
     link: style({
         textDecoration: "none"
@@ -28,6 +28,6 @@ const styles = {
     box: style({
         alignItems: "center"
     })
-}
+};
 
-export default styles
+export default styles;

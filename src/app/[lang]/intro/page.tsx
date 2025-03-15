@@ -1,14 +1,14 @@
-import { Introduction } from "./_view/introduction"
-import { getLangList } from "@/utils/get-lang-list"
+import { Introduction } from "./_view/introduction";
+import { getLangList } from "@/utils/get-lang-list";
 
-export const generateStaticParams = () => getLangList()
+export const generateStaticParams = () => getLangList();
 
-type Props = Promise<{ lang: string }>
+type Props = Promise<{ lang: string }>;
 
 const Intro = async ({ params }: { params: Props }) => {
-    const { lang } = await params
+    const { lang } = await params;
 
-    return <Introduction currentLang={lang} />
-}
+    return <Introduction currentLang={lang} />;
+};
 
-export default Intro
+export default Intro;

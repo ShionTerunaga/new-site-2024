@@ -229,4 +229,4 @@ export const en = {
             githubUrl: "https://github.com/kasumi0"
         }
     }
-}
+};

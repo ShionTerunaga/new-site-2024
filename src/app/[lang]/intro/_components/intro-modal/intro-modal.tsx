@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
-import { ReactNode } from "react"
-import styles from "./style.css"
-import { PopupContents } from "@/features/popup"
-import { usePopup } from "@/features/popup"
+import { ReactNode } from "react";
+import styles from "./style.css";
+import { PopupContents } from "@/features/popup";
+import { usePopup } from "@/features/popup";
 
 interface Props {
     /**
      * item
      */
-    title: string
+    title: string;
     /**
      * contents
      */
-    children: ReactNode
+    children: ReactNode;
 }
 
 const IntroModal = ({ title, children }: Props) => {
-    const { openPopup } = usePopup()
+    const { openPopup } = usePopup();
 
     const handleClick = () => {
-        openPopup(<PopupContents>{children}</PopupContents>)
-    }
+        openPopup(<PopupContents>{children}</PopupContents>);
+    };
 
     return (
         <button
@@ -31,7 +31,7 @@ const IntroModal = ({ title, children }: Props) => {
         >
             {title}
         </button>
-    )
-}
+    );
+};
 
-export default IntroModal
+export default IntroModal;

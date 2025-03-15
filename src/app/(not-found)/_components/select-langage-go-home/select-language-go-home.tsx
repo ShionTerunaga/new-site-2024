@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
-import { languages, SelectLanguage } from "../../_static/language"
-import styles from "./style.css"
+import Link from "next/link";
+import { useState } from "react";
+import { languages, SelectLanguage } from "../../_static/language";
+import styles from "./style.css";
 
 const SelectLanguageGoHome = () => {
-    const [isOpen, setIsOpen] = useState<boolean>(false)
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
-    const handleClick = () => setIsOpen(!isOpen)
+    const handleClick = () => setIsOpen(!isOpen);
 
     return (
         <section className={styles.container}>
@@ -33,7 +33,7 @@ const SelectLanguageGoHome = () => {
                 </ul>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default SelectLanguageGoHome
+export default SelectLanguageGoHome;

@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     container: style({
@@ -16,6 +16,6 @@ const styles = {
     comment: style({
         marginTop: 10
     })
-}
+};
 
-export default styles
+export default styles;

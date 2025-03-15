@@ -1,14 +1,14 @@
-import ABOUT from "@/assets/home/about.png"
-import INTRO from "@/assets/home/introduction.png"
-import PRODUCTION from "@/assets/home/product.png"
-import SKILL from "@/assets/home/skill.png"
-import { CardType } from "@/components/elements/card"
-import { i18n } from "@/utils/lang"
-import { routingPath } from "@/utils/routing-paths"
+import ABOUT from "@/assets/home/about.png";
+import INTRO from "@/assets/home/introduction.png";
+import PRODUCTION from "@/assets/home/product.png";
+import SKILL from "@/assets/home/skill.png";
+import { CardType } from "@/components/elements/card";
+import { i18n } from "@/utils/lang";
+import { routingPath } from "@/utils/routing-paths";
 
 export const staticCard = (lang: string): CardType[] => {
-    const t = i18n(lang)
-    const paths = routingPath(lang)
+    const t = i18n(lang);
+    const paths = routingPath(lang);
 
     return [
         {
@@ -35,5 +35,5 @@ export const staticCard = (lang: string): CardType[] => {
             title: t.home.card.card4.title,
             description: t.home.card.card4.description
         }
-    ]
-}
+    ];
+};

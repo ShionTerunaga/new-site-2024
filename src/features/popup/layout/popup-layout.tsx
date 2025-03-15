@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { AnimatePresence } from "motion/react"
-import { PopupBase } from "../components/base/popup-base"
-import { usePopup } from "@/features/popup"
+import { AnimatePresence } from "motion/react";
+import { PopupBase } from "../components/base/popup-base";
+import { usePopup } from "@/features/popup";
 
 export const PopupLayout = () => {
-    const { state } = usePopup()
+    const { state } = usePopup();
 
     return (
         <AnimatePresence>
             {state.state && <PopupBase>{state.children}</PopupBase>}
         </AnimatePresence>
-    )
-}
+    );
+};

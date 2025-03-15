@@ -1,5 +1,5 @@
 export const routingPath = (lang: string) => {
-    const locale = "/" + lang
+    const locale = "/" + lang;
 
     return {
         home: `${locale}/home`,
@@ -7,5 +7,5 @@ export const routingPath = (lang: string) => {
         skills: `${locale}/skills`,
         activity: `${locale}/activities`,
         about: `${locale}/about`
-    }
-}
+    };
+};

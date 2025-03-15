@@ -1,4 +1,4 @@
 export type MenuType = {
-    path: string
-    pageName: string
-}
+    path: string;
+    pageName: string;
+};

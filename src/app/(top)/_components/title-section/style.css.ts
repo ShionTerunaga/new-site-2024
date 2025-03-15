@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 export const styles = {
     titleBox: style({
@@ -6,6 +6,6 @@ export const styles = {
         fontSize: 26,
         textAlign: "center"
     })
-}
+};
 
-export default styles
+export default styles;

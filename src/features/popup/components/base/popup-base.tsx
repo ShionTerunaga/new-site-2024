@@ -1,9 +1,9 @@
-import { motion } from "motion/react"
-import { ReactNode } from "react"
-import styles from "./style.css"
+import { motion } from "motion/react";
+import { ReactNode } from "react";
+import styles from "./style.css";
 
 interface Props {
-    children: ReactNode
+    children: ReactNode;
 }
 
 export const PopupBase = ({ children }: Props) => {
@@ -28,5 +28,5 @@ export const PopupBase = ({ children }: Props) => {
                 </motion.div>
             </div>
         </>
-    )
-}
+    );
+};

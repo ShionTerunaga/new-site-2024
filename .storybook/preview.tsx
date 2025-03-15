@@ -1,7 +1,7 @@
-import type { Preview } from "@storybook/react"
-import React from "react"
-import { PopupLayout } from "../src/layout/popupLayout/popupLayout.logic"
-import { PopupContextProvider } from "../src/store/popup/popupContext"
+import type { Preview } from "@storybook/react";
+import React from "react";
+import { PopupLayout } from "../src/layout/popupLayout/popupLayout.logic";
+import { PopupContextProvider } from "../src/store/popup/popupContext";
 
 const preview: Preview = {
     parameters: {
@@ -37,9 +37,9 @@ const preview: Preview = {
                         <Story />
                     </PopupContextProvider>
                 </div>
-            )
+            );
         }
     ]
-}
+};
 
-export default preview
+export default preview;

@@ -1,5 +1,5 @@
-import { DetailedHTMLProps } from "react"
-import styles from "./style.css"
+import { DetailedHTMLProps } from "react";
+import styles from "./style.css";
 
 const Blockquote = (
     props: DetailedHTMLProps<
@@ -7,7 +7,7 @@ const Blockquote = (
         HTMLQuoteElement
     >
 ) => {
-    return <blockquote className={styles.container} {...props} />
-}
+    return <blockquote className={styles.container} {...props} />;
+};
 
-export default Blockquote
+export default Blockquote;

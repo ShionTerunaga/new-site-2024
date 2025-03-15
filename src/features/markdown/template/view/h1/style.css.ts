@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     h1: style({
@@ -8,6 +8,6 @@ const styles = {
     hr: style({
         marginBottom: 5
     })
-}
+};
 
-export default styles
+export default styles;

@@ -1,18 +1,18 @@
-import { CircleChevronRight } from "@yamada-ui/lucide"
-import Link from "next/link"
-import styles from "./style.css"
-import { Header } from "@/components/layouts/header"
-import { getAllContents } from "@/features/markdown/core"
-import { i18n } from "@/utils/lang"
-import { routingPath } from "@/utils/routing-paths"
+import { CircleChevronRight } from "@yamada-ui/lucide";
+import Link from "next/link";
+import styles from "./style.css";
+import { Header } from "@/components/layouts/header";
+import { getAllContents } from "@/features/markdown/core";
+import { i18n } from "@/utils/lang";
+import { routingPath } from "@/utils/routing-paths";
 
 interface Props {
-    currentLang: string
+    currentLang: string;
 }
 
 export const Activity = ({ currentLang }: Props) => {
-    const t = i18n(currentLang)
-    const contents = getAllContents(currentLang)
+    const t = i18n(currentLang);
+    const contents = getAllContents(currentLang);
 
     return (
         <>
@@ -44,5 +44,5 @@ export const Activity = ({ currentLang }: Props) => {
                 </section>
             </main>
         </>
-    )
-}
+    );
+};

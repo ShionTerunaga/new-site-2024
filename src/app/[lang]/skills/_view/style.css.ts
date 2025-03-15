@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css"
+import { style } from "@vanilla-extract/css";
 
 const styles = {
     container: style({
@@ -10,6 +10,6 @@ const styles = {
     space: style({
         height: 70
     })
-}
+};
 
-export default styles
+export default styles;

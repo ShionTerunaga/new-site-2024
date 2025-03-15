@@ -1,1 +1,1 @@
-export { CardView } from "./card-view"
+export { CardView } from "./card-view";

@@ -1,6 +1,6 @@
-import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin"
+import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin";
 
-const withVanillaExtract = createVanillaExtractPlugin()
+const withVanillaExtract = createVanillaExtractPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -13,6 +13,6 @@ const nextConfig = {
         domains: ["placehold.jp", "images.microcms-assets.io"]
     },
     transpilePackages: ["next-mdx-remote"]
-}
+};
 
-export default withVanillaExtract(nextConfig)
+export default withVanillaExtract(nextConfig);

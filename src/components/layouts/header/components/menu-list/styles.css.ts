@@ -20,7 +20,7 @@ const styles = {
     menuBox: style({
         width: "100%",
         height: "100%",
-        backgroundColor: "white",
+        backgroundColor: "#F5F5F5",
         zIndex: 3,
         display: "flex",
         justifyContent: "center",

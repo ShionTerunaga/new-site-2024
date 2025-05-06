@@ -1,7 +1,7 @@
 import { JSDOM } from "jsdom";
 import { LinkDict } from "./get-url-contents.type";
 
-export const getUrlContents = async (url: string) => {
+export const getUrlContents = async (url: string): Promise<LinkDict> => {
     const res = await fetch(url);
 
     if (!res.ok) {
@@ -25,12 +25,13 @@ export const getUrlContents = async (url: string) => {
 
     const twitterHome = url.match(/^https?:\/\/x\.com\/([\w]+)/);
 
+    //ここだけはnullは仕方ない
     if (twitterHome !== null) {
         return {
             "og:title": url,
             "og:image":
                 "https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png"
-        } as LinkDict;
+        };
     }
 
     const meta = DOM.window.document.head.querySelectorAll("meta");

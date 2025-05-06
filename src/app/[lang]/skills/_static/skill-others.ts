@@ -1,7 +1,8 @@
-import { GIT_MAIN, GIT_SUB, PYTHON, RASPI } from "./assets";
+import { GIT_MAIN, PYTHON, RASPI, RUST } from "./assets";
 import { CardType } from "@/components/elements/card";
+import { Lang } from "@/shared/lang/ja";
 
-export const skillOthers = (t: any): CardType[] => {
+export const skillOthers = (t: Lang): CardType[] => {
     return [
         {
             ...t.skills.otherSkill.skill1,
@@ -13,8 +14,11 @@ export const skillOthers = (t: any): CardType[] => {
         },
         {
             ...t.skills.otherSkill.skill3,
-            image: GIT_MAIN,
-            imageB: GIT_SUB
+            image: GIT_MAIN
+        },
+        {
+            ...t.skills.otherSkill.skill4,
+            image: RUST
         }
     ];
 };

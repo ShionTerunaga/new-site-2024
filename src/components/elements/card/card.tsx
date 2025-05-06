@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./style.css";
 
 interface Props {
-    image?: any;
+    image?: StaticImageData;
     title: string;
     description: string;
     isSkills?: boolean;

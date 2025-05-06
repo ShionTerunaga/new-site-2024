@@ -193,6 +193,12 @@ export const en = {
                 title: "git/github",
                 description:
                     "I use it for source code management; I don't know all the git commands but I try to use the CUI as much as possible. In my work, I try to use Github ingeniously to efficiently turn around projects."
+            },
+            skill4: {
+                path: "https://www.rust-lang.org/learn",
+                title: "Rust",
+                description:
+                    "I started this language when I thought it had stopped growing. In a word, I thought it was an amazingly clever language."
             }
         },
         official: "official site"

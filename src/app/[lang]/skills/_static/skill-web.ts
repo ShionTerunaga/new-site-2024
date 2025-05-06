@@ -1,10 +1,8 @@
 import {
     BUN_JS,
     EXPRESS,
-    EXPRESS_B,
     JS,
     NEXT,
-    NEXT_B,
     REACT_PIC,
     STORY_BOOK,
     TS,
@@ -12,8 +10,9 @@ import {
     VT
 } from "./assets";
 import { CardType } from "@/components/elements/card/card.type";
+import { Lang } from "@/shared/lang/ja";
 
-export const skillWeb = (t: any): CardType[] => {
+export const skillWeb = (t: Lang): CardType[] => {
     return [
         {
             ...t.skills.webSkills.skill1,
@@ -29,8 +28,7 @@ export const skillWeb = (t: any): CardType[] => {
         },
         {
             ...t.skills.webSkills.skill4,
-            image: NEXT,
-            imageB: NEXT_B
+            image: NEXT
         },
         {
             ...t.skills.webSkills.skill5,
@@ -42,8 +40,7 @@ export const skillWeb = (t: any): CardType[] => {
         },
         {
             ...t.skills.webSkills.skill7,
-            image: EXPRESS,
-            imageB: EXPRESS_B
+            image: EXPRESS
         },
         {
             ...t.skills.webSkills.skill8,

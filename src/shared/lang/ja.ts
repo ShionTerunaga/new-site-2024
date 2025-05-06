@@ -236,3 +236,5 @@ export const ja = {
         }
     }
 };
+
+export type Lang = typeof ja;

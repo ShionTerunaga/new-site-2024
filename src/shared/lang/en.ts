@@ -1,4 +1,6 @@
-export const en = {
+import { Lang } from "./ja";
+
+export const en: Lang = {
     component: {
         back: {
             title: "HOME"
@@ -213,6 +215,7 @@ export const en = {
         detail: "This section describes some of the innovations I have made in creating this site.",
         tech: {
             title: "1. Technology used",
+            detail: "このサイトで使用した技術スタックを列挙します",
             tech1: "Next.js",
             tech2: "vanilla-extract",
             tech3: "framer-motion",

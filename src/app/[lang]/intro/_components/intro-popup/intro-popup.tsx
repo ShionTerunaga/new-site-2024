@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./style.css";
 
 interface Props {
     answer: string;
     description: string;
-    image?: any;
+    image?: StaticImageData;
 }
 
 const IntroPopup = ({ answer, description, image }: Props) => {

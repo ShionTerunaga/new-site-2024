@@ -1,4 +1,6 @@
-export const en = {
+import { Lang } from "./ja";
+
+export const en: Lang = {
     component: {
         back: {
             title: "HOME"
@@ -193,6 +195,12 @@ export const en = {
                 title: "git/github",
                 description:
                     "I use it for source code management; I don't know all the git commands but I try to use the CUI as much as possible. In my work, I try to use Github ingeniously to efficiently turn around projects."
+            },
+            skill4: {
+                path: "https://www.rust-lang.org/learn",
+                title: "Rust",
+                description:
+                    "I started this language when I thought it had stopped growing. In a word, I thought it was an amazingly clever language."
             }
         },
         official: "official site"
@@ -207,6 +215,7 @@ export const en = {
         detail: "This section describes some of the innovations I have made in creating this site.",
         tech: {
             title: "1. Technology used",
+            detail: "このサイトで使用した技術スタックを列挙します",
             tech1: "Next.js",
             tech2: "vanilla-extract",
             tech3: "framer-motion",

@@ -192,6 +192,12 @@ export const ja = {
                 title: "git/github",
                 description:
                     "ソースコード管理に使っています。すべてのgitコマンドを知っているわけではありませんが、できるだけCUIを使うようにしています。仕事では、Githubを工夫して使い、プロジェクトを効率的に回すようにしています。"
+            },
+            skill4: {
+                path: "https://www.rust-lang.org/learn",
+                title: "Rust",
+                description:
+                    "成長が止まったと思った時に始めた言語です。一言で言うとすごいお利口な言語だなと思いました。"
             }
         },
         official: "公式サイト"
@@ -230,3 +236,5 @@ export const ja = {
         }
     }
 };
+
+export type Lang = typeof ja;

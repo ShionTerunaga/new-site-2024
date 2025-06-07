@@ -8,13 +8,13 @@ export type Result<T> =
 export const createResult = {
     ok: <T>(value: T): Result<T> => {
         return {
-            kind: "ok",
+            kind: RESULT_OK,
             value: value
         };
     },
     err: (message: string): Result<never> => {
         return {
-            kind: "error",
+            kind: RESULT_ERROR,
             err: new Error(message)
         };
     }

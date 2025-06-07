@@ -16,7 +16,7 @@ const CardCollection = ({ title, contents }: Props) => {
             <div className={styles.clickMessage}>{en.skills.clickMessage}</div>
             <div className={styles.mainBox}>
                 {contents.map((item, index) => (
-                    <CardButton {...item} key={index}>
+                    <CardButton index={index} {...item} key={index}>
                         <SkillContents
                             contents={item.description}
                             url={item.path}

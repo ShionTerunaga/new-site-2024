@@ -8,13 +8,13 @@ export type Option<T> =
 export const createOption = {
     some: <T>(value: T): Option<T> => {
         return {
-            kind: "some",
+            kind: OPTION_SOME,
             value: value
         };
     },
     none: (): Option<never> => {
         return {
-            kind: "none"
+            kind: OPTION_NONE
         };
     }
 };

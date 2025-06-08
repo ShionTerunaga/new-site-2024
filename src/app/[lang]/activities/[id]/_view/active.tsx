@@ -13,7 +13,7 @@ interface Props {
 
 export const Active = async ({ id, currentLang }: Props) => {
     const t = i18n(currentLang);
-    const markdown = getContents(id, currentLang);
+    const { options, source, overview } = getContents(id, currentLang);
 
     return (
         <>
@@ -24,13 +24,11 @@ export const Active = async ({ id, currentLang }: Props) => {
             />
             <main className={styles.mainBox}>
                 <section className={styles.container}>
-                    <h1 className={styles.heading}>
-                        {markdown.overview.title}
-                    </h1>
+                    <h1 className={styles.heading}>{overview.title}</h1>
                     <section className={styles.contents}>
                         <MDXRemote
-                            source={markdown.source}
-                            options={markdown.options}
+                            source={source}
+                            options={options}
                             components={markdownComponent}
                         />
                     </section>

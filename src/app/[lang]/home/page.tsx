@@ -1,7 +1,7 @@
-import { NotFoundComponent } from "@/app/(not-found)/_view/not-found";
 import { Home } from "./_view/home";
+import { NotFoundComponent } from "@/app/(not-found)/_view/not-found";
 import { getLangList } from "@/utils/get-lang-list";
-import { isLanguage, Language } from "@/utils/lang";
+import { isLanguage } from "@/utils/lang";
 
 export const generateStaticParams = () => getLangList();
 

@@ -1,7 +1,8 @@
 import { Active } from "./_view/active";
+import { NotFoundComponent } from "@/app/(not-found)/_view/not-found";
 import { getAllContents } from "@/features/markdown/core";
 import { getLangList } from "@/utils/get-lang-list";
-import { Language } from "@/utils/lang";
+import { isLanguage } from "@/utils/lang";
 
 export const generateStaticParams = () => {
     const lang = getLangList();
@@ -18,12 +19,16 @@ export const generateStaticParams = () => {
 };
 
 type Props = Promise<{
-    lang: Language;
+    lang: string;
     id: string;
 }>;
 
 const Activity = async ({ params }: { params: Props }) => {
     const { id, lang } = await params;
+
+    if (!isLanguage(lang)) {
+        return <NotFoundComponent />;
+    }
 
     return <Active id={id} currentLang={lang} />;
 };

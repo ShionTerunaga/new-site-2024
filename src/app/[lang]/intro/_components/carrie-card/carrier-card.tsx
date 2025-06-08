@@ -1,8 +1,9 @@
 import { carrier } from "./carrier.data";
 import styles from "./style.css";
+import { Language } from "@/utils/lang";
 
 interface Props {
-    lang: string;
+    lang: Language;
 }
 
 const CarrierCard = ({ lang }: Props) => {

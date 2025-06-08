@@ -1,6 +1,7 @@
 import { Active } from "./_view/active";
 import { getAllContents } from "@/features/markdown/core";
 import { getLangList } from "@/utils/get-lang-list";
+import { Language } from "@/utils/lang";
 
 export const generateStaticParams = () => {
     const lang = getLangList();
@@ -17,7 +18,7 @@ export const generateStaticParams = () => {
 };
 
 type Props = Promise<{
-    lang: string;
+    lang: Language;
     id: string;
 }>;
 

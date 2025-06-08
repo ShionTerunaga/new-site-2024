@@ -3,11 +3,11 @@ import Link from "next/link";
 import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
 import { getAllContents } from "@/features/markdown/core";
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 import { routingPath } from "@/utils/routing-paths";
 
 interface Props {
-    currentLang: string;
+    currentLang: Language;
 }
 
 export const Activity = ({ currentLang }: Props) => {

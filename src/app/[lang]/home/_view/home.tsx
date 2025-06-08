@@ -8,10 +8,10 @@ import styles from "./styles.css";
 
 import { Card } from "@/components/elements/card";
 import { Header } from "@/components/layouts/header";
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 
 interface Props {
-    currentLang: string;
+    currentLang: Language;
 }
 
 export const Home = ({ currentLang }: Props) => {

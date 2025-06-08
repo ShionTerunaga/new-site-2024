@@ -2,9 +2,10 @@ import { allSkills } from "../_static/skill-all";
 import styles from "./style.css";
 import { CardView } from "@/app/[lang]/skills/_components/card-view/card-view";
 import { Header } from "@/components/layouts/header";
+import { Language } from "@/utils/lang";
 
 interface Props {
-    currentLang: string;
+    currentLang: Language;
 }
 
 export const SkillsPage = ({ currentLang }: Props) => {

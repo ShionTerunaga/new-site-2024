@@ -8,11 +8,15 @@ export const lang: Language[] = [JA, EN];
 
 export type Language = typeof JA | typeof EN;
 
-export const i18n = (lang: Language) => {
+export function i18n(lang: Language) {
     switch (lang) {
         case "en":
             return en;
         case "ja":
             return ja;
     }
-};
+}
+
+export function isLanguage(str: unknown): str is Language {
+    return str === JA || str === EN;
+}

@@ -1,8 +1,8 @@
 import styles from "./style.css";
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 
 interface Props {
-    lang: string;
+    lang: Language;
 }
 
 const IntroContents = ({ lang }: Props) => {

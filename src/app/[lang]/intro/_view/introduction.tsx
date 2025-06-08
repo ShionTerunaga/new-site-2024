@@ -5,10 +5,10 @@ import IntroPopup from "../_components/intro-popup/intro-popup";
 import { introData } from "../_static/introduction.data";
 import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 
 interface Props {
-    currentLang: string;
+    currentLang: Language;
 }
 
 export const Introduction = ({ currentLang }: Props) => {

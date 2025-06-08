@@ -7,9 +7,10 @@ import { usePathname } from "next/navigation";
 import { Fragment, useState } from "react";
 import { staticMenu } from "./menu-list.data";
 import styles from "./styles.css";
+import { Language } from "@/utils/lang";
 
 interface Props {
-    currentLang: string;
+    currentLang: Language;
 }
 
 const MenuList = ({ currentLang }: Props) => {

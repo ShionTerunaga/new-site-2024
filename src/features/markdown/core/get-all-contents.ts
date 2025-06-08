@@ -2,8 +2,8 @@ import fs from "fs";
 import { contentsPath } from "./get-contents.data";
 import { isOverviewContents, OverviewContents } from "./get-contents.type";
 import { jsonPerse } from "@/utils/json-perse";
-import { RESULT_ERROR } from "@/utils/result";
 import { Language } from "@/utils/lang";
+import { RESULT_ERROR } from "@/utils/result";
 
 export const getAllContents = (lang: Language) => {
     const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`);

@@ -31,8 +31,8 @@ export function isOverviewContents(obj: unknown): obj is OverviewContents {
         typeof obj.id === "string" &&
         "title" in obj &&
         typeof obj.title === "string" &&
-        "data" in obj &&
-        typeof obj.data === "number" &&
+        "date" in obj &&
+        typeof obj.date === "number" &&
         "description" in obj &&
         typeof obj.description === "string"
     );

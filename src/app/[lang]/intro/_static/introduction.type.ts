@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export type IntroType = {
+export interface IntroType {
     /**
      * item
      */
@@ -17,4 +17,4 @@ export type IntroType = {
      * image
      */
     image?: StaticImageData;
-};
+}

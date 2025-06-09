@@ -5,7 +5,7 @@ import { useState } from "react";
 import { languages, SelectLanguage } from "../../_static/language";
 import styles from "./style.css";
 
-const SelectLanguageGoHome = () => {
+function SelectLanguageGoHome() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const handleClick = () => setIsOpen(!isOpen);
@@ -34,6 +34,6 @@ const SelectLanguageGoHome = () => {
             </div>
         </section>
     );
-};
+}
 
 export default SelectLanguageGoHome;

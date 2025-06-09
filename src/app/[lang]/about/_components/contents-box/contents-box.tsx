@@ -6,7 +6,7 @@ interface Props {
     linkTitle: string;
 }
 
-const ContentsBox = ({ contents, link, linkTitle }: Props) => {
+function ContentsBox({ contents, link, linkTitle }: Props) {
     return (
         <section className={styles.section}>
             <p>{contents}</p>
@@ -17,6 +17,6 @@ const ContentsBox = ({ contents, link, linkTitle }: Props) => {
             </div>
         </section>
     );
-};
+}
 
 export default ContentsBox;

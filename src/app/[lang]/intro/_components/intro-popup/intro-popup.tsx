@@ -7,7 +7,7 @@ interface Props {
     image?: StaticImageData;
 }
 
-const IntroPopup = ({ answer, description, image }: Props) => {
+function IntroPopup({ answer, description, image }: Props) {
     return (
         <>
             <h2 className={styles.heading2}>{answer}</h2>
@@ -25,6 +25,6 @@ const IntroPopup = ({ answer, description, image }: Props) => {
             </div>
         </>
     );
-};
+}
 
 export default IntroPopup;

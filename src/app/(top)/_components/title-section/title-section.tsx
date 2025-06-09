@@ -8,7 +8,7 @@ import { topAnimation } from "@/shared/static/top-animation";
 import { routingPath } from "@/utils/routing-paths";
 import { sleep } from "@/utils/sleep";
 
-const TitleSection = () => {
+function TitleSection() {
     const router = useRouter();
     const [counter, setCounter] = useState<number>(0);
     const [flag, setFlag] = useState<boolean>(false);
@@ -64,6 +64,6 @@ const TitleSection = () => {
             </AnimatePresence>
         </section>
     );
-};
+}
 
 export default TitleSection;

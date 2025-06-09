@@ -23,7 +23,7 @@ type Props = Promise<{
     id: string;
 }>;
 
-const Activity = async ({ params }: { params: Props }) => {
+async function Activity({ params }: { params: Props }) {
     const { id, lang } = await params;
 
     if (!isLanguage(lang)) {
@@ -31,6 +31,6 @@ const Activity = async ({ params }: { params: Props }) => {
     }
 
     return <Active id={id} currentLang={lang} />;
-};
+}
 
 export default Activity;

@@ -14,7 +14,7 @@ interface Props {
     currentLang: Language;
 }
 
-export const Home = ({ currentLang }: Props) => {
+export function Home({ currentLang }: Props) {
     const t = i18n(currentLang);
     const cards = staticCard(currentLang);
 
@@ -64,4 +64,4 @@ export const Home = ({ currentLang }: Props) => {
             </main>
         </>
     );
-};
+}

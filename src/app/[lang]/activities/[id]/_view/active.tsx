@@ -11,7 +11,7 @@ interface Props {
     currentLang: Language;
 }
 
-export const Active = async ({ id, currentLang }: Props) => {
+export async function Active({ id, currentLang }: Props) {
     const t = i18n(currentLang);
     const { options, source, overview } = getContents(id, currentLang);
 
@@ -36,4 +36,4 @@ export const Active = async ({ id, currentLang }: Props) => {
             </main>
         </>
     );
-};
+}

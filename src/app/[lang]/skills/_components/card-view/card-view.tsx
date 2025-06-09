@@ -6,7 +6,7 @@ interface Props {
     contents: ContentsAll[] | ContentsAll;
 }
 
-export const CardView = ({ contents }: Props) => {
+export function CardView({ contents }: Props) {
     return (
         <section className={styles.container}>
             <div>
@@ -22,4 +22,4 @@ export const CardView = ({ contents }: Props) => {
             </div>
         </section>
     );
-};
+}

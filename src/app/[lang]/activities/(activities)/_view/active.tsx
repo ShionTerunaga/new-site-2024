@@ -10,7 +10,7 @@ interface Props {
     currentLang: Language;
 }
 
-export const Activity = ({ currentLang }: Props) => {
+export function Activity({ currentLang }: Props) {
     const t = i18n(currentLang);
     const contents = getAllContents(currentLang);
 
@@ -45,4 +45,4 @@ export const Activity = ({ currentLang }: Props) => {
             </main>
         </>
     );
-};
+}

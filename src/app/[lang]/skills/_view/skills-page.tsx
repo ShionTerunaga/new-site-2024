@@ -8,7 +8,7 @@ interface Props {
     currentLang: Language;
 }
 
-export const SkillsPage = ({ currentLang }: Props) => {
+export function SkillsPage({ currentLang }: Props) {
     const skills = allSkills(currentLang);
 
     return (
@@ -20,4 +20,4 @@ export const SkillsPage = ({ currentLang }: Props) => {
             </main>
         </>
     );
-};
+}

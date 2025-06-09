@@ -1,6 +1,6 @@
 import { i18n, Language } from "@/utils/lang";
 
-export const getStack = (lang: Language): string[] => {
+export function getStack(lang: Language): string[] {
     const t = i18n(lang);
 
     const stacks: string[] = [
@@ -11,4 +11,4 @@ export const getStack = (lang: Language): string[] => {
     ];
 
     return stacks;
-};
+}

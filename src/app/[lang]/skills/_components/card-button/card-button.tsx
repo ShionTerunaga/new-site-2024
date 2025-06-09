@@ -17,7 +17,7 @@ interface Props {
     index: number;
 }
 
-const CardButton = ({ index, ...rest }: Props) => {
+function CardButton({ index, ...rest }: Props) {
     const { openPopup } = usePopup();
 
     const handleClick = () => {
@@ -35,6 +35,6 @@ const CardButton = ({ index, ...rest }: Props) => {
             <Card {...rest} description="" isSkills />
         </motion.button>
     );
-};
+}
 
 export default CardButton;

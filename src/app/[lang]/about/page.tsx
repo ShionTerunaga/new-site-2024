@@ -9,7 +9,7 @@ type Props = Promise<{
     lang: string;
 }>;
 
-const About = async ({ params }: { params: Props }) => {
+async function About({ params }: { params: Props }) {
     const { lang } = await params;
 
     if (!isLanguage(lang)) {
@@ -17,6 +17,6 @@ const About = async ({ params }: { params: Props }) => {
     }
 
     return <AboutComponent currentLang={lang} />;
-};
+}
 
 export default About;

@@ -6,7 +6,7 @@ interface Props {
     lang: Language;
 }
 
-const CarrierCard = ({ lang }: Props) => {
+function CarrierCard({ lang }: Props) {
     const carrierList = carrier(lang);
 
     return (
@@ -21,6 +21,6 @@ const CarrierCard = ({ lang }: Props) => {
             ))}
         </section>
     );
-};
+}
 
 export default CarrierCard;

@@ -9,7 +9,7 @@ interface Props {
     index: number;
 }
 
-const CardContainer = ({ children, index }: Props) => {
+function CardContainer({ children, index }: Props) {
     return (
         <motion.div
             className={styles.container}
@@ -20,6 +20,6 @@ const CardContainer = ({ children, index }: Props) => {
             {children}
         </motion.div>
     );
-};
+}
 
 export default CardContainer;

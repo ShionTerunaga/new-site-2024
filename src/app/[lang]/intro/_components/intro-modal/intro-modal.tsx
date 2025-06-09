@@ -16,7 +16,7 @@ interface Props {
     children: ReactNode;
 }
 
-const IntroModal = ({ title, children }: Props) => {
+function IntroModal({ title, children }: Props) {
     const { openPopup } = usePopup();
 
     const handleClick = () => {
@@ -32,6 +32,6 @@ const IntroModal = ({ title, children }: Props) => {
             {title}
         </button>
     );
-};
+}
 
 export default IntroModal;

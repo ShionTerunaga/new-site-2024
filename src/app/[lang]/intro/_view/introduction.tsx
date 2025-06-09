@@ -11,7 +11,7 @@ interface Props {
     currentLang: Language;
 }
 
-export const Introduction = ({ currentLang }: Props) => {
+export function Introduction({ currentLang }: Props) {
     const t = i18n(currentLang);
     const introModal = introData(currentLang);
 
@@ -40,4 +40,4 @@ export const Introduction = ({ currentLang }: Props) => {
             </main>
         </>
     );
-};
+}

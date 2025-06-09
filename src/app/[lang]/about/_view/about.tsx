@@ -10,7 +10,7 @@ interface Props {
     currentLang: Language;
 }
 
-export const AboutComponent = ({ currentLang }: Props) => {
+export function AboutComponent({ currentLang }: Props) {
     const t = i18n(currentLang);
     const stack = getStack(currentLang);
     const appeal = getAppeal(currentLang);
@@ -38,4 +38,4 @@ export const AboutComponent = ({ currentLang }: Props) => {
             </main>
         </>
     );
-};
+}

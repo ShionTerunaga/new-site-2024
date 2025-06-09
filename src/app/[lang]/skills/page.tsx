@@ -7,7 +7,7 @@ export const generateStaticParams = () => getLangList();
 
 type Props = Promise<{ lang: string }>;
 
-const Skills = async ({ params }: { params: Props }) => {
+async function Skills({ params }: { params: Props }) {
     const { lang } = await params;
 
     if (!isLanguage(lang)) {
@@ -15,6 +15,6 @@ const Skills = async ({ params }: { params: Props }) => {
     }
 
     return <SkillsPage currentLang={lang} />;
-};
+}
 
 export default Skills;

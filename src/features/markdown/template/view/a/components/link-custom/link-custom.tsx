@@ -3,22 +3,24 @@ import { getUrlContents } from "../../services/get-url-contents";
 import styles from "./style.css";
 
 interface Props {
-    url: string;
+    url?: string;
 }
 
-const LinkCustom = async (props: Props) => {
+const LinkCustom = async ({ url }: Props) => {
+    if (!url) return null;
+
     try {
-        const ogp = await getUrlContents(props.url);
+        const ogp = await getUrlContents(url);
 
         return (
-            <a href={props.url} target="_blank" className={styles.container}>
+            <a href={url} target="_blank" className={styles.container}>
                 <span className={styles.contents}>
                     <span className={styles.textContents}>
                         <span className={styles.title}>
                             {ogp["og:title"] ? (
                                 <>{ogp["og:title"]}</>
                             ) : (
-                                <>{props.url}</>
+                                <>{url}</>
                             )}
                             <br />
                         </span>

@@ -1,7 +1,7 @@
 import SelectLanguageGoHome from "../_components/select-langage-go-home/select-language-go-home";
 import styles from "./style.css";
 
-export const NotFoundComponent = () => {
+export function NotFoundComponent() {
     return (
         <main className={styles.container}>
             <section className={styles.section}>
@@ -15,4 +15,4 @@ export const NotFoundComponent = () => {
             </section>
         </main>
     );
-};
+}

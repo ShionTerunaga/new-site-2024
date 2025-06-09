@@ -15,7 +15,7 @@ interface Props {
     url: string;
 }
 
-const SkillContents = ({ title, contents, image, imageB, url }: Props) => {
+function SkillContents({ title, contents, image, imageB, url }: Props) {
     return (
         <>
             <h2 className={styles.heading2}>{title}</h2>
@@ -40,6 +40,6 @@ const SkillContents = ({ title, contents, image, imageB, url }: Props) => {
             </div>
         </>
     );
-};
+}
 
 export default SkillContents;

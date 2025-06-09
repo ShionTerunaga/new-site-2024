@@ -9,7 +9,7 @@ interface Props {
     contents: CardType[];
 }
 
-const CardCollection = ({ title, contents }: Props) => {
+function CardCollection({ title, contents }: Props) {
     return (
         <div className={styles.container}>
             {title && <h1 className={styles.heading1}>{title}</h1>}
@@ -27,6 +27,6 @@ const CardCollection = ({ title, contents }: Props) => {
             </div>
         </div>
     );
-};
+}
 
 export default CardCollection;

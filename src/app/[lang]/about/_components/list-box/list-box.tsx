@@ -4,7 +4,7 @@ interface Props {
     items: string[];
 }
 
-const ListBox = ({ items }: Props) => {
+function ListBox({ items }: Props) {
     return (
         <section className={styles.section}>
             <ul className={styles.container}>
@@ -16,6 +16,6 @@ const ListBox = ({ items }: Props) => {
             </ul>
         </section>
     );
-};
+}
 
 export default ListBox;

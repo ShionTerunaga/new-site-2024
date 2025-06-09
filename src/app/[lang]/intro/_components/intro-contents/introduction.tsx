@@ -5,7 +5,7 @@ interface Props {
     lang: Language;
 }
 
-const IntroContents = ({ lang }: Props) => {
+function IntroContents({ lang }: Props) {
     const t = i18n(lang);
 
     return (
@@ -22,6 +22,6 @@ const IntroContents = ({ lang }: Props) => {
             </div>
         </section>
     );
-};
+}
 
 export default IntroContents;

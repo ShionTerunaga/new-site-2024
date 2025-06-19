@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./style.css";
+import { CheckerProps } from "@/shared/types/props";
 
 interface Props {
     answer: string;
@@ -7,7 +8,11 @@ interface Props {
     image?: StaticImageData;
 }
 
-function IntroPopup({ answer, description, image }: Props) {
+function IntroPopup<T extends Props>({
+    answer,
+    description,
+    image
+}: CheckerProps<T, Props>) {
     return (
         <>
             <h2 className={styles.heading2}>{answer}</h2>

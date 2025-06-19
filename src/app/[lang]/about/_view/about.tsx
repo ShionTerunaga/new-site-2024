@@ -4,13 +4,16 @@ import { getAppeal } from "../_static/appeal";
 import { getStack } from "../_static/stack";
 import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
+import { CheckerProps } from "@/shared/types/props";
 import { i18n, Language } from "@/utils/lang";
 
 interface Props {
     currentLang: Language;
 }
 
-export function AboutComponent({ currentLang }: Props) {
+export function AboutComponent<T extends Props>({
+    currentLang
+}: CheckerProps<T, Props>) {
     const t = i18n(currentLang);
     const stack = getStack(currentLang);
     const appeal = getAppeal(currentLang);
@@ -32,7 +35,7 @@ export function AboutComponent({ currentLang }: Props) {
                 <h2 className={styles.subTitle}>{t.about.design.title}</h2>
                 <ContentsBox
                     contents={t.about.design.contents}
-                    link={t.about.design.githubUrl}
+                    href={t.about.design.githubUrl}
                     linkTitle={t.about.design.github}
                 />
             </main>

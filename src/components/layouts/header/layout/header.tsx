@@ -3,21 +3,25 @@ import LangSelect from "../components/lang-select/lang-select";
 import MenuList from "../components/menu-list/menu-list";
 import { HeaderProps } from "./header.type";
 import styles from "./style.css";
+import { CheckerProps } from "@/shared/types/props";
 
 interface Props extends HeaderProps {}
 
-export const Header = ({ isHome, ...rest }: Props) => {
+export function Header<T extends Props>(props: CheckerProps<T, Props>) {
+    const { isHome, currentLang, path } = props;
+    const langProps: Props = props;
+
     return isHome ? (
         <header className={`${styles.header} ${styles.isHome}`}>
-            <LangSelect isHome={isHome} {...rest} />
+            <LangSelect {...langProps} />
         </header>
     ) : (
         <header className={styles.header}>
-            <Back {...rest} />
+            <Back path={path} currentLang={currentLang} />
             <div className={styles.right}>
-                <LangSelect isHome={isHome} {...rest} />
-                <MenuList {...rest} />
+                <LangSelect {...langProps} />
+                <MenuList currentLang={currentLang} />
             </div>
         </header>
     );
-};
+}

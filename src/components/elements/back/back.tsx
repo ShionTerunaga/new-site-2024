@@ -2,6 +2,7 @@ import { Home } from "@yamada-ui/lucide";
 import { ArrowLeft } from "@yamada-ui/lucide";
 import Link from "next/link";
 import styles from "./style.css";
+import { CheckerProps } from "@/shared/types/props";
 import { routingPath } from "@/utils/routing-paths";
 
 interface Props {
@@ -15,7 +16,10 @@ interface Props {
     currentLang: string;
 }
 
-export const Back = ({ path, currentLang }: Props) => {
+export function Back<T extends Props>({
+    path,
+    currentLang
+}: CheckerProps<T, Props>) {
     const pathName = path || routingPath(currentLang).home;
 
     return (
@@ -27,4 +31,4 @@ export const Back = ({ path, currentLang }: Props) => {
             </div>
         </Link>
     );
-};
+}

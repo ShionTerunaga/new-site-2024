@@ -1,12 +1,13 @@
 import { carrier } from "./carrier.data";
 import styles from "./style.css";
+import { CheckerProps } from "@/shared/types/props";
 import { Language } from "@/utils/lang";
 
 interface Props {
     lang: Language;
 }
 
-function CarrierCard({ lang }: Props) {
+function CarrierCard<T extends Props>({ lang }: CheckerProps<T, Props>) {
     const carrierList = carrier(lang);
 
     return (

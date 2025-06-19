@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
 import { getAllContents } from "@/features/markdown/core";
+import { CheckerProps } from "@/shared/types/props";
 import { i18n, Language } from "@/utils/lang";
 import { routingPath } from "@/utils/routing-paths";
 
@@ -10,7 +11,9 @@ interface Props {
     currentLang: Language;
 }
 
-export function Activity({ currentLang }: Props) {
+export function Activity<T extends Props>({
+    currentLang
+}: CheckerProps<T, Props>) {
     const t = i18n(currentLang);
     const contents = getAllContents(currentLang);
 

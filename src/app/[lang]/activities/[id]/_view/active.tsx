@@ -3,6 +3,7 @@ import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
 import { markdownComponent } from "@/features/markdown";
 import { getContents } from "@/features/markdown/core";
+import { CheckerProps } from "@/shared/types/props";
 import { i18n, Language } from "@/utils/lang";
 import { routingPath } from "@/utils/routing-paths";
 
@@ -11,7 +12,10 @@ interface Props {
     currentLang: Language;
 }
 
-export async function Active({ id, currentLang }: Props) {
+export async function Active<T extends Props>({
+    id,
+    currentLang
+}: CheckerProps<T, Props>) {
     const t = i18n(currentLang);
     const { options, source, overview } = getContents(id, currentLang);
 

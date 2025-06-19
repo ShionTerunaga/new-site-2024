@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./style.css";
+import { CheckerProps } from "@/shared/types/props";
 
 interface Props {
     image?: StaticImageData;
@@ -8,7 +9,12 @@ interface Props {
     isSkills?: boolean;
 }
 
-export const Card = ({ image, title, description, isSkills }: Props) => {
+export function Card<T extends Props>({
+    image,
+    title,
+    description,
+    isSkills
+}: CheckerProps<T, Props>) {
     const containerClass = isSkills ? styles.isSkills : "";
     const descriptionClass = description === "" ? styles.noneContents : "";
 
@@ -37,4 +43,4 @@ export const Card = ({ image, title, description, isSkills }: Props) => {
             </div>
         </div>
     );
-};
+}

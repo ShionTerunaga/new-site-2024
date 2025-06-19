@@ -4,8 +4,10 @@ import { ReactNode } from "react";
 import styles from "./style.css";
 import { PopupContents } from "@/features/popup";
 import { usePopup } from "@/features/popup";
+import { CheckerProps } from "@/shared/types/props";
 
 interface Props {
+    key: string | number;
     /**
      * item
      */
@@ -16,7 +18,10 @@ interface Props {
     children: ReactNode;
 }
 
-function IntroModal({ title, children }: Props) {
+function IntroModal<T extends Props>({
+    title,
+    children
+}: CheckerProps<T, Props>) {
     const { openPopup } = usePopup();
 
     const handleClick = () => {

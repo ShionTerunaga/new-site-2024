@@ -1,10 +1,11 @@
 import styles from "./style.css";
+import { CheckerProps } from "@/shared/types/props";
 
 interface Props {
     items: string[];
 }
 
-function ListBox({ items }: Props) {
+function ListBox<T extends Props>({ items }: CheckerProps<T, Props>) {
     return (
         <section className={styles.section}>
             <ul className={styles.container}>

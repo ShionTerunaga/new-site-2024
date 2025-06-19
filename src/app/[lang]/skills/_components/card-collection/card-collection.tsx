@@ -15,12 +15,18 @@ function CardCollection({ title, contents }: Props) {
             {title && <h1 className={styles.heading1}>{title}</h1>}
             <div className={styles.clickMessage}>{en.skills.clickMessage}</div>
             <div className={styles.mainBox}>
-                {contents.map((item, index) => (
-                    <CardButton index={index} {...item} key={index}>
+                {contents.map(({ title, image, description, path }, index) => (
+                    <CardButton
+                        index={index}
+                        title={title}
+                        image={image}
+                        key={index}
+                    >
                         <SkillContents
-                            contents={item.description}
-                            url={item.path}
-                            {...item}
+                            contents={description}
+                            url={path}
+                            image={image}
+                            title={title}
                         />
                     </CardButton>
                 ))}

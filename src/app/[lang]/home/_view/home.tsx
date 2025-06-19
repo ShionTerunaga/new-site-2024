@@ -8,13 +8,14 @@ import styles from "./styles.css";
 
 import { Card } from "@/components/elements/card";
 import { Header } from "@/components/layouts/header";
+import { CheckerProps } from "@/shared/types/props";
 import { i18n, Language } from "@/utils/lang";
 
 interface Props {
     currentLang: Language;
 }
 
-export function Home({ currentLang }: Props) {
+export function Home<T extends Props>({ currentLang }: CheckerProps<T, Props>) {
     const t = i18n(currentLang);
     const cards = staticCard(currentLang);
 
@@ -53,10 +54,14 @@ export function Home({ currentLang }: Props) {
                     </div>
                 </section>
                 <section className={styles.cardContainer}>
-                    {cards.map((item, index) => (
+                    {cards.map(({ path, image, title, description }, index) => (
                         <CardContainer index={index} key={index}>
-                            <Link href={item.path} className={styles.link}>
-                                <Card {...item} />
+                            <Link href={path} className={styles.link}>
+                                <Card
+                                    image={image}
+                                    title={title}
+                                    description={description}
+                                />
                             </Link>
                         </CardContainer>
                     ))}

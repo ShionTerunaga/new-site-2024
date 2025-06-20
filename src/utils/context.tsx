@@ -14,6 +14,7 @@ interface ContextParams<T> {
     errMessage: string;
     initialState: T;
 }
+
 export function createReducerContext<T, S>({
     errMessage,
     initialState

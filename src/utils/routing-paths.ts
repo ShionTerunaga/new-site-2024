@@ -1,4 +1,4 @@
-export const routingPath = (lang: string) => {
+export function routingPath(lang: string) {
     const locale = "/" + lang;
 
     return {
@@ -8,4 +8,4 @@ export const routingPath = (lang: string) => {
         activity: `${locale}/activities`,
         about: `${locale}/about`
     };
-};
+}

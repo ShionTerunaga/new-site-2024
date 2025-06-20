@@ -3,6 +3,7 @@ import { ArrowLeft } from "@yamada-ui/lucide";
 import Link from "next/link";
 import styles from "./style.css";
 import { CheckerProps } from "@/shared/types/props";
+import { Language } from "@/utils/lang";
 import { routingPath } from "@/utils/routing-paths";
 
 interface Props {
@@ -13,7 +14,7 @@ interface Props {
     /**
      * 言語
      */
-    currentLang: string;
+    currentLang: Language;
 }
 
 export function Back<T extends Props>({

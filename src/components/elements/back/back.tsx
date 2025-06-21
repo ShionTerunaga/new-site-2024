@@ -27,7 +27,11 @@ export function Back<T extends Props>({
         <Link href={pathName} className={styles.link} aria-label="go to home">
             <div className={styles.linkContent}>
                 <div className={styles.icon}>
-                    {pathName.includes("/home") ? <Home /> : <ArrowLeft />}
+                    {pathName === routingPath(currentLang).home ? (
+                        <Home />
+                    ) : (
+                        <ArrowLeft />
+                    )}
                 </div>
             </div>
         </Link>

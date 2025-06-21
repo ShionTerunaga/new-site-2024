@@ -1,4 +1,6 @@
-import { Home } from "./_view/home";
+import { HomeLayout } from "./_layouts/home-layout";
+import { Home } from "./home/_view/home";
+import { Opening } from "./opening/_view/opening";
 import { NotFoundComponent } from "@/app/(not-found)/_view/not-found";
 import { getLangList } from "@/utils/get-lang-list";
 import { isLanguage } from "@/utils/lang";
@@ -16,7 +18,12 @@ const HomePage = async ({ params }: { params: Props }) => {
         return <NotFoundComponent />;
     }
 
-    return <Home currentLang={lang} />;
+    return (
+        <HomeLayout
+            openingChildren={<Opening />}
+            homeChildren={<Home currentLang={lang} />}
+        />
+    );
 };
 
 export default HomePage;

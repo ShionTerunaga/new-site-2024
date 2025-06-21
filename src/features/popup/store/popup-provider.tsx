@@ -6,7 +6,7 @@ import { popupReducer } from "./popup-reducer";
 import { PopAction, PopState } from "./popup.type";
 import { initialState } from "./popupInitial.static";
 import { CheckerProps } from "@/shared/types/props";
-import { createReducerContext } from "@/utils/context";
+import { createReducerContext } from "@/utils/context/reducer";
 
 interface Props {
     children: ReactNode;

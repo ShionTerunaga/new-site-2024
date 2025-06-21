@@ -23,11 +23,11 @@ export const ja = {
                 description: "私が知っている技術をフォーカスします。"
             },
             card3: {
-                title: "アクティブ",
+                title: "活動",
                 description: "普段の活動を説明します。"
             },
             card4: {
-                title: "アバウト",
+                title: "サイトについて",
                 description: "このサイトを作成するにあたって。"
             }
         }
@@ -203,12 +203,12 @@ export const ja = {
         official: "公式サイト"
     },
     active: {
-        title: "アクティビティ",
+        title: "活動",
         clickList: "アイテムリストをクリック"
     },
     activeDetail: {},
     about: {
-        title: "このサイトについて",
+        title: "サイトについて",
         detail: "ここでは、このサイトを作成するにあたって工夫した点等を記載しています。",
         tech: {
             title: "1. 使用技術",

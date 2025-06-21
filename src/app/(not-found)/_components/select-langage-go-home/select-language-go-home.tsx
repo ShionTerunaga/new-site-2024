@@ -23,7 +23,7 @@ function SelectLanguageGoHome() {
                     {languages.map((lang: SelectLanguage, index: number) => (
                         <li key={index} className={styles.list}>
                             <Link
-                                href={`/${lang.lang}/home`}
+                                href={`/${lang.lang}`}
                                 className={styles.link}
                             >
                                 {lang.text}

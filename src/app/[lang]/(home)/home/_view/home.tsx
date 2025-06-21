@@ -5,7 +5,6 @@ import Icon from "../_components/icon/icon";
 import { X_ICON, GITHUB_ICON } from "../_static/assets";
 import { staticCard } from "../_static/card";
 import styles from "./styles.css";
-
 import { Card } from "@/components/elements/card";
 import { Header } from "@/components/layouts/header";
 import { CheckerProps } from "@/shared/types/props";

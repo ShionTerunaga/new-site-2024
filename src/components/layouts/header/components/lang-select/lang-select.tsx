@@ -20,6 +20,12 @@ function LangSelect<T extends Props>({ currentLang }: CheckerProps<T, Props>) {
     const clickLink = (lang: string) => {
         setIsDrop(false);
 
+        if (pathArr.length <= 2) {
+            router.push(`/${lang}`);
+
+            return;
+        }
+
         if (pathArr[1] !== lang)
             router.push(`/${lang}/${pathArr[2]}/${params}`);
     };

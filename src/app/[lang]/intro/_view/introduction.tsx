@@ -5,13 +5,16 @@ import IntroPopup from "../_components/intro-popup/intro-popup";
 import { introData } from "../_static/introduction.data";
 import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
-import { i18n } from "@/utils/lang";
+import { CheckerProps } from "@/shared/types/props";
+import { i18n, Language } from "@/utils/lang";
 
 interface Props {
-    currentLang: string;
+    currentLang: Language;
 }
 
-export const Introduction = ({ currentLang }: Props) => {
+export function Introduction<T extends Props>({
+    currentLang
+}: CheckerProps<T, Props>) {
     const t = i18n(currentLang);
     const introModal = introData(currentLang);
 
@@ -27,17 +30,22 @@ export const Introduction = ({ currentLang }: Props) => {
                 <CarrierCard lang={currentLang} />
                 <h1 className={styles.title}>{t.intro.introData.title}</h1>
                 <div className={styles.box}>
-                    {introModal.map((item, index) => (
-                        <IntroModal key={index} title={item.title}>
-                            <IntroPopup
-                                answer={item.headerContents}
-                                description={item.bodyContents}
-                                {...item}
-                            />
-                        </IntroModal>
-                    ))}
+                    {introModal.map(
+                        (
+                            { image, title, headerContents, bodyContents },
+                            index
+                        ) => (
+                            <IntroModal key={index} title={title}>
+                                <IntroPopup
+                                    answer={headerContents}
+                                    description={bodyContents}
+                                    image={image}
+                                />
+                            </IntroModal>
+                        )
+                    )}
                 </div>
             </main>
         </>
     );
-};
+}

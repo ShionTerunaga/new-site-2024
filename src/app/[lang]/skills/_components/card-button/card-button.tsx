@@ -6,8 +6,11 @@ import { ReactNode } from "react";
 import styles from "./style.css";
 import { Card } from "@/components/elements/card";
 import { PopupContents, usePopup } from "@/features/popup";
+import { CheckerProps } from "@/shared/types/props";
+import { omitKeyObject } from "@/utils/omit-key-object";
 
 interface Props {
+    key: string | number;
     /** カードのタイトル */
     title: string;
     /** カードの画像 */
@@ -17,11 +20,17 @@ interface Props {
     index: number;
 }
 
-const CardButton = ({ index, ...rest }: Props) => {
+function CardButton<T extends Props>(props: CheckerProps<T, Props>) {
+    const { index, children } = props;
+    const cardProps: Omit<Props, "children" | "index" | "key"> = omitKeyObject(
+        props,
+        ["children", "index", "key"]
+    );
+
     const { openPopup } = usePopup();
 
     const handleClick = () => {
-        openPopup(<PopupContents {...rest} />);
+        openPopup(<PopupContents>{children}</PopupContents>);
     };
 
     return (
@@ -32,9 +41,9 @@ const CardButton = ({ index, ...rest }: Props) => {
             onClick={handleClick}
             className={styles.container}
         >
-            <Card {...rest} description="" isSkills />
+            <Card {...cardProps} description="" isSkills />
         </motion.button>
     );
-};
+}
 
 export default CardButton;

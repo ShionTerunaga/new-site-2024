@@ -5,16 +5,16 @@ import Icon from "../_components/icon/icon";
 import { X_ICON, GITHUB_ICON } from "../_static/assets";
 import { staticCard } from "../_static/card";
 import styles from "./styles.css";
-
 import { Card } from "@/components/elements/card";
 import { Header } from "@/components/layouts/header";
-import { i18n } from "@/utils/lang";
+import { CheckerProps } from "@/shared/types/props";
+import { i18n, Language } from "@/utils/lang";
 
 interface Props {
-    currentLang: string;
+    currentLang: Language;
 }
 
-export const Home = ({ currentLang }: Props) => {
+export function Home<T extends Props>({ currentLang }: CheckerProps<T, Props>) {
     const t = i18n(currentLang);
     const cards = staticCard(currentLang);
 
@@ -53,10 +53,14 @@ export const Home = ({ currentLang }: Props) => {
                     </div>
                 </section>
                 <section className={styles.cardContainer}>
-                    {cards.map((item, index) => (
+                    {cards.map(({ path, image, title, description }, index) => (
                         <CardContainer index={index} key={index}>
-                            <Link href={item.path} className={styles.link}>
-                                <Card {...item} />
+                            <Link href={path} className={styles.link}>
+                                <Card
+                                    image={image}
+                                    title={title}
+                                    description={description}
+                                />
                             </Link>
                         </CardContainer>
                     ))}
@@ -64,4 +68,4 @@ export const Home = ({ currentLang }: Props) => {
             </main>
         </>
     );
-};
+}

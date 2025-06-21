@@ -1,9 +1,9 @@
 import { ABOUT_ICON, INTRO_ICON, PRODUCT_ICON, SKILL_ICON } from "./assets";
 import { CardType } from "@/components/elements/card";
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 import { routingPath } from "@/utils/routing-paths";
 
-export const staticCard = (lang: string): CardType[] => {
+export const staticCard = (lang: Language): CardType[] => {
     const t = i18n(lang);
     const paths = routingPath(lang);
 

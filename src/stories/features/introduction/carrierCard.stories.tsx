@@ -10,5 +10,5 @@ export default meta;
 type Story = StoryFn<typeof CarrierCard>;
 
 export const Basic: Story = () => {
-    return <CarrierCard lang="" />;
+    return <CarrierCard lang="ja" />;
 };

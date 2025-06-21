@@ -1,7 +1,7 @@
 import { MEAT_PIC, RUN_PIC, SPITZ_PIC } from "./assets";
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 
-export const introData = (lang: string) => {
+export function introData(lang: Language) {
     const t = i18n(lang);
 
     return [
@@ -29,4 +29,4 @@ export const introData = (lang: string) => {
             image: SPITZ_PIC
         }
     ];
-};
+}

@@ -11,7 +11,7 @@ type Story = StoryFn<typeof CardButton>;
 
 export const Basic: Story = () => {
     return (
-        <CardButton index={0} title="こんにちは" image={SPITZ}>
+        <CardButton key={1} index={0} title="こんにちは" image={SPITZ}>
             <></>
         </CardButton>
     );

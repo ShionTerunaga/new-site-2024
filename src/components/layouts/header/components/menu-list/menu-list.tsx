@@ -7,12 +7,14 @@ import { usePathname } from "next/navigation";
 import { Fragment, useState } from "react";
 import { staticMenu } from "./menu-list.data";
 import styles from "./styles.css";
+import { CheckerProps } from "@/shared/types/props";
+import { Language } from "@/utils/lang";
 
 interface Props {
-    currentLang: string;
+    currentLang: Language;
 }
 
-const MenuList = ({ currentLang }: Props) => {
+function MenuList<T extends Props>({ currentLang }: CheckerProps<T, Props>) {
     const path = usePathname();
     const paths = staticMenu(currentLang);
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -65,6 +67,6 @@ const MenuList = ({ currentLang }: Props) => {
             </AnimatePresence>
         </>
     );
-};
+}
 
 export default MenuList;

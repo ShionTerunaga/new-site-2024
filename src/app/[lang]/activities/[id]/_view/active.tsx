@@ -3,17 +3,21 @@ import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
 import { markdownComponent } from "@/features/markdown";
 import { getContents } from "@/features/markdown/core";
-import { i18n } from "@/utils/lang";
+import { CheckerProps } from "@/shared/types/props";
+import { i18n, Language } from "@/utils/lang";
 import { routingPath } from "@/utils/routing-paths";
 
 interface Props {
     id: string;
-    currentLang: string;
+    currentLang: Language;
 }
 
-export const Active = async ({ id, currentLang }: Props) => {
+export async function Active<T extends Props>({
+    id,
+    currentLang
+}: CheckerProps<T, Props>) {
     const t = i18n(currentLang);
-    const markdown = getContents(id, currentLang);
+    const { options, source, overview } = getContents(id, currentLang);
 
     return (
         <>
@@ -24,13 +28,11 @@ export const Active = async ({ id, currentLang }: Props) => {
             />
             <main className={styles.mainBox}>
                 <section className={styles.container}>
-                    <h1 className={styles.heading}>
-                        {markdown.overview.title}
-                    </h1>
+                    <h1 className={styles.heading}>{overview.title}</h1>
                     <section className={styles.contents}>
                         <MDXRemote
-                            source={markdown.source}
-                            options={markdown.options}
+                            source={source}
+                            options={options}
                             components={markdownComponent}
                         />
                     </section>
@@ -38,4 +40,4 @@ export const Active = async ({ id, currentLang }: Props) => {
             </main>
         </>
     );
-};
+}

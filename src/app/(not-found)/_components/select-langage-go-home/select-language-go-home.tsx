@@ -5,7 +5,7 @@ import { useState } from "react";
 import { languages, SelectLanguage } from "../../_static/language";
 import styles from "./style.css";
 
-const SelectLanguageGoHome = () => {
+function SelectLanguageGoHome() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const handleClick = () => setIsOpen(!isOpen);
@@ -23,7 +23,7 @@ const SelectLanguageGoHome = () => {
                     {languages.map((lang: SelectLanguage, index: number) => (
                         <li key={index} className={styles.list}>
                             <Link
-                                href={`/${lang.lang}/home`}
+                                href={`/${lang.lang}`}
                                 className={styles.link}
                             >
                                 {lang.text}
@@ -34,6 +34,6 @@ const SelectLanguageGoHome = () => {
             </div>
         </section>
     );
-};
+}
 
 export default SelectLanguageGoHome;

@@ -5,7 +5,8 @@ import { PopupLayout } from "../layout/popup-layout";
 import { popupReducer } from "./popup-reducer";
 import { PopAction, PopState } from "./popup.type";
 import { initialState } from "./popupInitial.static";
-import { createReducerContext } from "@/utils/context";
+import { CheckerProps } from "@/shared/types/props";
+import { createReducerContext } from "@/utils/context/reducer";
 
 interface Props {
     children: ReactNode;
@@ -16,7 +17,9 @@ export const PopupContext = createReducerContext<PopState, PopAction>({
     initialState
 });
 
-export function PopupProvider({ children }: Props) {
+export function PopupProvider<T extends Props>({
+    children
+}: CheckerProps<T, Props>) {
     const { Provider } = PopupContext;
 
     return (

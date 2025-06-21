@@ -1,6 +1,6 @@
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 
-export const getAppeal = (lang: string): string[] => {
+export function getAppeal(lang: Language): string[] {
     const t = i18n(lang);
 
     const appeals: string[] = [
@@ -12,4 +12,4 @@ export const getAppeal = (lang: string): string[] => {
     ];
 
     return appeals;
-};
+}

@@ -12,6 +12,7 @@
         "build-storybook": "storybook build"
     },
     "dependencies": {
+        "@mdx-js/mdx": "^3.1.0",
         "@types/jsdom": "^21.1.7",
         "@types/mdx": "^2.0.13",
         "@vanilla-extract/css": "^1.15.2",

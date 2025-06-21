@@ -1,6 +1,6 @@
 export const getValidChildren = (children: any[]) => {
     if (children.length === 1) {
-        const { type, value } = children[0];
+        const { value } = children[0];
 
         const [, name, content] =
             value.match(/^:::(\w+)\s+([\s\S]*?)\s*:::$/) ?? [];

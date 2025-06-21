@@ -1,15 +1,22 @@
 import { en } from "../shared/lang/en";
 import { ja } from "../shared/lang/ja";
 
-export const lang: string[] = ["en", "ja"];
+export const JA = "ja" as const;
+export const EN = "en" as const;
 
-export const i18n = (lang: string) => {
+export const lang: Language[] = [JA, EN];
+
+export type Language = typeof JA | typeof EN;
+
+export function i18n(lang: Language) {
     switch (lang) {
         case "en":
             return en;
         case "ja":
             return ja;
-        default:
-            return en;
     }
-};
+}
+
+export function isLanguage(str: unknown): str is Language {
+    return str === JA || str === EN;
+}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { PopupProvider } from "@/features/popup";
+import { InitialStateProvider } from "@/features/whole";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,9 @@ export default function RootLayout({
     return (
         <html lang="ja">
             <body className={inter.className}>
-                <PopupProvider>{children}</PopupProvider>
+                <InitialStateProvider>
+                    <PopupProvider>{children}</PopupProvider>
+                </InitialStateProvider>
             </body>
         </html>
     );

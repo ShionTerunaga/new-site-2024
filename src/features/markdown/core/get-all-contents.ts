@@ -1,8 +1,11 @@
 import fs from "fs";
 import { contentsPath } from "./get-contents.data";
-import { OverviewContents } from "./get-contents.type";
+import { isOverviewContents, OverviewContents } from "./get-contents.type";
+import { jsonPerse } from "@/utils/json-perse";
+import { Language } from "@/utils/lang";
+import { RESULT_ERROR } from "@/utils/result";
 
-export const getAllContents = (lang: string) => {
+export const getAllContents = (lang: Language) => {
     const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`);
 
     const response: OverviewContents[] = pullFolders.map((item) => {
@@ -13,9 +16,19 @@ export const getAllContents = (lang: string) => {
         const overviewStr = fs
             .readFileSync(`${path}/${overviewFile}`)
             .toString();
-        const overviewParse = JSON.parse(overviewStr) as OverviewContents;
+        const overviewParse = jsonPerse(overviewStr);
 
-        return overviewParse;
+        if (overviewParse.kind === RESULT_ERROR) {
+            throw overviewParse.err;
+        }
+
+        const value = overviewParse.value;
+
+        if (!isOverviewContents(value)) {
+            throw new Error("型が違います");
+        }
+
+        return value;
     });
 
     return response;

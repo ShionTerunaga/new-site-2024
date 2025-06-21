@@ -1,4 +1,4 @@
-export type CarrierType = {
+export interface CarrierType {
     when: string;
     contents: string;
-};
+}

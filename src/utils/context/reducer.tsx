@@ -14,13 +14,14 @@ interface ContextParams<T> {
     errMessage: string;
     initialState: T;
 }
+
 export function createReducerContext<T, S>({
     errMessage,
     initialState
 }: ContextParams<T>) {
-    const Context = createContext<Result<[T, ActionDispatch<[action: S]>]>>(
-        createResult.err(errMessage)
-    );
+    const Context = createContext<
+        Result<[T, ActionDispatch<[action: S]>], Error>
+    >(createResult.err(new Error(errMessage)));
 
     const Provider = function ({
         children,
@@ -34,7 +35,7 @@ export function createReducerContext<T, S>({
             initialState
         );
 
-        const result: Result<[T, ActionDispatch<[action: S]>]> =
+        const result: Result<[T, ActionDispatch<[action: S]>], Error> =
             createResult.ok([state, action]);
 
         return <Context value={result}>{children}</Context>;

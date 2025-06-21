@@ -11,7 +11,7 @@ type Story = StoryFn<typeof IntroModal>;
 
 export const Basic: Story = () => {
     return (
-        <IntroModal title="あいうえお">
+        <IntroModal key={1} title="あいうえお">
             <div>hogehoge</div>
         </IntroModal>
     );

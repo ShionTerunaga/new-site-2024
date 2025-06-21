@@ -1,3 +1,5 @@
+import { Language } from "@/utils/lang";
+
 export interface HeaderProps {
     /**
      * ページのタイトル
@@ -10,7 +12,7 @@ export interface HeaderProps {
     /**
      * 言語
      */
-    currentLang: string;
+    currentLang: Language;
     /**
      * home画面か
      */

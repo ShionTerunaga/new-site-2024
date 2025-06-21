@@ -1,12 +1,15 @@
 import CardCollection from "../card-collection/card-collection";
 import { ContentsAll } from "../card-collection/contents-all.type";
 import styles from "./style.css";
+import { CheckerProps } from "@/shared/types/props";
 
 interface Props {
     contents: ContentsAll[] | ContentsAll;
 }
 
-export const CardView = ({ contents }: Props) => {
+export function CardView<T extends Props>({
+    contents
+}: CheckerProps<T, Props>) {
     return (
         <section className={styles.container}>
             <div>
@@ -22,4 +25,4 @@ export const CardView = ({ contents }: Props) => {
             </div>
         </section>
     );
-};
+}

@@ -1,11 +1,12 @@
 import styles from "./style.css";
-import { i18n } from "@/utils/lang";
+import { CheckerProps } from "@/shared/types/props";
+import { i18n, Language } from "@/utils/lang";
 
 interface Props {
-    lang: string;
+    lang: Language;
 }
 
-const IntroContents = ({ lang }: Props) => {
+function IntroContents<T extends Props>({ lang }: CheckerProps<T, Props>) {
     const t = i18n(lang);
 
     return (
@@ -22,6 +23,6 @@ const IntroContents = ({ lang }: Props) => {
             </div>
         </section>
     );
-};
+}
 
 export default IntroContents;

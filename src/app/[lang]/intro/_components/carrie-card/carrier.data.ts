@@ -1,6 +1,6 @@
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 
-export const carrier = (lang: string) => {
+export function carrier(lang: Language) {
     const t = i18n(lang);
 
     return [
@@ -12,4 +12,4 @@ export const carrier = (lang: string) => {
         { ...t.intro.carrier.list.companyIn },
         { ...t.intro.carrier.list.ossStart }
     ];
-};
+}

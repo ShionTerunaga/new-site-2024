@@ -3,11 +3,14 @@ import path from "path";
 import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import { contentsPath } from "./get-contents.data";
-import type { Contents, OverviewContents } from "./get-contents.type";
+import { isOverviewContents, type Contents } from "./get-contents.type";
 import "highlight.js/styles/vs2015.min.css";
 import { remarkUIComponent } from "./remark-ui-component";
+import { jsonPerse } from "@/utils/json-perse";
+import { Language } from "@/utils/lang";
+import { RESULT_ERROR } from "@/utils/result";
 
-export const getContents = (id: string, lang: string) => {
+export const getContents = (id: string, lang: Language): Contents => {
     const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`);
 
     const subResponse: Contents[] = pullFolders.map((item) => {
@@ -30,11 +33,22 @@ export const getContents = (id: string, lang: string) => {
 
         const source = fs.readFileSync(sourceFile, "utf8").toString();
         const overviewStr = fs.readFileSync(overviewFile, "utf8").toString();
-        const overviewParse = JSON.parse(overviewStr) as OverviewContents;
+
+        const overviewParse = jsonPerse(overviewStr);
+
+        if (overviewParse.kind === RESULT_ERROR) {
+            throw overviewParse.err;
+        }
+
+        const value = overviewParse.value;
+
+        if (!isOverviewContents(value)) {
+            throw new Error("型が違います");
+        }
 
         return {
             source: source,
-            overview: overviewParse
+            overview: value
         };
     });
 

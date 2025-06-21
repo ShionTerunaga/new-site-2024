@@ -2,9 +2,9 @@ import { ContentsAll } from "../_components/card-collection/contents-all.type";
 import { skillNative } from "./skill-native";
 import { skillOthers } from "./skill-others";
 import { skillWeb } from "./skill-web";
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 
-export const allSkills = (lang: string): ContentsAll[] => {
+export const allSkills = (lang: Language): ContentsAll[] => {
     const t = i18n(lang);
 
     return [

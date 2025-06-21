@@ -2,7 +2,7 @@ import Image from "next/image";
 import { MY_FACE } from "../../_static/assets";
 import styles from "./style.css";
 
-const Icon = () => {
+function Icon() {
     return (
         <picture>
             <Image
@@ -14,6 +14,6 @@ const Icon = () => {
             />
         </picture>
     );
-};
+}
 
 export default Icon;

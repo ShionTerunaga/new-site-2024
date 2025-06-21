@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import styles from "./style.css";
 import { en } from "@/shared/lang/en";
+import { CheckerProps } from "@/shared/types/props";
 
 interface Props {
     /** title of contents */
@@ -15,7 +16,13 @@ interface Props {
     url: string;
 }
 
-const SkillContents = ({ title, contents, image, imageB, url }: Props) => {
+function SkillContents<T extends Props>({
+    title,
+    contents,
+    image,
+    imageB,
+    url
+}: CheckerProps<T, Props>) {
     return (
         <>
             <h2 className={styles.heading2}>{title}</h2>
@@ -40,6 +47,6 @@ const SkillContents = ({ title, contents, image, imageB, url }: Props) => {
             </div>
         </>
     );
-};
+}
 
 export default SkillContents;

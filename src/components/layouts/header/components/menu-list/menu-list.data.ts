@@ -1,7 +1,7 @@
-import { i18n } from "@/utils/lang";
+import { i18n, Language } from "@/utils/lang";
 import { routingPath } from "@/utils/routing-paths";
 
-export const staticMenu = (lang: string) => {
+export const staticMenu = (lang: Language) => {
     const t = i18n(lang);
     const paths = routingPath(lang);
 

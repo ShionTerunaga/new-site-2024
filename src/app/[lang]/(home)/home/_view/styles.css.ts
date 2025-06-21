@@ -27,6 +27,8 @@ const styles = {
         }
     }),
     name: style({
+        height: 48,
+        lineHeight: "48px",
         fontSize: 32
     }),
     descriptionBox: style({

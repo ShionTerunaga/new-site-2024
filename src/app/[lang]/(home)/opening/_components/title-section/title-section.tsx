@@ -1,15 +1,14 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import styles from "./style.css";
+import { useInitialState } from "@/features/whole";
 import { topAnimation } from "@/shared/static/top-animation";
-import { routingPath } from "@/utils/routing-paths";
 import { sleep } from "@/utils/sleep";
 
-const TitleSection = () => {
-    const router = useRouter();
+function TitleSection() {
+    const { setIsFirst } = useInitialState();
     const [counter, setCounter] = useState<number>(0);
     const [flag, setFlag] = useState<boolean>(false);
     const animationCounterRef = useRef<number>(0);
@@ -39,7 +38,7 @@ const TitleSection = () => {
         }
 
         if (animationCounterRef.current === 6) {
-            router.push(routingPath("en").home);
+            setIsFirst(false);
         }
 
         setCounter(counter + 1);
@@ -64,6 +63,6 @@ const TitleSection = () => {
             </AnimatePresence>
         </section>
     );
-};
+}
 
 export default TitleSection;

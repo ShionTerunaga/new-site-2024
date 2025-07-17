@@ -4,7 +4,7 @@ export interface OverviewContents {
     id: string;
     title: string;
     date: number;
-    description: string;
+    icon: string;
 }
 
 type MdxOptions = Omit<
@@ -32,8 +32,8 @@ export function isOverviewContents(obj: unknown): obj is OverviewContents {
         "title" in obj &&
         typeof obj.title === "string" &&
         "date" in obj &&
-        typeof obj.date === "number" &&
-        "description" in obj &&
-        typeof obj.description === "string"
+        obj.date instanceof Date && !isNaN(obj.date.getTime()) &&
+        "icon" in obj && 
+        typeof obj.icon === "string"
     );
 }

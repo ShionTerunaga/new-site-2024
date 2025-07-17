@@ -1,5 +1,4 @@
-import { Home } from "@yamada-ui/lucide";
-import { ArrowLeft } from "@yamada-ui/lucide";
+import { House,ArrowLeft } from 'lucide-react'
 import Link from "next/link";
 import styles from "./style.css";
 import { CheckerProps } from "@/shared/types/props";
@@ -28,7 +27,7 @@ export function Back<T extends Props>({
             <div className={styles.linkContent}>
                 <div className={styles.icon}>
                     {pathName === routingPath(currentLang).home ? (
-                        <Home />
+                        <House />
                     ) : (
                         <ArrowLeft />
                     )}

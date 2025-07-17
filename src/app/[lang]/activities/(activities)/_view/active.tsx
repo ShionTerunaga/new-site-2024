@@ -37,9 +37,6 @@ export function Activity<T extends Props>({
                                             <CircleChevronRight />
                                         </span>
                                     </h2>
-                                    <p className={styles.description}>
-                                        {item.description}
-                                    </p>
                                 </Link>
                             </li>
                         ))}

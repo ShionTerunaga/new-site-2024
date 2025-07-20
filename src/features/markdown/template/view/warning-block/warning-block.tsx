@@ -1,4 +1,4 @@
-import { TriangleAlert } from "@yamada-ui/lucide";
+import { TriangleAlert } from "lucide-react";
 import React from "react";
 import styles from "./style.css";
 

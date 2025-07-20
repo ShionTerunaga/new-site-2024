@@ -1,4 +1,5 @@
 import { CompileOptions } from "@mdx-js/mdx";
+import emojiRegex from "emoji-regex";
 
 export interface OverviewContents {
     id: string;
@@ -32,8 +33,17 @@ export function isOverviewContents(obj: unknown): obj is OverviewContents {
         "title" in obj &&
         typeof obj.title === "string" &&
         "date" in obj &&
-        obj.date instanceof Date && !isNaN(obj.date.getTime()) &&
-        "icon" in obj && 
-        typeof obj.icon === "string"
+        obj.date instanceof Date &&
+        !isNaN(obj.date.getTime()) &&
+        "icon" in obj &&
+        typeof obj.icon === "string" &&
+        isOnlyUnicodeEmoji(obj.icon)
     );
+}
+
+export function isOnlyUnicodeEmoji(input: string): boolean {
+    const regex = emojiRegex();
+    const matched = input.match(regex);
+
+    return matched !== null && matched.join("") === input;
 }

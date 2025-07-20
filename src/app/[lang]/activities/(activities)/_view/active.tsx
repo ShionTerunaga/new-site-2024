@@ -1,5 +1,6 @@
-import { CircleChevronRight } from "lucide-react";
 import Link from "next/link";
+import ActiveCard from "../_components/active-card/active-card";
+import MotionChildren from "../_components/motion-children/motion-children";
 import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
 import { getAllContents } from "@/features/markdown/core";
@@ -23,25 +24,21 @@ export function Activity<T extends Props>({
             <main className={styles.container}>
                 <h1 className={styles.title}>{t.active.title}</h1>
                 <p className={styles.clickList}>{t.active.clickList}</p>
-                <section className={styles.section}>
-                    <ol>
-                        {contents.map((item, index) => (
-                            <li key={index} className={styles.li}>
-                                <Link
-                                    href={`${routingPath(currentLang).activity}/${item.id}`}
-                                    className={styles.link}
-                                >
-                                    <h2 className={styles.heading2}>
-                                        <span>{item.title}</span>
-                                        <span className={styles.icon}>
-                                            <CircleChevronRight />
-                                        </span>
-                                    </h2>
-                                </Link>
-                            </li>
-                        ))}
-                    </ol>
-                </section>
+                <ul className={styles.section}>
+                    {contents.map((item, index) => (
+                        <MotionChildren key={index} index={index}>
+                            <Link
+                                href={`${routingPath(currentLang).activity}/${item.id}`}
+                                className={styles.link}
+                            >
+                                <ActiveCard
+                                    icon={item.icon}
+                                    title={item.title}
+                                />
+                            </Link>
+                        </MotionChildren>
+                    ))}
+                </ul>
             </main>
         </>
     );

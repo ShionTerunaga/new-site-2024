@@ -1,4 +1,4 @@
-import { CircleChevronRight } from "@yamada-ui/lucide";
+import { CircleChevronRight } from "lucide-react";
 import Link from "next/link";
 import styles from "./style.css";
 import { Header } from "@/components/layouts/header";

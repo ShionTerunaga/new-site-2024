@@ -1,6 +1,6 @@
 "use client";
 
-import { X } from "@yamada-ui/lucide";
+import { X } from "lucide-react";
 import { ReactNode } from "react";
 import styles from "./style.css";
 import { usePopup } from "@/features/popup";

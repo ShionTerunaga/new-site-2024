@@ -1,15 +1,13 @@
 import fs from "fs";
 import path from "path";
+import matter from "gray-matter";
 import rehypeHighlight from "rehype-highlight";
 import remarkGfm from "remark-gfm";
 import { contentsPath } from "./get-contents.data";
 import { isOverviewContents, type Contents } from "./get-contents.type";
 import "highlight.js/styles/vs2015.min.css";
 import { remarkUIComponent } from "./remark-ui-component";
-import { jsonPerse } from "@/utils/json-perse";
 import { Language } from "@/utils/lang";
-import { RESULT_ERROR } from "@/utils/result";
-import matter from 'gray-matter'
 
 export const getContents = (id: string, lang: Language): Contents => {
     const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`);
@@ -25,7 +23,7 @@ export const getContents = (id: string, lang: Language): Contents => {
         );
 
         const source = fs.readFileSync(sourceFile, "utf8");
-        const {data,content} = matter(source)
+        const { data, content } = matter(source);
 
         if (!isOverviewContents(data)) {
             throw new Error(`型が違います${JSON.stringify(data)}`);

@@ -1,4 +1,4 @@
-import { House,ArrowLeft } from 'lucide-react'
+import { House, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import styles from "./style.css";
 import { CheckerProps } from "@/shared/types/props";

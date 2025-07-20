@@ -13,7 +13,7 @@ export const PopupBase = ({ children }: Props) => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ property: "opacity", duration: 0.5 }}
+                transition={{ duration: 0.5 }}
                 className={styles.background}
             />
             <div className={styles.mainContainer}>

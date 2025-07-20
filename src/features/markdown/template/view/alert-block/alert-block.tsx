@@ -1,4 +1,4 @@
-import { CircleX } from "@yamada-ui/lucide";
+import { CircleX } from "lucide-react";
 import React from "react";
 import styles from "./style.css";
 

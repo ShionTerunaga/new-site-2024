@@ -1,4 +1,4 @@
-import { Info } from "@yamada-ui/lucide";
+import { Info } from "lucide-react";
 import React from "react";
 import styles from "./style.css";
 

@@ -1,7 +1,7 @@
-import CardButton from "../card-button/card-button";
 import SkillContents from "../skill-contents/skill-contents";
 import styles from "./style.css";
 import { CardType } from "@/components/elements/card/card.type";
+import CardButton from "@/components/elements/card-button/card-button";
 import { en } from "@/shared/lang/en";
 
 interface Props {

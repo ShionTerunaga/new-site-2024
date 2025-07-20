@@ -1,9 +1,8 @@
 import fs from "fs";
+import matter from "gray-matter";
 import { contentsPath } from "./get-contents.data";
 import { isOverviewContents, OverviewContents } from "./get-contents.type";
-import { jsonPerse } from "@/utils/json-perse";
 import { Language } from "@/utils/lang";
-import { RESULT_ERROR } from "@/utils/result";
 
 export const getAllContents = (lang: Language) => {
     const pullFolders = fs.readdirSync(`${contentsPath}/${lang}`);
@@ -11,24 +10,17 @@ export const getAllContents = (lang: Language) => {
     const response: OverviewContents[] = pullFolders.map((item) => {
         const path = `${contentsPath}/${lang}/${item}`;
 
-        const overviewFile = `${item}Overview.json`;
+        const overviewFile = `${item}.mdx`;
 
-        const overviewStr = fs
-            .readFileSync(`${path}/${overviewFile}`)
-            .toString();
-        const overviewParse = jsonPerse(overviewStr);
+        const overviewStr = fs.readFileSync(`${path}/${overviewFile}`);
 
-        if (overviewParse.kind === RESULT_ERROR) {
-            throw overviewParse.err;
+        const { data } = matter(overviewStr);
+
+        if (!isOverviewContents(data)) {
+            throw new Error(`${JSON.stringify(data)}`);
         }
 
-        const value = overviewParse.value;
-
-        if (!isOverviewContents(value)) {
-            throw new Error("型が違います");
-        }
-
-        return value;
+        return data;
     });
 
     return response;

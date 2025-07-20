@@ -20,6 +20,7 @@ const styles = {
     }),
     li: style({
         marginBottom: 10,
+        listStyle: "none",
         "::marker": {
             fontSize: 24
         }
@@ -35,12 +36,13 @@ const styles = {
         alignItems: "center"
     }),
     section: style({
-        borderRadius: 8,
-        margin: "15px auto",
-        backgroundColor: "#333",
-        padding: 50,
-        color: "#fff",
-        overflow: "auto"
+        display: "grid",
+        gap: "max(3vw, 1em)",
+        width: "min(90%, 800px)",
+        marginInline: "auto",
+        gridTemplateColumns: "repeat(auto-fill, max(26%, 160px))",
+        justifyContent: "center",
+        marginTop: "max(3vw, 30px)"
     }),
     link: style({
         textDecoration: "none",

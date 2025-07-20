@@ -1,6 +1,6 @@
 import type { Meta, StoryFn } from "@storybook/react";
-import CardButton from "@/app/[lang]/skills/_components/card-button/card-button";
 import SPITZ from "@/assets/introduction/spitz.png";
+import CardButton from "@/components/elements/card-button/card-button";
 const meta: Meta<typeof CardButton> = {
     component: CardButton
 };

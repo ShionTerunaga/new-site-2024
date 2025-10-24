@@ -14,7 +14,7 @@ interface Props {
     /** カードのタイトル */
     title: string;
     /** カードの画像 */
-    image: StaticImageData;
+    image: string | StaticImageData;
     /**ポップアップの中身 */
     children: ReactNode;
     index: number;

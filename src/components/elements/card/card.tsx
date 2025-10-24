@@ -3,7 +3,7 @@ import styles from "./style.css";
 import { CheckerProps } from "@/shared/types/props";
 
 interface Props {
-    image?: StaticImageData;
+    image?: string | StaticImageData;
     title: string;
     description: string;
     isSkills?: boolean;

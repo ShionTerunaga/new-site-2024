@@ -31,11 +31,8 @@ export function Introduction<T extends Props>({
                 <h1 className={styles.title}>{t.intro.introData.title}</h1>
                 <div className={styles.box}>
                     {introModal.map(
-                        (
-                            { image, title, headerContents, bodyContents },
-                            index
-                        ) => (
-                            <IntroModal key={index} title={title}>
+                        ({ image, title, headerContents, bodyContents }) => (
+                            <IntroModal key={title} title={title}>
                                 <IntroPopup
                                     answer={headerContents}
                                     description={bodyContents}

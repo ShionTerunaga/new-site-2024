@@ -27,10 +27,10 @@ function CardButton<T extends Props>(props: CheckerProps<T, Props>) {
         ["children", "index", "key"]
     );
 
-    const { openPopup } = usePopup();
+    const { open } = usePopup();
 
     const handleClick = () => {
-        openPopup(<PopupContents>{children}</PopupContents>);
+        open(<PopupContents>{children}</PopupContents>);
     };
 
     return (

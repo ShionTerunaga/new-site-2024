@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { PopupProvider } from "@/features/popup";
 import { InitialStateProvider } from "@/features/whole";
+import { PopupBase } from "@/components/layouts/popup/popup-base/popup-base";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,8 @@ export default function RootLayout({
         <html lang="ja">
             <body className={inter.className}>
                 <InitialStateProvider>
-                    <PopupProvider>{children}</PopupProvider>
+                    {children}
+                    <PopupBase />
                 </InitialStateProvider>
             </body>
         </html>

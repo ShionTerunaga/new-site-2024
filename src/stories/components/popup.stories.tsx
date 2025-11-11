@@ -11,10 +11,10 @@ export default meta;
 type Story = StoryFn<typeof PopupBase>;
 
 export const Basic: Story = () => {
-    const { openPopup } = usePopup();
+    const { open } = usePopup();
 
     const handleClick = () => {
-        openPopup(
+        open(
             <PopupContents>
                 <div>hogehoge</div>
             </PopupContents>

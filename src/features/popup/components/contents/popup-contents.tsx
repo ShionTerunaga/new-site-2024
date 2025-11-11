@@ -10,13 +10,13 @@ interface Props {
 }
 
 export const PopupContents = ({ children }: Props) => {
-    const { closePopup } = usePopup();
+    const { close } = usePopup();
 
     return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <div>
-                    <button className={styles.button} onClick={closePopup}>
+                    <button className={styles.button} onClick={close}>
                         <X />
                     </button>
                 </div>

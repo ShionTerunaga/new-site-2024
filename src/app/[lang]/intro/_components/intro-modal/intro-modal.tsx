@@ -1,9 +1,6 @@
 "use client";
 
-import { memo, ReactNode } from "react";
 import styles from "./style.css";
-import { PopupContents } from "@/features/popup";
-import { usePopup } from "@/features/popup";
 import { CheckerProps } from "@/shared/types/props";
 
 interface Props {
@@ -15,30 +12,22 @@ interface Props {
     /**
      * contents
      */
-    children: ReactNode;
+    handlers: () => void;
 }
 
-const IntroModal = memo(function <T extends Props>({
+function IntroModal<T extends Props>({
     title,
-    children
+    handlers
 }: CheckerProps<T, Props>) {
-    const { open } = usePopup();
-
-    const handleClick = () => {
-        open(<PopupContents>{children}</PopupContents>);
-    };
-
     return (
         <button
             className={styles.button}
-            onClick={handleClick}
+            onClick={handlers}
             aria-label="Open popup"
         >
             {title}
         </button>
     );
-});
-
-IntroModal.displayName = "IntroModal";
+}
 
 export default IntroModal;

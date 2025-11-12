@@ -10,5 +10,5 @@ export default meta;
 type Story = StoryFn<typeof Header>;
 
 export const Basic: Story = () => {
-    return <Header title="" currentLang="ja" />;
+    return <Header currentLang="ja" />;
 };

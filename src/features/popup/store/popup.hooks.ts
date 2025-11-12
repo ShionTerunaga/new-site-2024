@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useMemo, useSyncExternalStore } from "react";
 import { type PopupState, popupStore } from "./store";
 
 export type SubPopupSnapshot = PopupState & {
@@ -12,9 +12,11 @@ export function usePopup() {
     const { subscribe, getSnapshot } = popupStore;
     const state = useSyncExternalStore(subscribe, getSnapshot, getSnapshot);
 
-    return {
-        ...state,
-        open: popupStore.open,
-        close: popupStore.close
-    } as const;
+    const response = useMemo(() => {
+        return {
+            ...state
+        };
+    }, [state]);
+
+    return response;
 }

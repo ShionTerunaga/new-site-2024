@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { usePopup } from "@/features/popup";
 import { AnimatePresence, motion } from "motion/react";
 import styles from "./style.css";

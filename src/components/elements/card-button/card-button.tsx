@@ -5,7 +5,7 @@ import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import styles from "./style.css";
 import { Card } from "@/components/elements/card";
-import { PopupContents, usePopup } from "@/features/popup";
+import { popupAction, PopupContents } from "@/features/popup";
 import { CheckerProps } from "@/shared/types/props";
 import { omitKeyObject } from "@/utils/omit-key-object";
 
@@ -22,12 +22,11 @@ interface Props {
 
 function CardButton<T extends Props>(props: CheckerProps<T, Props>) {
     const { index, children } = props;
+    const { open } = popupAction;
     const cardProps: Omit<Props, "children" | "index" | "key"> = omitKeyObject(
         props,
         ["children", "index", "key"]
     );
-
-    const { open } = usePopup();
 
     const handleClick = () => {
         open(<PopupContents>{children}</PopupContents>);

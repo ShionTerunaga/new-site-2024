@@ -1,3 +1,5 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import styles from "./style.css";
 import { CheckerProps } from "@/shared/types/props";
@@ -9,7 +11,7 @@ interface Props {
     image?: StaticImageData;
 }
 
-const IntroPopup = memo(function <T extends Props>({
+function IntroPopup<T extends Props>({
     answer,
     description,
     image
@@ -31,8 +33,6 @@ const IntroPopup = memo(function <T extends Props>({
             </div>
         </>
     );
-});
-
-IntroPopup.displayName = "IntroPopup";
+}
 
 export default IntroPopup;

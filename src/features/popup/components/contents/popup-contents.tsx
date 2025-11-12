@@ -3,14 +3,14 @@
 import { X } from "lucide-react";
 import { ReactNode } from "react";
 import styles from "./style.css";
-import { usePopup } from "@/features/popup";
+import { popupAction } from "@/features/popup";
 
 interface Props {
     children: ReactNode;
 }
 
 export const PopupContents = ({ children }: Props) => {
-    const { close } = usePopup();
+    const { close } = popupAction;
 
     return (
         <div className={styles.container}>

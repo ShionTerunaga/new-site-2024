@@ -20,7 +20,7 @@ export function Activity<T extends Props>({
 
     return (
         <>
-            <Header title={t.active.title} currentLang={currentLang} />
+            <Header currentLang={currentLang} />
             <main className={styles.container}>
                 <h1 className={styles.title}>{t.active.title}</h1>
                 <p className={styles.clickList}>{t.active.clickList}</p>

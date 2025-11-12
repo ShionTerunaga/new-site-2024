@@ -2,10 +2,6 @@ import { Language } from "@/utils/lang";
 
 export interface HeaderProps {
     /**
-     * ページのタイトル
-     */
-    title?: string;
-    /**
      * 戻る時のpath
      */
     path?: string;

@@ -16,7 +16,7 @@ export function SkillsPage<T extends Props>({
 
     return (
         <>
-            <Header title="" currentLang={currentLang} />
+            <Header currentLang={currentLang} />
             <main className={styles.container}>
                 <CardView contents={skills} />
                 <div className={styles.space} />

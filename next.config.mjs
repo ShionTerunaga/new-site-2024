@@ -12,7 +12,8 @@ const nextConfig = {
         ],
         domains: ["placehold.jp", "images.microcms-assets.io"]
     },
-    transpilePackages: ["next-mdx-remote"]
+    transpilePackages: ["next-mdx-remote"],
+    reactCompiler: true
 };
 
 export default withVanillaExtract(nextConfig);

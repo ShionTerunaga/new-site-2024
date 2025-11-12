@@ -7,7 +7,7 @@ import { CheckerProps } from "@/shared/types/props";
 
 interface Props extends HeaderProps {}
 
-export function Header<T extends Props>(props: CheckerProps<T, Props>) {
+function Header<T extends Props>(props: CheckerProps<T, Props>) {
     const { isHome, currentLang, path } = props;
     const langProps: Props = props;
 
@@ -25,3 +25,5 @@ export function Header<T extends Props>(props: CheckerProps<T, Props>) {
         </header>
     );
 }
+
+export { Header };

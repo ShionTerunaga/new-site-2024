@@ -22,7 +22,6 @@ export async function Active<T extends Props>({
     return (
         <>
             <Header
-                title={t.active.title}
                 path={routingPath(currentLang).activity}
                 currentLang={currentLang}
             />

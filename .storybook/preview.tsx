@@ -1,7 +1,4 @@
 import type { Preview } from "@storybook/react";
-import React from "react";
-import { PopupLayout } from "../src/layout/popupLayout/popupLayout.logic";
-import { PopupContextProvider } from "../src/store/popup/popupContext";
 
 const preview: Preview = {
     parameters: {
@@ -32,10 +29,7 @@ const preview: Preview = {
                         margin: 0
                     }}
                 >
-                    <PopupContextProvider>
-                        <PopupLayout />
-                        <Story />
-                    </PopupContextProvider>
+                    <Story />
                 </div>
             );
         }

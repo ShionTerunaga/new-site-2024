@@ -19,7 +19,7 @@ function CardCollection({ title, contents }: Props) {
                     <CardButton
                         index={index}
                         title={title}
-                        image={image}
+                        image={image.src}
                         key={index}
                     >
                         <SkillContents

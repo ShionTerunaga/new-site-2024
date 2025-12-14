@@ -5,7 +5,7 @@ import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import styles from "./style.css";
 import { Card } from "@/components/elements/card";
-import { PopupContents, usePopup } from "@/features/popup";
+import { popupAction, PopupContents } from "@/features/popup";
 import { CheckerProps } from "@/shared/types/props";
 import { omitKeyObject } from "@/utils/omit-key-object";
 
@@ -14,7 +14,7 @@ interface Props {
     /** カードのタイトル */
     title: string;
     /** カードの画像 */
-    image: StaticImageData;
+    image: string | StaticImageData;
     /**ポップアップの中身 */
     children: ReactNode;
     index: number;
@@ -22,15 +22,14 @@ interface Props {
 
 function CardButton<T extends Props>(props: CheckerProps<T, Props>) {
     const { index, children } = props;
+    const { open } = popupAction;
     const cardProps: Omit<Props, "children" | "index" | "key"> = omitKeyObject(
         props,
         ["children", "index", "key"]
     );
 
-    const { openPopup } = usePopup();
-
     const handleClick = () => {
-        openPopup(<PopupContents>{children}</PopupContents>);
+        open(<PopupContents>{children}</PopupContents>);
     };
 
     return (

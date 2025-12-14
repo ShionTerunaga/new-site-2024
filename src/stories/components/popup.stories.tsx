@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from "@storybook/react";
-import { PopupContents, usePopup } from "@/features/popup";
+import { popupAction, PopupContents, usePopup } from "@/features/popup";
 import { PopupBase } from "@/features/popup/components/base/popup-base";
 
 const meta: Meta<typeof PopupBase> = {
@@ -11,10 +11,10 @@ export default meta;
 type Story = StoryFn<typeof PopupBase>;
 
 export const Basic: Story = () => {
-    const { openPopup } = usePopup();
+    const { open } = popupAction;
 
     const handleClick = () => {
-        openPopup(
+        open(
             <PopupContents>
                 <div>hogehoge</div>
             </PopupContents>

@@ -1,16 +1,23 @@
 import type { StorybookConfig } from "@storybook/nextjs";
 import { VanillaExtractPlugin } from "@vanilla-extract/webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import { createRequire } from "module";
 import path from "path";
+import { fileURLToPath } from "url";
+
+const require = createRequire(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const srcPath = path.resolve(__dirname, "../src");
+const styleLoader = require.resolve("style-loader");
+const cssLoader = require.resolve("css-loader");
 
 const config: StorybookConfig = {
-    stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+    stories: ["../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
     addons: [
         "@storybook/addon-onboarding",
         "@storybook/addon-links",
-        "@storybook/addon-essentials",
         "@chromatic-com/storybook",
-        "@storybook/addon-interactions",
         "@storybook/addon-styling-webpack",
         {
             name: "@storybook/addon-styling-webpack",
@@ -24,9 +31,9 @@ const config: StorybookConfig = {
                         test: /\.css$/,
                         sideEffects: true,
                         use: [
-                            require.resolve("style-loader"),
+                            styleLoader,
                             {
-                                loader: require.resolve("style-loader"),
+                                loader: styleLoader,
                                 options: {}
                             }
                         ],
@@ -38,7 +45,7 @@ const config: StorybookConfig = {
                         use: [
                             MiniCssExtractPlugin.loader,
                             {
-                                loader: require.resolve("css-loader"),
+                                loader: cssLoader,
                                 options: {
                                     url: false
                                 }
@@ -58,7 +65,7 @@ const config: StorybookConfig = {
         if (config.resolve) {
             config.resolve.alias = {
                 ...config.resolve.alias,
-                "@": path.resolve(__dirname, "./src")
+                "@": srcPath
             };
         }
 

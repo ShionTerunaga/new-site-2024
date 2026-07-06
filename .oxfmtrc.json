@@ -1,5 +1,6 @@
 {
     "bracketSpacing": true,
+    "ignorePatterns": ["*.md", "*.mdx"],
     "jsxSingleQuote": false,
     "printWidth": 80,
     "proseWrap": "always",

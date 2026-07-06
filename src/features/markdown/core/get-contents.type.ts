@@ -22,6 +22,10 @@ export interface Contents {
     };
 }
 
+type OverviewContentsInput = Omit<OverviewContents, "date"> & {
+    date: string | number | Date;
+};
+
 export function isOverviewContents(obj: unknown): obj is OverviewContents {
     if (typeof obj !== "object") return false;
 
@@ -33,12 +37,26 @@ export function isOverviewContents(obj: unknown): obj is OverviewContents {
         "title" in obj &&
         typeof obj.title === "string" &&
         "date" in obj &&
-        obj.date instanceof Date &&
-        !isNaN(obj.date.getTime()) &&
+        typeof obj.date === "number" &&
+        Number.isFinite(obj.date) &&
         "icon" in obj &&
         typeof obj.icon === "string" &&
         isOnlyUnicodeEmoji(obj.icon)
     );
+}
+
+export function normalizeOverviewContents(
+    obj: OverviewContentsInput
+): OverviewContents {
+    const date =
+        obj.date instanceof Date
+            ? obj.date.getTime()
+            : new Date(obj.date).getTime();
+
+    return {
+        ...obj,
+        date
+    };
 }
 
 export function isOnlyUnicodeEmoji(input: string): boolean {

@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
+
 import styles from "./style.css";
 import { useInitialState } from "@/features/whole";
 import { topAnimation } from "@/shared/static/top-animation";
@@ -10,19 +11,16 @@ import { sleep } from "@/utils/sleep";
 function TitleSection() {
     const { setIsFirst } = useInitialState();
     const [counter, setCounter] = useState<number>(0);
-    const [flag, setFlag] = useState<boolean>(false);
+    const [flag, setFlag] = useState<boolean>(true);
     const animationCounterRef = useRef<number>(0);
 
     useEffect(() => {
-        setFlag(true);
-
         setTimeout(() => {
             setFlag(false);
 
             setCounter(counter + 1);
         }, 3000);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [counter]);
 
     const animationComplete = async () => {
         animationCounterRef.current += 1;
@@ -37,7 +35,7 @@ function TitleSection() {
             return;
         }
 
-        if (animationCounterRef.current === 6) {
+        if (animationCounterRef.current >= 6) {
             setIsFirst(false);
         }
 

@@ -7,7 +7,7 @@ const styles = {
         "::marker": {
             fontSize: 24
         }
-    }),
+    })
 };
 
 export default styles;

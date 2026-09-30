@@ -1,13 +1,13 @@
 "use client";
 
 import { useMemo } from "react";
-import { introData } from "../_static/introduction.data";
-import { Language } from "@/utils/lang";
-import { CheckerProps } from "@/shared/types/props";
-import { popupAction, PopupContents, usePopup } from "@/features/popup";
-import IntroPopup from "../_components/intro-popup/intro-popup";
-import styles from "./style.css";
 import IntroModal from "../_components/intro-modal/intro-modal";
+import IntroPopup from "../_components/intro-popup/intro-popup";
+import { introData } from "../_static/introduction.data";
+import styles from "./style.css";
+import { popupAction, PopupContents } from "@/features/popup";
+import { CheckerProps } from "@/shared/types/props";
+import { Language } from "@/utils/lang";
 
 interface Props {
     currentLang: Language;
@@ -17,12 +17,11 @@ export function IntroductionButton<T extends Props>({
     currentLang
 }: CheckerProps<T, Props>) {
     const introModal = useMemo(() => introData(currentLang), [currentLang]);
-    const { open } = popupAction;
 
     const handlers = useMemo(() => {
         return introModal.map(({ image, headerContents, bodyContents }) => {
             return () => {
-                open(
+                popupAction.open(
                     <PopupContents>
                         <IntroPopup
                             answer={headerContents}

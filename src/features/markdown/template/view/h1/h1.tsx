@@ -9,7 +9,9 @@ const H1 = (
 ) => {
     return (
         <>
-            <h1 {...props} className={styles.h1} />
+            <h1 {...props} className={styles.h1}>
+                {props.children}
+            </h1>
             <hr className={styles.hr} />
         </>
     );

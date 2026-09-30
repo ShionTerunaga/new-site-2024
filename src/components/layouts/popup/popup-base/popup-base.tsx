@@ -1,8 +1,8 @@
 "use client";
 
-import { usePopup } from "@/features/popup";
 import { AnimatePresence, motion } from "motion/react";
 import styles from "./style.css";
+import { usePopup } from "@/features/popup";
 
 export function PopupBase() {
     const popup = usePopup();

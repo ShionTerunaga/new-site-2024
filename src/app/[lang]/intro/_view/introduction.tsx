@@ -1,10 +1,10 @@
 import CarrierCard from "../_components/carrie-card/carrier-card";
 import IntroContents from "../_components/intro-contents/introduction";
+import { IntroductionButton } from "./introduction-button";
 import styles from "./style.css";
 import { Header } from "@/components/layouts/header";
 import { CheckerProps } from "@/shared/types/props";
 import { i18n, Language } from "@/utils/lang";
-import { IntroductionButton } from "./introduction-button";
 
 interface Props {
     currentLang: Language;

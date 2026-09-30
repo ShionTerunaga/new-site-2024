@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { InitialStateProvider } from "@/features/whole";
 import { PopupBase } from "@/components/layouts/popup/popup-base/popup-base";
+import { InitialStateProvider } from "@/features/whole";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,0 +1,68 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "categories": {
+        "correctness": "error"
+    },
+    "plugins": [
+        "eslint",
+        "typescript",
+        "react",
+        "import",
+        "jsx-a11y",
+        "nextjs"
+    ],
+    "jsPlugins": [
+        "eslint-plugin-storybook",
+        {
+            "name": "import-js",
+            "specifier": "eslint-plugin-import"
+        }
+    ],
+    "rules": {
+        "import-js/order": [
+            "error",
+            {
+                "alphabetize": {
+                    "order": "asc"
+                }
+            }
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "fix": {
+                    "imports": "safe-fix"
+                }
+            }
+        ],
+        "react/react-in-jsx-scope": "off",
+        "react/set-state-in-effect": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.stories.{js,jsx,ts,tsx,mjs,cjs}",
+                "**/*.story.{js,jsx,ts,tsx,mjs,cjs}"
+            ],
+            "rules": {
+                "react-hooks/rules-of-hooks": "off",
+                "import/no-anonymous-default-export": "off",
+                "storybook/await-interactions": "error",
+                "storybook/context-in-play-function": "error",
+                "storybook/default-exports": "error",
+                "storybook/hierarchy-separator": "warn",
+                "storybook/no-redundant-story-name": "warn",
+                "storybook/prefer-pascal-case": "warn",
+                "storybook/story-exports": "error",
+                "storybook/use-storybook-expect": "error",
+                "storybook/use-storybook-testing-library": "error"
+            }
+        },
+        {
+            "files": [".storybook/main.{js,cjs,mjs,ts}"],
+            "rules": {
+                "storybook/no-uninstalled-addons": "error"
+            }
+        }
+    ]
+}

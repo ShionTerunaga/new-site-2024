@@ -3,7 +3,6 @@
 import Image, { StaticImageData } from "next/image";
 import styles from "./style.css";
 import { CheckerProps } from "@/shared/types/props";
-import { memo } from "react";
 
 interface Props {
     answer: string;

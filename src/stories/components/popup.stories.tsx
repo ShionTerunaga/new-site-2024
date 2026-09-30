@@ -1,5 +1,5 @@
 import type { Meta, StoryFn } from "@storybook/react";
-import { popupAction, PopupContents, usePopup } from "@/features/popup";
+import { popupAction, PopupContents } from "@/features/popup";
 import { PopupBase } from "@/features/popup/components/base/popup-base";
 
 const meta: Meta<typeof PopupBase> = {

@@ -4,7 +4,7 @@ import { Header } from "@/components/layouts/header";
 import { markdownComponent } from "@/features/markdown";
 import { getContents } from "@/features/markdown/core";
 import { CheckerProps } from "@/shared/types/props";
-import { i18n, Language } from "@/utils/lang";
+import { Language } from "@/utils/lang";
 import { routingPath } from "@/utils/routing-paths";
 
 interface Props {
@@ -16,7 +16,6 @@ export async function Active<T extends Props>({
     id,
     currentLang
 }: CheckerProps<T, Props>) {
-    const t = i18n(currentLang);
     const { options, source, overview } = getContents(id, currentLang);
 
     return (

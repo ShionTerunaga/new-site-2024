@@ -1,5 +1,3 @@
-import { isString } from "./is";
-
 export function omitKeyObject<T extends object, S extends keyof T>(
     obj: T,
     keys: S[]
